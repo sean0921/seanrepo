@@ -78,6 +78,56 @@ Description: Data files for the GNOME terminal emulator
  This package contains data, help files and localization settings for
  gnome-terminal, the GNOME terminal emulator application.
 
+Package: ibus-data
+Architecture: all
+Version: 1.5.24-2~exp1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 57100
+Depends: dconf-gsettings-backend | gsettings-backend, librsvg2-common
+Suggests: ibus
+Breaks: ibus (<< 1.5.21-1~exp2)
+Replaces: ibus (<< 1.5.21-1~exp2)
+Filename: ./all/ibus-data_1.5.24-2~exp1_all.deb
+Size: 5698564
+MD5sum: fb723f58b64723d1671446542436ec3d
+SHA1: bb2a9c074f1df89b43427bd7aeb01798a23e6411
+SHA256: 9f4b3e17f6813566f8221931c75815da6d3eb639ff77d3865efa8b0c530771ad
+SHA512: b992ea7e1723ca9fe4fb697f0b368f6ef980edbf798ce2353a2b29a7c70cdc3ee4114923660b1ca73eeac2a097bc9b07da1514f0aad6badd0580ed8cf39e96fe
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - data files
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains data files.
+
+Package: ibus-doc
+Architecture: all
+Version: 1.5.24-2~exp1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 4664
+Filename: ./all/ibus-doc_1.5.24-2~exp1_all.deb
+Size: 463072
+MD5sum: 8586ab309774bcad16b40973bcfea9d3
+SHA1: 002bb3a3b25ef2dc324fb4767e6b15c6f34da68d
+SHA256: f97badb9ca9f3ab9e40df3e1eb1473768ae53a28aa05a19ec397b65ba9180d4e
+SHA512: 79c499d8e3071e28cfa6316e11a84f60f07982abe7d174f07cf63eb0ab74774d8bf082efb62caa257da9e5b64be0204d2f17a7377d9e5dc15647c814b68394e1
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - development documentation
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the reference manual.
+
 Package: libcloudproviders-doc
 Architecture: all
 Version: 0.3.1-2
@@ -211,6 +261,32 @@ Description: PuTTY HTML documentation
  Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
  Plink, PSCP, PSFTP, and PuTTYgen).
 
+Package: python3-ibus-1.0
+Architecture: all
+Version: 1.5.24-2~exp1
+Priority: optional
+Section: python
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 288
+Depends: python3:any, gir1.2-ibus-1.0, python3-gi (>= 3.8)
+Breaks: gir1.2-ibus-1.0 (<< 1.5.21-4~exp1)
+Replaces: gir1.2-ibus-1.0 (<< 1.5.21-4~exp1)
+Filename: ./all/python3-ibus-1.0_1.5.24-2~exp1_all.deb
+Size: 261596
+MD5sum: 25dc4009275d0e568b0018836eb173ee
+SHA1: 81c31f7201aa30bcb75a29960cf7700368e561c6
+SHA256: ecc1afe4148bbe90e28c728373651bc320b6dae3d1fded6ad67fa76c041be84f
+SHA512: 56c712b558e60e3a734d78d5d1194c3382864890aea0acc2ed7efba96b2e6078eaaf4380729dd1d381d0df10637b05b3ee976f81e08eb658471c97d1f73d14e1
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - introspection overrides for Python (Python 3)
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains GObject Introspection overrides for Python that
+ can be used by Python applications using IBus.
+
 Package: wayland-protocols
 Architecture: all
 Version: 1.20-1
@@ -309,6 +385,33 @@ Description: GTK graphical user interface library -- gir bindings
  .
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
+
+Package: gir1.2-ibus-1.0
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 578
+Depends: gir1.2-glib-2.0, libibus-1.0-5 (>= 1.5.21)
+Breaks: ibus-array (<< 0.2.1-3), ibus-pinyin (<< 1.5.0-6)
+Filename: ./amd64/gir1.2-ibus-1.0_1.5.24-2~exp1_amd64.deb
+Size: 320376
+MD5sum: 1aff08887e9556ab3e27b6c3ae1d57a2
+SHA1: 4a2c9fe95f5ad8c1ac1f29eff50f447c078263ea
+SHA256: 8e63ea718cdc069e58d68f699a3bd64e51c5d818f8c349354d807d6d93b80cc6
+SHA512: 29653bb894830c2ddd1ba643b1f393c1999f2b76a043bd4e7844d243d4078422000328d57ed3d48c5b0b371195dab7e326e9845f4d9bb112e0b24b3e01ea73b6
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - introspection data
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the GObject introspection data which are needed
+ for developing the IBus applications in various programming languages
+ with GObject introspection support.
 
 Package: gir1.2-pango-1.0
 Architecture: amd64
@@ -513,6 +616,275 @@ Description: "as-installed" tests for GTK 4
  .
  This package contains installable test programs, primarily for use with
  autopkgtest.
+
+Package: ibus-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 1649
+Depends: ibus (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 1372916
+MD5sum: 50339ccdcfb65d12e97aec211bf6e4ed
+SHA1: f33efdb4094ca2ed7343565370a978d34af0c5d3
+SHA256: 0f6d262e1036c7421810fb8910268dd9c6438f521be7897e84c9c9208562174f
+SHA512: d5f8d17fe03b7cef11dd72a135d64a54b758028b8b849113c6730c6711a2d4137396c894f93533459a934abaa2b5c012afc5e96597598c72b1e22f8582fcfe56
+Description: debug symbols for ibus
+Build-Ids: 06edaa5aa59e4baf8db0ec6c01a009b64c0b5708 227411a02460f65645179fe1cbde9225c31b0dc4 3acaa2c827ff9a23bfb5e5320fa753ea4def875a 7ecd79412ab607d548ea820cd9684f272a4fbea6 90be58a71b2bacfac3b51b093c43c3d414a4568e aa3ed38f55d38fe9e8a003daedb74b3ef1152c0a b75c75cab6e7497afc7884ec9d7e34c6bc9eb2bd e7eb94b6eeb025dbf42afce825242064be2b6436 f0dbcc9a6ff5a4030fc6134e3ce6c696d49c4a02 fe1321377ad843e74a0af1a393b895747d88a5bc
+
+Package: ibus-gtk-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 59
+Depends: ibus-gtk (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-gtk-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 40280
+MD5sum: 59d4522428bcec5e79b1daa13e60e164
+SHA1: eabb9a51fecc923086d2bee6c6b3968252b887fe
+SHA256: 5052ce312c87691161bb0eb6af6e57b474368dccce84752a225207eef9c92512
+SHA512: 80b273e6ebd25cd1a1bfa56c2eee75cfa3dec73afd827cbccc1bb2135fcfced26e49b33c86da0fd5324f99e670c37dcabbf78cf69ca03e7c356293bc9108704b
+Description: debug symbols for ibus-gtk
+Build-Ids: 8f91deec6c7b7281115b60b255dcd1d29963638d
+
+Package: ibus-gtk3-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 58
+Depends: ibus-gtk3 (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-gtk3-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 38408
+MD5sum: 0a7adf04f64bb137e864dce787273e2d
+SHA1: fbb870e0e7925e31661611efcd11ae9cd1df99d0
+SHA256: 71aedf7c95d320f27d5f4fd0aa1ca27c2334398afd329dac6153a55e99182e5f
+SHA512: ab11d838db348b658506451c12fca554af32a6beab83f2814f9fd29a339aa4fd39391d4aa922b91e79fe3fbcd73938287640b82977f064c37da79e9c503ff1f9
+Description: debug symbols for ibus-gtk3
+Build-Ids: a57aca5baee494cb0bb61f4dc6dbae416ee1fcac
+
+Package: ibus-gtk3
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 316
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.46.0~), libgtk-3-0 (>= 3.12.0), libibus-1.0-5 (>= 1.5.21), libpango-1.0-0 (>= 1.14.0)
+Filename: ./amd64/ibus-gtk3_1.5.24-2~exp1_amd64.deb
+Size: 270292
+MD5sum: 74d7d4fd35473514b595d52f728d3705
+SHA1: bcfd7c00ea331b3fb1fc94fbfe433e2c7c7c9ee4
+SHA256: 9302e6f68b6a98cb873be627ca9cf87e84ebd9da9d8f0b7d7ad52d005632225b
+SHA512: 43171cd489ef0d44281c8f3619b44b4eec2c3999818a93c4f64dfcbe0cacfbebd8e9a2fb875c38fd9907916ee44499014245b7e4be17a8acc007b78e009b2203
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - GTK3 support
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the GTK3 IM module.
+
+Package: ibus-gtk4-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 53
+Depends: ibus-gtk4 (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-gtk4-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 33244
+MD5sum: b78597add5499a192496352cd02c062d
+SHA1: 15985eebcffd611002ece806b5f9e86f75e2a4b6
+SHA256: 49ebb56794386c03284966b2692a0bbdf115c5500b1086b85c7b30274fb640cd
+SHA512: 58d32a0a9f118fedcc4acca3ec32ce4c5ade7d0d7b84685c527a5f9e13df866cf13ca4c6a704bed5566ca10ae15489fd3bb6dfe1c54eefba6c49ce17ae1dffe9
+Description: debug symbols for ibus-gtk4
+Build-Ids: d2f107ed84eddf8e7fd3fe55019a6fffafeb16ee
+
+Package: ibus-gtk4
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 312
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.46.0~), libgtk-4-1 (>= 4.0.0), libibus-1.0-5 (>= 1.5.21), libpango-1.0-0 (>= 1.14.0)
+Filename: ./amd64/ibus-gtk4_1.5.24-2~exp1_amd64.deb
+Size: 269288
+MD5sum: 16a797bab06273bdcbeabeb73edcbc03
+SHA1: 3a102da9337693868f87b9fbdb80fe6b51a1d88f
+SHA256: e07ccb654fcccacb3ee9f873eab6b52d7c384ead46a41ba434434a3d8e5af53d
+SHA512: 6924763fc0a44cb72d0ea82a8769c255ad933bf96983d969dd5341cde84e0c02b1d499a9ff4b9450195f03b225af5ce61432225db5629fbad3859a3f21af9472
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - GTK4 support
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the GTK4 IM module.
+
+Package: ibus-gtk
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 312
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.46.0~), libgtk2.0-0 (>= 2.24.5-4), libibus-1.0-5 (>= 1.5.21), libpango-1.0-0 (>= 1.14.0)
+Filename: ./amd64/ibus-gtk_1.5.24-2~exp1_amd64.deb
+Size: 269612
+MD5sum: 65a7f86a03d8546a005a73f076640543
+SHA1: 60e20e6938cc9ca8154834a79b1d508fc6379074
+SHA256: 742e5bdc1c6c00701ca1ff4e9f2931f2873a7d4ba5e3717920a2979903e52f10
+SHA512: 71262d0cfa46e96047a24caaa5e1edc765235a427a5cf6e11e79f8c134724b59c650bca4e91c68db26438c0c95343b9b11503968a5d4937e2061acc369b2e4a9
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - GTK2 support
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the GTK2 IM module.
+
+Package: ibus-tests-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 197
+Depends: ibus-tests (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-tests-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 71064
+MD5sum: 879f15e6937d717a748b8aa64d643363
+SHA1: e29cff26b0fb6973307745385aaf835b9948c43e
+SHA256: 09386b4bd8dde8bef66bd62a1cd87a338ed2ea2d838e2b7372c0e3d196ebc3d1
+SHA512: 5bd6cf93f37b4868f677fc920d1e6ac92ae30754421c8536a3ad213a91fa54fb85bac84799fb133f9b997b8098f58ec017eb0c1f51a95753cb9663154ebd1f80
+Description: debug symbols for ibus-tests
+Build-Ids: 09605e7c5cd281dce4c931b11dca25125b23eb4e 1230cca077d5c4c3c7d0498d70cd3371e4d74e23 30dd3c660cb607de1c27fc156e6fa47b452c2206 339ee2655bfefce6b14bf8a101394850f2e4dd2b 3605af8c10eb76ab876f69d5d9b691304b4f630e 4ccb92e1d3cf833e87392c418d37b5cca7f51175 55f9b3eaf801a324ed4d66071f06d5601632730f 8c061dd745f425663a8b403c7b91993a0486ab90 92992ddf59b8bc51005938ea8e7fd9c0d8e4290e 97b8990023009110259365b393b9ea3cf5312849 9b60f4673d8ee773e3084f233dae8f4a099c0b8c aa395102d9b029b091b76636530b6422a9c72893 ac5406eec2497260fae51b5c0882bc0b829fc8b3 f93ee9e8a3a0f0b734c0cc8e0362384b03182826
+
+Package: ibus-tests
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 557
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.57.2), libgtk-3-0 (>= 3.12.0), libibus-1.0-5 (>= 1.5.21), libx11-6, libxtst6, dbus-x11, gnome-desktop-testing, gnome-session, gnome-shell, ibus (= 1.5.24-2~exp1), locales-all, xvfb
+Filename: ./amd64/ibus-tests_1.5.24-2~exp1_amd64.deb
+Size: 292140
+MD5sum: 225bc7a1db2df553caab4dde10b6314c
+SHA1: f2a5c67defdee015a2e8b8a484611481c6e2e645
+SHA256: d1e445f5a0d393c76c159e6f48af7f1b21ac9652c7c5fea10ca423502ebd40ce
+SHA512: a38406c8668e1f5d24513857de212dbdecb6ce1e45e56629259ec8a75f0d13075f0441382e051c7fc1b429b0f63cfa2d15a918f7ef9d40d75c298a9991fc97bc
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - installed tests
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains test programs, designed to be run as part of a
+ regression testsuite.
+
+Package: ibus-wayland-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 37
+Depends: ibus-wayland (= 1.5.24-2~exp1)
+Filename: ./amd64/ibus-wayland-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 19876
+MD5sum: c069e0bf7e05cb56f4c4e736207d8b9b
+SHA1: f3cce48dedc84b63c981b34246ab54a891d9883e
+SHA256: bb2908399cbba4af3c215295a2949615681d3ee628328122b9d41734dfe2dc38
+SHA512: a0404098f1e7ff59ae7b3bc08f05ffdfdc3c94f351f41c9dab25e46a107d547f2f193634d33814fce39bf98978abe9f1bdf1de0f5bc20198c242a7954cd67aad
+Description: debug symbols for ibus-wayland
+Build-Ids: 511b54ce2a0457f724a6319a69cf31f0833af941
+
+Package: ibus-wayland
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 304
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.46.0~), libibus-1.0-5 (>= 1.5.1), libwayland-client0 (>= 1.9.91), libxkbcommon0 (>= 0.5.0)
+Filename: ./amd64/ibus-wayland_1.5.24-2~exp1_amd64.deb
+Size: 265764
+MD5sum: e3efa393a7c42bf8183ca33d9d8fac2e
+SHA1: 4077a0c5e850bc9d41ead3512e71b43c281defdc
+SHA256: 9fdeada579e62721d71f1354207bf770649a9c88e5c3c40552cd9091c33ee839
+SHA512: db6eef9bbe63f1b1a88b2542c8adb8b4271de63e24abc22b9702b50fc8c2a48965ead5b948858396528d33fb9c01462e3803eab7980f4c42591921a6e8e55944
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - Wayland support
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the Wayland input method support.
+ .
+ This package is only needed if you are using a Wayland compositor which
+ supports the "input-method-unstable-v1" protocol, and if you want to input
+ text via this protocol. Note that even on Wayland compositors with no support
+ of this protocol, IBus could still work using its own transport protocol and
+ APIs.
+
+Package: ibus
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 1585
+Depends: python3:any, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libdconf1 (>= 0.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.62.2-2), libgtk-3-0 (>= 3.21.5), libibus-1.0-5 (>= 1.5.19), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6, libxi6 (>= 2:1.2.99.4), adwaita-icon-theme, dconf-cli, ibus-data (= 1.5.24-2~exp1), gir1.2-gtk-3.0 (>= 3.8.5), gir1.2-ibus-1.0 (= 1.5.24-2~exp1), python3-gi, python3-ibus-1.0 (= 1.5.24-2~exp1)
+Recommends: ibus-gtk, ibus-gtk3, ibus-gtk4, im-config
+Suggests: ibus-clutter, ibus-doc
+Breaks: ibus-anthy (<< 1.5.3-2), ibus-data (<< 1.5.21-4~exp1), ibus-el (<< 0.3.2-2), ibus-googlepinyin (<< 0.1.2-2)
+Replaces: ibus-data (<< 1.5.21-4~exp1)
+Filename: ./amd64/ibus_1.5.24-2~exp1_amd64.deb
+Size: 549844
+MD5sum: 49bd9fe27271c4f8cdc66854f9e8a3f4
+SHA1: 2af8f7a33787d3757632a0e8465181640e8b3aa7
+SHA256: 74282a36e45f83b02fbadaa513434d202ce376e5e461f1dc5e9233a865e52e14
+SHA512: 2cb168a5cacaa94715335456ba54d7d0c9047e4c5fa7274b88571b724abb3cb19399d2da8789f544f08a1eacadaa6877b98f5f386c1c26f6692a2da0ca2e197d
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - core
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
 
 Package: libcloudproviders-dev
 Architecture: amd64
@@ -876,6 +1248,76 @@ Description: GStreamer media backend for the GTK graphical user interface librar
  suites.
  .
  This package contains the media module that uses GStreamer as backend.
+
+Package: libibus-1.0-5-dbgsym
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 451
+Depends: libibus-1.0-5 (= 1.5.24-2~exp1)
+Filename: ./amd64/libibus-1.0-5-dbgsym_1.5.24-2~exp1_amd64.deb
+Size: 381776
+MD5sum: bbe6d6c14d150a44bbc073129a71c2a2
+SHA1: 58990cbcd598a0ca294eee4c61f8872eecea6522
+SHA256: f644fb8d7e4b9ea9362a2e313bcde146e9fbf25cd07736adbc157abf6d147a4f
+SHA512: 9fc95f0889155cf9e1fa7a38a6ad93b6cc63d0ccb3363c16ddf594969bd7ef534799d5113e3d355657323c2f75631437bc92fedcc681284096a7eb62593988ac
+Description: debug symbols for libibus-1.0-5
+Build-Ids: 098ff9b476fef6328bebb96fe6c6a6902db403ff
+
+Package: libibus-1.0-5
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 788
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.59.0)
+Filename: ./amd64/libibus-1.0-5_1.5.24-2~exp1_amd64.deb
+Size: 408200
+MD5sum: a3692dd9e4b181eb7ab83bceb90ab989
+SHA1: 238b9b47f93752c6d94d2a8bed8e6a89aebefae5
+SHA256: 108d56f776dc8958087b1878143994de94867a87b1e7455e69da2f3edc007786
+SHA512: 1e31e10bc892081a7f401393009e1997a2c9fe82a6228dd488ba379d51e9694a187826890a478ffe5d0fe83e622bf6cf85c0e935aacfd263a9d5beb9c28769a7
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - shared library
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the shared library.
+
+Package: libibus-1.0-dev
+Architecture: amd64
+Version: 1.5.24-2~exp1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: ibus
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 2908
+Depends: gir1.2-ibus-1.0 (= 1.5.24-2~exp1), libdbus-1-dev, libglib2.0-dev, libibus-1.0-5 (= 1.5.24-2~exp1)
+Replaces: libibus-dev
+Filename: ./amd64/libibus-1.0-dev_1.5.24-2~exp1_amd64.deb
+Size: 434396
+MD5sum: 368204e94a8dac5c3fb281aaa2485d77
+SHA1: b704160f8b767ce6814d8f8eefba364849e61dbd
+SHA256: 651fa88d3ebc8e94f99f6c4e9b26419de4e1a6680e5be87f92ee9601607614ca
+SHA512: 254dd7088db1d7fcedb481eff0b0ee390cbff4a5204f2ff5b1ba857b96cad2d526dcab5157bf4835778257d93bf5be421e80bef68da487323d7b858ecf9d5300
+Homepage: https://github.com/ibus/ibus
+Description: Intelligent Input Bus - development file
+ IBus is an Intelligent Input Bus. It is a new input framework for the Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ This package contains the header files and static libraries which are
+ needed for developing the IBus applications.
 
 Package: libpango-1.0-0-dbgsym
 Architecture: amd64
