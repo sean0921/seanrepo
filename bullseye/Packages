@@ -1206,6 +1206,33 @@ Description: wayland compositor protocols
  the functionality of some other protocol either in Wayland core, or some other
  protocol in wayland-protocols.
 
+Package: wine-development
+Architecture: all
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 9276
+Provides: wine
+Depends: wine64-development (>= 6.0+repack-1~sean00) | wine32-development (>= 6.0+repack-1~sean00), wine64-development (<< 6.0+repack-1~sean00.1~) | wine32-development (<< 6.0+repack-1~sean00.1~)
+Suggests: q4wine, winbind, winetricks, playonlinux, wine-binfmt, dosbox (>= 0.74-4.2~), exe-thumbnailer | kio-extras
+Breaks: libwine-development (<< 5.5-6), wine-stable (<< 3.0.1ubuntu1~)
+Replaces: libwine-development (<< 5.5-6), wine-stable (<< 3.0.1ubuntu1~)
+Filename: ./all/wine-development_6.0+repack-1~sean00_all.deb
+Size: 1163172
+MD5sum: bfa97d16c2a13f6319254cfa9df27e29
+SHA1: 77a801e8184c6b36ed26a91358dc00b7efbb4ac8
+SHA256: b082fa7aff152e6f0d419fd0d0c5428e82c431ca42c592bfc47db015b3462b5b
+SHA512: f58b8fa466c598a7da7692f220acee0f5cac1865a1f4b2f74c3fc11838199b745bbd072873d86ee6565044d918ded924411320c7098bc51ea5948a7cb0be0263
+Homepage: https://www.winehq.org
+Description: Windows API implementation - standard suite
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides essential wrappers and convenience tools for the
+ standard Wine components. It also employs the Debian alternatives system to
+ provide the usual command names, e.g. "wine" instead of "wine-development".
+
 Package: gir1.2-cloudproviders-0.3.0
 Architecture: amd64
 Version: 0.3.1-2
@@ -2589,6 +2616,76 @@ Description: Layout and rendering of internationalized text
  .
  This package contains the shared libraries.
 
+Package: libwine-development-dbgsym
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 12368
+Depends: libwine-development (= 6.0+repack-1~sean00)
+Filename: ./amd64/libwine-development-dbgsym_6.0+repack-1~sean00_amd64.deb
+Size: 8389720
+MD5sum: 0be546450d618bbc6d17e86bb2a65a02
+SHA1: 5d7ec4ae861ffe0ed0b0fccda81688494c05f762
+SHA256: d2142cc0d90e68139113a4d31849d756301663572d65fd89b8cb8f9ce88d04a4
+SHA512: a79b3bd7c413502dec2a0cac2232c580fd82632ee64c91eb2880c787af730aedafcc68496985bdb775242e485f4e3617d027b40e9a2eaf9ccec11b73d7b505a2
+Description: debug symbols for libwine-development
+Build-Ids: 02ae569b237524b4362e57120ce91d5272aedd3a 05a70206a8c90400c07ee2f6046786d9ad7e8fad 06a753c0c778e20b3f89da0138d77e2b37e2793c 096b80200e93f830e8a05ef6ff82ae9485c34205 0bcb2317a3cfe22ab9eacc5e29cdf1f81116b260 0e839eee22a85e47d6061ccdb3b51674841ddad7 1030a7b816f564b7874cffb518ca22d6ea3581a1 12c3140845313fc8a48a694013c1bd1f981264c9 133c95120ace91484abceb9f25777889930d2a4d 1d9d98531e18a9996447a33eadbc52adf9a9eb8c 1f9a38ffd9995948fc66121e9a7c448caf606129 20c964b6551b9d1ddde4b064ccd481bc1b5c368c 2362f82969d5d2ecaaeeda4aa79ab9dd9c5eeb95 270807de3f43c20da3fb1a36617277dc3ae85938 2aed58560303544a2456f3304db31691ae0465bf 2ce2d36140b4e82c7cd031f7eb4455640d4f9754 2e104e40c9c9598359171e74a5901e1a4b671667 2e523114ca6c8347b620af4c1246009bd8ba7db2 32fc080ca9bc82a6439552fbd5f51f4f233e51be 343ed401aa128fbed5c22f7d7e38edd87fb3e648 35d11c9ee322b9ad61f499024e0f7f6f426979db 3c94e827d08e9e34cd2f6db0694cdead01314bf4 3cf0c69881a287da38d9e1c57c4f4f3fe0b99640 3eed94e19ca4e7f2fb2a217d60609ec9817140f2 3f3144ec31f2f36c3c1f97007b2a98539a3f848c 45f3276329555d90d5f1395f0cf41772172b3fc5 49d97bf243d3baae49d468d1086448c0abd132a5 4d9f8e0b6e2f3423f528425de8993a13ea286265 50c34c38315f77481d34c9237101171cab32e660 535e6ba7e102679cb6709ec72056e4b60c07fcc0 556170261beaa764cc9c7a63a56f15de33e0f8a7 56b489ffb420bf6a9edee5d3e0739c071c94863e 56c989bbd1fe132175f28f5b3a65d72552b049ab 5c8b8c652717633da92c5fd12d2b8558d1f407fe 5e5e73df7ecaaa012866a65a0eb08db7e9421344 62cd9cb41983ba2d2371950ab6b0d216d4d24dee 6515c606dbee61527848cd06ccd1487fbfaf2103 67e632b467fd95fc4e89c94fda2ea614a1630c0f 6924c7c9a6f3223b71460d80270db7c65d94130a 6abd5b397ef8a48b6daae0efbd8264acb4f6ca77 6fc0a9007994b402106050748af34dbf8d6be59d 77d71eca0ab5c460d5e7c7772e7e10a01bf950a9 7a34f6301b94e5cff57d9517e5169c7ca9fe5b06 92dae643ab58e6d6322e96505c567f09df3eefd3 94fdce27ca3ed6084e5d57a9b9f5d24ac318fde5 98ad420c925ccf7a88c1f73cea3718aa96af8192 98c2484be9227cc9fa4a3e5816f2d4817bb9bd63 995f46dfde52935cd75963a80f2c06b216f9c71f 9b66db1db7df799651b798bf618feed8fbbcad68 9e24a79d94e5068f48a75719fb4b481a315ee8d1 a212d37fad94c0393699e4f2b3aef10e5fbc74c5 a6a5cb4e30653727e75da981392c47012236a1c2 a705bc1a650aed87f59bdf8889c93981ef7c5bdc a817cbcf12e7be355fda795a71a6d4c2bdd602ec abfaf8deade1bbf4bcd44dd48da8d00892eef7e8 b4b07f65413989c191308e5ff65a7b7bbfec8eb8 b6b4d9c11dcc46cab74c2dac6679e2436937e516 b88ded1f3722600b8b3afb6efe13b2b6523b47ac babf01f479e91253b78d24b89386c26b2dc8bd3d bffbe7a6b4b8390cdcf12edee110072beff4ee4b c081d42974116335579b2dc42d991bbbdb6689d0 c492239a5fa0b598351fe1c6386c7103ddfe151a c52f53d3d720a785f8b6f092df02a04995daf20b c536a593cef317d960d8c735505762ea7f95eca8 c73014ebfb10b7b76a01d9c359adb3ede41a3828 c8dc70e9d554f230882dd3addfcec0e8466a35de ca3d28071d21d3da7e731f40570b6cf43c7cb8e6 cb562298e81748c856c625016b910e01633a0534 cb96d02e7fc2feac6207533d183727d155fd77b3 cba84f811399743db0b91858eb64d1a23924159f cfbf23eb0d39e1d2c636709998a29b1ff82b681f d356ec71b6330292a02e38854e39a06be4910b62 d529c26a9ec2b669250b90363150105eaa8a043e dc321981fe2e1cc68aed464d8f3991e0fb648a0b dd549f6f72e5b5ac1f7d93692fc5534d15f13b62 deba7e679d7c9ebd871fe7721c34a2d8e435312a dfb930e66a2180c1a76a7125be5a72665301dda8 e15ac935fc083b57b1671cc3542f439e01295526 e25b427b95b498fd61c49731ea91e524cb0f35d7 e7d541aef30fbbd6d11490427f67cbba8035fbb4 ec177b4086f1ce90f0dc7c97871c294f8fb03473 eebcc21007c52fd1637804cf82d02423fbd5d6f5 ef568cb025f802b5223e084dd47dd42e1f855524 f0b346a69c0a8cd8887e11b3a0abb42d6560927c f3031ad3df07a8cb8aa2cd5c318fa12270ad1bbe f33f9f0f36d56b954311310c5b769a61958c8be2 f498319e0c409677e9b8d7e4fefb0fa00819491e f735bcd41d9614c8c18fa53e63dff7940a728e4f fa3752f62a4c2941b180e24a2502cd10a8a1d0e0 fa5b6f81d8c8fa5a425d0c26d7c8abf0a0708ec0 fb018650a9eaa082289f3d16b324b37230605b43 fb15e6e8c66a7d91559f93da9d853711f1a9d5d0 fb58dbd12b15f9db114a4d3bc59dcc3fcec5e766
+
+Package: libwine-development-dev
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Priority: optional
+Section: libdevel
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 49832
+Depends: libwine-development (= 6.0+repack-1~sean00), libc6-dev | libc6.1-dev | libc0.3-dev | libc0.1-dev | libc-dev
+Recommends: wine64-development-tools (= 6.0+repack-1~sean00) | wine32-development-tools (= 6.0+repack-1~sean00)
+Breaks: libwine-development (= 5.22+repack-1)
+Replaces: libwine-development (= 5.22+repack-1)
+Filename: ./amd64/libwine-development-dev_6.0+repack-1~sean00_amd64.deb
+Size: 3573124
+MD5sum: 5844fb3e58cf23ee9db900fdcf1249b9
+SHA1: df96729ccf0bcb78264c785f1e8ba928aad5c561
+SHA256: 7eb73fcf1792398bfa36deca235b17cfef7b2b6c339e4c0bebb426d2ba456094
+SHA512: 81b110408252d0381eebb0d4af29ad74adb49053c69e15e86177692c0296bd58e90af18f09b618c7a2157c4ad177d4bca7dfebe9cef0a282190627a0fbf822d5
+Homepage: https://www.winehq.org
+Description: Windows API implementation - development files
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides Wine's C header files and development libraries.
+
+Package: libwine-development
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 531076
+Depends: libc6 (>= 2.29), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.6.2), libasound2 (>= 1.0.16), libfaudio0 (>= 20.11), libglib2.0-0 (>= 2.12.0), libgphoto2-6 (>= 2.5.10), libgphoto2-port12 (>= 2.5.10), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), liblcms2-2 (>= 2.2+git20110628), libldap-2.4-2 (>= 2.4.7), libmpg123-0 (>= 1.6.2), libopenal1 (>= 1.14), libpcap0.8 (>= 0.9.8), libpulse0 (>= 0.99.1), libudev1 (>= 183), libunwind8, libvkd3d1 (>= 1.0), libx11-6, libxext6, libxml2 (>= 2.9.0), ocl-icd-libopencl1 | libopencl1, libz-mingw-w64
+Recommends: libcapi20-3, libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libgl1, libgnutls30 (>= 3.7.0), libgsm1 (>= 1.0.18), libgssapi-krb5-2 (>= 1.6.dfsg.2), libjpeg62-turbo (>= 1.3.1), libkrb5-3 (>= 1.6.dfsg.2), libodbc1 (>= 2.3.1), libosmesa6 (>= 10.2~), libpng16-16 (>= 1.6.2-1), libsdl2-2.0-0 (>= 2.0.12), libtiff5 (>= 4.0.3), libv4l-0 (>= 0.5.0), libvulkan1 (>= 1.2.131.2), libxcomposite1 (>= 1:0.4.5), libxcursor1 (>> 1.1.2), libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, libxslt1.1 (>= 1.1.25), libxxf86vm1, libgl1-mesa-dri, libasound2-plugins, fonts-liberation, fonts-wine (>= 1.8.2-1~), gstreamer1.0-plugins-good
+Suggests: cups-bsd, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, ttf-mscorefonts-installer
+Breaks: wine-development (<< 4.7-2~), wine32-development (<< 4.7-2~), wine64-development (<< 4.7-2~)
+Replaces: wine-development (<< 4.7-2~), wine32-development (<< 4.7-2~), wine64-development (<< 4.7-2~)
+Filename: ./amd64/libwine-development_6.0+repack-1~sean00_amd64.deb
+Size: 77691200
+MD5sum: 40d90ce8223df755cdf800e21fa5cbdf
+SHA1: 73b88885993725568a238a11398253b7e1f6afa5
+SHA256: 94d7cba317921422fe90065d995267400e9a64578ede960bbd9ae97bd59f89b4
+SHA512: 2046ae664cdbe4310cbe46ced09501953bbeb6ca04ea4ad7892e0dc9a755a68e1edcb0dfc8bb28ea98c9009e394cd02c705c6bdbdae8279c8c5e56ab394240d2
+Homepage: https://www.winehq.org
+Description: Windows API implementation - library
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the Wine library.
+
 Package: nautilus-extension-gnome-terminal
 Architecture: amd64
 Version: 3.38.3-1sean01
@@ -3360,6 +3457,134 @@ Description: Python 3 bindings for gobject-introspection libraries
  support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
  package. With these packages, the libraries can be used from Python 3.
 
+Package: wine64-development-dbgsym
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 661
+Depends: wine64-development (= 6.0+repack-1~sean00)
+Filename: ./amd64/wine64-development-dbgsym_6.0+repack-1~sean00_amd64.deb
+Size: 567584
+MD5sum: 2fc1d46b943dab2133776313af0c273d
+SHA1: 05e01c4f7a8f2abf21fe18dae19c2268b1e6319e
+SHA256: 68567f41d571e39b821aaa38061aeb7c6ad2299837113fef310aadc80bcbea7a
+SHA512: 8de3400e7ecd42443c2ed48a2156d283fc315010930dfa61d5907d052487316af7148e62054633f5cbdc1ce3ca934868c918408ac2257c5464bdd68f3380757f
+Description: debug symbols for wine64-development
+Build-Ids: 42f925471fd0f1b1c00ba2f2417e6ae690b739e3 a4be115a9f34792e946f155d8dde95d1e8f5c98e
+
+Package: wine64-development-preloader-dbgsym
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 23
+Depends: wine64-development-preloader (= 6.0+repack-1~sean00)
+Filename: ./amd64/wine64-development-preloader-dbgsym_6.0+repack-1~sean00_amd64.deb
+Size: 11096
+MD5sum: 32246694a1a13b2a112dd52d7b3e812c
+SHA1: 3070e0cad318dc57fa51282fcbf04753a01d1c5a
+SHA256: 9428d9fa954832559afeef307a416855da8b1d510e0e43006f5ea937f935bae6
+SHA512: 85b1b55e5169a4f9d1397deb1b2e33cedfc5408ecfbd47b1eb4c256da83ff87bf70ec1d2cd0135cc1090aed1f8c3964a9f2327ba032627a961bf5d168f9dd034
+Description: debug symbols for wine64-development-preloader
+Build-Ids: 61fb1ab0515be24a215a750f80149edd9afdec29
+
+Package: wine64-development-preloader
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 126
+Depends: wine64-development (= 6.0+repack-1~sean00)
+Filename: ./amd64/wine64-development-preloader_6.0+repack-1~sean00_amd64.deb
+Size: 96996
+MD5sum: 60d5cc451fb87eafca9003c330168844
+SHA1: 69c64a3064b76d2641a8c7f559b368ce745c4837
+SHA256: 98a899b9d36d568b0b6d63da695d43e438d3754308b8d4b70d96197597da91dc
+SHA512: 458d31f8c6b47e20a2c8f2002a81b2701c98bd8700b870abd9c709c7dd6e81199cb18ee497dd5d71df376a24333a791fd2e97bba72b8248132b164772ec8926b
+Homepage: https://www.winehq.org
+Description: Windows API implementation - prelinked 64-bit binary loader
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the prelinked loader for 64-bit Windows applications.
+
+Package: wine64-development-tools-dbgsym
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 865
+Depends: wine64-development-tools (= 6.0+repack-1~sean00)
+Filename: ./amd64/wine64-development-tools-dbgsym_6.0+repack-1~sean00_amd64.deb
+Size: 758392
+MD5sum: 68ad6c4e790b48ad0969c96c5436d59b
+SHA1: 04b6f053ce778be3ddfe623006f50cda3a8cab60
+SHA256: 7c2d37ff858a53a99611b04d2f41d9d014eefab7f5c27120dfc2fe89c5d512fe
+SHA512: 86e7685712e546f05bab88528bef5f1e050126b16f9867317ac5d6dc9df866a387d003b7b32df295e86aa5b1ca5fc32599b1c736fba22a80f781aa637dc84fa4
+Description: debug symbols for wine64-development-tools
+Build-Ids: 758a9f629d096f9b32991a71b7daee7292f025ee 8a92751f5b02891d0bf9861a3d65d4fa3fa84929 9b671233e3e76a5cff59e596cd0375cdc06f32d1 a9af16664cc9de9e00a3b0b81343a0dcb385ab36 e6a67d8b690424e93d0b16eefbd9a4ef2f358f68 fc600623b1849f46c5443cd1873371cddb00bfca
+
+Package: wine64-development-tools
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libdevel
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 1465
+Depends: gcc, perl:any, libc6 (>= 2.14), libgettextpo0 (>= 0.21), libwine-development-dev (= 6.0+repack-1~sean00) | libwine-development-dev:i386 (= 6.0+repack-1~sean00)
+Recommends: wine-development (= 6.0+repack-1~sean00), g++
+Conflicts: wine32-development-tools
+Filename: ./amd64/wine64-development-tools_6.0+repack-1~sean00_amd64.deb
+Size: 558116
+MD5sum: 188ac3eb29a26296ee6eb30259af58ad
+SHA1: 5759a51a83f907e47723478c75eec92193cf78cf
+SHA256: 22dab8115a60991787171761f6bddd470832885166f02852df555922b04ae10c
+SHA512: 6d2be8b40689dcdb7a1e8cdbd82ea492b304f2236f7dafa3060fe315f04ac90f1376ca5dc94564eef2866be3047fab2f8824a951841dd398d06cfa0d519b4b3f
+Homepage: https://www.winehq.org
+Description: Windows API implementation - 64-bit developer tools
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides Wine's 64-bit developer tools. They are capable of
+ generating both 32- and 64-bit results.
+
+Package: wine64-development
+Architecture: amd64
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 691
+Depends: libc6 (>= 2.17), libwine-development (= 6.0+repack-1~sean00)
+Recommends: wine-development (= 6.0+repack-1~sean00), wine32-development (= 6.0+repack-1~sean00)
+Suggests: wine64-development-preloader (= 6.0+repack-1~sean00)
+Filename: ./amd64/wine64-development_6.0+repack-1~sean00_amd64.deb
+Size: 301028
+MD5sum: db1b86c67a326ef163813b97a7bf5cdc
+SHA1: 3fdc9b767690874dc159c7d485ecbd8d445d1cee
+SHA256: a9261e25ce0cea1bb8f237fd10a6ffc61f8e35831f430ae663aa1a7ed0df674e
+SHA512: 2d0de6ccfa53758bf9a0bb99031ec19b84aed197133874c459f083201e236a50ebbcd9ff4b2a450b8d8b7502f54acdbe7cf8738931510ea0ed4e01def1a7f7d0
+Homepage: https://www.winehq.org
+Description: Windows API implementation - 64-bit binary loader
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the binary loader for 64-bit Windows applications.
+
 Package: gnome-terminal
 Architecture: arm64
 Version: 3.38.3-1sean01
@@ -3798,6 +4023,76 @@ Description: Layout and rendering of internationalized text
  .
  This package contains the shared libraries.
 
+Package: libwine-development-dbgsym
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 11305
+Depends: libwine-development (= 6.0+repack-1~sean00)
+Filename: ./i386/libwine-development-dbgsym_6.0+repack-1~sean00_i386.deb
+Size: 8171780
+MD5sum: 804c05275c3e08c06486c02b7a6de056
+SHA1: 86fd7a4f408159beb67a0622f8c528fa10febbb5
+SHA256: aa915216ad4b4f88cc9ab2a0e6e6cfa233774032fff23ee7c53543bd9307e963
+SHA512: 1dd207a62f957f67d3b03582018b7c86e0756c19004908645a31f623117e6e4afa7294b2a230c324537f7925c70563295486124fec379faa3c8dacab2861c8c9
+Description: debug symbols for libwine-development
+Build-Ids: 0106252b92dcb44f7984ba92ea3de32b23b5be83 0af15ec299adc31c8d096ed1246cba473a3017b7 0bca3bf2a5a5cbfef116f5be66c6e2ff67ab6845 0bd9b5c033b7197eb803db34cf8508557f7299bd 0fc1445b055cde28d4204186fd79220219c01456 13c7715c55ce8d14db4ffcf742677dd73823674b 18a1fe96885e3ecd5f80ef444f84f4dcd6d247f6 1c61ba7211962310a5789972c823b4b7d9ddbe13 211c1be81943d0fae173b06f84cd89ea2d6d04e1 21a27eb99ffa87921013d724b5c746cd6d3afe7b 25126799de8fc92ee033e74b4a40cdd2d09fa7a1 290dfd2e3a5cbc943798ebbb3e76f341b9e29086 2e0cf5a3dd625ab9f62b27b6bb0e24d96a97e8d9 304e25fe5a97af0a62b7176ea30a03570acf6126 321a4aebcf66a27c8e2e62e44272ca76207348d6 33149bd636d44ae467c21866f00aebea1f36880e 33381847f592a10ac4adb6c990fe820a821ff4b4 34d62bfbf029e19fee39195d76a56b4558805533 3920ca757a7e363d4b0d489f265e732299a70327 3c8f62e1756f9d17aeaba24011246cb4bcd92323 3caf9251405c7a5a5e4a248709663a8840d26417 40c3605c252e1131c711c4e2e10227eb626d8d96 41ed4a96d3b665dca488edf86bf0b07c16b318f8 47642b6a99b478032d5c50782df61c1534d2a709 48ad26a4662d3be9d26286fca3926d74e0819e91 4c0830b3fac421a4e8c1ab31020216c708967727 4c5970ce2980109991f9b1d78666d243cfa8e824 4d1d8e0f66ad5b46f8f6374cbc1c7cb0ec7d8813 4d1e311747ec2216b8ae8d8ed5743ee5918625ca 4e46dbcbcfb08c3937b5f76720601655956e018d 4fe74b7bfb8fea027d2e96422b59fa76507902fd 50bdf5b4dfd294168bf3b0cd710802b722b67be4 58ad4f6d1881f5e69c20858e05932fe0a2274a66 58f069964adb236f9e84dfc2e1d1bfd0a73296df 5b46e8ab365f8f1dae8d611a5696673603deaf98 67e65ba3e8d257dd9dea2d51c20412998b9a553e 69e283be887c12d7987548f71148f647745ba2a4 6c720e30e2d7069c24798ac5455dd7f89303879c 6c81b0e8d7d8365eb98b8e03c2fef65e2ecd9e79 6c8c66ecd5b009bf838a44fb9cbbef93859f07be 7063800d4126f43f95cf0b7f1f39bc19d58ab153 74073402d6bb1bf4d206e09368dc11dc84327cef 741910fb823096c983c430603c7d0a75425b4292 74aace0bff3517cd18edd9d2c14dfacf959a7ad1 76225fc6f36df67c27dbf35d05b0671741005076 7655c8fd860ed0fc23cc782042c6c35a94e7eb1e 76c89b44fb831a952f3e318634b8ff3939629346 79f36c419ffa452b8da7242f9cf30e123fd83576 7c5344c7b7fc714bf2a3e99d2b92c9bd64b699bd 7d323e72168200f324fd0b61aa8a4d24b8dcea0f 83a08b6fe1937434e6986aef8afbc3c7db3349dc 858866ead95bae8ddad58c5e189d3f7de9efc05a 85a16322276b2c5a7d28378396ef41052a19ca0f 870853701bfdbcdf3fe2e0085355796debe885fe 897fb0c7021d23fffd72f56d39f8d37cf8b6c0e1 89879e87554990c38165bf2258cf404e1a4305af 899d45324a6b55db375ca93ca456dbe51456e260 8a160c4fa981b32f4fa7215373b8374ce9aff79b 8c6be20b6e620488fc21ae76a4445de1b1dec7a5 8e64ae976d8d64c9c1e7cab3bae5c7af5ddee3d5 8e8f47c3eaf86ac09455ae0b8c656b8bffce68b5 95d5b8c19f6d46b5ded6242523ea417eb4cfef37 9e2d9c4db39f0e21c3735431ee90b17c65964e66 af9ddef475636cd084de714588348f54abfbe74a b0af41176186f3026e7f5a1c1a7a5a084e49624b b800ad463c326d6816a221e0913086a97c763d74 b84f6b5eb2b4aea2fc304f1034250bc3ddad4430 bb6173df658a754393117f2e064aa814984607b2 bb7ef3df044030f6e01d1e86f36b5b39dc1028b5 bcb5cabf0051595406c456e2afcc7bf027e10fa0 c1758c80c22bf901e3ec29778b3d5852ef30ee11 c603077066e417c58dda9215e3585bc481e414e8 cba4907ca5181ef583bccf8a5f927a0766f1ee65 cbc5e67a46ca89b6d5bc2bd63d466a10b4d391c1 cfd1ad2d7a26ba9391c9275e5c0a78a32190b2d9 d02bfad34ccb4604b34722dc268eebcdb0fed663 d0f680ec274149a77a43a74f888f12af13e66011 d2fd7e06c8ccebeaf3bedc9391403147bb91229b d477abfbae0a049af393206e9de9eee78076ca7e d6df91b4139ad39f0b94583cec0d827653dce16f d991f4213337c145a37d2771426e57cb4cb26ce5 db3ba081b0bcad17c59eb735fb3a657c80e01889 dd695de9601aedbdb5e2cb5fbee1b3c95501045a df692e1d6c06fbf9353a8492dae017903ae76729 e845a03bc0eed4fc8b04f2aef28cea0ab34528e8 effff97dda9053119c87e3eb336ca72e80bf6a76 f1a70f4ba31f2018a8fb7ce3efdaa90b27b6ecb7 f1fe7429f30536c77b98db5a7f79682ff16e7356 f35d48ba38bd39b72e9434397b4445b845c2f986 f491e8ba7653aa11dfd805970c836afb971bfa0b f4b98b9e183dab1365fa2cd1cd933fbcbadaf356 fa7c7969a15dfdde69bdc2fcf253045c13d3c2ab fc75e4c0417ffbb9e469893fa5a06fd105aa0aae fd5b51cd9f00d54aaeb77b163660535baadb9410
+
+Package: libwine-development-dev
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Priority: optional
+Section: libdevel
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 46615
+Depends: libwine-development (= 6.0+repack-1~sean00), libc6-dev | libc6.1-dev | libc0.3-dev | libc0.1-dev | libc-dev
+Recommends: wine64-development-tools (= 6.0+repack-1~sean00) | wine32-development-tools (= 6.0+repack-1~sean00)
+Breaks: libwine-development (= 5.22+repack-1)
+Replaces: libwine-development (= 5.22+repack-1)
+Filename: ./i386/libwine-development-dev_6.0+repack-1~sean00_i386.deb
+Size: 3579996
+MD5sum: e4edd46dc3ce63782e02bb2025b1729f
+SHA1: 4c1b889dfbaa27fba78bc2bd10965ce1c56c4e48
+SHA256: fb1a82949e7a8de9991b3d5e5c2a74975d7098a75e8e620cb21129fb349f63a1
+SHA512: 8c6dd26c4215bb74483542674b9e6bcb6a2482820c1f10ef310ebf1ae5dc02e748c09446a1c5c5233899c052a956dfd84b28508e38427a9abedfc80611c90468
+Homepage: https://www.winehq.org
+Description: Windows API implementation - development files
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides Wine's C header files and development libraries.
+
+Package: libwine-development
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 465025
+Depends: libc6 (>= 2.29), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.6.2), libasound2 (>= 1.0.16), libfaudio0 (>= 20.11), libglib2.0-0 (>= 2.12.0), libgphoto2-6 (>= 2.5.10), libgphoto2-port12 (>= 2.5.10), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), liblcms2-2 (>= 2.2+git20110628), libldap-2.4-2 (>= 2.4.7), libmpg123-0 (>= 1.13.7), libopenal1 (>= 1.14), libpcap0.8 (>= 0.9.8), libpulse0 (>= 0.99.1), libudev1 (>= 183), libvkd3d1 (>= 1.0), libx11-6, libxext6, libxml2 (>= 2.9.0), ocl-icd-libopencl1 | libopencl1, libz-mingw-w64
+Recommends: libcapi20-3, libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.9.14), libgl1, libgnutls30 (>= 3.7.0), libgsm1 (>= 1.0.18), libgssapi-krb5-2 (>= 1.6.dfsg.2), libjpeg62-turbo (>= 1.3.1), libkrb5-3 (>= 1.6.dfsg.2), libodbc1 (>= 2.3.1), libosmesa6 (>= 10.2~), libpng16-16 (>= 1.6.2-1), libsdl2-2.0-0 (>= 2.0.12), libtiff5 (>= 4.0.3), libv4l-0 (>= 0.5.0), libvulkan1 (>= 1.2.131.2), libxcomposite1 (>= 1:0.4.5), libxcursor1 (>> 1.1.2), libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, libxslt1.1 (>= 1.1.25), libxxf86vm1, libgl1-mesa-dri, libasound2-plugins, fonts-liberation, fonts-wine (>= 1.8.2-1~), gstreamer1.0-plugins-good
+Suggests: cups-bsd, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, ttf-mscorefonts-installer
+Breaks: wine-development (<< 4.7-2~), wine32-development (<< 4.7-2~), wine64-development (<< 4.7-2~)
+Replaces: wine-development (<< 4.7-2~), wine32-development (<< 4.7-2~), wine64-development (<< 4.7-2~)
+Filename: ./i386/libwine-development_6.0+repack-1~sean00_i386.deb
+Size: 75433108
+MD5sum: 93f5b123a34e4ce7003ecb54d294b70b
+SHA1: d2001314563e42ef151c568ccde20162034c2586
+SHA256: 80c7c27d783197f2b60774a77537bff37c80936bb6fd050ff594730f67c410d4
+SHA512: 71a14da3e33086d4082bb8bc6f61f12b52e5fe8b07b6e7729a08d31218b271ddda7715435c3ccfd9643f8d16ca35203af488f520b25959bdfb58097447629cad
+Homepage: https://www.winehq.org
+Description: Windows API implementation - library
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the Wine library.
+
 Package: pango1.0-tests-dbgsym
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3904,4 +4199,132 @@ Description: Development utilities for Pango
  .
  This package contains pango-view, the Pango text viewer, and pango-list,
  a utility that outputs a list of compatible system fonts.
+
+Package: wine32-development-dbgsym
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 609
+Depends: wine32-development (= 6.0+repack-1~sean00)
+Filename: ./i386/wine32-development-dbgsym_6.0+repack-1~sean00_i386.deb
+Size: 537828
+MD5sum: 24e30ce4ad82a5d642577d4a670db017
+SHA1: 94d18383356e7165e9978b4d9344e8e6babe4899
+SHA256: cc465a97510a01643e0d3892987872c719a2d9ca5bf639f18afdc7650475a09c
+SHA512: 957f6c43f1d6adc37b450d97f67c750d25446b7c3bf3aa9d23171eae2989e730ed071038e60f64f2d2ac5b1b6e3355c2e8aab0281cbacee2eb471297f5f5d30f
+Description: debug symbols for wine32-development
+Build-Ids: e8291c0e81bc389d49d75e7f352e424b48f54a63 eaacd249497a9292d76ca2cf0984ca1422694d00
+
+Package: wine32-development-preloader-dbgsym
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 23
+Depends: wine32-development-preloader (= 6.0+repack-1~sean00)
+Filename: ./i386/wine32-development-preloader-dbgsym_6.0+repack-1~sean00_i386.deb
+Size: 12076
+MD5sum: 8d4a8a27495b667df9be03cd449d5107
+SHA1: a517b920d5c36c6105d693c565547d9d08d0e5e4
+SHA256: 15b58a23ace7b5d9087892ad560d56e47d4bc4873771de9bf8bc3dce672763d9
+SHA512: ac215fc14b3499e78520025b04f3721726011949bd49df6ad8a3c26f12b4e745af96852e175ba8817354c576a42213a57f5f5b8b3f5673da9841403557278923
+Description: debug symbols for wine32-development-preloader
+Build-Ids: fdbe79aedd5ca5fd3476d78707dcbfcac852ba92
+
+Package: wine32-development-preloader
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 126
+Depends: wine32-development (= 6.0+repack-1~sean00)
+Filename: ./i386/wine32-development-preloader_6.0+repack-1~sean00_i386.deb
+Size: 97072
+MD5sum: 360e17177eb8fe75d92aaa823731c3d4
+SHA1: 8cf0a943053544a167896cd2f5dd17c3f427bc67
+SHA256: d18043e34e9bade86385021ebe4d20a60572a7227babc7e6b58d6315688f9f2b
+SHA512: d07717fb44acc48bc370c2fa3a9d1eafcd2647a970c8fca68c3e01859106d337645fc7dbec53915b5ca70110b011c860ec765d0683398eff0a3f68ef3065a23a
+Homepage: https://www.winehq.org
+Description: Windows API implementation - prelinked 32-bit binary loader
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the prelinked loader for 32-bit Windows applications.
+
+Package: wine32-development-tools-dbgsym
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 873
+Depends: wine32-development-tools (= 6.0+repack-1~sean00)
+Filename: ./i386/wine32-development-tools-dbgsym_6.0+repack-1~sean00_i386.deb
+Size: 760376
+MD5sum: fc220b8b8a0c175e1caea3952cdb777d
+SHA1: b4b5f11c6209880889a344fce3177cad5d77dac4
+SHA256: ed29f72aa503ed30c03692426ffad35a903185b325235b689b35dccd87b9c5f8
+SHA512: e75cdd2524aca925a06a2f5a8597902b39a999b7f62f3989840188f6fbfaf77c9241ef9c11eadc7048270fcb1fad4d97fe0a50f537bddaeefe4f78f419dc81e3
+Description: debug symbols for wine32-development-tools
+Build-Ids: 1c15fccdaa7ed44271260c2d5ff0211f6c14e5a3 2fc9dabf06c4a1ac4951fa390856d69387253574 43cc44fd77eb6e69b3e70e5a2ce6c928f7a9ebc4 6974cb942a658bbf070c000a2b8bbae5783c7a13 ad3654469b9ba32cb36c848d1ae3e561a88e9622 e332d997afc45107bf307f52d00567caebb42b54
+
+Package: wine32-development-tools
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libdevel
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 1466
+Depends: gcc | gcc-multilib:amd64, perl:any, libc6 (>= 2.11), libgettextpo0 (>= 0.21), libwine-development-dev (= 6.0+repack-1~sean00)
+Recommends: wine-development (= 6.0+repack-1~sean00), g++ | g++-multilib:amd64
+Conflicts: wine64-development-tools
+Filename: ./i386/wine32-development-tools_6.0+repack-1~sean00_i386.deb
+Size: 548964
+MD5sum: 3a9e639a0ed188d64cb694f11dd79560
+SHA1: 3da75f3a76850bd3bfbb87b80957c46f3d7c6e3e
+SHA256: 9a1a8731b336c461c8f1cf886b2a4f00d92b903a22b9c7e27de2829c1e15c48d
+SHA512: 494d0c28cf74ebcfe4cabcd22bf41eea237c0f2527f4b57f6590d1cd6a1a426627259a150ecdc83c16fc90517923c32866b585667011b64084be860856ee0a00
+Homepage: https://www.winehq.org
+Description: Windows API implementation - 32-bit developer tools
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides Wine's 32-bit developer tools. They are capable of
+ generating 32-bit results.
+
+Package: wine32-development
+Architecture: i386
+Version: 6.0+repack-1~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: otherosfs
+Source: wine-development
+Maintainer: Debian Wine Party <debian-wine@lists.debian.org>
+Installed-Size: 661
+Depends: libc6 (>= 2.28), libwine-development (= 6.0+repack-1~sean00)
+Recommends: wine-development (= 6.0+repack-1~sean00)
+Suggests: wine32-development-preloader (= 6.0+repack-1~sean00)
+Filename: ./i386/wine32-development_6.0+repack-1~sean00_i386.deb
+Size: 293992
+MD5sum: d9b84d9dabe36e21c39c16d3ba3da73a
+SHA1: af7a0e3d1b91fb6b5322f4e68d61d740f9830241
+SHA256: 94abe77f86202a84f8558cd275679830cee4c3784b8326b341bb290686c1acc7
+SHA512: 8d0d8178e7b2e83bda6b55931b412a03fd8ff5480b7719a02e06afa9e3e88134dfa7ed02316cb8cddf2ed6d83e95addbc41ce1df0e54fbf8076907cb3afc1432
+Homepage: https://www.winehq.org
+Description: Windows API implementation - 32-bit binary loader
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides the binary loader for 32-bit Windows applications.
 
