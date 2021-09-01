@@ -18,6 +18,10 @@ curl -fsSL https://www.clam.ml/gpg-pubkey/sean.gpg | sudo gpg --dearmor -o  /usr
 ```
 deb [signed-by=/usr/share/keyrings/sean-test-keyring.gpg] https://gh.pkg.clam.ml/bullseye ./
 ```
+or
+```
+deb [signed-by=/usr/share/keyrings/sean-test-keyring.gpg] https://raw.githubusercontent.com/sean0921/seanrepo/master/bullseye ./
+```
 
 * Check if repo works:
 ```
