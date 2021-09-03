@@ -980,6 +980,32 @@ Description: common files for the GTK graphical user interface library
  .
  This package contains the common files which the libraries need.
 
+Package: libgtk-4-common
+Architecture: all
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 23588
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libgtk-4-1
+Filename: ./all/libgtk-4-common_4.4.0+ds1-4~sean00_all.deb
+Size: 3482544
+MD5sum: 02ae21ae9556846fc38d2c498bd32d48
+SHA1: fb28a5d0dc85e6994a866874ae86299ca64aeab7
+SHA256: 1e806aa6e37264688cd9a201b3bbdc07ff73ada79b2c78d2c39a68fdd7a3f1c0
+SHA512: 78d37ec760a7a8483fbb534fe59091d9e7607db604c3892beb244bf2b27d318965fed6c1dd4535a28db87c51d462863eca28e2ef893b4d525e53f0f9c93de1a8
+Homepage: https://www.gtk.org/
+Description: common files for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+
 Package: libgtk-4-doc
 Architecture: all
 Version: 4.4.0+ds1-1
@@ -1007,6 +1033,33 @@ Description: documentation for the GTK graphical user interface library
  This package contains the HTML documentation for the GTK library
  in /usr/share/doc/libgtk-4-doc/ .
 
+Package: libgtk-4-doc
+Architecture: all
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 68769
+Recommends: libglib2.0-doc, libpango1.0-doc
+Suggests: devhelp
+Filename: ./all/libgtk-4-doc_4.4.0+ds1-4~sean00_all.deb
+Size: 4484960
+MD5sum: 0730f5e0b0ae113c10992d434bace691
+SHA1: 883d0438d475f424e8432990d763bf60e1366218
+SHA256: 5fbf07534b1765d8e68f7e4228f1c45c36cb240aa041784c1f548e58b049ab50
+SHA512: 6d138da2ac0b0d0ab8e94a4dc470ec1b8fa937c9a5fe1b492ac4eb312acacac423cdcd715fccd76bc1f30114840e62735ec63bf447f70ec4af19b9a22bea5d12
+Homepage: https://www.gtk.org/
+Description: documentation for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the HTML documentation for the GTK library
+ in /usr/share/doc/libgtk-4-doc/ .
+
 Package: libpango1.0-doc
 Architecture: all
 Version: 1.48.9+ds1-1
@@ -1023,6 +1076,40 @@ MD5sum: 8bd91d61c6d42b8a575b3e14ed248b8a
 SHA1: 2393288e56118a6254ed90b8ff23d3727e375e1c
 SHA256: 63887b4ea8c6eb4b4e9e8128bb0dc8e4216e84b39a7e215781e0117e1e652aa2
 SHA512: 7b9087ab7a2ac8d08bfb2eaffa4cbdad15d067da6acb061e0f1812d46cfe3fb69e0b6b30ea50d04cfda589b26cc3fe29fdb07f54b6e74e8f83a0d840f6d4e019
+Homepage: https://www.pango.org/
+Description: Documentation files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the HTML documentation for the Pango in
+ /usr/share/doc/libpango1.0-doc/ .
+
+Package: libpango1.0-doc
+Architecture: all
+Version: 1.48.9+ds1-2
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 5787
+Recommends: libglib2.0-doc
+Filename: ./all/libpango1.0-doc_1.48.9+ds1-2_all.deb
+Size: 419016
+MD5sum: 35afbe15874edae1d670134749d1b71e
+SHA1: 898eb0d382a6539a5b9da3ae35dd136dc2be9c81
+SHA256: 85b3f48f14658f0e3a250bdaa23a9430be1fc78ce36e40dfefd96df0f417d769
+SHA512: 1e8be320eff6e2f2a6feb188e9ad5ea015ac63fdfa03ec3d61b8e08c3a1514cb3aaffb20d72c5d080aff8ffa5641e1e926419479a4d675dbdad183a44586b513
 Homepage: https://www.pango.org/
 Description: Documentation files for the Pango
  Pango is a library for layout and rendering of text, with an emphasis
@@ -1290,6 +1377,34 @@ Description: GTK graphical user interface library -- gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
+Package: gir1.2-gtk-4.0
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 866
+Provides: gir1.2-gdk-4.0 (= 4.4.0+ds1-4~sean00), gir1.2-gdkwayland-4.0 (= 4.4.0+ds1-4~sean00), gir1.2-gdkx11-4.0 (= 4.4.0+ds1-4~sean00), gir1.2-gsk-4.0 (= 4.4.0+ds1-4~sean00)
+Depends: gir1.2-freedesktop (>= 1.39.0), gir1.2-gdkpixbuf-2.0 (>= 2.30.0), gir1.2-glib-2.0 (>= 1.39.0), gir1.2-graphene-1.0 (>= 1.10.4~), gir1.2-pango-1.0 (>= 1.47.0), libgtk-4-1 (>= 4.4.0), libgtk-4-common
+Breaks: python-gi (<< 3.18), python3-gi (<< 3.18)
+Filename: ./amd64/gir1.2-gtk-4.0_4.4.0+ds1-4~sean00_amd64.deb
+Size: 235384
+MD5sum: 0d9cb1eeca9c1d6c520a8f971f973ea4
+SHA1: b1392feabcc949978fd1aab420cd840946750307
+SHA256: cc43b45c9897a148c879d363cca98cdc8684bf934fa18a7b8bab0f87ac4fec1b
+SHA512: 6b694d4f47f498ddf48df363b6a6fd147fe81a233c37adf75c631c07df7d16fb4d534477c6116e612625f8140a567fb643aeba8080fda850a0626b8c44ddb26b
+Homepage: https://www.gtk.org/
+Description: GTK graphical user interface library -- gir bindings
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
 Package: gir1.2-ibus-1.0
 Architecture: amd64
 Version: 1.5.24-2~exp1
@@ -1334,6 +1449,41 @@ MD5sum: d0655b7077cd9c8c18607dbe8311bfa2
 SHA1: 2f751faf64728e4edf8da29eedde86f7afb73481
 SHA256: 89eab081f9927634b1b11ecf06817a355aa1d8925841c712e53c6ef24dae454e
 SHA512: b53476435659794ad7e3d8fe39005e61969509af343c64329e7219f390d50d038606f0955077738e92df3243bd9151e80d2f35ab2a319cde84c477ae89ce329c
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text - gir bindings
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
+Package: gir1.2-pango-1.0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 169
+Provides: gir1.2-pangocairo-1.0 (= 1.48.9+ds1-2), gir1.2-pangofc-1.0 (= 1.48.9+ds1-2), gir1.2-pangoft2-1.0 (= 1.48.9+ds1-2), gir1.2-pangoot-1.0 (= 1.48.9+ds1-2), gir1.2-pangoxft-1.0 (= 1.48.9+ds1-2)
+Depends: gir1.2-freedesktop (>= 0.9.5), gir1.2-glib-2.0 (>= 0.9.5), gir1.2-harfbuzz-0.0 (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/gir1.2-pango-1.0_1.48.9+ds1-2_amd64.deb
+Size: 62384
+MD5sum: ff28c7bb10ff70825fa079bc24ac91d3
+SHA1: 64e22215a1aaeb16a21be480dbb94fe7f1af0cc8
+SHA256: 9c0fc1db0c0f7c19c1558777ee41c78951a7bdae367034f8e0a081ea18f2a9cb
+SHA512: e4225b27d5ba5bdd3b1e509c42bbca85c2699c1d6fc2eda2fb8ea4abff0acf8fed03a19a2ee2f8a2e6587058abc92138674305c7755a0ba45960b8e0c81d9c48
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text - gir bindings
  Pango is a library for layout and rendering of text, with an emphasis
@@ -1558,6 +1708,25 @@ SHA512: 0c5779538f9aabd76d3a98fb9818a81bbf1fc65d9ec5ca0d1c7eb772602549b718dc7bc4
 Description: debug symbols for gtk-4-examples
 Build-Ids: 127f0e45eba19d23e0f1ca87f662e7d9285860d5 168ba40afe4134bc902a95e7a3c1d2cf6f8b2380 8f57eed432601f9959d568118c86f6289d8ddf40 af940e998a1ded962661f93825cffea47d8e7d31 e64d2d07d4d91f61c8531a0e046cf05223d52b3f
 
+Package: gtk-4-examples-dbgsym
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 866
+Depends: gtk-4-examples (= 4.4.0+ds1-4~sean00)
+Filename: ./amd64/gtk-4-examples-dbgsym_4.4.0+ds1-4~sean00_amd64.deb
+Size: 682420
+MD5sum: f01053d594ac144610dd556a4fa56a27
+SHA1: 877c94be0668ae5c916f4111fba9f9a0e71ac9ff
+SHA256: 1d121dc67ca511424ae101fe5ee9a1a8748bce0818639f4aa8700e27dab34ad7
+SHA512: 27012a870a21941430f4b666ce65a206394c4fd50fe01f7d7f1265b721ead52794e5fe1724fc654086f659a74301236a8adc7dee08650e2121d0a95479a86468
+Description: debug symbols for gtk-4-examples
+Build-Ids: 127f0e45eba19d23e0f1ca87f662e7d9285860d5 168ba40afe4134bc902a95e7a3c1d2cf6f8b2380 1b97941b533a921aebce7ba4beddf24e38fbef8f 8f57eed432601f9959d568118c86f6289d8ddf40 af940e998a1ded962661f93825cffea47d8e7d31
+
 Package: gtk-4-examples
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -1574,6 +1743,32 @@ MD5sum: 571d3b2a0b9024eb146683534bfb2f12
 SHA1: bb4b89c7a752170f2fd6d437c046a965863fd56b
 SHA256: 67f5f4d3ddfd672e9575fb4d4ef22af8bd204378383db71b67f3ba793b342c4c
 SHA512: 7da0674f8715711085d0f12f4501002ed7cf3910445c6248b599b66cc45ff75e0672a4383191fc98f9f171c64886f5cf43790788534c2a4a9c1689d446254c1b
+Homepage: https://www.gtk.org/
+Description: example files for GTK 4
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for GTK4. It also contains the installed tests.
+
+Package: gtk-4-examples
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 21595
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.28), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.0), libgdk-pixbuf-2.0-0 (>= 2.30.0), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (= 4.4.0+ds1-4~sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), librsvg2-2 (>= 2.46.0)
+Recommends: fonts-cantarell, librsvg2-common
+Filename: ./amd64/gtk-4-examples_4.4.0+ds1-4~sean00_amd64.deb
+Size: 11480908
+MD5sum: 970c506cf54b23ed566cab2edadb39d8
+SHA1: 105510a14b1518303b77aeb7a98590f35ba98bc1
+SHA256: 17cc822a5cbf96409ddefda25d1baf159e8b4e89610dd2af2be08d606f06d748
+SHA512: 24784363ee68fe4c2423f43086a2e874c675dc8aeb3f9cc1c766ca5e57bfa3f408946afa03a74705a19f0923d374f183623b689b0e84cd651597ee876a3a7502
 Homepage: https://www.gtk.org/
 Description: example files for GTK 4
  GTK is a multi-platform toolkit for creating graphical user
@@ -1603,6 +1798,25 @@ SHA512: 3219bce4e5240a3b68d1005d53e97441fba150c6cbcecd1707183ddaad54d7c86e424f31
 Description: debug symbols for gtk-4-tests
 Build-Ids: 03982e6a2faf29018d229b6a76537c6c75679dba 03ccc19b3e7750aec68d7b3c41e8991e49e9052f 05255f18a43a1f667733c2fbf8f202f994867e41 052de4d4f17028c3defc34e6dc78759631212937 06a768d17b703a60525283f210433874b83f6bc6 13d417dcb53c8795c2109ce68b0cd547d5a0874a 14e6c23487131eb7dfa205b2eb7fbd1410947572 1a059aed95b8922c196302e8d9fa09f50fef5699 1a394a723572b9603b31a269f78ef27694de4f0b 1a8e4d78bb01b40b7095d92047b807a1a402ca0c 1cf39c159141aa356e7ca8e02610fbad8378cffc 1fde3aecbfe12bf258e3a7b53dcf77faa8c7d00a 203e820ec6fd48f73d1aeafbad56bdca12b1e45c 2222379cf384613b8af6db60f88274ff3f13d05a 24a69c7360d2f841296b9d480972786dbab4fa72 24d3f7a197f25a109c64dcf1eff9b0b3be4a0dca 26c5978b93947b3257b38d4e8223ee10a28ae5d0 28441764a2a4eafb56c10876d27b13a583e7b589 2a501233c9fd69c03937f062be1ad6d0f304fa10 2e7a7437c9d2dece0ee5c924eabcdb2f639dd602 313d89c57f8047bb6b5e6dcfbb92207b30a35ec5 324943388fcaafd2c06ad2769553d9fa231c3d30 325540c7f6f56185fb8ab0a0db0a48edff028ce0 3425edee79a85a3b5a29c6b164734cc331839ad4 347912c34e9e6b26282ac1bbe2c70d997bd7c5c5 35f9e8b91cf2c8b36f52217aa1d441107d9c3d8a 38e96a756ca8de59c1901560701cad85182de5f1 3d2e100739af47244483f25221173981dc28d8e6 3ecf6d873a5274b74306d438341abdb0c950a524 416944ca2be4c90b652a55807fd2c564dfa8019b 42d0b990d90c971515510eaf85f5a0c53a071647 46049387c60532104a0063e76a180137805d0698 4b8a38f3f8fcbdbde5b487506d528671614288db 4f47e44a8d981902ca4413e987ad2db87992fe68 5428ec47c7cb90aab4d8e351965a610f6190c90d 5983eb8265277cd70365fa7b1e169146531c0129 5c46aabef7cedf67ad95b85c3a485c04378e9862 5dd54cea519eadd83bd279630815ce6187292943 60e63b046a78b8f34b51dc7bdb0b1d63b8397750 6337ed4ac3c3d72cc34b9fc65c117159f148c096 65a50fdc88ca26524d670a18d1ab94f4033779ec 672b0dcddfccd3cad64940e50643f084b121facf 696a4406b14078839609722317c257315496e672 69799e6c96f517788e93b8d6bff16ab868cb99ee 6b486bf899dbba9bfe8402c56f8d31d6fdcadd03 6d4791213ffd4b28c3c068a0c58ea94d0b449b89 6e41aff909a88a0e992aba3681b5daf48f6d558a 6e8fc1e5a9468839b7c2c6586ba20f2dcaa2a215 7260e2f92765263b9225bd9baabd89ded7b41c23 761f2b625b4643bb389d10e7a5bd943b72eaf8f8 7734a3e1b5d3b542fc0d6d62a13f5a3b6a23548d 7d2c427024e8753839e31b1867cc1407c7412042 835607712572604bb31b97cea20a339a51a53bf7 83abceb613c48dc8cfed070e15bd32447e3c1db4 84120aeb900f941666d6311a8fb5ac1894cad8bf 87b85013f0246c47facdb5ef093a77b3bb185d99 886e71dd640636be6776ad2df046d78d75823d6c 889c062f89e51d48f8e86a37960ca5563b88d30b 8b622af35551fea68faae3275b55bbcc47f6f35e 8c2e7261f742ce693352cee3650d20667fbaa40d 90f60b7bccfec292c1019ce0ee0e83793d53848d 92465474c99ec2382d85edcf356e6a6d77642323 96a55a09df5039c52a55930bded7a66cac815acc 97b71e917310376cf37be3b0b35307f9334d2e28 97d0e340a84547f551bc22aba3a6a4919dbf8174 98ab9a5e8116384ea72128371d20f7ac11bb0f56 98b80e3745141cb9888d5cdb99a9226a3bb5a66c 99928f6eca61abd2034d2b66c3825bce998c34c2 9992ccaf4e95868e8a2972fd6c57d09f8a3df813 9ade4d198d280bd411017a7261e510f9cb349e7a 9d084d2aaf4b4e3ab706524e871003a9c54eccc5 9d41c57648ad8164e18b3ca1cfe42dee2f51c934 ac20462a65fe41d0330ca7b1adc1ad11aef7007e ac69ca1a406a4b529092002dffce970af0ad4332 ace59da922ab2589c46179a14c4864467bc80c62 acfc429e4f9379f20a1faa0c7ad88012a6da6ced ad558bfea5f234668305d0045e69a299f2d0b1df ad97e9239a1ccb98da89fad2c0d60b91b7559fe9 aeb7355b969da5fca829dee36632746d312fb0e5 af354ff401310cbba4f4059ccb520d0b6e927e20 b2510a66de5335bb41159b1c9b816672e0805ee3 b272e824c86aa81a964179382a375c2dbc9a3ce4 b5dce5269cb974d26a6ef114cd019a0cfd88ba41 bb011245b74ebd918ed3e0891d2f6b5161ca8f26 bcd83735c9d6b878d6bfa6624ec872c29887b61a bdddbd718c51508700136b8910d1deb43c809a9e be0902581ba83cb68876e3335a997b1f6a0446b3 bf1e351f3c04406173635639f10252172a4ca880 bfea738ec175c86ce4b67f3ec4756377ff94a40c c75701f6233e776bc1fe9b4e7d4dd9f67ef6b756 c76f59a8301cd17208db0de8b15e2f62b6def9f1 c9b70fb81d5e57f6be4f285f69f90f7f0673b87f ca14255a83398b7f0c11c550082d38f4888a214b ca677c69e5058a8a1695476061a0e8fae75ebb4f ca760e730dd897d9b1f13af02c15cb475cd0d5a5 d2d5adb472af2cd3275734b5188adaac6bb8f989 d2fa08f974c4827f2634e981f77e8daab4eb3b41 d3b9e51fe4525a3481c2aa8d6f8d9db2d0a6f8ea d425d9023afbe974a7adfd18a2646063d9bcc954 d79815addc836d1c0de6bdd322060202069b5cfd dff44554345357efdd3e5d0349adeef1d60d44a9 e2d57d3ce04081c14c116dc9f262d1a5764cb4a5 e48597bbf28fdead22fd3f3a04640b4354f56a3b e58edcbfa1b91aad7bb266af7988982b29b39b8a e8717f2ee7ad0bbe01bd6833ee06dc3be26985e6 ebba2035d4fd94af838cbaa18cd5b5b9785059c7 ed5cb16f84d8c364018fff335fbf2cc6ac0ee4fc ef695ca26a78fe3e3fc56f226f49983915a37aab f0e80bf2b086a57a058ab46ce7d02968a6221d44 f2d3593ccd4f73a59d6d53b1936b6042fe118797 f383c7c2523572bdd62c2afe6ed0313a56367e4b f39ca9499e0b0cb77ed3122d45646b681567f264 f3aff4c1dd60b36a172b2b0347babaf0cd01cfb1 f67fa3c8346abe9339d536ee74d66a680d4e7289 f68cdb245f91d93fc2e140f2dd6b2c9bff96c9ce f69265ab56a38cb1e56de3f14252677fcedb194a f81fe1fe1cf6d8336ccb92cd48f8e3639dcf8a12 f82f1d8a5d9369e61f6f817957c259c417efd9be fa28387f65043c14ff4f8a25b7a720012f61e8ff ff8afc944d45af4f3c49cb21cac3fa991263a9b2
 
+Package: gtk-4-tests-dbgsym
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 46923
+Depends: gtk-4-tests (= 4.4.0+ds1-4~sean00)
+Filename: ./amd64/gtk-4-tests-dbgsym_4.4.0+ds1-4~sean00_amd64.deb
+Size: 41205704
+MD5sum: d2fa755175918c57037e21ce2b3fb1cc
+SHA1: 7595166934494878b6b69d599cfb16d901ab4948
+SHA256: 4bf4f3fad9345be90c1b9f44faf4348b67e3443d49f4d09622c2584b46cdccdc
+SHA512: 72c1a766702e5c3ca91c999b151d8b0507d106cc37262bb967a99bf351cb3eafa9d65627fe81d52b763d0ff87a647ddab000e37325c93d2650d6cad10f5f37d4
+Description: debug symbols for gtk-4-tests
+Build-Ids: 03982e6a2faf29018d229b6a76537c6c75679dba 05255f18a43a1f667733c2fbf8f202f994867e41 06a768d17b703a60525283f210433874b83f6bc6 13d417dcb53c8795c2109ce68b0cd547d5a0874a 14e6c23487131eb7dfa205b2eb7fbd1410947572 1a059aed95b8922c196302e8d9fa09f50fef5699 1a394a723572b9603b31a269f78ef27694de4f0b 1a8e4d78bb01b40b7095d92047b807a1a402ca0c 1cf39c159141aa356e7ca8e02610fbad8378cffc 1fde3aecbfe12bf258e3a7b53dcf77faa8c7d00a 203e820ec6fd48f73d1aeafbad56bdca12b1e45c 2222379cf384613b8af6db60f88274ff3f13d05a 24a69c7360d2f841296b9d480972786dbab4fa72 24d3f7a197f25a109c64dcf1eff9b0b3be4a0dca 26c5978b93947b3257b38d4e8223ee10a28ae5d0 2a501233c9fd69c03937f062be1ad6d0f304fa10 2e7a7437c9d2dece0ee5c924eabcdb2f639dd602 324943388fcaafd2c06ad2769553d9fa231c3d30 325540c7f6f56185fb8ab0a0db0a48edff028ce0 3425edee79a85a3b5a29c6b164734cc331839ad4 347912c34e9e6b26282ac1bbe2c70d997bd7c5c5 35f9e8b91cf2c8b36f52217aa1d441107d9c3d8a 38e96a756ca8de59c1901560701cad85182de5f1 3d2e100739af47244483f25221173981dc28d8e6 3ecf6d873a5274b74306d438341abdb0c950a524 3f5f18af1ce7ffd6a19560c288c5ee41c57c8bba 416944ca2be4c90b652a55807fd2c564dfa8019b 42d0b990d90c971515510eaf85f5a0c53a071647 46049387c60532104a0063e76a180137805d0698 46b92eb24238e9e511568ab61cff79e09cde088d 4b7a43cd181ebd0bc1584ff6b267fb68996808e1 4b8a38f3f8fcbdbde5b487506d528671614288db 4f47e44a8d981902ca4413e987ad2db87992fe68 5428ec47c7cb90aab4d8e351965a610f6190c90d 5983eb8265277cd70365fa7b1e169146531c0129 5dd54cea519eadd83bd279630815ce6187292943 60e63b046a78b8f34b51dc7bdb0b1d63b8397750 6337ed4ac3c3d72cc34b9fc65c117159f148c096 65a50fdc88ca26524d670a18d1ab94f4033779ec 672b0dcddfccd3cad64940e50643f084b121facf 696a4406b14078839609722317c257315496e672 69799e6c96f517788e93b8d6bff16ab868cb99ee 6b486bf899dbba9bfe8402c56f8d31d6fdcadd03 6d4791213ffd4b28c3c068a0c58ea94d0b449b89 6e41aff909a88a0e992aba3681b5daf48f6d558a 6e8fc1e5a9468839b7c2c6586ba20f2dcaa2a215 7071a45dc7015ae01b8277e3607bdbe3ba0af09e 7260e2f92765263b9225bd9baabd89ded7b41c23 761f2b625b4643bb389d10e7a5bd943b72eaf8f8 7734a3e1b5d3b542fc0d6d62a13f5a3b6a23548d 7d2c427024e8753839e31b1867cc1407c7412042 835607712572604bb31b97cea20a339a51a53bf7 83abceb613c48dc8cfed070e15bd32447e3c1db4 84120aeb900f941666d6311a8fb5ac1894cad8bf 87b85013f0246c47facdb5ef093a77b3bb185d99 886e71dd640636be6776ad2df046d78d75823d6c 889c062f89e51d48f8e86a37960ca5563b88d30b 8b622af35551fea68faae3275b55bbcc47f6f35e 8bee47ec420c5fd66f9955fa8631c13a65a5f85e 8c2e7261f742ce693352cee3650d20667fbaa40d 90f60b7bccfec292c1019ce0ee0e83793d53848d 9147d59aadea723fafa67dc26514ff5975bd47a5 92465474c99ec2382d85edcf356e6a6d77642323 96a55a09df5039c52a55930bded7a66cac815acc 97b71e917310376cf37be3b0b35307f9334d2e28 97d0e340a84547f551bc22aba3a6a4919dbf8174 98ab9a5e8116384ea72128371d20f7ac11bb0f56 98b80e3745141cb9888d5cdb99a9226a3bb5a66c 99928f6eca61abd2034d2b66c3825bce998c34c2 9992ccaf4e95868e8a2972fd6c57d09f8a3df813 9ade4d198d280bd411017a7261e510f9cb349e7a 9d084d2aaf4b4e3ab706524e871003a9c54eccc5 9d41c57648ad8164e18b3ca1cfe42dee2f51c934 9f87e0e4c6685cde13f5426548c45d7db5919eed 9fa5c3ad5558710c3158b71e6013f5e0ff571e51 ac69ca1a406a4b529092002dffce970af0ad4332 ace59da922ab2589c46179a14c4864467bc80c62 acfc429e4f9379f20a1faa0c7ad88012a6da6ced ad558bfea5f234668305d0045e69a299f2d0b1df ad97e9239a1ccb98da89fad2c0d60b91b7559fe9 aeb7355b969da5fca829dee36632746d312fb0e5 af354ff401310cbba4f4059ccb520d0b6e927e20 b2510a66de5335bb41159b1c9b816672e0805ee3 b272e824c86aa81a964179382a375c2dbc9a3ce4 b5dce5269cb974d26a6ef114cd019a0cfd88ba41 bb011245b74ebd918ed3e0891d2f6b5161ca8f26 bcd83735c9d6b878d6bfa6624ec872c29887b61a bdddbd718c51508700136b8910d1deb43c809a9e be0902581ba83cb68876e3335a997b1f6a0446b3 bf1e351f3c04406173635639f10252172a4ca880 bfea738ec175c86ce4b67f3ec4756377ff94a40c c75701f6233e776bc1fe9b4e7d4dd9f67ef6b756 c76f59a8301cd17208db0de8b15e2f62b6def9f1 c9b70fb81d5e57f6be4f285f69f90f7f0673b87f ca14255a83398b7f0c11c550082d38f4888a214b ca677c69e5058a8a1695476061a0e8fae75ebb4f ca760e730dd897d9b1f13af02c15cb475cd0d5a5 d2d5adb472af2cd3275734b5188adaac6bb8f989 d2fa08f974c4827f2634e981f77e8daab4eb3b41 d3b9e51fe4525a3481c2aa8d6f8d9db2d0a6f8ea d425d9023afbe974a7adfd18a2646063d9bcc954 d79815addc836d1c0de6bdd322060202069b5cfd e2d57d3ce04081c14c116dc9f262d1a5764cb4a5 e58edcbfa1b91aad7bb266af7988982b29b39b8a e8717f2ee7ad0bbe01bd6833ee06dc3be26985e6 ebba2035d4fd94af838cbaa18cd5b5b9785059c7 ed5cb16f84d8c364018fff335fbf2cc6ac0ee4fc ef695ca26a78fe3e3fc56f226f49983915a37aab f0e80bf2b086a57a058ab46ce7d02968a6221d44 f2d3593ccd4f73a59d6d53b1936b6042fe118797 f383c7c2523572bdd62c2afe6ed0313a56367e4b f39ca9499e0b0cb77ed3122d45646b681567f264 f3aff4c1dd60b36a172b2b0347babaf0cd01cfb1 f67fa3c8346abe9339d536ee74d66a680d4e7289 f68cdb245f91d93fc2e140f2dd6b2c9bff96c9ce f69265ab56a38cb1e56de3f14252677fcedb194a f81fe1fe1cf6d8336ccb92cd48f8e3639dcf8a12 f82f1d8a5d9369e61f6f817957c259c417efd9be fa28387f65043c14ff4f8a25b7a720012f61e8ff ff8afc944d45af4f3c49cb21cac3fa991263a9b2
+
 Package: gtk-4-tests
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -1619,6 +1833,32 @@ MD5sum: a34f3b169bacd3e4ab2265e56e9542fa
 SHA1: 340ce67df62115c862a67986a757caeb82999f85
 SHA256: 7298135aef5b0bc03d7d78bfc7ebd921ca4785f745c025f61abfadf0e52ae973
 SHA512: 59400b78d1f4d0b1f7e58fd2e41fb11e45b209e4aeae9d6341dfc93a3e9480c7a0eab28d8cb78dd1c4103a2fba930f30e848f96fbb724003a0d960127b4da362
+Homepage: https://www.gtk.org/
+Description: "as-installed" tests for GTK 4
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains installable test programs, primarily for use with
+ autopkgtest.
+
+Package: gtk-4-tests
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 47950
+Depends: iso-codes, librsvg2-common, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libgtk-4-1 (= 4.4.0+ds1-4~sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0)
+Recommends: gnome-desktop-testing, locales | locales-all
+Filename: ./amd64/gtk-4-tests_4.4.0+ds1-4~sean00_amd64.deb
+Size: 13426280
+MD5sum: 8efdac0790eada37df1578c241521fac
+SHA1: 9f33b16e74890754537bfefabbd729280f1e8f4d
+SHA256: 1d65c08f8727b690ec60c5f3162fb282d2bfa04d0b33b9683fdea0ff762f780f
+SHA512: 1c028f54b9cdc7f065aecbf74650a027b33c7e79658b8f9a5fb08a71e2ebdaa67f00706aa6410c658c9abfa812c7fb6c22a6ab2247eef5bcc87c06669ec3e692
 Homepage: https://www.gtk.org/
 Description: "as-installed" tests for GTK 4
  GTK is a multi-platform toolkit for creating graphical user
@@ -2067,6 +2307,26 @@ SHA512: c4cd68c1c0667dc7be12eb8747bb5f71596204fa052e6b0871d594bfe9a85ab43443a8f5
 Description: debug symbols for libgtk-4-1
 Build-Ids: 2d48c0a01eb11ac8bd3770d820400a5b89b4f7db 4f0fefbc817ef794a5056e829da5b5f013402ede 7fa325579e7ffc07f027e9acccf0c8f90f9a3e57
 
+Package: libgtk-4-1-dbgsym
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 9885
+Depends: libgtk-4-1 (= 4.4.0+ds1-4~sean00)
+Filename: ./amd64/libgtk-4-1-dbgsym_4.4.0+ds1-4~sean00_amd64.deb
+Size: 8849792
+MD5sum: 8aede3c925be656d9812342397efa33d
+SHA1: 54311a90e1517be96ebff43bbf2ebf15525a8302
+SHA256: 1e4c2e002b1613209bf2318be0a2cc6c0a4b278fda0eb5762bb8af89a709d25d
+SHA512: e3673bbb5334bfeaad411c7bda0ca6198c5054a82ad71bbde85d093fc3ff95962ed74cd33f05d96100452e830a832c78c5fea8113e11c3a1c25491a75e901f09
+Description: debug symbols for libgtk-4-1
+Build-Ids: 2d48c0a01eb11ac8bd3770d820400a5b89b4f7db 7fa325579e7ffc07f027e9acccf0c8f90f9a3e57 b2f6bae25347a09122e990d4fa5a73e583c9ad83
+
 Package: libgtk-4-1
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -2097,6 +2357,36 @@ Description: GTK graphical user interface library
  .
  This package contains the shared libraries.
 
+Package: libgtk-4-1
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8840
+Provides: gtk4-binver-4.0.0
+Depends: adwaita-icon-theme, hicolor-icon-theme, shared-mime-info, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2 (>= 2.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-4-common (>= 4.4.0+ds1-4~sean00)
+Recommends: libgtk-4-bin, iso-codes, librsvg2-common
+Suggests: gvfs, libgtk-4-media-gstreamer | libgtk-4-media-ffmpeg
+Breaks: libgtk-4-0 (<< 4.0.0)
+Replaces: libgtk-4-0 (<< 4.0.0)
+Filename: ./amd64/libgtk-4-1_4.4.0+ds1-4~sean00_amd64.deb
+Size: 2771476
+MD5sum: c91672dfdb5a44aa9479d57a37df98b3
+SHA1: 6fb4b84dd011c4a4885ab157e73c03a6fe71cca6
+SHA256: f64471a022ba084e757b30c85593db2fd7e516255a9b8be81de27b66cb8adac0
+SHA512: 873276e39545a0c2a57c8283b01ad025c5dfa2dca591f3c0554f2884e54d6d22e43664a968ab3b75f4d1c3a2b10b18c5eef77f46135439e65b2d560907e77f1f
+Homepage: https://www.gtk.org/
+Description: GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+
 Package: libgtk-4-bin-dbgsym
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -2115,6 +2405,25 @@ SHA256: 8f44f654a3c50b03b0e14c71882c7956661105693b0ca4ec973e5e8516e33744
 SHA512: 2b79418047e5eaca6881f9fa82b261f7ec0a19a8cab240f2e90ec7421f664e32d9d36cc83093f858fdc3742c43f97bfe60dd3758826214764341735c5e78a739
 Description: debug symbols for libgtk-4-bin
 Build-Ids: 4f1ed16b0a1e5e28b9f0a0324bd11592b69cba38 5617fecc1d60c3a17caad38936be96242cfe1365 d81ecd459593e7e65fd7ab2de1b103641d59a1db dd4ec3145f4fae7ae4218728a6f15430ae9fb61b ea57f7f14de5b9a2f2192d80ba5076865d4f27b0 ee89fca3e8c84f2e4a90703c408eeef93789d824
+
+Package: libgtk-4-bin-dbgsym
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 9742
+Depends: libgtk-4-bin (= 4.4.0+ds1-4~sean00)
+Filename: ./amd64/libgtk-4-bin-dbgsym_4.4.0+ds1-4~sean00_amd64.deb
+Size: 8760024
+MD5sum: 7d8c73308f3c4ff38a9c5fe8ca704fff
+SHA1: 09fa527db6b0e4368b04129f139e3ed512db80a8
+SHA256: e53b78b1ce0233d2fb150d25c0ef5bd9a85c99aaa0e2ee9f553ebb882fa747da
+SHA512: 10aaf56b6671a6a8814e12c69ee5b3615e543be5f15af0c2569f2aa665914882a48d54447f79ba41ea05029cee8943315a11ccc5e30fbca26ed03f2ef363db6d
+Description: debug symbols for libgtk-4-bin
+Build-Ids: 5617fecc1d60c3a17caad38936be96242cfe1365 9443549925592213eff71b2f6f79d115fc9ab434 a2c81f60f1eef5dcea0b4abff5f838ef37cf1092 ee89fca3e8c84f2e4a90703c408eeef93789d824 f309899f1246d07869abeaafb5a483596e1c9de7
 
 Package: libgtk-4-bin
 Architecture: amd64
@@ -2144,6 +2453,34 @@ Description: programs for the GTK graphical user interface library
  This package contains the utilities which are used by the libraries
  and other packages.
 
+Package: libgtk-4-bin
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8535
+Depends: gtk-update-icon-cache, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libgtk-4-1 (>= 4.4.0+ds1-4~sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-4-common (>= 4.4.0+ds1-4~sean00)
+Breaks: gtk-4-examples (<< 3.96.0-3~)
+Replaces: gtk-4-examples (<< 3.96.0-3~)
+Filename: ./amd64/libgtk-4-bin_4.4.0+ds1-4~sean00_amd64.deb
+Size: 2730172
+MD5sum: 73772b485fc6f7274ddeaa498a4ba42a
+SHA1: e03b59000d78faaaf0389a60101de564609ded51
+SHA256: eebf08553e7a1475d9de0fae9592cc7bd8dea75edf50bcce20717127ecc55427
+SHA512: 98203e12b4284469cac0e304143addb3c6458c8873cb215d570827218dd37e6bc36495fafc306b3858b4fbbe28deb0292b02e27543d2d0fb310e97abd6e6173d
+Homepage: https://www.gtk.org/
+Description: programs for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+
 Package: libgtk-4-dev
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -2161,6 +2498,33 @@ MD5sum: b67bb629473af867c875031230f71d25
 SHA1: c3c4323ae0c35ec82c7d496a2e26efbfa1865190
 SHA256: 2e9fbcddcc5ef344562923c77e3e4ab25670be3a7874169962f5cc3e0227ca8c
 SHA512: cd210bb06e531ce965baa4053a749745f3ed8fc1446ee69aa6b7ad75032ce1461f20c9e1bff2b905bdf7469308ae27563f3b24b2778bd1c4c1ef128877b64af6
+Homepage: https://www.gtk.org/
+Description: development files for the GTK library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header and development files which are
+ needed for building GTK applications.
+
+Package: libgtk-4-dev
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 10754
+Depends: gir1.2-gtk-4.0 (= 4.4.0+ds1-4~sean00), libcairo2-dev (>= 1.14.0), libegl1-mesa-dev, libepoxy-dev (>= 1.0), libfontconfig1-dev, libgdk-pixbuf-2.0-dev (>= 2.30.0), libglib2.0-dev (>= 2.66.0), libgraphene-1.0-dev (>= 1.9.1), libpango1.0-dev (>= 1.47.0), libwayland-dev (>= 1.16.91), libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev, libxrandr-dev, libvulkan-dev, pkg-config, wayland-protocols (>= 1.21), libgtk-4-common, libgtk-4-1 (= 4.4.0+ds1-4~sean00)
+Suggests: libgtk-4-doc
+Filename: ./amd64/libgtk-4-dev_4.4.0+ds1-4~sean00_amd64.deb
+Size: 914552
+MD5sum: 568f730073c740cd383a1f121bdcb884
+SHA1: a4cf5337e8ea86794051cef4d9d41257dcab14f4
+SHA256: 9ac2e1277c604625c6cc72e1a66b30aeb97aa18f5ad2c546cf622e3014f2b412
+SHA512: ac2dd238ee922edf656db3e10753e9cc63cbd5cd09b04e7d8a06c63bfc45a3105640d401cc1aafd4e79966602010e57c8a6f30884fdcfbc65385323be886ed3c
 Homepage: https://www.gtk.org/
 Description: development files for the GTK library
  GTK is a multi-platform toolkit for creating graphical user
@@ -2236,6 +2600,25 @@ SHA512: cd6d9c0b66c383b3e8ea1cdff92b961167ede4c079ff7218f9a287829aa0e202479d2db0
 Description: debug symbols for libgtk-4-media-gstreamer
 Build-Ids: b1366e80f4c793c1893b340f78dce3c8c5354a67
 
+Package: libgtk-4-media-gstreamer-dbgsym
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 75
+Depends: libgtk-4-media-gstreamer (= 4.4.0+ds1-4~sean00)
+Filename: ./amd64/libgtk-4-media-gstreamer-dbgsym_4.4.0+ds1-4~sean00_amd64.deb
+Size: 55024
+MD5sum: 3ad4e89174b0878c36a35521c7da4804
+SHA1: bc2e0df76a46f37f6fd55fbfeff767f2cbc3309e
+SHA256: d4692c72bef92e1372a5d0a5652953bb8a4ffe462dbde5e83a25da0ce9144cd7
+SHA512: a270c59a4f2945caff16ecf1a3aa684cfdf6bd1c6833d3da61fdf51d436cae09854e6874459e0b4e18609c6d357c077ac6205e1c6d2c16a13164d02de4236516
+Description: debug symbols for libgtk-4-media-gstreamer
+Build-Ids: b1366e80f4c793c1893b340f78dce3c8c5354a67
+
 Package: libgtk-4-media-gstreamer
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -2252,6 +2635,31 @@ MD5sum: c8674d5b9f312af7068b39583c70eb37
 SHA1: a2cbd23053ebf8e9e883150978ed2af421f163f8
 SHA256: e7860e230b085205d3990cc740b8780ce75ad38c7bf159b7fd0318b3773eb3ce
 SHA512: 2b1bdbdda317e90b4a1ab6d6ee1c344cdcd23dfd4bca3be5deef71af4ddfd00135ef674d56bb790de2e1c6177ccca24ad5108bc7769188dee283b67a15d77091
+Homepage: https://www.gtk.org/
+Description: GStreamer media backend for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the media module that uses GStreamer as backend.
+
+Package: libgtk-4-media-gstreamer
+Architecture: amd64
+Version: 4.4.0+ds1-4~sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 154
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.66.0), libgstreamer-gl1.0-0 (>= 1.14.0), libgstreamer-plugins-bad1.0-0 (>= 1.18.4), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.12.3), libgtk-4-1 (>= 4.3.2)
+Filename: ./amd64/libgtk-4-media-gstreamer_4.4.0+ds1-4~sean00_amd64.deb
+Size: 88652
+MD5sum: 2f5670683f0b883ff4a2d8608574b620
+SHA1: 5f25ff354b40778b8d262e00fec5af3491bc4fb7
+SHA256: 252c73c5dd68656243ca197e71def9ce6f8d1bff74ba17d42ef13bfa27f22a75
+SHA512: 690d9da5a99098e7b3726fd91a1dbb50ece88b1382459d22e1bb7f4a7b67f41a87fcfff3b4c717dfc822b1bf403d4000789e5f7a9ea725a88e29c7c8817615c3
 Homepage: https://www.gtk.org/
 Description: GStreamer media backend for the GTK graphical user interface library
  GTK is a multi-platform toolkit for creating graphical user
@@ -2351,6 +2759,26 @@ SHA512: 5096ec5112de5e228108517736f2cb8ce9919e78ff29564077ab232ceef317ed32ebaaa2
 Description: debug symbols for libpango-1.0-0
 Build-Ids: 43575259a02bfd0e3d28d0a3e2332cce49fe9db9
 
+Package: libpango-1.0-0-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 384
+Depends: libpango-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpango-1.0-0-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 334192
+MD5sum: 233de029487736a674d2517b99508b62
+SHA1: adbb0c16a3c8de8f53b2e03f07794164fff92cae
+SHA256: 3c00d6ef209dee56cd7922856506188c08b413004496bcef13c5caf16caa0847
+SHA512: e7d2b436834eda2d0d4bad4c6ca7bc681eae8d75a3d97a97fd9e915e3fadd7ff01df8c1b73dac8bab5e1568d85ab6755c5a51cacf1645f133885e036c4f68ebe
+Description: debug symbols for libpango-1.0-0
+Build-Ids: 43575259a02bfd0e3d28d0a3e2332cce49fe9db9
+
 Package: libpango-1.0-0
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2385,6 +2813,40 @@ Description: Layout and rendering of internationalized text
  .
  This package contains the shared libraries.
 
+Package: libpango-1.0-0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 464
+Depends: fontconfig (>= 2.1.91), libc6 (>= 2.14), libfribidi0 (>= 1.0.6), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libthai0 (>= 0.1.25)
+Breaks: libpangocairo-1.0-0 (<< 1.44.7), libpangoft2-1.0-0 (<< 1.44.7), libpangoxft-1.0-0 (<< 1.44.7)
+Filename: ./amd64/libpango-1.0-0_1.48.9+ds1-2_amd64.deb
+Size: 203828
+MD5sum: d3a8725c341fa8331a010031f2f6da9b
+SHA1: 24a34ddf6e452a59482264e9a86fd2e20ba23021
+SHA256: 778d2d94076bad5e1eab0eed57915a3ffd231597383d81df429885b4a98763a7
+SHA512: 0279f6d4b9ba2ef79b51af8fd411e012977f5c884b29c008b4753551b718dfa01e70d7c553a669facc265632a0c3e383d200197e4d3f1c0791549973218bf279
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
 Package: libpango1.0-0
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2402,6 +2864,43 @@ MD5sum: 135a366cdcff34bb04d51f7fb186bee5
 SHA1: 0d8bec3d60654c5b2fdad6ba31bc4607beb8331e
 SHA256: 484e5a16c23d6eec4a9390980c45c66a990ca4f4212ca10e7c63e3c5ad0a0662
 SHA512: 322ac2ad349e48df37275edbfccef01597417d54772e343e8d0828e497bf41eeeec5319151967067a44453bd73cacd7dda774ad05dbd3d71c96a41efa9e930af
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text (transitional package)
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This is a transitional package and will be removed in a future release.
+ Third-party packages should depend on the individual libraries that they
+ use instead. If another package depends on this one, please report that
+ as a bug.
+
+Package: libpango1.0-0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 75
+Depends: libpango-1.0-0 (>= 1.42), libpangocairo-1.0-0 (>= 1.42), libpangoft2-1.0-0 (>= 1.42), libpangoxft-1.0-0 (>= 1.42)
+Suggests: libpangox-1.0-0 (>= 0.0.2-2~)
+Filename: ./amd64/libpango1.0-0_1.48.9+ds1-2_amd64.deb
+Size: 40784
+MD5sum: 8b555890853c857ce98cad4326f450c8
+SHA1: c2e0af627d941e67a6a31555691ef8fa386d94ef
+SHA256: ec55e22b033cdefcf1b1015fe353d4077bb42acfdd09ed806d2529bc37d9d7ba
+SHA512: 5a65c67dc0b2ce2eaa8b9854e0226ae53198dd09d409de08046a175b26a8ddf4d704ac3975fc86f0a3f5d8b42be98a738836f19b842e28e9a74cce2c2774237c
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text (transitional package)
  Pango is a library for layout and rendering of text, with an emphasis
@@ -2457,6 +2956,41 @@ Description: Development files for the Pango
  This package contains the header files and some files needed for development
  with Pango.
 
+Package: libpango1.0-dev
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1509
+Depends: gir1.2-pango-1.0 (= 1.48.9+ds1-2), libcairo2-dev (>= 1.12.10), libfontconfig1-dev (>= 2.11.91), libfreetype-dev (>= 2.1.7), libfribidi-dev (>= 1.0.6), libglib2.0-dev (>= 2.62.0), libharfbuzz-dev (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2), libthai-dev (>= 0.1.22-3~), libx11-dev (>= 2:1.3.3-2), libxft-dev (>= 2.1.14-2), libxrender-dev (>= 1:0.9.0.2-2), pango1.0-tools (= 1.48.9+ds1-2), pkg-config
+Suggests: imagemagick, libpango1.0-doc
+Filename: ./amd64/libpango1.0-dev_1.48.9+ds1-2_amd64.deb
+Size: 168268
+MD5sum: fef8b836fac8643f2afb32d3cf33ce24
+SHA1: f80b72a65153b4debd8e6371048d601181c89f6d
+SHA256: 9a12471692081d48ecabca1f701b9a42abae1e92711a35b9712e9619a453bf96
+SHA512: acbaf1157eed783b4a74d1ab1a0e1925f54da525d55f828c30c0ef064ace00975e3a5b2824c8d31a2f0c4bd88e23686c9158c2f08dd2e10da842b2e33f65f361
+Homepage: https://www.pango.org/
+Description: Development files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the header files and some files needed for development
+ with Pango.
+
 Package: libpangocairo-1.0-0-dbgsym
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2477,6 +3011,26 @@ SHA512: a712906ff65b26ac623fa7b4023e4dfced034420c5e06b4d87855afcbd1b9eba1e961e9c
 Description: debug symbols for libpangocairo-1.0-0
 Build-Ids: 0e0d5ff198a4a20ed05904134eb1313d2cfba5b0
 
+Package: libpangocairo-1.0-0-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 90
+Depends: libpangocairo-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpangocairo-1.0-0-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 67112
+MD5sum: e1af4c2917f26f1b1d03dda9f6501c93
+SHA1: 26af6940a372973f8153be1e900636521f73c149
+SHA256: 6de195e0a3918231c47490dc6bbde8c986ddab60df0b0b087f2d2107267b1ceb
+SHA512: f58e6844a7a03870d5298621ad9f7ef1fa1e7f12661a8706581960319f47e50b69c6f66aeef934f0fc7334a86e2f9f9a1c440808f1b6b9c79a373d41fd7cb76c
+Description: debug symbols for libpangocairo-1.0-0
+Build-Ids: 0e0d5ff198a4a20ed05904134eb1313d2cfba5b0
+
 Package: libpangocairo-1.0-0
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2493,6 +3047,39 @@ MD5sum: 398645e8c45a16cafd26c6c5164f4415
 SHA1: a4535b1a62cad4aed726d9733eb0127f54a6647a
 SHA256: 236d0cf9692dc089354f09f280f24926cc69cb1ef50b763cea6c5b169f10f4bd
 SHA512: 9ab87af01a87a9ba8c847f4b2c28e71942cbbca22490e6cc23b5230bd7fca6e3d73658e633e39eba89e1f089930f47abfb781b29d286f71fd6b6714e5ca20f11
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangocairo-1.0-0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 144
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpangocairo-1.0-0_1.48.9+ds1-2_amd64.deb
+Size: 60516
+MD5sum: 95f45f3a7d3dcf430233f234c8bfdb62
+SHA1: 3c64e0903315bdb812e41782aa36b77f963604ed
+SHA256: 7f84da4526e3966d51e527edfd89a79537fe487d687b5c2c159f0c0063519d6f
+SHA512: ef2f05b1c6f44b249ef23c9d9b67c173d5ae198e58e72bfab391e70a0356d2e73b12672d1a8d9915303c029c55334d8b334d9527bff6669b019362e3d5bd6014
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -2530,6 +3117,26 @@ SHA512: f2ce7c9b89beec96bf1af3a217242309ad56d245e72749e3d39c2aba8776c0f12267dcf2
 Description: debug symbols for libpangoft2-1.0-0
 Build-Ids: b8942593411bd3e6a8d0b31ec2e69c95e0df5d00
 
+Package: libpangoft2-1.0-0-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 149
+Depends: libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpangoft2-1.0-0-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 116816
+MD5sum: 9638463d51bab8fb17cf53a71859d650
+SHA1: 1889a6a114aed8abde30b0b954d4f389d989b3ed
+SHA256: 41dc998ed8241803bc186c5fd2947ee6633d17b8b6919cca7379d1c71c78a27c
+SHA512: 7a37dd8f5a8d139238d062767af22d040f2bda0847ff739794c636423c57750732bcb8907f9a629341e2fac6410e5306079430a9862a98bb616a6a61699f6d84
+Description: debug symbols for libpangoft2-1.0-0
+Build-Ids: b8942593411bd3e6a8d0b31ec2e69c95e0df5d00
+
 Package: libpangoft2-1.0-0
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2546,6 +3153,39 @@ MD5sum: f49c2890a5ef6a390192bd2885273cd2
 SHA1: a6cc20b4d779093f2f9de64c79a66c80026b445b
 SHA256: 19d2d1a84249da98da46e3ebc9bcbfc20a39f8a82277bb83c97f3e92763f97d0
 SHA512: cf39c5d81e77741800db49d256e155df407e6ca8b869de2856fed77d16c49b6546cf5ec7b614e1091e132b3fb2181791821ea304e52a905396a59e43a83c0cf6
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangoft2-1.0-0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 179
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.13.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.6.0), libpango-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpangoft2-1.0-0_1.48.9+ds1-2_amd64.deb
+Size: 73124
+MD5sum: ec1e7a4699b25d4b4b4e71626aa39ca1
+SHA1: 2f7461cf1f8f51089d18c735f3bf21748a2fb818
+SHA256: c38354b4ce880d37b40149125d554f2370f443ea378ceec039204f66163c14c3
+SHA512: 26dcaa56647e1d13db7b4fdd7ccd3c7ca2bc78151d60987436de8d100f67bace4e5b9ba3983bfe0de008a8941ff9e0c451912dc4d87da94e57c72f58d80c4f99
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -2583,6 +3223,26 @@ SHA512: 0fdd91908428248cafbf72b53d0ebc412f4ee32ec232151f4a2f4b142b7971ccc48bdece
 Description: debug symbols for libpangoxft-1.0-0
 Build-Ids: fbe9dfbe562bf27f085607472f0251bc65116ef5
 
+Package: libpangoxft-1.0-0-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 74
+Depends: libpangoxft-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/libpangoxft-1.0-0-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 55780
+MD5sum: 16455bc3a9d125fcf6a5172ea74aed80
+SHA1: 7f0883052161635fbbcd936e1338854be70096a6
+SHA256: 675c3ae1afdc18edbf415516eaedd79f0903f1c486b3978f4d335373d2a98d48
+SHA512: 0985ff54b87dccce75f91906b13e4442b01fcd95dbbdad07ed2071ecae9c4765d735b79af787445de2cfd7827506abab30e0ea4b6cadf2da5f5a0d41430fbf77
+Description: debug symbols for libpangoxft-1.0-0
+Build-Ids: fbe9dfbe562bf27f085607472f0251bc65116ef5
+
 Package: libpangoxft-1.0-0
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -2599,6 +3259,39 @@ MD5sum: 44eb461ba7cb24b29694bb65ad8d5ea5
 SHA1: 38bcc09fea38c92f2e3fb95c3ec9f68232965c58
 SHA256: 3a4e0c8f6e3798d74a33ce98bf96aa16fd697cb4bbdffd7e980a6381584482a1
 SHA512: ea36fa50704674fea20bdc1cb63623a21187da734dc8e83b8afc4c113f6dfaf6cc15f044c0f121f9b7ed3946581e0f04053a43a4570b5039998ce1bc300a61e5
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangoxft-1.0-0
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 119
+Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libx11-6, libxft2 (>> 2.1.1), libxrender1
+Filename: ./amd64/libpangoxft-1.0-0_1.48.9+ds1-2_amd64.deb
+Size: 53360
+MD5sum: 76faf43a45bcfce98c7df3395c571720
+SHA1: 8bd458314d51f70d0640362edfe45b6c4ff223a3
+SHA256: 25e05b2135e8583cd44c923a123a6fb4ce659858d71646e9eace2d0ab02559cc
+SHA512: dbbaddb40c456f99be66884fee3f423e170d74f790164628cd3644afde6be563d7977928e1c3fd198a6b730b3a6ef85026f38c900bc7961441227de65cc34c26
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3111,6 +3804,25 @@ SHA512: b1d4cd3a3479ee5c7a75d89f8e5a8f3c72090d8257995be2f64751ad2bcd82dd44b637b4
 Description: debug symbols for pango1.0-tests
 Build-Ids: 27af266d64d552de6f33eb843151d1c4d7b33652 30b67123ec618198c0d3e3d62e7ccae7b9c262bc 411c3b65cd3d125e7c1f388e12ef8ac61f936dbb 4e345c58787893a34bc94467b548986b230fd4d8 4e4a9df3cab00f6b83a6fe3f18654f99e061b3f0 578bd5476120acbc609143c5fd39ad9894670ae2 5b5007f8a55b160213875621a1dc3fba18e758f7 736cf5ecf9d7964e3c86cd7034809537dc0809f2 7f4ecf579d34c05edd83488d1f8e8e7ca862d3eb 7fd67edf7d3276a4468c33515ea1f282230206e8 8581a2eef5e6c8c153eb694f234ec8c0e0fa18ff 9325b6646a3a07d727ed2b8c89d3c8037ec82fad 9bab541882ecfc83e79e99187c96731b4c727eca a83bbdd18594875eb3ebc3021afd6053bb344e4a acdc74bf3e2070063224eac588bb299b9feee548 af76df0b773ad6255d4e54004546278325b42d00 b068c26c695f68d0aebc74d5c96e2d8ef700a927 bac4e9f051f9331e18023357bb5151c80af98340 bc77dc16314d1821f994889ab343856e269266d0 c3ca75fc3d389a40c307e2a2d9717581cf19147d c89892852999cfeec0c3445ba1785c79f8317353 d37b583c3d889214519b693413a49b05be230b4b e480233b387e382a9d033ffb64a6bb298b3587fb ec0ca9e7497ab3bda59c7e8ffae5d8bd50f23f28
 
+Package: pango1.0-tests-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 420
+Depends: pango1.0-tests (= 1.48.9+ds1-2)
+Filename: ./amd64/pango1.0-tests-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 195932
+MD5sum: 9f48fe40c2747503b7a71ac76849a711
+SHA1: 4ec6176c8bed96e19396bc4f976713bc172c3f47
+SHA256: b756dbaf375fdbe7535fe9d238b0302332f49ea61e256b7eb5be4a52e30d3127
+SHA512: f4f3149f293ae873e64e81ca60855a15e59a63d190f0af38fd616c0f418ecc127c40b9c90337c915c1c20383052c7787b3ef24a595fb3ba36f27fbf7c15e5b14
+Description: debug symbols for pango1.0-tests
+Build-Ids: 27af266d64d552de6f33eb843151d1c4d7b33652 30b67123ec618198c0d3e3d62e7ccae7b9c262bc 411c3b65cd3d125e7c1f388e12ef8ac61f936dbb 4e345c58787893a34bc94467b548986b230fd4d8 4e4a9df3cab00f6b83a6fe3f18654f99e061b3f0 578bd5476120acbc609143c5fd39ad9894670ae2 5b5007f8a55b160213875621a1dc3fba18e758f7 736cf5ecf9d7964e3c86cd7034809537dc0809f2 7f4ecf579d34c05edd83488d1f8e8e7ca862d3eb 7fd67edf7d3276a4468c33515ea1f282230206e8 8581a2eef5e6c8c153eb694f234ec8c0e0fa18ff 9325b6646a3a07d727ed2b8c89d3c8037ec82fad 9bab541882ecfc83e79e99187c96731b4c727eca a83bbdd18594875eb3ebc3021afd6053bb344e4a acdc74bf3e2070063224eac588bb299b9feee548 af76df0b773ad6255d4e54004546278325b42d00 b068c26c695f68d0aebc74d5c96e2d8ef700a927 bac4e9f051f9331e18023357bb5151c80af98340 bc77dc16314d1821f994889ab343856e269266d0 c3ca75fc3d389a40c307e2a2d9717581cf19147d c89892852999cfeec0c3445ba1785c79f8317353 d37b583c3d889214519b693413a49b05be230b4b e480233b387e382a9d033ffb64a6bb298b3587fb ec0ca9e7497ab3bda59c7e8ffae5d8bd50f23f28
+
 Package: pango1.0-tests
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -3126,6 +3838,39 @@ MD5sum: bcdfb7e985fa34a985f5b6f173df6e78
 SHA1: 15941f4524ee4cc72cb87c35945d1d5dc2201916
 SHA256: c63f321e327f3b48493ea8d5efb651962dd2d3224748a036cda503f92a86b46b
 SHA512: 48bd82ddb90664187310fcae5e847491b13d108f162ad6b6390173565671bc2191e70104068e28875bbfdcae43ce5b5492d2bcd0ff6ce1fe5d605008f7cc4075
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text - installed tests
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains test programs, designed to be run as part of a
+ regression testsuite.
+
+Package: pango1.0-tests
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1717
+Depends: fonts-cantarell, fonts-noto-color-emoji, fonts-noto-core, libc6 (>= 2.4), libcairo2 (>= 1.12.10), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./amd64/pango1.0-tests_1.48.9+ds1-2_amd64.deb
+Size: 202452
+MD5sum: 82f883d764a334f2218ffcfe178e6566
+SHA1: 8532e8fe65cbc362255a02497e37f965df7afce7
+SHA256: 2b1dddcfbdd0eb43aea209e4ee452ce06f98334f1403c350155c531a54a53b1e
+SHA512: 55d9fe7e9e56f3e340dd763687b62603c29514ee4b2fe59430459829cfec17c0faeabbed6db1b54355c63ff653b18816c745724d764d7014392dd3c466e4480a
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text - installed tests
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3163,6 +3908,25 @@ SHA512: 001e72bb34ed766bcc2d0d595d1e612958cfa8c83af1fd4835a1c68ea028a1616cce33b2
 Description: debug symbols for pango1.0-tools
 Build-Ids: 3d453f38df19c1be7a3b015b45f1785a93d463ac 5b04996a9af6230bc5041cae2c5801f7dade24fd e5dcc7cace0f2c4df2a3d6bcab09d0c755076d03
 
+Package: pango1.0-tools-dbgsym
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 104
+Depends: pango1.0-tools (= 1.48.9+ds1-2)
+Filename: ./amd64/pango1.0-tools-dbgsym_1.48.9+ds1-2_amd64.deb
+Size: 61356
+MD5sum: e4a88209229ac5dbfa85e5bef7581c3b
+SHA1: 33ef45f751e9d11514b275a79fea988391a4cd2a
+SHA256: 44766da4d275c822e29e1abfb71e6af818e4021c0bd1605ef1ba3a7891c0091e
+SHA512: 87e2365067349fbd7f4d7f0245f07345256ec68cd05a93d7cd01f1fb67e41d4cd6e4a0d83cf95dc4343a3b1952657b417c3d6a80b6ccf8f1d87237cb36d47393
+Description: debug symbols for pango1.0-tools
+Build-Ids: 3d453f38df19c1be7a3b015b45f1785a93d463ac 5b04996a9af6230bc5041cae2c5801f7dade24fd e5dcc7cace0f2c4df2a3d6bcab09d0c755076d03
+
 Package: pango1.0-tools
 Architecture: amd64
 Version: 1.48.9+ds1-1
@@ -3181,6 +3945,42 @@ MD5sum: 22ac89549b53f9665050583046802248
 SHA1: 460843c55ae483867ba9e0ded826939072703f74
 SHA256: ed747ea21b121c80b1e2c7d2ff558cfe06b2226a67f268dda57fb3cb41b0d77b
 SHA512: 6d696255ffb72ff801d352e5054043068c81b6c255428d3caabf2e4d8303ac93325beb46c7077bfe298fe765cf4b00abf6d1b284a9e7637134b9bda53e63236d
+Homepage: https://www.pango.org/
+Description: Development utilities for Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. However, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+ 2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends.
+ .
+ This package contains pango-view, the Pango text viewer, and pango-list,
+ a utility that outputs a list of compatible system fonts.
+
+Package: pango1.0-tools
+Architecture: amd64
+Version: 1.48.9+ds1-2
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 173
+Depends: libc6 (>= 2.7), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2), libx11-6, libxft2 (>> 2.1.1)
+Breaks: libpango1.0-dev (<< 1.42.4-4)
+Replaces: libpango1.0-dev (<< 1.42.4-4)
+Filename: ./amd64/pango1.0-tools_1.48.9+ds1-2_amd64.deb
+Size: 63760
+MD5sum: d5d47714656df4e354bf02b75d0a87cd
+SHA1: 7d83c4817c20df5997e46ed4a88422692951f0c8
+SHA256: 18663d0215f3a8a249b2388bb3f935b553eabda8cbccbd7370108bec18fee438
+SHA512: 22b194446bfc28bf5c77d8038c272e1ad6102c35bcb6f2792750b680387112daa98eccef4077ceada8996a02e2fd33041eb762313dd48acca974526505fd033c
 Homepage: https://www.pango.org/
 Description: Development utilities for Pango
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3738,6 +4538,41 @@ Description: Layout and rendering of internationalized text - gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
+Package: gir1.2-pango-1.0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 169
+Provides: gir1.2-pangocairo-1.0 (= 1.48.9+ds1-2), gir1.2-pangofc-1.0 (= 1.48.9+ds1-2), gir1.2-pangoft2-1.0 (= 1.48.9+ds1-2), gir1.2-pangoot-1.0 (= 1.48.9+ds1-2), gir1.2-pangoxft-1.0 (= 1.48.9+ds1-2)
+Depends: gir1.2-freedesktop (>= 0.9.5), gir1.2-glib-2.0 (>= 0.9.5), gir1.2-harfbuzz-0.0 (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/gir1.2-pango-1.0_1.48.9+ds1-2_i386.deb
+Size: 62408
+MD5sum: 528eb179bdfa9590a863f1a853169aee
+SHA1: 7e6fc7b65b74b84eecb90ac47b5cbe0bf8235838
+SHA256: 84d3465835c5d8c598c60f9a655862c0241754cabe1d992d262e0d2f8314381d
+SHA512: 6974746e5b832d975631a06dcd2adc24b03be4778910eded25860db8e8e0cf05c2bb44701fceeb24999c1e256d9125b2fc2a17f50402a853865f55d7ea7c10db
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text - gir bindings
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
 Package: libpango-1.0-0-dbgsym
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3755,6 +4590,26 @@ MD5sum: 7d8cc5db4b351364208dda98b9d91b30
 SHA1: a67666aea2e488bc3d5f8465a16346cf0bcba4c8
 SHA256: df6f392487628595c932d57edfb191fba065e00a2c6e632bb11e3e8ef805b451
 SHA512: 2bfcc9a9b45f8b3d49afb67e70a4f17af71f88981abc6ff494012dd4d8ae32c66446cc75faf13f43b3e1ef149c21583ecc4eb1d116da065eff06a72d5fd7a6db
+Description: debug symbols for libpango-1.0-0
+Build-Ids: a6d812faedcb3d3189930bb326ecc40e62ba6bb2
+
+Package: libpango-1.0-0-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 334
+Depends: libpango-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpango-1.0-0-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 292420
+MD5sum: 49abc21eb4d1d1c09f9a6d2a3777db28
+SHA1: 31cc14bca6f08122055e4d2e7223daaa3b092834
+SHA256: bcc4b99f276305b78f3427b46a564938d7dcee4905916e3cb418ea6d2806de19
+SHA512: c1488961f29ad9343b95fc131212ab15adf128759a38ddd895f3ed0f4539fa2b11b755f5d5abd11283e90ba25b325209a16f5983189b5f31984553de80a2c615
 Description: debug symbols for libpango-1.0-0
 Build-Ids: a6d812faedcb3d3189930bb326ecc40e62ba6bb2
 
@@ -3792,6 +4647,40 @@ Description: Layout and rendering of internationalized text
  .
  This package contains the shared libraries.
 
+Package: libpango-1.0-0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 484
+Depends: fontconfig (>= 2.1.91), libc6 (>= 2.4), libfribidi0 (>= 1.0.6), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libthai0 (>= 0.1.25)
+Breaks: libpangocairo-1.0-0 (<< 1.44.7), libpangoft2-1.0-0 (<< 1.44.7), libpangoxft-1.0-0 (<< 1.44.7)
+Filename: ./i386/libpango-1.0-0_1.48.9+ds1-2_i386.deb
+Size: 208540
+MD5sum: e21b6f59cec0aaaea9cbe16e865bb52a
+SHA1: 1151e5d69bcd4d2c732101137afaf422eba2fd9b
+SHA256: ea1f0c186d377f1a3c98dc6f430c1b17a900ec22e3de8119a7db397d81f5ca66
+SHA512: 8614ba12ffdfbce60f0526b7f3dceda51c4b99e9455d22747f7fb4224cac1f455a24198441c73fb210e308b2101df8ca26003f3ec27854a597b5521c1ed7d7f7
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
 Package: libpango1.0-0
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3809,6 +4698,43 @@ MD5sum: eca91edc6bb403ad5d8b349a115a9de9
 SHA1: 84109962a15ac73045d342a6f3b4b256a7dd83f8
 SHA256: 021b37f064d64a5dd7a1e006791d8c6286b37ad28c89e016950afad915a7536d
 SHA512: ff009efe19b4cee63e500de4c7d438f5901116d4390b737d94a35d1d9f8f29728c98e338da91653bb4e5d3cd3029910c446a7f56e6d703fc085f84534df840ba
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text (transitional package)
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This is a transitional package and will be removed in a future release.
+ Third-party packages should depend on the individual libraries that they
+ use instead. If another package depends on this one, please report that
+ as a bug.
+
+Package: libpango1.0-0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 75
+Depends: libpango-1.0-0 (>= 1.42), libpangocairo-1.0-0 (>= 1.42), libpangoft2-1.0-0 (>= 1.42), libpangoxft-1.0-0 (>= 1.42)
+Suggests: libpangox-1.0-0 (>= 0.0.2-2~)
+Filename: ./i386/libpango1.0-0_1.48.9+ds1-2_i386.deb
+Size: 40780
+MD5sum: 1971eec96cf5a945cb6322358238fff4
+SHA1: fdee8c910b8619fb5e944334c8c048bcd60fe82e
+SHA256: 7a3949772372b32132d57ff5168dd4a0acfd6ad1d928ddbce40d816094d52e09
+SHA512: 46d889297a82991c45317e4216f17531a48ae8bdc8aea362f031d964022879888bf914c43cc5ed1bc532398a897d66b8654b5307a276244017537e879e9d693b
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text (transitional package)
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3864,6 +4790,41 @@ Description: Development files for the Pango
  This package contains the header files and some files needed for development
  with Pango.
 
+Package: libpango1.0-dev
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1509
+Depends: gir1.2-pango-1.0 (= 1.48.9+ds1-2), libcairo2-dev (>= 1.12.10), libfontconfig1-dev (>= 2.11.91), libfreetype-dev (>= 2.1.7), libfribidi-dev (>= 1.0.6), libglib2.0-dev (>= 2.62.0), libharfbuzz-dev (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2), libthai-dev (>= 0.1.22-3~), libx11-dev (>= 2:1.3.3-2), libxft-dev (>= 2.1.14-2), libxrender-dev (>= 1:0.9.0.2-2), pango1.0-tools (= 1.48.9+ds1-2), pkg-config
+Suggests: imagemagick, libpango1.0-doc
+Filename: ./i386/libpango1.0-dev_1.48.9+ds1-2_i386.deb
+Size: 168264
+MD5sum: 10f51e72f5a0820896539166580715c3
+SHA1: 9b6627cbd4f1f1024162223f06505df7eea4f412
+SHA256: b837fe2e362daa88402ace0efe740749de094d528271d753d3870b6b1dc93417
+SHA512: 06502595d0c187ba2764f367c98013ceb4491303f95c0e4cf8142210be9f6dc07809a9d2e18a3d895f91118c66dd46991209d981315a5d7030fc5ea70ac0fddd
+Homepage: https://www.pango.org/
+Description: Development files for the Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the header files and some files needed for development
+ with Pango.
+
 Package: libpangocairo-1.0-0-dbgsym
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3884,6 +4845,26 @@ SHA512: 9c751e0ae5ac8fa3ff30766dfd2b6b7c8162b401e660de0c3700521095e9efd7121b50fd
 Description: debug symbols for libpangocairo-1.0-0
 Build-Ids: 2ab752be047a1df9d20409c4eab36e6d50fa11a9
 
+Package: libpangocairo-1.0-0-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 77
+Depends: libpangocairo-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpangocairo-1.0-0-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 57876
+MD5sum: ce73071c41c59649fb72c0c3ab99c13b
+SHA1: be4db4020cc1d1255497d917744002cf3e6fdbcd
+SHA256: 50429dd55c90a0b94c987c7d3ffa6ab6d5559fd84e6db792cf434c852ced08dd
+SHA512: 8fd8618df7c12f5c07d3476c69d10ddc1ecbca102516797147801ea94ec832f2af825703263d4c1be81413a06e05e8fa33e3a932221d2baa9dc5720cae68af4e
+Description: debug symbols for libpangocairo-1.0-0
+Build-Ids: 2ab752be047a1df9d20409c4eab36e6d50fa11a9
+
 Package: libpangocairo-1.0-0
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3900,6 +4881,39 @@ MD5sum: 27fb70ba04c99ddf55e72b88960ab7a1
 SHA1: 7a22465b342fbe895216adea993390b7a42c97e7
 SHA256: eb4cf77eb63e07a2b8d2a0c6158f794e0389a489babe6288eccc72d8b0af50ee
 SHA512: fb3e9b51cc44b3fc887fb0cf16abf355872e80fcf7a5ed97b055c5ec6f35f45dad42cdea9dca684d23da54f4654f731aa9d4911be95aa70cf5c261dab027991b
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangocairo-1.0-0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 140
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpangocairo-1.0-0_1.48.9+ds1-2_i386.deb
+Size: 61760
+MD5sum: 378f16f55db46e68cb6cec2a27d7dff6
+SHA1: 494d8925869a552b2bdc66868d7dab7318150ba7
+SHA256: bf44c6b0908ae2be9e169e8fd523ea3e25991c2f3ddb382bf6d5b93e97057143
+SHA512: cd6c2c4ecb2e4f7da9908ec925d636165ae5b1743ef9adc36f336c62875733e94ad4d4727e858b24034266d0a59223c41a4dd90142cc641d29fa6e364e6600c1
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3937,6 +4951,26 @@ SHA512: ed7b3b54bae1dd52129ee223e41d3048aa6371569f43a33082bcd35cc34dee80bec712ba
 Description: debug symbols for libpangoft2-1.0-0
 Build-Ids: 8ecaa91581fa01858ed1578c98e127ab7d9cf166
 
+Package: libpangoft2-1.0-0-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 128
+Depends: libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpangoft2-1.0-0-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 101596
+MD5sum: fe57686f81f969a3783b8062ca974f24
+SHA1: 1238f4e9e58ecd42f3c61cdcb8c6df25aae806e7
+SHA256: a2d47759f9ae0d9000553ce02fddf5b336262d305338902df23eb4742470fd51
+SHA512: 7b6e54cc26dff6ec3b5d5d6db9568edf6b316dbdc531fac3fa1574006646ce813dd1cca5419c448288490223d55536153684782c19dfa6e3566297739b95f70a
+Description: debug symbols for libpangoft2-1.0-0
+Build-Ids: 8ecaa91581fa01858ed1578c98e127ab7d9cf166
+
 Package: libpangoft2-1.0-0
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -3953,6 +4987,39 @@ MD5sum: 122d0284598f91e588a5e23d75f59762
 SHA1: 2f88b7e9a90986f9798355f8a8404375850ecb5d
 SHA256: 7872fb189156d85f129ca54af0e52dce262b6a2847684c9e59ab8657d4519764
 SHA512: 643418bf4cb64cc193b26bb1c64ff9bb1b28f9b8200125a7b66cdb0da490d59164e623be8460267b920b3ec764329779851ce6c3da8c9c9cec4e61af2467b86c
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangoft2-1.0-0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 187
+Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.13.0), libfreetype6 (>= 2.2.1), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.6.0), libpango-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpangoft2-1.0-0_1.48.9+ds1-2_i386.deb
+Size: 76592
+MD5sum: 2fc9e8aaf8f528206f438c34cb500d29
+SHA1: 9ea31ff78faf9650746b8c782757a281bde2f905
+SHA256: 23820eb55010402f01dd11df511e32a94e57a9fe4780373b91e09ae55265b767
+SHA512: ea455a3025b44491c5f46ac2e58f6d3a86ab7751eca032820e9a7f890bdb3e67afe089b6ed585500248bf41fa80b843dcda810dd978842337bcf381d7ee79220
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -3990,6 +5057,26 @@ SHA512: 24e3f67c91e887379d1f91a22a9d052a64ad61636c9a2545152f71190e3bab4d59af1cf7
 Description: debug symbols for libpangoxft-1.0-0
 Build-Ids: 34d90fb440f6ea2a94b7aed427fc55a7f31ba9e7
 
+Package: libpangoxft-1.0-0-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 65
+Depends: libpangoxft-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/libpangoxft-1.0-0-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 49576
+MD5sum: f85fa5d8195154101a8557e53458c9cb
+SHA1: 43ca6f69518dc44d2a607258935c6b025ffc5d60
+SHA256: e7055b2484a3fefa7bf4b883ecc4b74d180ff98df3a3a1d39b869f8b8bf3ebe9
+SHA512: 62914032cc56dac37ec6af2d5b5afa16bd9e8b167eeb8ef0e2b477404cef5cdadc80ea3e9aeec8aa5cc507ee4b5329e498cd9bdbcd1c4da795a10edb7498281f
+Description: debug symbols for libpangoxft-1.0-0
+Build-Ids: 34d90fb440f6ea2a94b7aed427fc55a7f31ba9e7
+
 Package: libpangoxft-1.0-0
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -4006,6 +5093,39 @@ MD5sum: 5524b1a41d740f559678f32890e5ca6d
 SHA1: f2c0e6c57422bc97c9088546ae924d683b954997
 SHA256: c99c421ad0f225a9390f4a2d0886d58417e22b0165f31f212e44c692942853b3
 SHA512: f6f02826e3b1331689a1129438e53a401714fa183fbc66190dd43dfb66e9ad9d4ecfadd8646767ca0f9717ff4c4cd9694693d7d27a973649c40fe2f7b217af23
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains the shared libraries.
+
+Package: libpangoxft-1.0-0
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 119
+Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libx11-6, libxft2 (>> 2.1.1), libxrender1
+Filename: ./i386/libpangoxft-1.0-0_1.48.9+ds1-2_i386.deb
+Size: 54104
+MD5sum: 2d789cdb8e65f3eb4317fd970927a246
+SHA1: 5b6f1282c0f69ecf2aa23408c9f12aebf222434c
+SHA256: 1409ba5f4dc2ada555bc18c17dac648dca89681e16f1d87e9b2481c9dc8e03ce
+SHA512: 3e37e6cab59cee932e5b48dc5fc6a3c5d389d91a7d1874c5120ff7ced81d1333badccf17ee7038af27b5693f745991040826ea5e0f0dbea82efd4dd97132dfc1
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text
  Pango is a library for layout and rendering of text, with an emphasis
@@ -4112,6 +5232,25 @@ SHA512: fef70eef1bd5be4ef6441cd2a4c35449fddfeda679a8daefee907ccdbd04692bac87a4a3
 Description: debug symbols for pango1.0-tests
 Build-Ids: 046cd124488ea73291e51a73c15c94f47123c67a 0696ba5d992f9a342c3ee09a6bc760afdcd4c41c 18a46aac2e48809953ceda2a962d6a1350f7b714 1e876c03cae8a9ac849a7846f8c02cdee84290e9 212b723627e2eeaa70898356a176fff00b80cc5b 332cab4669ed4e56d1560886fe523121e1e9a7a1 4c286aeb47f81295a57fd507b29c028d665397c4 5003d9459ce8c0e00be79e5b0f38758ba8084b04 591b97f771d3428691a2b250e05b710d40dae7f8 61ebbe4e4d42dbff4aa1db8f6e43e5a1bb3eab2c 75f3a50ab0ff5143ce715ee842afd26c845fd3bf ac7e5c9e64cbdef0ea9c1904344e3a7d32066623 b0aefb497115bc894c6d95255c2b7d06ab9b9e39 b2137527b48f7bba4c6e3ba337507534be9b0db3 b685cd46ef76b2e657658e731b5d92423be4aef6 c0e42f2a7a2caa6fb3bf1c73609d3716475b9c05 c1d1124fc8b20244a9e928c99fdc5852d0e22bec c2d8d770dc859fbbf8bddf337f55134d9bd9708f c99c0f7b31d009730c3f91e50fb84504f7578488 c9cd1a98a001ea31a7a7cc7642629895439603a6 ca378d1125920a63c2445e61bf047edbf65c0aef e527f10bf7361bd33216599780e188a7b58f0ed1 e7ac4bfa522b89969dfe1b9f0a1dd5db39328719 fc8ff49d57785c80c785ad06920d1188ba755674
 
+Package: pango1.0-tests-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 346
+Depends: pango1.0-tests (= 1.48.9+ds1-2)
+Filename: ./i386/pango1.0-tests-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 167360
+MD5sum: 173b6fb9d8fb7fda5714281bb310eb27
+SHA1: a9b45be25d374779fcfd33c7cac6d4c98a3547c3
+SHA256: 810fb0faadc81a2d5c2be7c28e97bc38d23f8cfc206efbdf562c1e2108d51aa6
+SHA512: ae911cb022d07a605dfe3771434231807dc59ad934ddb73ebf14c0adc18b39af248df472991cb3c811c616ceba1eecf65e043905372bf981f5ad89c8e8bfdeb6
+Description: debug symbols for pango1.0-tests
+Build-Ids: 046cd124488ea73291e51a73c15c94f47123c67a 0696ba5d992f9a342c3ee09a6bc760afdcd4c41c 18a46aac2e48809953ceda2a962d6a1350f7b714 1e876c03cae8a9ac849a7846f8c02cdee84290e9 212b723627e2eeaa70898356a176fff00b80cc5b 332cab4669ed4e56d1560886fe523121e1e9a7a1 4c286aeb47f81295a57fd507b29c028d665397c4 5003d9459ce8c0e00be79e5b0f38758ba8084b04 591b97f771d3428691a2b250e05b710d40dae7f8 61ebbe4e4d42dbff4aa1db8f6e43e5a1bb3eab2c 75f3a50ab0ff5143ce715ee842afd26c845fd3bf ac7e5c9e64cbdef0ea9c1904344e3a7d32066623 b0aefb497115bc894c6d95255c2b7d06ab9b9e39 b2137527b48f7bba4c6e3ba337507534be9b0db3 b685cd46ef76b2e657658e731b5d92423be4aef6 c0e42f2a7a2caa6fb3bf1c73609d3716475b9c05 c1d1124fc8b20244a9e928c99fdc5852d0e22bec c2d8d770dc859fbbf8bddf337f55134d9bd9708f c99c0f7b31d009730c3f91e50fb84504f7578488 c9cd1a98a001ea31a7a7cc7642629895439603a6 ca378d1125920a63c2445e61bf047edbf65c0aef e527f10bf7361bd33216599780e188a7b58f0ed1 e7ac4bfa522b89969dfe1b9f0a1dd5db39328719 fc8ff49d57785c80c785ad06920d1188ba755674
+
 Package: pango1.0-tests
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -4127,6 +5266,39 @@ MD5sum: 786d47d1d51ae19cf79711b396374941
 SHA1: 571986e230de1461cca9fafae9305a21a4e61789
 SHA256: 3d3a409643302f0873dc8cfe1163d933b7fa263cf9b5d712a0d465595f2a6750
 SHA512: 2a3f27bf2027c24878d2d5026b64473fa41e457a66721e225066b426fafe8095a1f220417276626319fc01bf5e1632e966adb13dc3e87157e54fce517d2dd8a4
+Homepage: https://www.pango.org/
+Description: Layout and rendering of internationalized text - installed tests
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. however, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+-2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends
+ .
+ This package contains test programs, designed to be run as part of a
+ regression testsuite.
+
+Package: pango1.0-tests
+Architecture: i386
+Version: 1.48.9+ds1-2
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1687
+Depends: fonts-cantarell, fonts-noto-color-emoji, fonts-noto-core, libc6 (>= 2.4), libcairo2 (>= 1.12.10), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2)
+Filename: ./i386/pango1.0-tests_1.48.9+ds1-2_i386.deb
+Size: 202248
+MD5sum: 9e54c7712059cdba4273e92177768104
+SHA1: b0365206b98c5ddc17fa7755ef20d45e32da459e
+SHA256: 6bc694e658695b1b234b9c9242bbb8d0ceddb1b55c13998a95ad0fc489b439c7
+SHA512: f39c17cf9bd46cbd296d8c624e6edc11e1a71444c5ccc8060a5f8ef4fad7ad3ecb8531d21ea655af2ea0f729686411f9d413733842d1eb56e3e69dde2d9a1fee
 Homepage: https://www.pango.org/
 Description: Layout and rendering of internationalized text - installed tests
  Pango is a library for layout and rendering of text, with an emphasis
@@ -4164,6 +5336,25 @@ SHA512: d1f1e85937509f27ef1afffc1fd3234bf35ceaba03a4846dfc494c3bb26a29dc7960d9e7
 Description: debug symbols for pango1.0-tools
 Build-Ids: 5550d9e26c0e347dd7a51ca830ad358c78405ad6 752158f5f17863c01e2a1b2d40ac35a63b3e4443 bebd9431c2f0e353c83482687ec7122de633e052
 
+Package: pango1.0-tools-dbgsym
+Architecture: i386
+Version: 1.48.9+ds1-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 88
+Depends: pango1.0-tools (= 1.48.9+ds1-2)
+Filename: ./i386/pango1.0-tools-dbgsym_1.48.9+ds1-2_i386.deb
+Size: 53068
+MD5sum: 5e64a74ad4da1631569b9bba3a60f348
+SHA1: 36354bf3c29c283795148c943a1b63b92926424c
+SHA256: 02041565b7f6829d003751850a03105903bc9464f59ae55a6727b4672c2de9a5
+SHA512: 5614b21c0e275ce0b6eca3a537f040e54ea920483af8a4cdc7c6adc6a60723ec7a5efd41748aa9df5cd6d6d9b64c9e0b0eb2715adbad7693951983c6bd8f1eb4
+Description: debug symbols for pango1.0-tools
+Build-Ids: 5550d9e26c0e347dd7a51ca830ad358c78405ad6 752158f5f17863c01e2a1b2d40ac35a63b3e4443 bebd9431c2f0e353c83482687ec7122de633e052
+
 Package: pango1.0-tools
 Architecture: i386
 Version: 1.48.9+ds1-1
@@ -4182,6 +5373,42 @@ MD5sum: 79decfd8c3ba79da03732259f4231f58
 SHA1: 68d51956691779a0cdb5a2222825c8d651a46c48
 SHA256: 0070764cdf604aff88ddcc3134b4a37dffda77a7fa38886f7a32f7115593d578
 SHA512: 1e9eddfad3e4d15e37a13c429b62009d03d55cf5c523ffdbe8f2857b7541a5edf37a3eab9a55d14677414bfaf17a9c254c4c14168564efab98cb049eee1904e3
+Homepage: https://www.pango.org/
+Description: Development utilities for Pango
+ Pango is a library for layout and rendering of text, with an emphasis
+ on internationalization. Pango can be used anywhere that text layout is
+ needed. However, most of the work on Pango-1.0 was done using the GTK+
+ widget toolkit as a test platform. Pango forms the core of text and
+ font handling for GTK+ 2.0.
+ .
+ Pango is designed to be modular; the core Pango layout can be used with
+ four different font backends:
+  - Core X windowing system fonts
+  - Client-side fonts on X using the Xft library
+  - Direct rendering of scalable fonts using the FreeType library
+  - Native fonts on Microsoft backends.
+ .
+ This package contains pango-view, the Pango text viewer, and pango-list,
+ a utility that outputs a list of compatible system fonts.
+
+Package: pango1.0-tools
+Architecture: i386
+Version: 1.48.9+ds1-2
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: pango1.0
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 162
+Depends: libc6 (>= 2.7), libcairo2 (>= 1.12.10), libfontconfig1 (>= 2.12.6), libglib2.0-0 (>= 2.62.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (= 1.48.9+ds1-2), libpangocairo-1.0-0 (= 1.48.9+ds1-2), libpangoft2-1.0-0 (= 1.48.9+ds1-2), libpangoxft-1.0-0 (= 1.48.9+ds1-2), libx11-6, libxft2 (>> 2.1.1)
+Breaks: libpango1.0-dev (<< 1.42.4-4)
+Replaces: libpango1.0-dev (<< 1.42.4-4)
+Filename: ./i386/pango1.0-tools_1.48.9+ds1-2_i386.deb
+Size: 64724
+MD5sum: 271658d6a239fe6992c5f5faf4ff16c6
+SHA1: 35d0634bedc81a90e1f7431803e25293ddc81476
+SHA256: 65c332216c6aede9fe9e605aca82d8179dcbbf6bb31858cd72cd019ed3dddcac
+SHA512: d9da1f3160a93f5c232885f6c6fbfe46595c4388d058c4daeb7913a437b87121afecf4d072e6eef6669f114a5898f2888da7f19880cf46ae668c0af179b3c3bc
 Homepage: https://www.pango.org/
 Description: Development utilities for Pango
  Pango is a library for layout and rendering of text, with an emphasis
