@@ -3352,6 +3352,103 @@ Description: Windows API implementation - library
  .
  This package provides the Wine library.
 
+Package: mtr-dbgsym
+Architecture: amd64
+Version: 0.94-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 192
+Depends: mtr (= 0.94-2)
+Filename: ./amd64/mtr-dbgsym_0.94-2_amd64.deb
+Size: 156540
+MD5sum: c50c0ed2d2cec7874a757e008d8bcc16
+SHA1: 34e8c48476d4b1247c9be439c7611d9cfad74660
+SHA256: cbf23f5c8629938f83ffa33902932e5fd72fe03cd9a80059d74686465f529e55
+SHA512: 9d061763c93f0193cafc9d01a6eec0987e35baf4bc66f69ae6039a4233b8239e67cba99295d83273430e26a12f936c653b653505f4ba1c4dff7637e1120cbfa5
+Description: debug symbols for mtr
+Build-Ids: 20d1760dfcc7585c5153c91bf50574951e609e4c d848e04700e0bad5e76367bd9e85cfb8c479dc01
+
+Package: mtr-tiny-dbgsym
+Architecture: amd64
+Version: 0.94-2
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 163
+Depends: mtr-tiny (= 0.94-2)
+Filename: ./amd64/mtr-tiny-dbgsym_0.94-2_amd64.deb
+Size: 131272
+MD5sum: 0af8ee2f82d1eec800eb3ea71f84547b
+SHA1: 56aa27ff1d3b5701a765c7ec147b1a147313ca49
+SHA256: 88bca79bf6887c8904cf44ddc5bfd19b073fca80add5828eccfde2b149f2c83b
+SHA512: 8c197230e84c2cd83bc8acc4e93b9a90b65959ec17a86299e3f6373b819057dda598535cd52794b096da9c6c4ecbcd251d33a239bb9452a054875939418c0e6f
+Description: debug symbols for mtr-tiny
+Build-Ids: 4d862b1c33cf1160608c42968dbd3874e4037134 a2f30b99d53f3bbb052898505a7e1f5d3bd90b2e
+
+Package: mtr-tiny
+Architecture: amd64
+Version: 0.94-2
+Priority: optional
+Section: net
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 160
+Depends: libc6 (>= 2.29), libjansson4 (>= 2.0.1), libncurses6 (>= 6), libtinfo6 (>= 6)
+Breaks: mtr, suidmanager (<< 0.50)
+Replaces: mtr
+Filename: ./amd64/mtr-tiny_0.94-2_amd64.deb
+Size: 70796
+MD5sum: 5890dfff0d4b9dd4f89b0f65e2cdc45e
+SHA1: 03e4d272ce4c008e7f0460760f2d53689c60de76
+SHA256: 1a74a20cfcad7c669724b783abfaba17eed094d59b8c37875850adfe66db651c
+SHA512: e56abeef0a5869915fa71f3af63221e53f51a3ed9febe9464a943dd6fa2c1c86cd5eeeb2854b559c384fbdb41d1f51ec5c520659a1a37b80aa4475d23b5bb4b3
+Homepage: https://www.bitwizard.nl/mtr/
+Description: Full screen ncurses traceroute tool
+ mtr combines the functionality of the 'traceroute' and 'ping' programs
+ in a single network diagnostic tool.
+ .
+ As mtr starts, it investigates the network connection between the host
+ mtr runs on and a user-specified destination host.  After it
+ determines the address of each network hop between the machines,
+ it sends a sequence of ICMP ECHO requests to each one to determine the
+ quality of the link to each machine.  As it does this, it prints
+ running statistics about each machine.
+ .
+ mtr-tiny is compiled without support for X and conserves disk space.
+
+Package: mtr
+Architecture: amd64
+Version: 0.94-2
+Priority: optional
+Section: net
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 214
+Depends: libc6 (>= 2.29), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libjansson4 (>= 2.0.1), libncurses6 (>= 6), libtinfo6 (>= 6)
+Breaks: mtr-tiny, suidmanager (<< 0.50)
+Replaces: mtr-tiny
+Filename: ./amd64/mtr_0.94-2_amd64.deb
+Size: 87136
+MD5sum: 0907635c64ee6055d64d68cdb5eedbbf
+SHA1: b9e6b2f76269aaefcc03465326f4468d82146732
+SHA256: 09fbd9b199485210c069ac28912a9abc157a66a2523af5cfbe100cf0fa528d26
+SHA512: 163b81bc15948d2c7831d0e0a888d7fa81afdceb090c290dace7004ed1102e1f8bceab925198714eca7aa80afafea5a7bb71d9d98927a3985e8ab65cd6929229
+Homepage: https://www.bitwizard.nl/mtr/
+Description: Full screen ncurses and X11 traceroute tool
+ mtr combines the functionality of the 'traceroute' and 'ping' programs
+ in a single network diagnostic tool.
+ .
+ As mtr starts, it investigates the network connection between the host
+ mtr runs on and a user-specified destination host.  After it
+ determines the address of each network hop between the machines,
+ it sends a sequence of ICMP ECHO requests to each one to determine the
+ quality of the link to each machine.  As it does this, it prints
+ running statistics about each machine.
+
 Package: nautilus-extension-gnome-terminal
 Architecture: amd64
 Version: 3.38.3-1sean01
