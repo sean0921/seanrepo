@@ -1036,6 +1036,26 @@ Description: Intelligent Input Bus - development documentation
  .
  This package contains the reference manual.
 
+Package: idle-python3.8
+Architecture: all
+Version: 3.8.10-1
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 1347
+Depends: python3.8, python3-tk, python3.8-tk, libjs-mathjax
+Enhances: python3.8
+Filename: ./all/idle-python3.8_3.8.10-1_all.deb
+Size: 357200
+MD5sum: 2d75f7c04c9aafa6450accd5ccbfd07a
+SHA1: 1267b48643a101effdf158ae949ffc8696a2f143
+SHA256: 43d07b107dcd8ba01a43ab42e9a954d0a3d2dc2219d838ce26c6386370ef5eac
+SHA512: 6c294dbbd9337fcfb7f53823e79a2ee76d54d0b5a57a6d423fee7f895e95f3f8dde5dd785ac9ccc2b7deb4943ef52a85340a4aa6c1cdf60200f22f55cc79fbee
+Description: IDE for Python (v3.8) using Tkinter
+ IDLE is an Integrated Development Environment for Python (v3.8).
+ IDLE is written using Tkinter and therefore quite platform-independent.
+
 Package: libcloudproviders-doc
 Architecture: all
 Version: 0.3.1-2
@@ -1236,6 +1256,29 @@ Description: Documentation files for the Pango
  This package contains the HTML documentation for the Pango in
  /usr/share/doc/libpango1.0-doc/ .
 
+Package: libpython3.8-testsuite
+Architecture: all
+Version: 3.8.10-1
+Priority: optional
+Section: libdevel
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 31467
+Depends: python3.8 (>= 3.8.10-1), net-tools
+Suggests: python3-gdbm, python3-tk
+Filename: ./all/libpython3.8-testsuite_3.8.10-1_all.deb
+Size: 4137336
+MD5sum: 27c56f39dba89363e19fe6b5d4924785
+SHA1: a9117a543974895714531e92a33085896806970f
+SHA256: 52335f0a57398cec9426169c412ad8a3bc1068ff36c61dc926b3d7edcbedf7cf
+SHA512: 6abf99fbff5ae2b0982244554352c2980f9344588c3c29419debd18ef4f1251bfbcfd224cd21f4d9bbdf3903b51d158a6b50d34f927b407f8e0af1322f06f482
+Description: Testsuite for the Python standard library (v3.8)
+ The complete testsuite for the Python standard library.  Note that
+ a subset is found in the libpython3.8-stdlib package, which should
+ be enough for other packages to use (please do not build-depend
+ on this package, but file a bug report to include additional
+ testsuite files in the libpython3.8-stdlib package).
+
 Package: libqalculate-data
 Architecture: all
 Version: 3.20.1-1~sean00
@@ -1383,6 +1426,58 @@ Description: Intelligent Input Bus - introspection overrides for Python (Python 
  .
  This package contains GObject Introspection overrides for Python that
  can be used by Python applications using IBus.
+
+Package: python3.8-doc
+Architecture: all
+Version: 3.8.10-1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 51539
+Depends: libjs-jquery, libjs-underscore
+Suggests: python3.8
+Filename: ./all/python3.8-doc_3.8.10-1_all.deb
+Size: 10537828
+MD5sum: 10ad2ffefa089a4a02e8cf0c0f22167a
+SHA1: 30d2b7b31843375687cbedb63f90abea43d89f92
+SHA256: 8d38423c5fecd5752525472ed7cbd9595a8314e2e96935cb5c77a98c1d80d643
+SHA512: 8e88bcac598098f5371946ba24fc3f08a289dadad1e14f9974b275b23e7b1258ddda4ae947fdcbf545a8403c0be4fa687830e737d113a752fc3190d4b219b775
+Description: Documentation for the high-level object-oriented language Python (v3.8)
+ These is the official set of documentation for the interactive high-level
+ object-oriented language Python (v3.8). All documents are provided
+ in HTML format. The package consists of ten documents:
+ .
+   * What's New in Python3.8
+   * Tutorial
+   * Python Library Reference
+   * Macintosh Module Reference
+   * Python Language Reference
+   * Extending and Embedding Python
+   * Python/C API Reference
+   * Installing Python Modules
+   * Documenting Python
+   * Distributing Python Modules
+
+Package: python3.8-examples
+Architecture: all
+Version: 3.8.10-1
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 1767
+Depends: python3.8:any (>= 3.8.10-1)
+Filename: ./all/python3.8-examples_3.8.10-1_all.deb
+Size: 484044
+MD5sum: 16ca2055a1213f88179ea4653e47bd6f
+SHA1: d8fc6e1134e2c6972b72043eb4c89286e434b089
+SHA256: 5f124992133648b426d0a9522248e3e2bdda5c9335807faeafc696aeb5194687
+SHA512: 940ec53418d9f0fe53b343ba54217d24966c5dccdcc1c02020dc2eb4e9e1eed32fb406ff122915a80de17eda5800550cc70884b3ff3376ad32c13a6916a970a8
+Description: Examples for the Python language (v3.8)
+ Examples, Demos and Tools for Python (v3.8). These are files included in
+ the upstream Python distribution (v3.8).
 
 Package: wayland-protocols
 Architecture: all
@@ -3696,6 +3791,130 @@ Description: Layout and rendering of internationalized text
  .
  This package contains the shared libraries.
 
+Package: libpython3.8-dbg
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 65702
+Depends: libpython3.8-stdlib (= 3.8.10-1), libbz2-1.0, libc6 (>= 2.29), libcrypt1 (>= 1:4.1.0), libdb5.3, libexpat1 (>= 2.1~beta3), libffi7 (>= 3.3~20180313), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.7.15), libssl1.1 (>= 1.1.1), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2), libuuid1 (>= 2.20.1), zlib1g (>= 1:1.2.0)
+Filename: ./amd64/libpython3.8-dbg_3.8.10-1_amd64.deb
+Size: 13174208
+MD5sum: 3f2f17423357ffb52c3e6004244edce9
+SHA1: 911f46c22d7a4823c7323e1df03ae2a87c0b7ffa
+SHA256: 1f7db84aa012d657eecf36d3c8dcc0265af2d6d04220ea2083ec0057f2a6ad2b
+SHA512: 2c7219f29f4a12dd5dbcc894456e2983fb948c2a5f7287b1ecb6fa75869a3d7277016c6b3ad6b53ab6b9c9e30ef7dc265e1e664f8d3d2d26a8b272168039d6c9
+Description: Debug Build of the Python Interpreter (version 3.8)
+ The package holds two things:
+ .
+ - Extensions for a Python interpreter configured with --pydebug.
+ - Debug information for standard python extensions.
+ .
+ See the README.debug for more information.
+
+Package: libpython3.8-dev
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 19061
+Depends: libpython3.8-stdlib (= 3.8.10-1), libpython3.8 (= 3.8.10-1), libexpat1-dev
+Recommends: libc6-dev | libc-dev
+Filename: ./amd64/libpython3.8-dev_3.8.10-1_amd64.deb
+Size: 3845500
+MD5sum: aaa9d7f65817173a7426b7cbffff86e3
+SHA1: 56d9716cc133568cd49fd537c5fe748225c3866a
+SHA256: b7ae905a289bdac239da260031fc304aa50530c4b18218b12a5262274315baa0
+SHA512: dd9b8f527f7d25d659a49e873c19f8da880015fd558b38ef5da8f3eb3a4a2dc48597f4d873437694d6a42999ab7c5668fb8834f97b4f67c7baa9c53da7332911
+Description: Header files and a static library for Python (v3.8)
+ Header files, a static library and development tools for building
+ Python (v3.8) modules, extending the Python interpreter or embedding
+ Python (v3.8) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+ .
+ This package contains development files. It is normally not
+ used on it's own, but as a dependency of python3.8-dev.
+
+Package: libpython3.8-minimal
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 4789
+Depends: libc6 (>= 2.4), libssl1.1 (>= 1.1.1)
+Recommends: libpython3.8-stdlib
+Conflicts: binfmt-support (<< 1.1.2), libpython3.8-stdlib (<< 3.8.0~b1-1~)
+Breaks: libpython3.8-stdlib (<< 3.8.0~b1-1~)
+Filename: ./amd64/libpython3.8-minimal_3.8.10-1_amd64.deb
+Size: 762880
+MD5sum: 0f92c747f94c9326ec64f428c2913750
+SHA1: 60d7ae70af66b98afb3c5dbe92583ae64a838cc1
+SHA256: 9c12f368e028095611098d0cb810aa40c0929285c27c417b7c61f3a6ed445f8f
+SHA512: e02efbfb1e16bfeb7b63ad3800ab0e3690c3cd3d8e231bd0aee7b9f4e3c0c6dd5a6d44eb78bd73e668d96551113d857f226f15da2b5106a8f6c59bc3e6bbd2d8
+Description: Minimal subset of the Python language (version 3.8)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.8-minimal.
+
+Package: libpython3.8-stdlib
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7950
+Depends: libpython3.8-minimal (= 3.8.10-1), mime-support, libbz2-1.0, libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libdb5.3, libffi7 (>= 3.3~20180313), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.7.15), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Breaks: libpython3.8-testsuite (<< 3.8.0-4)
+Replaces: libpython3.8-testsuite (<< 3.8.0-4)
+Filename: ./amd64/libpython3.8-stdlib_3.8.10-1_amd64.deb
+Size: 1728232
+MD5sum: 6c858ffdd57555e54f8471212fb0da5e
+SHA1: 0a1c55a482a006dd12c356aeb2cf46fcfa611675
+SHA256: 7ac9c5cb0e8502da2661626355a31151d99aa85b2f665b5ee303c5c9ee84e706
+SHA512: 91b4394f01e213e69f61902f08b7f0c433f8e7f69f08ca978b47b7527f52592b0ee1c66cb84d7bb9b1746753450a69823ba000cc89d37b39c6cba8140b07130a
+Description: Interactive high-level object-oriented language (standard library, version 3.8)
+ Python is a high-level, interactive, object-oriented language. Its 3.8 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.8's standard library. It is normally not
+ used on its own, but as a dependency of python3.8.
+
+Package: libpython3.8
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5356
+Depends: libpython3.8-stdlib (= 3.8.10-1), libc6 (>= 2.29), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Filename: ./amd64/libpython3.8_3.8.10-1_amd64.deb
+Size: 1608564
+MD5sum: 82c961d5a16f3e7707d228718be1c199
+SHA1: ff36d69e63ecb029d24ea50b3bc9d9f00e5a26d0
+SHA256: bf219da4c9958fdbe08d68206708cc91a131f03e9fe8f60de907f4a789b23d1e
+SHA512: 4d95c351dcb0e0e2a6533e966548f8ace27e79ced1f2ee8b0b32d4e55185332eef4efca7e98352b66913768dd2522aadc7ef332b36f42684b24cee7339f52847
+Description: Shared Python runtime library (version 3.8)
+ Python is a high-level, interactive, object-oriented language. Its 3.8 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+
 Package: libqalculate-dev
 Architecture: amd64
 Version: 3.20.1-1~sean00
@@ -4535,6 +4754,132 @@ Description: Python 3 bindings for gobject-introspection libraries
  This package contains the Python 3 binding generator for libraries that
  support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
  package. With these packages, the libraries can be used from Python 3.
+
+Package: python3.8-dbg
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: allowed
+Priority: optional
+Section: debug
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 37454
+Depends: python3.8 (= 3.8.10-1), libpython3.8-dbg (= 3.8.10-1), libc6 (>= 2.29), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Recommends: gdb
+Suggests: python3-gdbm-dbg, python3-tk-dbg
+Filename: ./amd64/python3.8-dbg_3.8.10-1_amd64.deb
+Size: 18470688
+MD5sum: ec6803160cb70bf22323e24b15a22f5c
+SHA1: a143f89329d77d825a4abb4af28accd1b1354cb9
+SHA256: f2e2c6fc578046ca3f602e4bda037a8ab8d368bbfa1ce639adb20ed147b7504d
+SHA512: 02492b852dbf096bdf54188d77fdaa0bab90d41187f781f192373553851730cba8215d23ecf3685b3590d70e34dd4d794203f0da564ed1b622f443bdef2f6f5e
+Description: Debug Build of the Python Interpreter (version 3.8)
+ The package holds two things:
+ .
+ - A Python interpreter configured with --pydebug. Dynamically loaded modules
+   are searched as <foo>_d.so first. Third party extensions need a separate
+   build to be used by this interpreter.
+ - Debug information for standard python interpreter and extensions.
+ .
+ See the README.debug for more information.
+Build-Ids: 05409684cbc4a3960ff0fc0e1f9dd64ac23082d1 0835c3b14b802419d7bc9ef0d957dc788cf7db54 09295dffa2666fc7db080db38b921fd6a70ce8d4 0e474b46beb0c9e3402aa4419a2928157369e9f9 1116afb634cb507ad008bbe6987fe84ddea00f89 1a62aed0763262adca9a6f00abb4a6d8b4f30487 23efc8b3a89cd3a3047db105ef22ff61e0d23531 2882de3553f985e7037e5417880c3282aa46b060 2a68bfa7ad051ccdfcc4a9900e01f3f70f9c509d 2cd999a26fa8af32f128e12e5da9ff5c122fab80 301f1cbf4c04d0968dc3ea45999a492458f3d30f 35de2ff9fc68e85e3175669d2a658402704321e3 36e5c55ea56fa62651598683af3742ba594bda8d 48a7ae059ac68eb06908471ef2bd5c669f076742 4fa7a06b95455c0a01403433664101639980a506 578003c0f6091dceae7c7610b84e5e077c4e52f2 58ab0e74d74bf89f8ca229341dc3d06ecc1697a8 5a8bb7d8f8870ef86feb2736511202118fccd46e 5f869a1f326c325fc837db51487ee7fa2c8820a0 62be480f4d0ad48d7bddd88571cbc239754288b1 667adb9743bb4149b09542cba679cb89bb153c58 6b46e9d2f82a588ae7469817a7d13dfdd69744f9 6cbd554bce94017be8911841b4d35c358f0dcfb3 73ac319a0391eaf7d56b897a5ae4a9b56bbaf1bd 7c30baba57b58de83229e7358e76e64e004332a9 97669421c48ac88e8f9d0066a549a92d86fc41f9 a03161e90ea324e28d9057d742cd6ecf788d1026 a56b403b825f9384acd92c12c7d8ca27e3910419 abf2e135658116137ba1bac08cc4ec6f3df94f82 b0e228f63e0a2f805638f7d24a29ac7255e41053 b52f73a6192af43720e4018ceb822ae4c4f7e30b c10e705a978355a674ab6fed977110b8972d7804 ca4865bb4ff7e8b3fd1eb3f208f82270fa24611b d32234a65df57aac7b97b6ab88ff4484a2870a9f d55485c5bebd7679cb246ee0d51a421337d3a3e7 da5738c305d72163665e3d697ffad62b83ca4afb da5ffbc150c4b5326b4767c4619f02879f162676 dc48b0cf98abc6dc36df1b6db9f52df590cf3233 e083558f694c54e4e9c551829b15d65e88657bcb e3af1d15865c5ed43bbf36da06f04ab9758cc3b0 e6b9078aab4f95bf04cda2b0f9775fc27a0d1a4a e76e40bc8f93e058e1465c5a122986ac183c11e0 ebe7cd1eb1209eced19a6f2ef034c556e29ff67c f450be7608a58fa49cd05bcdc51eaff1e2794286 f9824e1b1dd518b08f56ccad111b457000e1188a fb16086777257d4d14bce83995140ffc0154acd9
+
+Package: python3.8-dev
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 518
+Depends: python3.8 (= 3.8.10-1), libpython3.8-dev (= 3.8.10-1), libpython3.8 (= 3.8.10-1), libexpat1-dev, zlib1g-dev
+Recommends: libc6-dev | libc-dev
+Filename: ./amd64/python3.8-dev_3.8.10-1_amd64.deb
+Size: 516080
+MD5sum: 68be20f8879945fd361dd16697f09956
+SHA1: 59fbc8693276109c2c4e13e47ba48a50c2513364
+SHA256: ee730ff5563bf13b5fcc64574d0b8c6bc91f64e9ff3f9e2063301c1f58818ce2
+SHA512: b58a5ae6903a51f60a9176cbac16dd07dd208bbff732af1a2e21f2266d9f4dd82926e434dd7cd99283c2a71fddc7b62f7aa9b7dca6f96d2c2927d3fa4ec76f7e
+Description: Header files and a static library for Python (v3.8)
+ Header files, a static library and development tools for building
+ Python (v3.8) modules, extending the Python interpreter or embedding
+ Python (v3.8) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+
+Package: python3.8-minimal
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5243
+Pre-Depends: libc6 (>= 2.29)
+Depends: libpython3.8-minimal (= 3.8.10-1), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Recommends: python3.8
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: ./amd64/python3.8-minimal_3.8.10-1_amd64.deb
+Size: 1869324
+MD5sum: 50ae191f2bd2eff84f93ef767ecbbe4c
+SHA1: 421deb126d159a94c0661af3dd85f8055ca20136
+SHA256: f89cdaf015428d8f253da6b7bf4ee8669593556d218271e51200a3a005c7e599
+SHA512: 1d736cb8838c872136093c955242f04bca2e11a419b0969c9dadd5b7e77a43d5c8a70e88a987e24922749de5593e7c2591ff17eb2a2cb3a4e9ec6cf0b42b1e71
+Description: Minimal subset of the Python language (version 3.8)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.8-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.8
+
+Package: python3.8-venv
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.8
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 27
+Depends: python3.8 (= 3.8.10-1), python-pip-whl (>= 8.1.0-2)
+Breaks: python3-pip (<< 1.5.6-4)
+Filename: ./amd64/python3.8-venv_3.8.10-1_amd64.deb
+Size: 5384
+MD5sum: 77e9aaf51538cd2d13a478f1dd685d69
+SHA1: e6ba2f7ec86d983c857215eae98c34cd1b1af9fc
+SHA256: 9a7cb48a2f3df5ee784ec888826c78bcee9adc9f7bd04bda0cdb20bcfae6b586
+SHA512: 3be0d4ea0bbd2387d9988bb1223a8b88a904e268457ddc5809ce0ce767b85f0baf91805389dc043ecc22c88f61fff3a7addea7b35fac06dddbcbc659abc04e21
+Description: Interactive high-level object-oriented language (pyvenv binary, version 3.8)
+ Python is a high-level, interactive, object-oriented language. Its 3.8 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the pyvenv-3.8 binary.
+
+Package: python3.8
+Architecture: amd64
+Version: 3.8.10-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 509
+Depends: python3.8-minimal (= 3.8.10-1), libpython3.8-stdlib (= 3.8.10-1), mime-support
+Suggests: python3.8-venv, python3.8-doc, binutils
+Breaks: python3-all (<< 3.6.5~rc1-1), python3-dev (<< 3.6.5~rc1-1), python3-venv (<< 3.6.5-2)
+Filename: ./amd64/python3.8_3.8.10-1_amd64.deb
+Size: 433720
+MD5sum: 3d6e2aedb0a6308b16056609c3f59c85
+SHA1: e12fb1d38c86663ce5141c2a1e76d60e0d477929
+SHA256: 019e3e89c0da1a25df565a654f18a3945421f0af2f251939a8b1541b9da80093
+SHA512: 79254d6bb3c285c13616144bf26382244f4b633a8a86045a5ae76ff8c24d500b6a6f2fad03779636acc7f517131829e4c6175b01252c2656af6f5258938a482d
+Description: Interactive high-level object-oriented language (version 3.8)
+ Python is a high-level, interactive, object-oriented language. Its 3.8 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
 
 Package: qalc-dbgsym
 Architecture: amd64
