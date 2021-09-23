@@ -1502,6 +1502,40 @@ Description: heavily refactored vim fork (runtime files)
  language-specific highlighting and indentation, color schemes, and standard
  plugins.
 
+Package: parallel
+Architecture: all
+Version: 20210822+ds-3~bpo11+0.sean00
+Priority: optional
+Section: utils
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Installed-Size: 2968
+Depends: procps, sysstat, perl:any
+Suggests: ash, csh, fish, ksh, tcsh, zsh
+Filename: ./all/parallel_20210822+ds-3~bpo11+0.sean00_all.deb
+Size: 1969828
+MD5sum: b2272576fd5bbdedbc51dfa2c611b87e
+SHA1: 9751f78f46e06b6854260dc9cb703cb3b6cdf5c4
+SHA256: e2c16df67ca4b0b8b5e255e10d1d418f1e971925c80982270ed8a0bdabc02019
+SHA512: c6f07b7a54c58e2a26d05d5dff8a46a96e684cceabbdde6f4dee27cc935e27ab47b25f589be687ec7500ef891a87ec98c8ce041edbf5920924a59373b591c686
+Homepage: https://www.gnu.org/software/parallel/
+Description: build and execute command lines from standard input in parallel
+ GNU Parallel is a shell tool for executing jobs in parallel using one
+ or more machines. A job is typically a single command or a small
+ script that has to be run for each of the lines in the input. The
+ typical input is a list of files, a list of hosts, a list of users, or
+ a list of tables.
+ .
+ If you use xargs today you will find GNU Parallel very easy to use. If
+ you write loops in shell, you will find GNU Parallel may be able to
+ replace most of the loops and make them run faster by running jobs in
+ parallel. If you use ppss or pexec you will find GNU Parallel will
+ often make the command easier to read.
+ .
+ GNU Parallel also makes sure output from the commands is the same
+ output as you would get had you run the commands sequentially. This
+ makes it possible to use output from GNU Parallel as input for other
+ programs.
+
 Package: putty-doc
 Architecture: all
 Version: 0.76-1
