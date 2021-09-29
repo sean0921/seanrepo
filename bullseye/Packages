@@ -1427,6 +1427,33 @@ Description: Powerful and easy to use desktop calculator - data
  .
  This package contains the data files needed by libqalculate.
 
+Package: libqalculate-data
+Architecture: all
+Version: 3.20.1-2.1+sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 1830
+Breaks: libqalculate20-data (<< 3.20.1), libqalculate21-data
+Replaces: libqalculate20-data (<< 3.20.1), libqalculate21-data
+Filename: ./all/libqalculate-data_3.20.1-2.1+sean00_all.deb
+Size: 305756
+MD5sum: 41fce6e4c497a0b0762212c29ec4bca2
+SHA1: 853767d2944ecb62a9eaa5c5e27201672127c415
+SHA256: 29fd5cd1725a6b75995f22c8a3af7bb4db84c3c9f90e22704d917168e96af5d4
+SHA512: 384b6bb420775d840ef5ce4ab21e5c2a3eb6df3ad9546613d6b44beb47d96ea4b09eee8854e71ad9c2a51328fcb1897efc91f92dd9d6b11d2f3eeb10b7635ac0
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use desktop calculator - data
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision, plotting, and a graphical interface that uses a one-line
+ fault-tolerant expression entry (although it supports optional traditional
+ buttons).
+ .
+ This package contains the data files needed by libqalculate.
+
 Package: libqalculate-doc
 Architecture: all
 Version: 3.20.1-1~sean00
@@ -1451,6 +1478,52 @@ Description: Powerful and easy to use desktop calculator - documentation
  buttons).
  .
  This package contains the libqalculate documentation for developers.
+
+Package: libqalculate-doc
+Architecture: all
+Version: 3.20.1-2.1+sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 307
+Filename: ./all/libqalculate-doc_3.20.1-2.1+sean00_all.deb
+Size: 123940
+MD5sum: 10d4dd50b2b1f1ac45539815b589eda1
+SHA1: 616d3e41705cb5b89cc4c6e4f2443ce1c0d79421
+SHA256: 07cfb6b61a2d422c5c04d53e06b4d39f6f8a9e797d12a27adaad7902e0a0de99
+SHA512: c0f399a3d036f2c568e24090d86ad5f9938f2d6c55b3c72d71c164b216c1001095b6a4b5aae9beeea170cba358deac3e89ca3bf6aa08edbb25cf9e9d3589a206
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use desktop calculator - documentation
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision, plotting, and a graphical interface that uses a one-line
+ fault-tolerant expression entry (although it supports optional traditional
+ buttons).
+ .
+ This package contains the libqalculate documentation for developers.
+
+Package: libqalculate20-data
+Architecture: all
+Version: 3.20.1-2.1+sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 62
+Depends: libqalculate-data
+Filename: ./all/libqalculate20-data_3.20.1-2.1+sean00_all.deb
+Size: 56268
+MD5sum: 17268f5f72549e475cc4d2dbe72db417
+SHA1: 8cbba2f5a178125c5073c579b37dd40dfdb5b650
+SHA256: b549f03c22c9cc65bcad2f65fe4d1c219fdc27392debf710f730ce318d9da6dd
+SHA512: 820c0f6a25393925b0757a1cd51c7d6e4fe9c396db46aeb7c75f11e72e21ebd6dfdb7f30f99fc78415fca6e103127401cdd12797023119c2574a1dbf0753c0e3
+Homepage: https://qalculate.github.io/
+Description: Dummy transitional package for transition to new name
+ This package ensures smooth transition to libqalculate-data and
+ can be safely removed.
 
 Package: neovim-runtime
 Architecture: all
@@ -5022,6 +5095,32 @@ Description: Powerful and easy to use desktop calculator - development
  .
  This package contains the development files needed to build the frontends.
 
+Package: libqalculate-dev
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 10023
+Depends: libcln-dev (>> 1.2), libmpfr-dev, libqalculate22 (= 3.20.1-2.1+sean00), libxml2-dev
+Filename: ./amd64/libqalculate-dev_3.20.1-2.1+sean00_amd64.deb
+Size: 1505648
+MD5sum: 03c4ee04b380cb4994826eae2b0961cf
+SHA1: 33073a3711b8ccbe326343e9198eaea1d7a60c6e
+SHA256: e0bad69f93dfcd97b78306d863a32494b68ac574c096c9cf4518f6bcd51491c3
+SHA512: 4eb8672838dcf06f16390c6a3e6242c79262082f2f63a0333946ab2af2fa99ad311be08fab6c46d1be180a7dee3e9caf5c463b94624a50305ac905da394f6fec
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use desktop calculator - development
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision, plotting, and a graphical interface that uses a one-line
+ fault-tolerant expression entry (although it supports optional traditional
+ buttons).
+ .
+ This package contains the development files needed to build the frontends.
+
 Package: libqalculate22-dbgsym
 Architecture: amd64
 Version: 3.20.1-1~sean00
@@ -5039,6 +5138,26 @@ MD5sum: 05547d2bb4946eebb31916a397d481c9
 SHA1: bb9c6404f3295da5657ce927ab68132811aa2ca4
 SHA256: a90387bea3ea1593e21d9305b7f2537ed4aa9f10e5bd8e605f672e3318234187
 SHA512: cb07c044ae19d773e99861071a3502653a94e101e1d51b7f1b3c58467330dd62db271f685189b9e3fd49a12f812640428309de4e3a8307bbec0adf31f0c67d2b
+Description: debug symbols for libqalculate22
+Build-Ids: 8d115b00e3d43e31e527c124273c7e2af616a2aa
+
+Package: libqalculate22-dbgsym
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 10420
+Depends: libqalculate22 (= 3.20.1-2.1+sean00)
+Filename: ./amd64/libqalculate22-dbgsym_3.20.1-2.1+sean00_amd64.deb
+Size: 9995000
+MD5sum: 81f128b09aecf2fdd24b1d3ab01e62ed
+SHA1: ed47aa6bcfe53babe818b3fbf6deb0d472352a91
+SHA256: 9e6f8a37a3042bc1841c1c2ace452ac4358ecf6a660a7c0f1976f1f59289352b
+SHA512: eada2b099ba9ff2358a8275d053029274f731f7cbff08552b502d4fc74ebb8c8598d820988a2f063c9fac857dfa01f71f3e0410eb833a07ae5193c062b3524e7
 Description: debug symbols for libqalculate22
 Build-Ids: 8d115b00e3d43e31e527c124273c7e2af616a2aa
 
@@ -5060,6 +5179,34 @@ MD5sum: 0f10c7b4866a952bdf4e610e6a75c3a4
 SHA1: 4358d5be63f0c04294527f2e87721530a110999d
 SHA256: 8c4be3423b1d8ccf96da32f6f8b8592b1a1409b4a34a02d6b0ff711848f50c40
 SHA512: 75672aed1eac281dbf82a0a8b5103a6b34466d0b96fbf84e3982580bbd5df774976d06c2df2d1cc4d4853fedf9edd2c62332b36cdb53473881624724390a1414
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use desktop calculator - library
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision, plotting, and a graphical interface that uses a one-line
+ fault-tolerant expression entry (although it supports optional traditional
+ buttons).
+ .
+ This package contains the shared library used by all Qalculate! frontends.
+
+Package: libqalculate22
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 4754
+Depends: libqalculate-data, libc6 (>= 2.29), libcurl3-gnutls (>= 7.16.2), libgcc-s1 (>= 3.0), libgmp10, libicu67 (>= 67.1-1~), libmpfr6 (>= 4.0.0), libstdc++6 (>= 5.2), libxml2 (>= 2.7.4)
+Breaks: qalc (<< 0.9.7-2)
+Replaces: qalc (<< 0.9.7-2)
+Filename: ./amd64/libqalculate22_3.20.1-2.1+sean00_amd64.deb
+Size: 1417800
+MD5sum: a9883e32d77967d355c9bcb3a3767a2c
+SHA1: 0b5ad8820de573921147b0c6421f3bbaeaad5238
+SHA256: f52dd8a19d11ec5f844e429c3b59c090b6b776a278a5235b0d078af29560d24c
+SHA512: 6db0259678c333ece7bbc7c742d2069878935188aff2c10d14b2768d4b9b33746a66845fdba35aa4c53ef549af17ebed972901630e6cf24101908ed61bd106e3
 Homepage: https://qalculate.github.io/
 Description: Powerful and easy to use desktop calculator - library
  Qalculate! is small and simple to use but with much power and versatility
@@ -6197,6 +6344,25 @@ SHA512: d9191028ebb90d13aabe904cce8957e213f52d9e7c52f8ac78a086622d13cc545a4456b2
 Description: debug symbols for qalc
 Build-Ids: af72cb07d6c7a1b1ae2fcbf4110a45d8d65bc026
 
+Package: qalc-dbgsym
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 923
+Depends: qalc (= 3.20.1-2.1+sean00)
+Filename: ./amd64/qalc-dbgsym_3.20.1-2.1+sean00_amd64.deb
+Size: 883932
+MD5sum: 0736ecee718ca5acb481a737b32d934d
+SHA1: cecb9264b33019a6650074cb7f027541a7eafdff
+SHA256: 7f8b0104630d26c8558cc6bb11b315fb15225e94e92b8f43a36ac44137c0cb0b
+SHA512: 8e5f831541c99fd5212b8f9a16f7d833fbb168af1a25e193f8d7f6280489df07be1ccee55125287acbc733667b9b96fbd7de4b3bfaf636099a186b9452360440
+Description: debug symbols for qalc
+Build-Ids: af72cb07d6c7a1b1ae2fcbf4110a45d8d65bc026
+
 Package: qalc
 Architecture: amd64
 Version: 3.20.1-1~sean00
@@ -6213,6 +6379,30 @@ MD5sum: bc0d23d1c07129c4ef47db6690f4a4d1
 SHA1: 226cd3a1cdfc28036a175f790b96fdf8859a9dc9
 SHA256: fb44a5e9540da886c3d4e4b8c3f78bf3afe567011a03c32452d393ca8e43cba1
 SHA512: 557c58fb4c7e2bcf23580e0b853b0c7c9d7f25e9d79411a5d66b60d6065309b8855c1646b9507254fce4f9889b93a416459d7a73c2bf1eb9b88c9647f40c1775
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use command line calculator
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision using a one-line fault-tolerant expression entry.
+ .
+ This package contains the command line version of Qalculate!.
+
+Package: qalc
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Priority: optional
+Section: math
+Source: libqalculate
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 659
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libqalculate22 (>= 3.20.1), libreadline8 (>= 7.0~rc1), libstdc++6 (>= 5.2)
+Recommends: wget
+Filename: ./amd64/qalc_3.20.1-2.1+sean00_amd64.deb
+Size: 256652
+MD5sum: 06a558d1b31f8d4eefac3a5962c1cfe1
+SHA1: 40888d8ff1fa6bccb35de7ccffe81fe6958011b1
+SHA256: fd8df907819b0c5281e535ae1db30f3cd70cb393995f2e2ec5de501e9814ab70
+SHA512: eaed0c09e0012b7b2ae2dbb53647c76fea14dd5ff35c066d0724933bc1b20fe5db5a11be24e56712de198c00bb501b150be060e031b88884b120a2f45d4febd6
 Homepage: https://qalculate.github.io/
 Description: Powerful and easy to use command line calculator
  Qalculate! is small and simple to use but with much power and versatility
@@ -6240,6 +6430,25 @@ SHA512: dd2b01b2914da9e587955ce0045b42d9f47001847c502933756ac6463499f085a02bcb6c
 Description: debug symbols for qalculate-gtk
 Build-Ids: 388d8ee390b617fc04a194b5d56c15b65fe4537d f8c9ebb7b42b486b09178c5967df2cefb7cf918b
 
+Package: qalculate-gtk-dbgsym
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: qalculate-gtk
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 5070
+Depends: qalculate-gtk (= 3.20.1-2.1+sean00)
+Filename: ./amd64/qalculate-gtk-dbgsym_3.20.1-2.1+sean00_amd64.deb
+Size: 4857468
+MD5sum: 1c5cb57e602db3dc0ed2dd860cf66bbb
+SHA1: 12f12b4bdc562a75840c236fa377862e4c57a480
+SHA256: db5d2e2a4dd6cd1161e92a0fb1fe1dcbc15a06ba73246cedce76341f2a1820b4
+SHA512: 6d77e65a322d06bca8d160bfbe005de742abb2c7b380fdfbcc837c2e62f29f5626fec6931533d205f37756ff901f5a99b3442aab790c3b7744d9b7dc649ec0ea
+Description: debug symbols for qalculate-gtk
+Build-Ids: 388d8ee390b617fc04a194b5d56c15b65fe4537d f8c9ebb7b42b486b09178c5967df2cefb7cf918b
+
 Package: qalculate-gtk
 Architecture: amd64
 Version: 3.20.1-1~sean00
@@ -6257,6 +6466,33 @@ MD5sum: 474e098f3d7777d7ab214caa90a3108e
 SHA1: 5fe1889922de620ec9fb24474a3b1ac20ed425c4
 SHA256: f1a9529775a541c58b5839dbb4cb3ee57dc39e4a762b4149c32dcd2969fb6f5c
 SHA512: 1391e54aae8cca18918faf22922404006e70ce6829772e0882f80d3381468fb6fae5dde1d669af7102b37a03a02f3153c656e61e752a7516841b44024e687ab0
+Homepage: https://qalculate.github.io/
+Description: Powerful and easy to use desktop calculator - GTK+ version
+ Qalculate! is small and simple to use but with much power and versatility
+ underneath.  Features include customizable functions, units, arbitrary
+ precision, plotting, and a graphical interface that uses a one-line
+ fault-tolerant expression entry (although it supports optional traditional
+ buttons).
+ .
+ This package contains the GTK+ user interface of qalculate.
+
+Package: qalculate-gtk
+Architecture: amd64
+Version: 3.20.1-2.1+sean00
+Priority: optional
+Section: math
+Maintainer: Qalculate Team <team+qalculate@tracker.debian.org>
+Installed-Size: 6364
+Depends: qalc, libc6 (>= 2.29), libcairo2 (>= 1.14.0), libgcc-s1 (>= 3.0), libgdk-pixbuf-2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.39.90), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libqalculate22 (>= 3.20.1), libstdc++6 (>= 5.2)
+Recommends: gnuplot-x11 | gnuplot-nox | gnuplot-qt
+Breaks: qalculate (<< 0.8)
+Replaces: qalculate
+Filename: ./amd64/qalculate-gtk_3.20.1-2.1+sean00_amd64.deb
+Size: 2222608
+MD5sum: a882cfe32efce564ad241bbf0c4fbe27
+SHA1: f734ee69264ad23f28e2ce7f2864a5a06e46ff3b
+SHA256: a109a7c1de00ffe2a50c0c166de462da235a93bd2164d7b949cfd283af9c177d
+SHA512: 39c7fa8a9b643fdad12ae7916af2c09d06c176db67c9278cc1658a1455021fbcd0ca8c27ef3a4b8e1e7b2d70ba0d94ff6ba9719cfdf68a166d7081fd9da42956
 Homepage: https://qalculate.github.io/
 Description: Powerful and easy to use desktop calculator - GTK+ version
  Qalculate! is small and simple to use but with much power and versatility
