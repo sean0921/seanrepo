@@ -1575,6 +1575,31 @@ Description: heavily refactored vim fork (runtime files)
  language-specific highlighting and indentation, color schemes, and standard
  plugins.
 
+Package: neovim-runtime
+Architecture: all
+Version: 0.5.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: editors
+Source: neovim
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 19393
+Filename: ./all/neovim-runtime_0.5.1-1~bpo11+0.sean00_all.deb
+Size: 3796312
+MD5sum: 30e70a57833bf06be6f862972cb8aed8
+SHA1: bb354f238cb16b28e013461a717348dbd8601c58
+SHA256: fad318819a5c135cd8dd2d173d7458f39cc810368725cd0a1d207c71e0559613
+SHA512: f151ee8ffa476f42cc14eebecbc21a354d7e1d82ac26176251b861a7bdbadc48fea79622d6043a436c4a96f73a8afe99862e3ababeab2e8a02fdb3c75dd68ef6
+Homepage: https://neovim.io/
+Description: heavily refactored vim fork (runtime files)
+ Neovim is a fork of Vim focused on modern code and features, rather than
+ running in legacy environments.
+ .
+ This package contains the architecture independent runtime files used by
+ neovim.  Examples of such files are: documentation, rules for
+ language-specific highlighting and indentation, color schemes, and standard
+ plugins.
+
 Package: parallel
 Architecture: all
 Version: 20210822+ds-3~bpo11+0.sean00
@@ -5453,6 +5478,25 @@ SHA512: 8083c8dea56d88381b2601d62a097cf4bb2ea9f1b55955291a68406fc6fa373a10d5bd41
 Description: debug symbols for neovim
 Build-Ids: 7fd6f93249fce2c690a92d191628f8420f56c7ce
 
+Package: neovim-dbgsym
+Architecture: amd64
+Version: 0.5.1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: neovim
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 6926
+Depends: neovim (= 0.5.1-1~bpo11+0.sean00)
+Filename: ./amd64/neovim-dbgsym_0.5.1-1~bpo11+0.sean00_amd64.deb
+Size: 6482208
+MD5sum: 3cbe9952372930848ae20535da10dbfe
+SHA1: 940d5c4b5eeb7af57e2aeaf28f79c8b05a68c5a7
+SHA256: 6a88b6bbc09e0d4b6c6d8476572cd35072812b241eb235130243209e43bb2250
+SHA512: c1ad0dd17e775006880c70eb047d6c7f433bcdddd6a5b9f17ccaf0e94b056ace2f3de7dc214f4a819f5e4e80a359c7ef54bde82fea15c6c58695c4f0e72580ac
+Description: debug symbols for neovim
+Build-Ids: cb43437b130e75e0212811aef674082f77459bec
+
 Package: neovim
 Architecture: amd64
 Version: 0.5.0-1
@@ -5499,6 +5543,35 @@ MD5sum: 882b836a2e33fec26ad073d6cd54b5ae
 SHA1: a1caa6a41c33bf85ea69cf0180aaf120d1f08b75
 SHA256: e2f9bb013771230a1ce7af396680a5fe5c508c6492b6ddad49385e3b6812f908
 SHA512: ffa30a22b755e96c42479595ddb9fb70ca15f88fee30c6523eb8104b3b5cfa8e1c0649cbe2cb19e88bc5adfec16ba73c7c12c74d326083e62954ca41ba020622
+Homepage: https://neovim.io/
+Description: heavily refactored vim fork
+ Neovim is a fork of Vim focused on modern code and features, rather than
+ running in legacy environments.
+ .
+ msgpack API enables structured communication to/from any programming language.
+ Remote plugins run as co-processes that communicate with Neovim safely and
+ asynchronously.
+ .
+ GUIs (or TUIs) can easily embed Neovim or communicate via TCP sockets using
+ the discoverable msgpack API.
+
+Package: neovim
+Architecture: amd64
+Version: 0.5.1-1~bpo11+0.sean00
+Priority: optional
+Section: editors
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4257
+Provides: editor
+Depends: neovim-runtime (= 0.5.1-1~bpo11+0.sean00), libc6 (>= 2.29), libluajit-5.1-2 (>= 2.0.4+dfsg), libmsgpackc2 (>= 2.1.0), libtermkey1 (>= 0.19), libtree-sitter0 (>= 0.20.0), libunibilium4 (>= 2.0), libuv1 (>= 1.30.1), libvterm0 (>= 0.1), lua-luv (>= 1.36.0-0)
+Recommends: python3-neovim, xclip | xsel, xxd
+Suggests: ctags, vim-scripts
+Filename: ./amd64/neovim_0.5.1-1~bpo11+0.sean00_amd64.deb
+Size: 1629176
+MD5sum: b1b39d0497b38b70a95a0120dd05a696
+SHA1: f0913e16149f5291cc118e45e578dd997823afd1
+SHA256: c1616190898eda09b026d48c1fbe7ed683cb51c528e9c8e765292b0c045a7f58
+SHA512: f1ffdf80d63f271703e3a2d5ef488d777891825b942bce1faf83ef968029319732bd8e43c7a8400374493c559dd7d36990e4edde6044c698a99b2b906c6c474c
 Homepage: https://neovim.io/
 Description: heavily refactored vim fork
  Neovim is a fork of Vim focused on modern code and features, rather than
