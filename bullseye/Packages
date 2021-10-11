@@ -3830,6 +3830,74 @@ Description: Intelligent Input Bus - development file
  This package contains the header files and static libraries which are
  needed for developing the IBus applications.
 
+Package: libmpv-dev
+Architecture: amd64
+Version: 0.33.1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 181
+Depends: libmpv1 (= 0.33.1-1~bpo11+0.sean00)
+Filename: ./amd64/libmpv-dev_0.33.1-1~bpo11+0.sean00_amd64.deb
+Size: 49824
+MD5sum: 6d5ecb2306cc5a1460ae0b2b7c226be1
+SHA1: 902a0015927448cf903d9b3d429c88e3dc05ae0e
+SHA256: 728bdc843e510dbcdccc8f2d46b3e2fddb95874bbda9232a7b0a020aca2463fd
+SHA512: fdb294890f957de2d5a4575d2ff571656b41c504911fcad811353d3e265042062dc65470782972cd5f34b4b0cd76d1f4389a66cef3cc00b0fdd1e765a3957b96
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2 (client library dev files)
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ This package provides development files for libmpv.
+
+Package: libmpv1-dbgsym
+Architecture: amd64
+Version: 0.33.1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2399
+Depends: libmpv1 (= 0.33.1-1~bpo11+0.sean00)
+Filename: ./amd64/libmpv1-dbgsym_0.33.1-1~bpo11+0.sean00_amd64.deb
+Size: 2231624
+MD5sum: bd2aa60101b96290b6411d89d3ba79f4
+SHA1: 122afe27ffb68931fe6657eda5b1eebfc998a6c2
+SHA256: 9a12a5029df7ee87326b261781184c4eb136382ce48f820a7b730b2b320d152f
+SHA512: 783022a400f532b203bfc45c0ec1feaf57354af1c6da5f0e75e303cb44c3aed439b9a5e14947828b6d036e7a3b57c9d732ff56f260e0c0b3fd18a4f96bb6af89
+Description: debug symbols for libmpv1
+Build-Ids: 444871edb8d3b913b72f3faabbaab96b364dc82f
+
+Package: libmpv1
+Architecture: amd64
+Version: 0.33.1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2307
+Depends: libarchive13 (>= 3.4.0), libasound2 (>= 1.0.27), libass9 (>= 1:0.13.6), libavcodec58 (>= 7:4.2), libavdevice58 (>= 7:4.0), libavfilter7 (>= 7:4.0), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libbluray2 (>= 1:0.2.2), libc6 (>= 2.29), libcaca0 (>= 0.99.beta17-1), libcdio-cdda2 (>= 10.2+2.0.0), libcdio-paranoia2 (>= 10.2+2.0.0), libcdio19 (>= 2.1.0), libdrm2 (>= 2.4.74), libdvdnav4 (>= 4.1.3), libegl1, libgbm1 (>= 8.1~0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.6), liblua5.2-0, libmujs1 (>= 1.0.7), libplacebo72 (>= 2.72.0), libpulse0 (>= 0.99.4), librubberband2 (>= 1.9.0), libsdl2-2.0-0 (>= 2.0.12), libsixel1, libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libuchardet0 (>= 0.0.1), libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvdpau1 (>= 0.2), libvulkan1 (>= 1.2.131.2), libwayland-client0 (>= 1.15.0), libwayland-cursor0 (>= 1.15.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.2.99.3), libxss1, libxv1, libzimg2 (>= 0.3.1), zlib1g (>= 1:1.1.4)
+Recommends: youtube-dl (>= 2014.11.26)
+Filename: ./amd64/libmpv1_0.33.1-1~bpo11+0.sean00_amd64.deb
+Size: 821984
+MD5sum: 433f3f22711a1f96dd3355891104a606
+SHA1: 9245aa984d728b99994db0e9197ae0d9056fa4f6
+SHA256: 52875077590b994f010e87d040fb22dff7c1f381560a096ea1c4937468b5610c
+SHA512: 419322a28ebbd6dbb2866042d9038ed717b272115222fe3fc4b68a73295bf8aba88d1898b36e5dc0e918339534736c076682c26b2c6ca9b41935b18bb172fa1c
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2 (client library)
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ This package provides a client library that can be used to embed mpv in other
+ applications.
+
 Package: libpango-1.0-0-dbgsym
 Architecture: amd64
 Version: 1.48.10+ds1-1.1~sean00+1
@@ -5311,6 +5379,128 @@ Description: Windows API implementation - library
  Wine is a free MS-Windows API implementation.
  .
  This package provides the Wine library.
+
+Package: libzimg-dev
+Architecture: amd64
+Version: 3.0.3+ds1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: zimg
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 1938
+Depends: libzimg2 (= 3.0.3+ds1-1~bpo11+0.sean00)
+Filename: ./amd64/libzimg-dev_3.0.3+ds1-1~bpo11+0.sean00_amd64.deb
+Size: 319828
+MD5sum: d392f7d823feebb0ac88ba7ed0933914
+SHA1: b2a82e7bba27d2a43deb8c859a3471b83a4f0bb2
+SHA256: 34f0fcec60294accac32f98a233e932f4eba1887ecf543bb4848c22ef4dc2bb1
+SHA512: 5970ca5cbfee82e50925c5ce75c3e2a0cdc814fa6f5db4c35a1fb96ae7514cb198bd702bf455b888cc815e074fb741f6e955648712fb4858be123f465e597436
+Homepage: https://github.com/sekrit-twc/zimg
+Description: scaling, colorspace, depth conversion library (development files)
+ The "z" library implements the commonly required image processing basics of
+ scaling, colorspace conversion, and depth conversion. A simple API enables
+ conversion between any supported formats to operate with minimal knowledge
+ from the programmer.
+ .
+ This package contains development files.
+
+Package: libzimg2-dbgsym
+Architecture: amd64
+Version: 3.0.3+ds1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: zimg
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 4819
+Depends: libzimg2 (= 3.0.3+ds1-1~bpo11+0.sean00)
+Filename: ./amd64/libzimg2-dbgsym_3.0.3+ds1-1~bpo11+0.sean00_amd64.deb
+Size: 4638252
+MD5sum: e7fc95c3b51dbcc41ef837c88a9bcc1e
+SHA1: f958215e31d2b12738ebbc4a2eb96de316d8f580
+SHA256: 8cae0251dcfa1e8fb04431adf1daf68624566161ec1f622240a571eeee2ba9f9
+SHA512: f800e9ee89c64c164ac06e45ba895eaa09a1e6c035d834e3187c7921e77a2ba306a697c18e53f9244ee715971b0d4011e9de9dc13845ead9e9a2c94968ae8b40
+Description: debug symbols for libzimg2
+Build-Ids: c1fb34c6dee8aad38d91fcc88e50865207863a26
+
+Package: libzimg2
+Architecture: amd64
+Version: 3.0.3+ds1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: zimg
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 852
+Depends: libc6 (>= 2.27), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: ./amd64/libzimg2_3.0.3+ds1-1~bpo11+0.sean00_amd64.deb
+Size: 233488
+MD5sum: eac71da70222b0a657882af79227ebf7
+SHA1: 07cf1321f94100747e98d9f90a709241a2a291fb
+SHA256: ae43ea3391f5e84d9460dbe0bff87b052ceb0c78ef70e4370b194aa39109f6aa
+SHA512: 28f60b22c77bfcc280361e9dc0ec4a125e4c814e19c14f131341a01278652a6b2e8f0c8dc13fc5d582c066607df12dbdc4f1dd95225532e10f8ceff1c412443e
+Homepage: https://github.com/sekrit-twc/zimg
+Description: scaling, colorspace, depth conversion library (shared library)
+ The "z" library implements the commonly required image processing basics of
+ scaling, colorspace conversion, and depth conversion. A simple API enables
+ conversion between any supported formats to operate with minimal knowledge
+ from the programmer.
+ .
+ This package constains the shared library.
+
+Package: mpv-dbgsym
+Architecture: amd64
+Version: 0.33.1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2449
+Depends: mpv (= 0.33.1-1~bpo11+0.sean00)
+Filename: ./amd64/mpv-dbgsym_0.33.1-1~bpo11+0.sean00_amd64.deb
+Size: 2281360
+MD5sum: 4b9acc1e24c651c42326b466b349f282
+SHA1: 2dd58f470f3fb918aed7cf6c6e3cf0838a4804a4
+SHA256: 21878b558f5ea18f2c6cc0802e4f16f52c2f867260a5249adfc9b1e7091104e9
+SHA512: 3b5bfe24cf1eab48f45783f48c314d06360664e0ef9ce685aa109cb00d8aa57b6f96fb6df79b5e22761bf1db5ceca81afe488483708ac7026bfd11a7d24b1248
+Description: debug symbols for mpv
+Build-Ids: 96786050a20b6f5bfe922e22699c07a8316fb78f
+
+Package: mpv
+Architecture: amd64
+Version: 0.33.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2724
+Depends: libarchive13 (>= 3.4.0), libasound2 (>= 1.0.27), libass9 (>= 1:0.13.6), libavcodec58 (>= 7:4.2), libavdevice58 (>= 7:4.0), libavfilter7 (>= 7:4.0), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libbluray2 (>= 1:0.2.2), libc6 (>= 2.29), libcaca0 (>= 0.99.beta17-1), libcdio-cdda2 (>= 10.2+2.0.0), libcdio-paranoia2 (>= 10.2+2.0.0), libcdio19 (>= 2.1.0), libdrm2 (>= 2.4.74), libdvdnav4 (>= 4.1.3), libegl1, libgbm1 (>= 8.1~0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.6), liblua5.2-0, libmujs1 (>= 1.0.7), libplacebo72 (>= 2.72.0), libpulse0 (>= 0.99.4), librubberband2 (>= 1.9.0), libsdl2-2.0-0 (>= 2.0.12), libsixel1, libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libuchardet0 (>= 0.0.1), libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvdpau1 (>= 0.2), libvulkan1 (>= 1.2.131.2), libwayland-client0 (>= 1.15.0), libwayland-cursor0 (>= 1.15.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.2.99.3), libxss1, libxv1, libzimg2 (>= 0.3.1), zlib1g (>= 1:1.1.4)
+Recommends: xdg-utils, youtube-dl (>= 2014.11.26)
+Filename: ./amd64/mpv_0.33.1-1~bpo11+0.sean00_amd64.deb
+Size: 1105160
+MD5sum: 9ed24f6da3faf9beea84c64701bdbfb9
+SHA1: 3f65b85ae9d968cdde06a389b59d186a043d69fb
+SHA256: f64870f3ceb24c07ec6077c523b9b9d3521a88f6bc17ab5bc3e698f2a847180a
+SHA512: 4f809a96c3cf4de325635e66b919fd4246166f4790f2f5f065cd475ce497cd44a35848f58a4002b3d5e5ac09d51162c6dfd19b1e33a1b86b075774b45ef781ec
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ Changes from mplayer2 to mpv include:
+  * Removal of lots of unneeded code to encourage developer activity
+  * Better OSD rendering
+  * Cleaned up terminal output
+  * Improved OpenGL output
+  * Encoding functionality (replacement for mencoder)
+  * Wayland support
+  * Support for playing URLs of popular streaming sites
+  * Screenshot improvements
+  * ...
+ See mpv(1) for more info regarding changes between MPlayer, mplayer2 and mpv.
 
 Package: mtr-dbgsym
 Architecture: amd64
