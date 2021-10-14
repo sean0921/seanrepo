@@ -2451,6 +2451,43 @@ SHA256: fa79ed950479508746aabc695872f626f7bcc971ba9b99de16d426ea98e29f6a
 SHA512: caa9d79be5117c3dafffb61d315b52573a730f3a3270e10249a25479c46ac8424b960d2d3f674d1ff8627c9899a74fb2e306c2e5255e3a1451d433779dabea0c
 Description: GNS3 GUI
 
+Package: gns3-server-dbgsym
+Architecture: amd64
+Version: 2.2.26~hirsute1~bpo11+1.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gns3-server
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 1324
+Depends: gns3-server (= 2.2.26~hirsute1~bpo11+1.sean00)
+Filename: ./amd64/gns3-server-dbgsym_2.2.26~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 1159612
+MD5sum: 50335f0dbd514616cb63eaf59a31c416
+SHA1: 5e18cecf2059b183b4021b85aafacde137a5ee72
+SHA256: 7372d6ff411478642f3b45e78451f67f2712e143e622ea664753a67e6153a18d
+SHA512: eee3fbcb0347137d0b524cae0d418fc0df67aa8b9bb10d239cafeb1ce6b9b5c481e38afed19242e26bccd671a22d3e3a1199517a10ee7e24982d69ca95107eb5
+Description: debug symbols for gns3-server
+Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 2958c2e5ab9bcee493650466c0df335a28d8bb3f 37145f3256058be9df29d62dcdea3608093cd88f 68ad4f2ccfa7ebf4672d757bd218ddce4c5120ca 924b693d5a0c001b790302f886da14804438744b acf2c86fe84817394730d8dad0577a568592dc67 c889628fcfa27d5f7f8ad7048d51950610aca253 d256a21b64aad2ccd689b568fb0898b1bdc3edf7 e6095d60caa57e33b82301b5e7f042afafc2f523 e9fced434308b375c25a59f8a8cf05101c074c5f f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
+
+Package: gns3-server
+Architecture: amd64
+Version: 2.2.26~hirsute1~bpo11+1.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 47408
+Depends: python3, vpcs, ubridge (>= 0.9.14), qemu-system-x86, qemu-kvm, qemu-utils, mtools, cpulimit, libvirt-bin | libvirt-daemon-system, libc6 (>= 2.14)
+Recommends: dynamips, x11vnc, xvfb
+Enhances: gns3-iou
+Filename: ./amd64/gns3-server_2.2.26~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 8526844
+MD5sum: 1d807a00b612d6abf5e8f857e02c919f
+SHA1: 945629dfaadd2e5d093c10c7851cf9aa67d546aa
+SHA256: 2cc383288e164dc4d4c8aa720585d57edcd6ed3db1527f4040b74d63ef450e32
+SHA512: 58d045cb367d94147247e5a825106b7b9faf3e51c9fe3f78ada37230044b20ae3f43dd93fbf085d281a25e7dada45a6fc3ac9b817ee22989a41655a6fa10f4ed
+Description: GNS3 server
+
 Package: gtk-4-examples-dbgsym
 Architecture: amd64
 Version: 4.4.0+ds1-1
