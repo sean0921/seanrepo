@@ -1801,6 +1801,50 @@ Description: Windows API implementation - standard suite
  standard Wine components. It also employs the Debian alternatives system to
  provide the usual command names, e.g. "wine" instead of "wine-development".
 
+Package: dynamips-dbgsym
+Architecture: amd64
+Version: 0.2.21-1~hirsute1~bpo11+1.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: non-free/debug
+Source: dynamips
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 2005
+Depends: dynamips (= 0.2.21-1~hirsute1~bpo11+1.sean00)
+Filename: ./amd64/dynamips-dbgsym_0.2.21-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 1859932
+MD5sum: a47efcbec70cb31b6e3b7d93a0056867
+SHA1: 300cfceb2529f63790cc1388c5c85fb29c833601
+SHA256: 5c2ca337497f0b8f0b02a32f73d9483a41b46578443e98d5e802dd546240d49f
+SHA512: a07bf1d2913ad406f23f61998855eccfbd8396f6c41e0b43655ef6303d09a2f214695da2b30dc42f995591e50289e30b65d7398feaf2eefda0249fd938736663
+Description: debug symbols for dynamips
+Build-Ids: 0f5f2e0c77d8b7195dfbe4adf6f1fd77c018becf 13599d321db2f49356abe1643e16a9451687a002
+
+Package: dynamips
+Architecture: amd64
+Version: 0.2.21-1~hirsute1~bpo11+1.sean00
+Priority: optional
+Section: non-free/net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 1079
+Depends: libc6 (>= 2.28), libelf1 (>= 0.131), libpcap0.8 (>= 0.9.8)
+Suggests: gns3
+Filename: ./amd64/dynamips_0.2.21-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 359832
+MD5sum: 017334a2df5bcd2e3d6ce04550416eea
+SHA1: 10b892e1093cac3ffc59531c2054ea02743be2a4
+SHA256: e6586d026384f0950d700a2fa74f27c8accab0c8e4e9051f2cbf8af8ef4acca3
+SHA512: d302950993eed2b54fa56aaf33af22aa17a399ddc2f9be9653dd1b523f56c8266673ed1f9dc697b642ac34eef5f2361dc86866cd13cb3aa1fd49b1029ee11e8e
+Homepage: http://www.gns3.net/dynamips
+Description: Cisco 7200/3600/3725/3745/2600/1700 Router Emulator
+ Dynamips emulates Cisco 7200/3600/3725/3745/2600/1700 Routers on a traditional
+ PC.  You can use dynamips to create labs. It uses IOS Images (which are not
+ part of this package). Of course, this emulator cannot replace a real router.
+ .
+ It is simply a complementary tool to real labs for administrators of Cisco
+ networks or people wanting to pass their CCNA/CCNP/CCIE exams. For a Command
+ Line Interface for dynamips see dynagen or gns3 package.
+
 Package: gir1.2-cloudproviders-0.3.0
 Architecture: amd64
 Version: 0.3.1-2
@@ -2369,6 +2413,43 @@ Description: GNOME terminal emulator application
  .
  GNOME Terminal features the ability to use multiple terminals in a single
  window (tabs) and profiles support.
+
+Package: gns3-gui-dbgsym
+Architecture: amd64
+Version: 2.2.26~hirsute1~bpo11+1.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gns3-gui
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 140
+Depends: gns3-gui (= 2.2.26~hirsute1~bpo11+1.sean00)
+Filename: ./amd64/gns3-gui-dbgsym_2.2.26~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 106748
+MD5sum: f1fb3d805e2c8c82fc06205fb09ffeef
+SHA1: ee00f8b6c78b4b571944eab6fe5a18ec7159a2c7
+SHA256: 19c6bc3363f5c299b39f3fac5df4b164c2b3775f860adb33ca4e55a136b00428
+SHA512: 2c3de940363e472c17974a112d20c2a157fc8d4a59e3702795cabcca11e82573eca6e84366c395b7ffdfd81bceca0e9345e34e751aeb1e16a45deebbf51d7acc
+Description: debug symbols for gns3-gui
+Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 924b693d5a0c001b790302f886da14804438744b f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
+
+Package: gns3-gui
+Architecture: amd64
+Version: 2.2.26~hirsute1~bpo11+1.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 26200
+Depends: python3, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyqt5.qtwebsockets, wireshark, vinagre, libc6 (>= 2.7)
+Recommends: gns3-server
+Replaces: gns3 (<< 1.4.0-1)
+Filename: ./amd64/gns3-gui_2.2.26~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 6312848
+MD5sum: 8373fb60995d8fe25616a151d3d43aa2
+SHA1: 2ffd097b58d6886fb6648c9cc7aa2fca029daeec
+SHA256: fa79ed950479508746aabc695872f626f7bcc971ba9b99de16d426ea98e29f6a
+SHA512: caa9d79be5117c3dafffb61d315b52573a730f3a3270e10249a25479c46ac8424b960d2d3f674d1ff8627c9899a74fb2e306c2e5255e3a1451d433779dabea0c
+Description: GNS3 GUI
 
 Package: gtk-4-examples-dbgsym
 Architecture: amd64
@@ -6765,6 +6846,82 @@ Description: Powerful and easy to use desktop calculator - GTK+ version
  buttons).
  .
  This package contains the GTK+ user interface of qalculate.
+
+Package: ubridge-dbgsym
+Architecture: amd64
+Version: 0.9.18-1~hirsute1~bpo11+1.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ubridge
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 145
+Depends: ubridge (= 0.9.18-1~hirsute1~bpo11+1.sean00)
+Filename: ./amd64/ubridge-dbgsym_0.9.18-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 123164
+MD5sum: f8d9c85612d138abcbf3ec55e747585d
+SHA1: 791907b5e6c2966872c90c35e50dd1c6f7a8212d
+SHA256: 0e2e26c1f60a64bd8ab5d864a6b5bb0722529affaff7e2151b146d1474db5b37
+SHA512: f9574f65d78e6f4db668e244fdc14b5e5089b7b1d9bb842f070ca6d827683d305263b5f4c3690a3aa586a8c70ee7c714d402b3334b5d7b9d2131cf9184f8e4f5
+Description: debug symbols for ubridge
+Build-Ids: d1f921ba39d39a00f96faff1c604917cc4b6db84
+
+Package: ubridge
+Architecture: amd64
+Version: 0.9.18-1~hirsute1~bpo11+1.sean00
+Priority: optional
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 102
+Depends: libpcap0.8 (>= 1.0.0), libc6 (>= 2.15), debconf (>= 0.5) | debconf-2.0
+Filename: ./amd64/ubridge_0.9.18-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 33384
+MD5sum: b0b6f66c9e4f1f4e1077c9c3371ac5b0
+SHA1: 1a69bfda334c27464adfac80e6ddb34b71125fb3
+SHA256: dc22646d1d45f2f4b7f89cd7ef59904589046c3f314dafa87a7f19749402b62b
+SHA512: 331e2a543756559efee512949548ee20a2a9cadeb2819f7620a36306f3437e109c557c2969b0884d7262dabd7348def99966bd7188e1fa8e194d205c4e6ea3fd
+Homepage: https://github.com/GNS3/ubridge/
+Description: Bridge for UDP tunnels, Ethernet, TAP and VMnet interfaces.
+
+Package: vpcs-dbgsym
+Architecture: amd64
+Version: 1:0.8.2-1~hirsute1~bpo11+1.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: vpcs
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 30
+Depends: vpcs (= 1:0.8.2-1~hirsute1~bpo11+1.sean00)
+Filename: ./amd64/vpcs-dbgsym_0.8.2-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 6364
+MD5sum: 6021fc66f7b0835f272bfb9b2d27c924
+SHA1: 7b328d6ad676f7c749ae07e16a1eaa227260589b
+SHA256: 3ee1197a138ed1f87f6ad27e0a8467e7af630a18eb66d7301a0f93c8cfe21e1a
+SHA512: cb18332cc4e75cc463cf7c2aaec8f7d5c4829250cf7b4e966f7c765d171adef82a516c38b332fc87b473cda329e552b91d71901502ba7ce0a87c39f9700ff9fe
+Description: debug symbols for vpcs
+Build-Ids: 797505cc5a51772456de2b3bd2b72109cc6c8850
+
+Package: vpcs
+Architecture: amd64
+Version: 1:0.8.2-1~hirsute1~bpo11+1.sean00
+Priority: optional
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 210
+Depends: libc6 (>= 2.14)
+Filename: ./amd64/vpcs_0.8.2-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 66872
+MD5sum: 354f9386155f480608ffe4e1cb9b66f9
+SHA1: a5a8d52963077d0b888ca64f905d6105d8ad4e8c
+SHA256: 14f19b07c862db937280e110b11a5728f383bd1d3c3e86dcdeba918d4b3bcecc
+SHA512: 796108852db1c49e6994be55e357c4dfc8f11c3ae5128a4cceb7cfbd31d7bf4a3caf101f6a7ab09aa71ea651863fff76de1539f0a35f6cb097ba850e07ca561e
+Homepage: http://sourceforge.net/projects/vpcs/
+Description: Virtual PC Simulator
+ VPCS can simulate up to 9 PCs. You can ping/traceroute to
+ them or ping/traceroute to other hosts/routers from the VPCS.
+ .
+ VPCS is not intended to be a fully functional PC.
 
 Package: wine64-development-dbgsym
 Architecture: amd64
