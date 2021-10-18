@@ -1,3 +1,28 @@
+Package: dolphin-emu-data
+Architecture: all
+Version: 5.0+dfsg-6
+Multi-Arch: foreign
+Priority: optional
+Section: games
+Source: dolphin-emu
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 5775
+Suggests: dolphin-emu
+Filename: ./all/dolphin-emu-data_5.0+dfsg-6_all.deb
+Size: 1108140
+MD5sum: d5aa289dc2915cc30c97c36f484c3c24
+SHA1: 6d722fe0744a74c2663a3f0c92f2b5d6853a166d
+SHA256: b09a108723cc79ad515d53cc4ab6c33ac4fcbb81df451dc517e79051ff28bd11
+SHA512: 53443145638db978424038a301613dacfe0c743b2f60ff36ef1e74f9be015f5ef7dd4849c3efb1070cdddf07a6bd6b20d55495aac5ae78ddfa00ca5093688b67
+Homepage: https://dolphin-emu.org/
+Description: Gamecube and Wii emulator - data files
+ Dolphin is an emulator for two recent Nintendo video game consoles: the
+ GameCube and the Wii. It allows PC gamers to enjoy games for these two
+ consoles in full HD (1080p) with several enhancements: compatibility with all
+ PC controllers, turbo speed, networked multiplayer, and even more.
+ .
+ This package contains the platform independent data files for Dolphin.
+
 Package: git-all
 Architecture: all
 Version: 1:2.33.0-1
@@ -1830,6 +1855,46 @@ Description: Windows API implementation - standard suite
  This package provides essential wrappers and convenience tools for the
  standard Wine components. It also employs the Debian alternatives system to
  provide the usual command names, e.g. "wine" instead of "wine-development".
+
+Package: dolphin-emu-dbgsym
+Architecture: amd64
+Version: 5.0+dfsg-6
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: dolphin-emu
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 27003
+Depends: dolphin-emu (= 5.0+dfsg-6)
+Filename: ./amd64/dolphin-emu-dbgsym_5.0+dfsg-6_amd64.deb
+Size: 26082836
+MD5sum: 06553643dfb185cca7f1396bf4056530
+SHA1: 78dc5571a7343f578c474a06419afc8fedefdd27
+SHA256: 9e5f1955881b290d04e81b16d08aca14a92c23a1e93a3b1e10a254610cc0941c
+SHA512: 3e1233d46df0a631f84f907afba0bd3e7458fb4df37b22478bebc80087c2e06b95ef18ef5cfccb34ca39fd3c320b38ef531ec992b726c1dfa11048e46e80462a
+Description: debug symbols for dolphin-emu
+Build-Ids: bd34157b70db423266187e6c52bd5a48cf435947
+
+Package: dolphin-emu
+Architecture: amd64
+Version: 5.0+dfsg-6
+Priority: optional
+Section: games
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Installed-Size: 5221
+Depends: libao4 (>= 1.1.0), libasound2 (>= 1.0.16), libavcodec58 (>= 7:4.0), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libbluetooth3 (>= 4.91), libc6 (>= 2.30), libcurl3-gnutls (>= 7.16.2), libenet7, libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.4), libgl1, libglib2.0-0 (>= 2.12.0), libgtk-3-0 (>= 3.9.10), liblzo2-2 (>= 2.02), libmbedcrypto3 (>= 2.13), libmbedtls12 (>= 2.13), libmbedx509-0 (>= 2.1.1), libminiupnpc17 (>= 1.9.20140610), libopenal1 (>= 1.14), libpng16-16 (>= 1.6.2-1), libportaudio2 (>= 19+svn20101113), libpulse0 (>= 0.99.1), libsfml-network2.5, libsfml-system2.5, libsoil1 (>= 1.07~20080707), libsoundtouch1 (>= 2.0.0), libstdc++6 (>= 6), libswscale5 (>= 7:4.0), libudev1 (>= 183), libusb-1.0-0 (>= 2:1.0.16), libwxbase3.0-0v5 (>= 3.0.5.1+dfsg), libwxgtk3.0-gtk3-0v5 (>= 3.0.5.1+dfsg), libx11-6 (>= 2:1.2.99.901), libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), zlib1g (>= 1:1.1.4), dolphin-emu-data (= 5.0+dfsg-6)
+Filename: ./amd64/dolphin-emu_5.0+dfsg-6_amd64.deb
+Size: 1475884
+MD5sum: d288bf1d51dd03ebae6a535d0baa488c
+SHA1: c7e8a6ddb9e9273db34a2ee0cfd5b3df42effae4
+SHA256: 4a5b5ab914bdf8125087a03c71e5896e6cd54788ca9c8103fd81ca7e1a9b2d9f
+SHA512: 585e0550f4ed88aa3efeebfa76f2eda18b4bc42a002bd260d1cd0828ef887c603dcb47424a518c9f44da961e1ada7228690970c06573c9a1903eff5f96f1d77a
+Homepage: https://dolphin-emu.org/
+Description: Gamecube and Wii emulator
+ Dolphin is an emulator for two recent Nintendo video game consoles: the
+ GameCube and the Wii. It allows PC gamers to enjoy games for these two
+ consoles in full HD (1080p) with several enhancements: compatibility with all
+ PC controllers, turbo speed, networked multiplayer, and even more.
 
 Package: dynamips-dbgsym
 Architecture: amd64
