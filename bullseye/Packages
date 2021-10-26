@@ -7444,6 +7444,48 @@ Description: GTK+ Remote Desktop Client
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
 
+Package: telegram-desktop-dbgsym
+Architecture: amd64
+Version: 3.1.9+ds-sean00~bpo11+1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: telegram-desktop
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Installed-Size: 557322
+Depends: telegram-desktop (= 3.1.9+ds-sean00~bpo11+1)
+Filename: ./amd64/telegram-desktop-dbgsym_3.1.9+ds-sean00~bpo11+1_amd64.deb
+Size: 513596968
+MD5sum: 3bc0afcc60b9024f5567ff9d7c7627b4
+SHA1: 9b60ace7f2c147625f70bb597e960ba4886ecf92
+SHA256: 6b378bd2fef0b84707499c4487642d500ba76adb18c1d2ce734c08d7a7e59256
+SHA512: 50d1746b38f04e92ae286e2d8b1a6e4a842f758c96519b1412d12bde761f454a0f8118bcdcc77e8f0f89312ab36380e0e45f73a71de933ad031e60a572e0e033
+Description: debug symbols for telegram-desktop
+Build-Ids: 4c385aa7522ca96adb553cddeaf65231f46e5b74
+
+Package: telegram-desktop
+Architecture: amd64
+Version: 3.1.9+ds-sean00~bpo11+1
+Built-Using: libtgowt (= 0~git20210627.91d836d+dfsg-3~bpo11+1), ms-gsl (= 3.1.0-4), range-v3 (= 0.11.0-1), tl-expected (= 1.0.0~dfsg-2)
+Priority: optional
+Section: net
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Installed-Size: 72888
+Depends: qt5-image-formats-plugins (>= 5.9.0), libavcodec58 (>= 7:4.2), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libc6 (>= 2.29), libdbusmenu-qt5-2 (>= 0.3.2), libgcc-s1 (>= 3.4), libglib2.0-0 (>= 2.31.8), libglibmm-2.4-1v5 (>= 2.64.2), libhunspell-1.7-0, libjpeg62-turbo (>= 1.3.1), libkf5waylandclient5 (>= 4:5.42.0), liblz4-1 (>= 0.0~r130), libminizip1 (>= 1.1), libopenal1 (>= 1.14), libopus0 (>= 1.1), libqrcodegencpp1 (>= 1.2.1), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.11.3), libqt5gui5 (>= 5.15.1) | libqt5gui5-gles (>= 5.15.1), libqt5network5 (>= 5.15.1), libqt5svg5 (>= 5.6.0~beta), libqt5waylandclient5 (>= 5.10.1), libqt5widgets5 (>= 5.15.1), librlottie0-1 (>= 0~git20200305.a717479+dfsg), libsigc++-2.0-0v5 (>= 2.2.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libx11-6, libxcb-keysyms1 (>= 0.4.0), libxcb-record0, libxcb-screensaver0, libxcb1, libxcomposite1 (>= 1:0.4.5), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrandr2 (>= 2:1.5.0), libxtst6, libxxhash0 (>= 0.6.5), qtbase-abi-5-15-2, qtwayland-client-abi-5-15-2, zlib1g (>= 1:1.1.4)
+Recommends: fonts-open-sans
+Filename: ./amd64/telegram-desktop_3.1.9+ds-sean00~bpo11+1_amd64.deb
+Size: 25746452
+MD5sum: 3fdfbb946319e7c7da8595fa49c0c19a
+SHA1: 7599a2438f90567ed8481ea3b48a6c7610b0b4ae
+SHA256: 34be0fafd23d52343eaefa9d2e5a9ecdf437cb2381af6c8a5e59cf9cf373e3fe
+SHA512: 0eca08d9b9dba1a882bbed69f1b9717f215c390d38aa60af51b76f460258e085843e20b2c513795d5d9113107aa8126706bae604b310db807566da5fe92ceecc
+Homepage: https://desktop.telegram.org
+Description: fast and secure messaging application
+ Telegram is a messaging app with a focus on speed and security, it is
+ super-fast, simple and free. You can use Telegram on all your devices at the
+ same time — your messages sync seamlessly across any number of your phones,
+ tablets or computers.
+
 Package: ubridge-dbgsym
 Architecture: amd64
 Version: 0.9.18-1~hirsute1~bpo11+1.sean00
