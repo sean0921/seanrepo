@@ -1671,6 +1671,32 @@ Description: common files for the GTK graphical user interface library
  .
  This package contains the common files which the libraries need.
 
+Package: libgtk-4-common
+Architecture: all
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 23791
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libgtk-4-1
+Filename: ./all/libgtk-4-common_4.4.1+ds1-2~bpo11+0.sean00_all.deb
+Size: 3467628
+MD5sum: 016d5c6e2181cd88d9980c242200dd0a
+SHA1: 142b9f182d6403cf1bbfae71c8cd5879a42d1c32
+SHA256: aaf43f5ba96f8d1edbfed38e99d609a7d2e5cab31278d7610393d0d05c42fd5e
+SHA512: 2791780036923f9238b760a8819145d5d498a48e552fe321530bd29e88e3a49c1dc866cab935316e11cd6a604ac5ae491b2c1f13609ae3eac7c475c745b5c45b
+Homepage: https://www.gtk.org/
+Description: common files for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+
 Package: libgtk-4-doc
 Architecture: all
 Version: 4.4.0+ds1-1
@@ -1742,6 +1768,33 @@ MD5sum: 53a027bdd3e99ff38355837a51a8fb97
 SHA1: 6208db027796ae8a6c25075b456e5ee51efb172b
 SHA256: 668bd1cff1e78afb725ec8873bf9c8930d1c531a8e48988c94b7191c2417405b
 SHA512: cb4738cbdd5ffb4eae3a8d2f5aab24ebde7d4fdc53ef12b54b5435ce6d61d336a84d72ac4ec5b845bed403ca43fa487ba6b3204176ecbb6de5a6e8cd17866ee0
+Homepage: https://www.gtk.org/
+Description: documentation for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the HTML documentation for the GTK library
+ in /usr/share/doc/libgtk-4-doc/ .
+
+Package: libgtk-4-doc
+Architecture: all
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 70488
+Recommends: libglib2.0-doc, libpango1.0-doc
+Suggests: devhelp
+Filename: ./all/libgtk-4-doc_4.4.1+ds1-2~bpo11+0.sean00_all.deb
+Size: 4549532
+MD5sum: 1ce8c76f5c6b4b8aa61c703ac449a75e
+SHA1: fad0a9e23cb3a817d1790343e43cc57c9c0d1cfd
+SHA256: 529827ec53a3094e0c119fcf82addeb905678f546b808b7439945d8573bc6d88
+SHA512: 212c68fcd03381f54dff21a77c24e0dd79169cf49748b8dad5ec55d58c457c9cc9a73b7d981398014751f0b756aec26bc3ae5098d9af1b015912f0b0c5987e94
 Homepage: https://www.gtk.org/
 Description: documentation for the GTK graphical user interface library
  GTK is a multi-platform toolkit for creating graphical user
@@ -2569,6 +2622,34 @@ Description: GTK graphical user interface library -- gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
+Package: gir1.2-gtk-4.0
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 867
+Provides: gir1.2-gdk-4.0 (= 4.4.1+ds1-2~bpo11+0.sean00), gir1.2-gdkwayland-4.0 (= 4.4.1+ds1-2~bpo11+0.sean00), gir1.2-gdkx11-4.0 (= 4.4.1+ds1-2~bpo11+0.sean00), gir1.2-gsk-4.0 (= 4.4.1+ds1-2~bpo11+0.sean00)
+Depends: gir1.2-freedesktop (>= 1.39.0), gir1.2-gdkpixbuf-2.0 (>= 2.30.0), gir1.2-glib-2.0 (>= 1.39.0), gir1.2-graphene-1.0 (>= 1.10.4~), gir1.2-pango-1.0 (>= 1.47.0), libgtk-4-1 (>= 4.4.0), libgtk-4-common
+Breaks: python-gi (<< 3.18), python3-gi (<< 3.18)
+Filename: ./amd64/gir1.2-gtk-4.0_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 236288
+MD5sum: a9e1f36296208f6ea8ffcea29811ca07
+SHA1: f25188fa075a9e56e4eabd222fd2613e2b760f40
+SHA256: 9db1c1c81aa9b8b1e68847bbc20db925346e22793db11f296e1dfc844fe51378
+SHA512: 339dc11ea9a0bda0b3636e3d34c552dfe1305b62484cf209c8e8021c08d80fb03ecabeabc58cc0d5cd107dc0c5f49c56f1a6893184d6b8b728f581fbd3ae35dc
+Homepage: https://www.gtk.org/
+Description: GTK graphical user interface library -- gir bindings
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
+
 Package: gir1.2-ibus-1.0
 Architecture: amd64
 Version: 1.5.24-2~exp1
@@ -3386,6 +3467,25 @@ SHA512: ddf400154d24600e044e532a87dc623909527ece7ba1dafd0fada19a0ac67ee2414af38d
 Description: debug symbols for gtk-4-examples
 Build-Ids: 127f0e45eba19d23e0f1ca87f662e7d9285860d5 168ba40afe4134bc902a95e7a3c1d2cf6f8b2380 5ec8d22b465bb36523c7999fe0b6b90a66db1d50 8f57eed432601f9959d568118c86f6289d8ddf40 af940e998a1ded962661f93825cffea47d8e7d31
 
+Package: gtk-4-examples-dbgsym
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 866
+Depends: gtk-4-examples (= 4.4.1+ds1-2~bpo11+0.sean00)
+Filename: ./amd64/gtk-4-examples-dbgsym_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 682392
+MD5sum: 4e4287cbb8a947ff4a9b7f4ada4e2a1a
+SHA1: c274c32b6f751e87ba6ddb7768a56ac00a35618c
+SHA256: d126361307ee832ee3b888b0a691007d78759c9080bbb26a0c121d0e807a1106
+SHA512: a69c2b89bbadb4d0648d035b53654c7499d46cacfbc402e6a28a778430762ff57f8e6d93452019687864fa15d160fc7326895f527216940b446fa748b5d69b7c
+Description: debug symbols for gtk-4-examples
+Build-Ids: 0771af325f5783ecbc040ec94b4a672399b72d28 169e79e9e8fb9f71510751f94a86be1638ad6253 5bd32884a1e2f0c6b7a757afdbd1af7e71436108 b575a49ad3c69cf50ae0b03942164850833c2af1 deee3a896d692aeafb696148a148af9320edcf1c
+
 Package: gtk-4-examples
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -3464,6 +3564,32 @@ Description: example files for GTK 4
  This package contains the example files and a demonstration program
  for GTK4. It also contains the installed tests.
 
+Package: gtk-4-examples
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 21596
+Depends: dconf-gsettings-backend | gsettings-backend, libc6 (>= 2.28), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.0), libgdk-pixbuf-2.0-0 (>= 2.30.0), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.5.4), libgtk-4-1 (= 4.4.1+ds1-2~bpo11+0.sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), librsvg2-2 (>= 2.46.0)
+Recommends: fonts-cantarell, librsvg2-common
+Filename: ./amd64/gtk-4-examples_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 11482080
+MD5sum: ffd01de96ea1997bf76f003fe0ef0b7f
+SHA1: ac03276a3f0f8f12de9495ecdacb27b30492fe1d
+SHA256: eac87b90736ca9eabd2732109b7aae36d623fdf6d6d1ea994d8c8b2081359b46
+SHA512: 9c1aa6ba485e1fa3a9dda611e190c44d9718fc337031c6ddf4211b7c25ef70a632225b34761620a168cbc25860a56a46577411173fa23e30ec8aa7ed225ffd6a
+Homepage: https://www.gtk.org/
+Description: example files for GTK 4
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for GTK4. It also contains the installed tests.
+
 Package: gtk-4-tests-dbgsym
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -3520,6 +3646,25 @@ SHA256: df233590ae61fa7fbb7979977041a87d67c56ff1daaf4cdb513c01006dd0f22a
 SHA512: c2d2693da9ba5cc308960e5da5da2416f1a82ad1f36053db10f7e2e9f24f25cb2f6f4f77d11de335786ced80d7cf28bb102fda6952643e36c2c49cbba5fdaada
 Description: debug symbols for gtk-4-tests
 Build-Ids: 03982e6a2faf29018d229b6a76537c6c75679dba 05255f18a43a1f667733c2fbf8f202f994867e41 06a768d17b703a60525283f210433874b83f6bc6 13d417dcb53c8795c2109ce68b0cd547d5a0874a 14e6c23487131eb7dfa205b2eb7fbd1410947572 1a059aed95b8922c196302e8d9fa09f50fef5699 1a394a723572b9603b31a269f78ef27694de4f0b 1a8e4d78bb01b40b7095d92047b807a1a402ca0c 1cf39c159141aa356e7ca8e02610fbad8378cffc 1fde3aecbfe12bf258e3a7b53dcf77faa8c7d00a 203e820ec6fd48f73d1aeafbad56bdca12b1e45c 2222379cf384613b8af6db60f88274ff3f13d05a 24a69c7360d2f841296b9d480972786dbab4fa72 24d3f7a197f25a109c64dcf1eff9b0b3be4a0dca 26c5978b93947b3257b38d4e8223ee10a28ae5d0 2a501233c9fd69c03937f062be1ad6d0f304fa10 2e7a7437c9d2dece0ee5c924eabcdb2f639dd602 324943388fcaafd2c06ad2769553d9fa231c3d30 325540c7f6f56185fb8ab0a0db0a48edff028ce0 3425edee79a85a3b5a29c6b164734cc331839ad4 347912c34e9e6b26282ac1bbe2c70d997bd7c5c5 35f9e8b91cf2c8b36f52217aa1d441107d9c3d8a 38e96a756ca8de59c1901560701cad85182de5f1 3d2e100739af47244483f25221173981dc28d8e6 3ecf6d873a5274b74306d438341abdb0c950a524 3f5f18af1ce7ffd6a19560c288c5ee41c57c8bba 416944ca2be4c90b652a55807fd2c564dfa8019b 42d0b990d90c971515510eaf85f5a0c53a071647 46049387c60532104a0063e76a180137805d0698 4b7a43cd181ebd0bc1584ff6b267fb68996808e1 4b8a38f3f8fcbdbde5b487506d528671614288db 4f47e44a8d981902ca4413e987ad2db87992fe68 5428ec47c7cb90aab4d8e351965a610f6190c90d 5983eb8265277cd70365fa7b1e169146531c0129 5dd54cea519eadd83bd279630815ce6187292943 60e63b046a78b8f34b51dc7bdb0b1d63b8397750 6337ed4ac3c3d72cc34b9fc65c117159f148c096 65a50fdc88ca26524d670a18d1ab94f4033779ec 672b0dcddfccd3cad64940e50643f084b121facf 696a4406b14078839609722317c257315496e672 69799e6c96f517788e93b8d6bff16ab868cb99ee 6b486bf899dbba9bfe8402c56f8d31d6fdcadd03 6d4791213ffd4b28c3c068a0c58ea94d0b449b89 6e41aff909a88a0e992aba3681b5daf48f6d558a 6e8fc1e5a9468839b7c2c6586ba20f2dcaa2a215 7071a45dc7015ae01b8277e3607bdbe3ba0af09e 7260e2f92765263b9225bd9baabd89ded7b41c23 761f2b625b4643bb389d10e7a5bd943b72eaf8f8 7734a3e1b5d3b542fc0d6d62a13f5a3b6a23548d 7d2c427024e8753839e31b1867cc1407c7412042 835607712572604bb31b97cea20a339a51a53bf7 83abceb613c48dc8cfed070e15bd32447e3c1db4 84120aeb900f941666d6311a8fb5ac1894cad8bf 87b85013f0246c47facdb5ef093a77b3bb185d99 886e71dd640636be6776ad2df046d78d75823d6c 889c062f89e51d48f8e86a37960ca5563b88d30b 8b622af35551fea68faae3275b55bbcc47f6f35e 8bee47ec420c5fd66f9955fa8631c13a65a5f85e 8c2e7261f742ce693352cee3650d20667fbaa40d 90f60b7bccfec292c1019ce0ee0e83793d53848d 9147d59aadea723fafa67dc26514ff5975bd47a5 92465474c99ec2382d85edcf356e6a6d77642323 96a55a09df5039c52a55930bded7a66cac815acc 97b71e917310376cf37be3b0b35307f9334d2e28 97d0e340a84547f551bc22aba3a6a4919dbf8174 98ab9a5e8116384ea72128371d20f7ac11bb0f56 98b80e3745141cb9888d5cdb99a9226a3bb5a66c 99928f6eca61abd2034d2b66c3825bce998c34c2 9992ccaf4e95868e8a2972fd6c57d09f8a3df813 9ade4d198d280bd411017a7261e510f9cb349e7a 9d084d2aaf4b4e3ab706524e871003a9c54eccc5 9d41c57648ad8164e18b3ca1cfe42dee2f51c934 9f87e0e4c6685cde13f5426548c45d7db5919eed 9fa5c3ad5558710c3158b71e6013f5e0ff571e51 ac69ca1a406a4b529092002dffce970af0ad4332 ace59da922ab2589c46179a14c4864467bc80c62 acfc429e4f9379f20a1faa0c7ad88012a6da6ced ad558bfea5f234668305d0045e69a299f2d0b1df ad97e9239a1ccb98da89fad2c0d60b91b7559fe9 aeb7355b969da5fca829dee36632746d312fb0e5 af354ff401310cbba4f4059ccb520d0b6e927e20 b2510a66de5335bb41159b1c9b816672e0805ee3 b272e824c86aa81a964179382a375c2dbc9a3ce4 b5dce5269cb974d26a6ef114cd019a0cfd88ba41 bb011245b74ebd918ed3e0891d2f6b5161ca8f26 bcd83735c9d6b878d6bfa6624ec872c29887b61a bdddbd718c51508700136b8910d1deb43c809a9e be0902581ba83cb68876e3335a997b1f6a0446b3 bf1e351f3c04406173635639f10252172a4ca880 bfea738ec175c86ce4b67f3ec4756377ff94a40c c75701f6233e776bc1fe9b4e7d4dd9f67ef6b756 c76f59a8301cd17208db0de8b15e2f62b6def9f1 c9b70fb81d5e57f6be4f285f69f90f7f0673b87f ca14255a83398b7f0c11c550082d38f4888a214b ca677c69e5058a8a1695476061a0e8fae75ebb4f ca760e730dd897d9b1f13af02c15cb475cd0d5a5 d2d5adb472af2cd3275734b5188adaac6bb8f989 d2fa08f974c4827f2634e981f77e8daab4eb3b41 d3b9e51fe4525a3481c2aa8d6f8d9db2d0a6f8ea d425d9023afbe974a7adfd18a2646063d9bcc954 d79815addc836d1c0de6bdd322060202069b5cfd e2d57d3ce04081c14c116dc9f262d1a5764cb4a5 e58edcbfa1b91aad7bb266af7988982b29b39b8a e8717f2ee7ad0bbe01bd6833ee06dc3be26985e6 ebba2035d4fd94af838cbaa18cd5b5b9785059c7 ed5cb16f84d8c364018fff335fbf2cc6ac0ee4fc ef695ca26a78fe3e3fc56f226f49983915a37aab f0e80bf2b086a57a058ab46ce7d02968a6221d44 f2d3593ccd4f73a59d6d53b1936b6042fe118797 f383c7c2523572bdd62c2afe6ed0313a56367e4b f39ca9499e0b0cb77ed3122d45646b681567f264 f3aff4c1dd60b36a172b2b0347babaf0cd01cfb1 f67fa3c8346abe9339d536ee74d66a680d4e7289 f68cdb245f91d93fc2e140f2dd6b2c9bff96c9ce f69265ab56a38cb1e56de3f14252677fcedb194a f81fe1fe1cf6d8336ccb92cd48f8e3639dcf8a12 f82f1d8a5d9369e61f6f817957c259c417efd9be fa28387f65043c14ff4f8a25b7a720012f61e8ff ff8afc944d45af4f3c49cb21cac3fa991263a9b2
+
+Package: gtk-4-tests-dbgsym
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 46921
+Depends: gtk-4-tests (= 4.4.1+ds1-2~bpo11+0.sean00)
+Filename: ./amd64/gtk-4-tests-dbgsym_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 41208924
+MD5sum: 0e42d93fe19ecceafdb38442c6ede407
+SHA1: 9c2af8ab19f6110b0135e2a23ad9c97dc6447663
+SHA256: fc22a560fe8f159cbb4bb5195f099c974a7bcdd9cd8c6bf305ebe7a0bc19a6d8
+SHA512: 35d82d38d9c804092dcff876b9733ad5d459edc74361d80f4a236d6b560b2be5163937f69d068b55be105815365a5fda3526d5b72d4bb47c39ccfe63ece1fff3
+Description: debug symbols for gtk-4-tests
+Build-Ids: 03982e6a2faf29018d229b6a76537c6c75679dba 05255f18a43a1f667733c2fbf8f202f994867e41 06a768d17b703a60525283f210433874b83f6bc6 0a4331857b6e003e4f933b85ddb7cdcb42bddbe9 13d417dcb53c8795c2109ce68b0cd547d5a0874a 14e6c23487131eb7dfa205b2eb7fbd1410947572 1a059aed95b8922c196302e8d9fa09f50fef5699 1a394a723572b9603b31a269f78ef27694de4f0b 1a8e4d78bb01b40b7095d92047b807a1a402ca0c 1cf39c159141aa356e7ca8e02610fbad8378cffc 1fde3aecbfe12bf258e3a7b53dcf77faa8c7d00a 203e820ec6fd48f73d1aeafbad56bdca12b1e45c 2222379cf384613b8af6db60f88274ff3f13d05a 24a69c7360d2f841296b9d480972786dbab4fa72 24d3f7a197f25a109c64dcf1eff9b0b3be4a0dca 26c5978b93947b3257b38d4e8223ee10a28ae5d0 2a501233c9fd69c03937f062be1ad6d0f304fa10 2e7a7437c9d2dece0ee5c924eabcdb2f639dd602 324943388fcaafd2c06ad2769553d9fa231c3d30 325540c7f6f56185fb8ab0a0db0a48edff028ce0 3425edee79a85a3b5a29c6b164734cc331839ad4 347912c34e9e6b26282ac1bbe2c70d997bd7c5c5 35f9e8b91cf2c8b36f52217aa1d441107d9c3d8a 38e96a756ca8de59c1901560701cad85182de5f1 3d2e100739af47244483f25221173981dc28d8e6 3ecf6d873a5274b74306d438341abdb0c950a524 416944ca2be4c90b652a55807fd2c564dfa8019b 41e43f30bbb231e55d201e5d12884429926cc8b7 42d0b990d90c971515510eaf85f5a0c53a071647 46049387c60532104a0063e76a180137805d0698 4b8a38f3f8fcbdbde5b487506d528671614288db 4f47e44a8d981902ca4413e987ad2db87992fe68 520c021b812659e081908edc04e5890babbccdad 5428ec47c7cb90aab4d8e351965a610f6190c90d 5dd54cea519eadd83bd279630815ce6187292943 60e63b046a78b8f34b51dc7bdb0b1d63b8397750 612d816eb465a67d33c9c4ac6e524004f3e3cb49 6337ed4ac3c3d72cc34b9fc65c117159f148c096 65a50fdc88ca26524d670a18d1ab94f4033779ec 672b0dcddfccd3cad64940e50643f084b121facf 68956c4b74c40032141a39df69c75e24c88e32cf 696a4406b14078839609722317c257315496e672 69799e6c96f517788e93b8d6bff16ab868cb99ee 6ac0ca947699a916a6fea90e07a59476b813057a 6b486bf899dbba9bfe8402c56f8d31d6fdcadd03 6d4791213ffd4b28c3c068a0c58ea94d0b449b89 6e41aff909a88a0e992aba3681b5daf48f6d558a 7260e2f92765263b9225bd9baabd89ded7b41c23 761f2b625b4643bb389d10e7a5bd943b72eaf8f8 7734a3e1b5d3b542fc0d6d62a13f5a3b6a23548d 7d2c427024e8753839e31b1867cc1407c7412042 835607712572604bb31b97cea20a339a51a53bf7 83abceb613c48dc8cfed070e15bd32447e3c1db4 84120aeb900f941666d6311a8fb5ac1894cad8bf 87b85013f0246c47facdb5ef093a77b3bb185d99 886e71dd640636be6776ad2df046d78d75823d6c 889c062f89e51d48f8e86a37960ca5563b88d30b 8b622af35551fea68faae3275b55bbcc47f6f35e 8c2e7261f742ce693352cee3650d20667fbaa40d 90f60b7bccfec292c1019ce0ee0e83793d53848d 92465474c99ec2382d85edcf356e6a6d77642323 96a55a09df5039c52a55930bded7a66cac815acc 97b71e917310376cf37be3b0b35307f9334d2e28 97d0e340a84547f551bc22aba3a6a4919dbf8174 98ab9a5e8116384ea72128371d20f7ac11bb0f56 98b80e3745141cb9888d5cdb99a9226a3bb5a66c 99928f6eca61abd2034d2b66c3825bce998c34c2 9992ccaf4e95868e8a2972fd6c57d09f8a3df813 99b7c3d63e119239f35d06ac4a5a4ee25964cac3 9ade4d198d280bd411017a7261e510f9cb349e7a 9d084d2aaf4b4e3ab706524e871003a9c54eccc5 9d41c57648ad8164e18b3ca1cfe42dee2f51c934 9f87e0e4c6685cde13f5426548c45d7db5919eed ac69ca1a406a4b529092002dffce970af0ad4332 ace59da922ab2589c46179a14c4864467bc80c62 acfc429e4f9379f20a1faa0c7ad88012a6da6ced ad558bfea5f234668305d0045e69a299f2d0b1df ad59da34da0887ee9fce8183d7035eb048a078b2 ad97e9239a1ccb98da89fad2c0d60b91b7559fe9 aeb7355b969da5fca829dee36632746d312fb0e5 af354ff401310cbba4f4059ccb520d0b6e927e20 b2510a66de5335bb41159b1c9b816672e0805ee3 b272e824c86aa81a964179382a375c2dbc9a3ce4 b5dce5269cb974d26a6ef114cd019a0cfd88ba41 bb011245b74ebd918ed3e0891d2f6b5161ca8f26 bcd83735c9d6b878d6bfa6624ec872c29887b61a bdddbd718c51508700136b8910d1deb43c809a9e be0902581ba83cb68876e3335a997b1f6a0446b3 bf1e351f3c04406173635639f10252172a4ca880 bfea738ec175c86ce4b67f3ec4756377ff94a40c c75701f6233e776bc1fe9b4e7d4dd9f67ef6b756 c9b70fb81d5e57f6be4f285f69f90f7f0673b87f ca14255a83398b7f0c11c550082d38f4888a214b ca677c69e5058a8a1695476061a0e8fae75ebb4f ca760e730dd897d9b1f13af02c15cb475cd0d5a5 d2d5adb472af2cd3275734b5188adaac6bb8f989 d2fa08f974c4827f2634e981f77e8daab4eb3b41 d3b9e51fe4525a3481c2aa8d6f8d9db2d0a6f8ea d425d9023afbe974a7adfd18a2646063d9bcc954 d79815addc836d1c0de6bdd322060202069b5cfd e2d57d3ce04081c14c116dc9f262d1a5764cb4a5 e58edcbfa1b91aad7bb266af7988982b29b39b8a e8717f2ee7ad0bbe01bd6833ee06dc3be26985e6 e9f57f3b60225cbd927b64d8ef452b51d939d9a8 ebba2035d4fd94af838cbaa18cd5b5b9785059c7 ed5cb16f84d8c364018fff335fbf2cc6ac0ee4fc ef695ca26a78fe3e3fc56f226f49983915a37aab f0e80bf2b086a57a058ab46ce7d02968a6221d44 f2120c1164c19c274f27ce3dc422bf8fc27d9c1a f2d3593ccd4f73a59d6d53b1936b6042fe118797 f39ca9499e0b0cb77ed3122d45646b681567f264 f3aff4c1dd60b36a172b2b0347babaf0cd01cfb1 f67fa3c8346abe9339d536ee74d66a680d4e7289 f68cdb245f91d93fc2e140f2dd6b2c9bff96c9ce f69265ab56a38cb1e56de3f14252677fcedb194a f81fe1fe1cf6d8336ccb92cd48f8e3639dcf8a12 f82f1d8a5d9369e61f6f817957c259c417efd9be fa28387f65043c14ff4f8a25b7a720012f61e8ff ff8afc944d45af4f3c49cb21cac3fa991263a9b2
 
 Package: gtk-4-tests
 Architecture: amd64
@@ -3589,6 +3734,32 @@ MD5sum: a74015954d172c62f4ae6d226b8e8714
 SHA1: f06d940cc80c18ec0997193dc313800d41486c7a
 SHA256: c393c84ac19e489ddceb8bfffcc6a0cafbf9666089a9329fb6ca232a886e2ff0
 SHA512: 954ec83e6612a7c143dcec5b4280ebce261fff20b3885058d8bc7f38d43c81976c4c9758ce255570c2ff7da7227f7881cc7e346579cbd5a8a96e26ceb13a76bd
+Homepage: https://www.gtk.org/
+Description: "as-installed" tests for GTK 4
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains installable test programs, primarily for use with
+ autopkgtest.
+
+Package: gtk-4-tests
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 48027
+Depends: iso-codes, librsvg2-common, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libgtk-4-1 (= 4.4.1+ds1-2~bpo11+0.sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0)
+Recommends: gnome-desktop-testing, locales | locales-all
+Filename: ./amd64/gtk-4-tests_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 13424348
+MD5sum: 83f9deb704bb99a10e5e3bc4497e3056
+SHA1: c62d3e42b34271e5d707f303d5059a804c6aff48
+SHA256: 79bb4fbf2173dd843a81564fea5e689f0052105a9797af0378ac8a54ab06bcb5
+SHA512: 63051d4a9305b5eb448642477c9b1227141bf1923cd8a1c5f54bbc2dfe6edc002aa4830c20a482621ca9ff7e4bbddd80a6bcca064bdcf526df3acf6a451ecec1
 Homepage: https://www.gtk.org/
 Description: "as-installed" tests for GTK 4
  GTK is a multi-platform toolkit for creating graphical user
@@ -4381,6 +4552,26 @@ SHA512: e62ebdbd44d89846ee1fbf252b7c1403201f55c8bdb01ea7cac11ce87430d2fc892aed4f
 Description: debug symbols for libgtk-4-1
 Build-Ids: 2d48c0a01eb11ac8bd3770d820400a5b89b4f7db 7fa325579e7ffc07f027e9acccf0c8f90f9a3e57 b2f6bae25347a09122e990d4fa5a73e583c9ad83
 
+Package: libgtk-4-1-dbgsym
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 9886
+Depends: libgtk-4-1 (= 4.4.1+ds1-2~bpo11+0.sean00)
+Filename: ./amd64/libgtk-4-1-dbgsym_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 8850824
+MD5sum: 699fc3eabfed316aae266ac08419879c
+SHA1: dd7aed705c0d52783490f1e02eb6e5c453439f9f
+SHA256: 3fbde2d76cfbf4ee5f669fb5b75e9fe331d9a77d4792067a80a4d3a7902453e6
+SHA512: 9fb76caddcf28945db2cdfbf22ac5f861b666a0e95ae968a1c047d17a7af6a8c2a3a26d1cc5ba1326255943f34a6f40732b888b8c0acc27790f7a30c133d4d3a
+Description: debug symbols for libgtk-4-1
+Build-Ids: 2d48c0a01eb11ac8bd3770d820400a5b89b4f7db 695b0289193d76f224403dd3ae0ef9c9b7bb8e3e 7fa325579e7ffc07f027e9acccf0c8f90f9a3e57
+
 Package: libgtk-4-1
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -4471,6 +4662,36 @@ Description: GTK graphical user interface library
  .
  This package contains the shared libraries.
 
+Package: libgtk-4-1
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8861
+Provides: gtk4-binver-4.0.0
+Depends: adwaita-icon-theme, hicolor-icon-theme, shared-mime-info, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2 (>= 2.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-4-common (>= 4.4.1+ds1-2~bpo11+0.sean00)
+Recommends: libgtk-4-bin, iso-codes, librsvg2-common
+Suggests: gvfs, libgtk-4-media-gstreamer | libgtk-4-media-ffmpeg
+Breaks: libgtk-4-0 (<< 4.0.0)
+Replaces: libgtk-4-0 (<< 4.0.0)
+Filename: ./amd64/libgtk-4-1_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 2773104
+MD5sum: d04e279bf96e80146182825f6c757a8d
+SHA1: 1d67fb6bda795fe0d81c094d2644f3a05024d750
+SHA256: d55593e33defc712c27211827d823b25604a8939aa3f35d447d1c36017515a52
+SHA512: 3952536aaf04e7059b5f9cbc52b55cb31fe9beb78bf015fcd71c266353b62420b408744c5ba3269c6ec8ccccaa8f5d8aa98350a5277d974a902a9a13ec54cb4f
+Homepage: https://www.gtk.org/
+Description: GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+
 Package: libgtk-4-bin-dbgsym
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -4527,6 +4748,25 @@ SHA256: dee77477818dc738415c87508169d3cbed5bee820d2e825851ce6b6663229cd9
 SHA512: 1d9e7cffe55e68b430f26d704616aaa1eb3f2a81aa233a2159dfae3b46b99a54ef587a9a6023ebe9d8e327b551a2aa8ae19b604ca3eaecb149efde6e025e7a02
 Description: debug symbols for libgtk-4-bin
 Build-Ids: 5617fecc1d60c3a17caad38936be96242cfe1365 9443549925592213eff71b2f6f79d115fc9ab434 a2c81f60f1eef5dcea0b4abff5f838ef37cf1092 ee89fca3e8c84f2e4a90703c408eeef93789d824 f309899f1246d07869abeaafb5a483596e1c9de7
+
+Package: libgtk-4-bin-dbgsym
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 9744
+Depends: libgtk-4-bin (= 4.4.1+ds1-2~bpo11+0.sean00)
+Filename: ./amd64/libgtk-4-bin-dbgsym_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 8762100
+MD5sum: b975f43d3fa712ef3f6c8eda1b054ff5
+SHA1: 22f6cb6fbce517ff8967ac86edd1b66af9d51a76
+SHA256: 33bf0660c9968f47bd1887d893d19c7afffa56050485ae2713a9e8e87b1e7a15
+SHA512: b8cad922fca31a20476031d47de52591a5847cc5f96f9d8200d2c77c99b8f321ab15d57c2d285e46e726bc0e717fba6b06bd42c5166684b1cc345cf8cc09c768
+Description: debug symbols for libgtk-4-bin
+Build-Ids: 1b76ee974873ef6db22d4cdf1d587169545720e2 5617fecc1d60c3a17caad38936be96242cfe1365 a2c81f60f1eef5dcea0b4abff5f838ef37cf1092 ee89fca3e8c84f2e4a90703c408eeef93789d824 f309899f1246d07869abeaafb5a483596e1c9de7
 
 Package: libgtk-4-bin
 Architecture: amd64
@@ -4612,6 +4852,34 @@ Description: programs for the GTK graphical user interface library
  This package contains the utilities which are used by the libraries
  and other packages.
 
+Package: libgtk-4-bin
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8556
+Depends: gtk-update-icon-cache, libc6 (>= 2.29), libcairo-gobject2 (>= 1.14.0), libcairo-script-interpreter2 (>= 1.14.0), libcairo2 (>= 1.14.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.30.1), libglib2.0-0 (>= 2.66.0), libgraphene-1.0-0 (>= 1.9.4), libgtk-4-1 (>= 4.4.1+ds1-2~bpo11+0.sean00), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.47.0), libpangocairo-1.0-0 (>= 1.47.0), libpangoft2-1.0-0 (>= 1.47.0), libwayland-client0 (>= 1.16.91), libwayland-egl1 (>= 1.16.91), libx11-6 (>= 2:1.4.99.1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-4-common (>= 4.4.1+ds1-2~bpo11+0.sean00)
+Breaks: gtk-4-examples (<< 3.96.0-3~)
+Replaces: gtk-4-examples (<< 3.96.0-3~)
+Filename: ./amd64/libgtk-4-bin_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 2728080
+MD5sum: 8bf71a6f0560fed0a5ead73ae097acc8
+SHA1: e4aeb66da3d392b172199d14ad02422f73bf88f8
+SHA256: 13f971ce6d4e07ec575f4083d0624e66e84f01df17e9e12822a28c3ecf0c391c
+SHA512: b33ce3a0bd1c35b4fd1c09602c3763013ddc2b4fec940edd4b76c0473a69de8cf74962247d4c91a484f3dd33ac88ed249e44f7ee5c970adfab727c54336dc523
+Homepage: https://www.gtk.org/
+Description: programs for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+
 Package: libgtk-4-dev
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -4683,6 +4951,33 @@ MD5sum: 1bea77434dc6b33f1c1318d85861dcbd
 SHA1: 84164b1d1ec5415a34f0b371e9ae83e54cd4b430
 SHA256: a6e639aaeb17f0831541819c214eed4c9daf305d0711074db1d5c40ecbf2f4ce
 SHA512: 4ba64448e9484db2129c423a65bdcdc4ee7f0f38d14dd37dbb1aea856bcdd96c8f627be79dfa01d131eadb601c87253525ec9040a9196ed396d68d29195a9246
+Homepage: https://www.gtk.org/
+Description: development files for the GTK library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header and development files which are
+ needed for building GTK applications.
+
+Package: libgtk-4-dev
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 10757
+Depends: gir1.2-gtk-4.0 (= 4.4.1+ds1-2~bpo11+0.sean00), libcairo2-dev (>= 1.14.0), libegl1-mesa-dev, libepoxy-dev (>= 1.0), libfontconfig1-dev, libgdk-pixbuf-2.0-dev (>= 2.30.0), libglib2.0-dev (>= 2.66.0), libgraphene-1.0-dev (>= 1.9.1), libpango1.0-dev (>= 1.47.0), libwayland-dev (>= 1.16.91), libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev, libxrandr-dev, libvulkan-dev, pkg-config, wayland-protocols (>= 1.21), libgtk-4-common, libgtk-4-1 (= 4.4.1+ds1-2~bpo11+0.sean00)
+Suggests: libgtk-4-doc, gtk-4-examples
+Filename: ./amd64/libgtk-4-dev_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 915704
+MD5sum: 7649f0865434a2fbfa467fb2a2481987
+SHA1: f5aa47b7edda222d7c9104c07a382c3db6bd2c51
+SHA256: 05adb0b5c878fbbb9d90543d52dff1336b095f69b8fdc0b78f2f8ce1a2cf7add
+SHA512: 4e8d646d75394665e28f6fa7b414e452884afd00af7df41849e3cadfad406498c27459adc53a8c83293e40538a25233048cb09ea3fa83ef3f666627deaee1bbc
 Homepage: https://www.gtk.org/
 Description: development files for the GTK library
  GTK is a multi-platform toolkit for creating graphical user
@@ -4796,6 +5091,25 @@ SHA512: 9207489c65ea7225267a811adf31a2fc73b92b5c8d31ef1d0bc3e157e888d1bc201ff38d
 Description: debug symbols for libgtk-4-media-gstreamer
 Build-Ids: b1366e80f4c793c1893b340f78dce3c8c5354a67
 
+Package: libgtk-4-media-gstreamer-dbgsym
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 75
+Depends: libgtk-4-media-gstreamer (= 4.4.1+ds1-2~bpo11+0.sean00)
+Filename: ./amd64/libgtk-4-media-gstreamer-dbgsym_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 55028
+MD5sum: 8da4cb8e2a1c61df84a64979538d01ea
+SHA1: 4dbd9564b9f3b990136c33920c04f9079225b882
+SHA256: 65ebffb13cee0bd7861b42f073693e58ee24dd5e0e1cfcb5ac7fa26eb8f8c050
+SHA512: 1625d0a7ad3d6c50852165e57f5b8e4e2ee3525081840d077ac96998d0b27efbbe706f36cb8c53301757866d6e88d9108dc6c9f7d5b546bbd4aa703de53ed429
+Description: debug symbols for libgtk-4-media-gstreamer
+Build-Ids: b1366e80f4c793c1893b340f78dce3c8c5354a67
+
 Package: libgtk-4-media-gstreamer
 Architecture: amd64
 Version: 4.4.0+ds1-1
@@ -4862,6 +5176,31 @@ MD5sum: 28648e0286d49a169a6fd4ee031b495b
 SHA1: 204dd21716d2c8cbc85ba9c7dfce237376831e27
 SHA256: eb47de26f7b32ff8736508f4d86d67b4e4e547cd5bc41b5e142daafd2ecafbbf
 SHA512: d3fa214d90b5001b82095ff32b0adba806b88fd23901bfa0fab4dc17e94c4b345fb0df132b79ffcc019fa7ba1810c09ee128af16502fcfb2036a165984247862
+Homepage: https://www.gtk.org/
+Description: GStreamer media backend for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the media module that uses GStreamer as backend.
+
+Package: libgtk-4-media-gstreamer
+Architecture: amd64
+Version: 4.4.1+ds1-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: gtk4
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 155
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.66.0), libgstreamer-gl1.0-0 (>= 1.14.0), libgstreamer-plugins-bad1.0-0 (>= 1.18.4), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.12.3), libgtk-4-1 (>= 4.3.2)
+Filename: ./amd64/libgtk-4-media-gstreamer_4.4.1+ds1-2~bpo11+0.sean00_amd64.deb
+Size: 89448
+MD5sum: e0f2b33c1ba9f622e2bf009f8a5a4f27
+SHA1: b04acd61083305622765ee75a02f72ae24080860
+SHA256: 4411d763a497818b2844c7d6dd55f8a4fb583843dcfd0e5fd3eebe968bc91a8e
+SHA512: b818b8411f9833f294ec7cd394d5c6ccf10fd0aa55e16877e61f694603540307232abd36c62bd7a287ffad99b4d174ecd564aa5225ad5fe1fd1fc0f91ec90c80
 Homepage: https://www.gtk.org/
 Description: GStreamer media backend for the GTK graphical user interface library
  GTK is a multi-platform toolkit for creating graphical user
@@ -7685,6 +8024,30 @@ Description: development headers for GObject Python bindings
  This package contains the development headers needed to build C extensions
  which use pygobject.
 
+Package: python-gi-dev
+Architecture: amd64
+Version: 3.42.0-2~bpo11+0.sean00
+Priority: optional
+Section: python
+Source: pygobject
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 60
+Depends: libffi-dev (>= 3.3), libglib2.0-dev (>= 2.48.0), python3-gi (= 3.42.0-2~bpo11+0.sean00)
+Filename: ./amd64/python-gi-dev_3.42.0-2~bpo11+0.sean00_amd64.deb
+Size: 28288
+MD5sum: f7a8f178e50133ffd67ddde09cf0d465
+SHA1: 2efca6203040c03d009c580e42e01b6557329c78
+SHA256: a6bdbea6f1cc614f99ddf1ec54b167cbe1dc4b1897e15886c90348c1902bd50a
+SHA512: eaf087fe58a12cbb27e2e6957e1996cb659d8383d44218cdeb95e6e02cc6bda4834757b932f4865ed481445d9d6893891401d72011683bafc4be480480ed20c8
+Homepage: https://wiki.gnome.org/Projects/PyGObject
+Description: development headers for GObject Python bindings
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the development headers needed to build C extensions
+ which use pygobject.
+
 Package: python3-gi-cairo
 Architecture: amd64
 Version: 3.40.1-2
@@ -7700,6 +8063,30 @@ MD5sum: ad9f2252dfd0a97f0f6d0b9d4d975bb8
 SHA1: 83f5531538bf729218c389bd01c75cd0ddcb41bb
 SHA256: b8a6f8dbee2f051af240b3d019417bd299eb6512330066dbc1fece5e6262612e
 SHA512: 315ba248e10596f5a62106a6b9f400e5010adf0f9c4eaa323b6f10f50b72e0a93af6a9fec46c8cd80d9e390c7b294b601f367f98effe8257044a3fd59ca948dc
+Homepage: https://wiki.gnome.org/Projects/PyGObject
+Description: Python 3 Cairo bindings for the GObject library
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the Python 3 Cairo bindings for GObject. It is mostly
+ used by other bindings to map their GObjects to Python objects.
+
+Package: python3-gi-cairo
+Architecture: amd64
+Version: 3.42.0-2~bpo11+0.sean00
+Priority: optional
+Section: python
+Source: pygobject
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 55
+Depends: python3-cairo (>= 1.11.1), python3-gi (= 3.42.0-2~bpo11+0.sean00), python3 (<< 3.10), python3 (>= 3.9~), libc6 (>= 2.4), libcairo-gobject2 (>= 1.12.16), libcairo2 (>= 1.10.0), libglib2.0-0 (>= 2.56.0)
+Filename: ./amd64/python3-gi-cairo_3.42.0-2~bpo11+0.sean00_amd64.deb
+Size: 27284
+MD5sum: e403adafae1fa8de2b5ebb33d813c428
+SHA1: f942ec78cb24beb4a2d5f497dbad6d5ec4b34c67
+SHA256: 2320f0de370dee5c8da615a60da033fab3486e3bf1e2b3524491ecb8a12899bb
+SHA512: f906654f4c820d7edae56b91a8856e1dbc6742e92075975e04d147a3006051a5a19282beb2b850cc0d8d54d61120c5e563dbe5f558ce9e11cd0941e499ad2e54
 Homepage: https://wiki.gnome.org/Projects/PyGObject
 Description: Python 3 Cairo bindings for the GObject library
  GObject is an abstraction layer that allows programming with an object
@@ -7737,6 +8124,34 @@ Description: Python 3 bindings for gobject-introspection libraries (debug extens
  This package contains the extensions built for the Python 3 debug interpreter.
 Build-Ids: d484c60ebfaf8ec62a1906b239abc9f0dd475424
 
+Package: python3-gi-dbg
+Architecture: amd64
+Version: 3.42.0-2~bpo11+0.sean00
+Priority: optional
+Section: debug
+Source: pygobject
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 870
+Depends: python3-gi (= 3.42.0-2~bpo11+0.sean00), python3-dbg (<< 3.10), python3-dbg (>= 3.9~), libc6 (>= 2.14), libcairo-gobject2 (>= 1.12.16), libcairo2 (>= 1.10.0), libffi7 (>= 3.3~20180313), libgirepository-1.0-1 (>= 1.62.0-4~), libglib2.0-0 (>= 2.56.0)
+Filename: ./amd64/python3-gi-dbg_3.42.0-2~bpo11+0.sean00_amd64.deb
+Size: 536124
+MD5sum: 52d53a43be9cf1541d9ab2d8155591e2
+SHA1: bd1172f73910106ac2f6494002ea952028e31aeb
+SHA256: 83a672c3fae46b752c52749db8b635edcd6765db7c9b951ab0cda5420db99fca
+SHA512: bc3a41c3073f6f6dec6d957b8790c94ade1e13514c4ca1a6cc843a723d6d043d65acf46f56f361e1362ca1fde98698906d7a35b5358749e4859ba634e12b656f
+Homepage: https://wiki.gnome.org/Projects/PyGObject
+Description: Python 3 bindings for gobject-introspection libraries (debug extension)
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the Python 3 binding generator for libraries that
+ support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
+ package. With these packages, the libraries can be used from Python 3.
+ .
+ This package contains the extensions built for the Python 3 debug interpreter.
+Build-Ids: 186980938e832fcb3883e2d68b391a1a3d945829
+
 Package: python3-gi
 Architecture: amd64
 Version: 3.40.1-2
@@ -7753,6 +8168,32 @@ MD5sum: d61dd3d0b9dda263f88e994b491de61f
 SHA1: dc2716af24f3ae6d143f7f46f89a369fbab8ec7f
 SHA256: 87f3c7f04b3384fe34c95767f2ad2967833dc1b7cb67991d43da5f1b4dfba11c
 SHA512: afc0b50386bc85c8ec4c4033e32d6a9dfd768cf265025513f6a0582b0d8ebeb1b266ad8f1d09e2213eddb7836ce166f9246d270d33a0ccdf9b5654c2efa2aa2c
+Homepage: https://wiki.gnome.org/Projects/PyGObject
+Description: Python 3 bindings for gobject-introspection libraries
+ GObject is an abstraction layer that allows programming with an object
+ paradigm that is compatible with many languages. It is a part of Glib,
+ the core library used to build GTK+ and GNOME.
+ .
+ This package contains the Python 3 binding generator for libraries that
+ support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
+ package. With these packages, the libraries can be used from Python 3.
+
+Package: python3-gi
+Architecture: amd64
+Version: 3.42.0-2~bpo11+0.sean00
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: pygobject
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 739
+Depends: gir1.2-glib-2.0 (>= 1.48.0), python3 (<< 3.10), python3 (>= 3.9~), python3:any, libc6 (>= 2.14), libffi7 (>= 3.3~20180313), libgirepository-1.0-1 (>= 1.62.0-4~), libglib2.0-0 (>= 2.56.0)
+Filename: ./amd64/python3-gi_3.42.0-2~bpo11+0.sean00_amd64.deb
+Size: 233696
+MD5sum: d45bcb1d0bf3fc65a5004c213affc4ec
+SHA1: 9aa252188667a96a9d02526fcdfe84d4c4209edf
+SHA256: f897c950c1d5d8ae62b60c770b42de1c6d135c706e327dd84041a3bcc677ec13
+SHA512: b53d7f6e1c13ee842e97a79637e210fa06b8880e8221406be2984b27586680a6226a88f23e803b9e444b580f3e5012dfbe32cdc85cdd71ddc4dc3ade5bc8075e
 Homepage: https://wiki.gnome.org/Projects/PyGObject
 Description: Python 3 bindings for gobject-introspection libraries
  GObject is an abstraction layer that allows programming with an object
