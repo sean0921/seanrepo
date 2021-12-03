@@ -12020,6 +12020,240 @@ Description: Layout and rendering of internationalized text - gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
+Package: libasound2-dbgsym
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 1076
+Depends: libasound2 (= 1.2.5.1-1.2~bpo11+0.sean00)
+Filename: ./i386/libasound2-dbgsym_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 950552
+MD5sum: 2579bc9b96e641b60f67c3457d1bb686
+SHA1: e2565ef85185d4c8d88b6785d8eabfb3f8a3ab41
+SHA256: b098fa018ff2c1d8f828f4c4317b70cae3da82a12d7e606421aa24f88af54f80
+SHA512: dfad603e82f8229c533806129f6438409ed70ae86319b66ac05f067e6501425552ad6c51a1fb535f08c0b9e97eb8d42cf76d410c5f5691ed9cd2d40368295669
+Description: debug symbols for libasound2
+Build-Ids: 7ced4a6743bcfcac63842c50acc4109b54873cd3
+
+Package: libasound2-dev
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 671
+Provides: libasound-dev
+Depends: libasound2 (= 1.2.5.1-1.2~bpo11+0.sean00)
+Suggests: libasound2-doc
+Filename: ./i386/libasound2-dev_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 126876
+MD5sum: 58dcdeece159f2b8c1d07f5f8e4aa4cf
+SHA1: 84811dce4084e89959360f6ac86f3f6cdaca9cc3
+SHA256: 26de2ed0ba133961b1fcd8c6e6890054e24206bd59506fa8e234cdc31439c978
+SHA512: ec4d1d3380c495fda7a8b45c0e3f01ee37512b6145a17856fdb491da6329dcd54d218f79d6aa7d4c8a177b888541c800012d502c54ea2a37ea9571423d5e88a9
+Homepage: https://www.alsa-project.org/
+Description: shared library for ALSA applications -- development files
+ This package contains files required for developing software
+ that makes use of libasound2, the ALSA library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2-plugin-smixer-dbgsym
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 43
+Depends: libasound2-plugin-smixer (= 1.2.5.1-1.2~bpo11+0.sean00)
+Filename: ./i386/libasound2-plugin-smixer-dbgsym_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 28800
+MD5sum: 52b9de3a58b616cf1f7002ed880e7767
+SHA1: 40b6eed95afa936037a34c7743f4bd60ea565956
+SHA256: 58b52ebcd57290d6b00d992b142790781c49b5830fc89a127ba35cfda0a1dcb0
+SHA512: 47799631682b5876d6fe6ce00ba9dec2126928dc00dcd6908e857662ddc40fb0668dd17311d4c2a5e7faec6355d580afd26f51e29938ab79f2dee6c7da54f4de
+Description: debug symbols for libasound2-plugin-smixer
+Build-Ids: 03d106d7c860952f51518414d2f819b42f832dff
+
+Package: libasound2-plugin-smixer
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 64
+Depends: libasound2 (= 1.2.5.1-1.2~bpo11+0.sean00), libc6 (>= 2.4), libpython3.9 (>= 3.9.1)
+Filename: ./i386/libasound2-plugin-smixer_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 32472
+MD5sum: 02229fbebc594758bc87a977d8fae4ed
+SHA1: 5b59ba564a37125422f4c166bdf2eb8c964edb2a
+SHA256: 1c0f2849eaad03533d21a8326c2d67b0a976add90735152ca09131a909b07ca1
+SHA512: 7e3b2994ec8c93475cd541e0d355c977667e899db86ff74f5002d334d40ef4e3ae75f9ffd9233db98203270706bd54b71725bc49dde3e9d07936b69000064344
+Homepage: https://www.alsa-project.org/
+Description: smixer plugin for ALSA library
+ This package contains the smixer (Simple Mixer) interface for the ALSA
+ library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2-plugins-dbgsym
+Architecture: i386
+Version: 1.2.5-2.1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: alsa-plugins
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 247
+Depends: libasound2-plugins (= 1.2.5-2.1~bpo11+0.sean00)
+Filename: ./i386/libasound2-plugins-dbgsym_1.2.5-2.1~bpo11+0.sean00_i386.deb
+Size: 151768
+MD5sum: 1e5bd9f0362b89e9db6184165b674b29
+SHA1: 76b4dc1d94536e6087f8fbb84ebbc37e4675285e
+SHA256: 8c7ea00821dedc8d593cdead8cd610b8434f6f3f0258f8e394abe0ed0b108f00
+SHA512: 972963775782e73ba000b4c21545af0f5953e97a80d0651255207c17af1bebfcb612b87ea9d26b118f63ff0cd234e58cfc3346ab6903efaabf774ca0f8050b3e
+Description: debug symbols for libasound2-plugins
+Build-Ids: 139a9f34b9e5f13db846312d122f73a2dc2d94fe 145c8cd242c4a7cba4367ca6a866e6144364b2ee 384fdac474cacd775a6947e825c2d70f3a14e1e5 397dbf9e17b556b4bdbff219c21c17abea29d479 40bc510ca8fe1119b89aa5c432a46da05ffa3109 48ed0e2ca2db9b1a396d6804447ee09ed6d2a4a1 55c9d376fd13a129939f38da5e1de2e8662be157 7327962c670da2cbe8f470232c827bd56a90dee1 76cea1775bc03698775fd8aa6c1a7d49313d2076 9decfe4b7e68eedaa902a905785d2fbcfd5a9cdf a4936089fe4ebca8ea4fd249b5dc90b668194fda a6916ec833f61c219f506817d36acd1b0da12173 d865aa018f0fdf69c372b23f941999b207559e1d fdc33fff290b8fa0a082de9782339efc2a587e43
+
+Package: libasound2-plugins
+Architecture: i386
+Version: 1.2.5-2.1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: alsa-plugins
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 358
+Depends: libasound2 (>= 1.2.5), libavcodec58 (>= 7:4.4), libavutil56 (>= 7:4.4), libc6 (>= 2.28), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libpulse0 (>= 0.99.1-1~), libsamplerate0 (>= 0.1.7), libswresample3 (>= 7:4.4)
+Filename: ./i386/libasound2-plugins_1.2.5-2.1~bpo11+0.sean00_i386.deb
+Size: 79616
+MD5sum: f1ba9faa8216f6b11623cba22c7a995d
+SHA1: c41e7c62da563dc7d18dcb44d100a05a20d50c92
+SHA256: 5efca0514e37e44a6825d4982db3a9516f210ebaf18bc8dc2dd5defdb9110212
+SHA512: d6b39bbf86f8350052a5be050be1487aacdc21228a1c1efcb91db74f442c3f01ba46cf70896373c3902fdeaf1634dd2c931a329f4caa93389fee111e0f01b38d
+Homepage: https://www.alsa-project.org/
+Description: ALSA library additional plugins
+ This package contains plugins for the ALSA library that are
+ not included in the main libasound2 package.
+ .
+ The following plugins are included, among other:
+   - a52: S16 to A52 stream converter
+   - jack: play or capture via JACK
+   - oss: run native ALSA apps on OSS drivers
+   - pulse: play or capture via Pulse Audio
+   - lavcrate, samplerate and speexrate: rate converters
+   - upmix and vdownmix: convert from/to 2 and 4/6 channel streams
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libasound2
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 1273
+Depends: libasound2-data (>= 1.2.5.1-1.2~bpo11+0.sean00), libc6 (>= 2.29)
+Suggests: libasound2-plugins (>= 1.0.24)
+Breaks: alsa-utils (<< 1.2.1)
+Filename: ./i386/libasound2_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 397220
+MD5sum: e65bb1ec1d9103305b2f01912cfffcae
+SHA1: 41fe6c5fa1f5922e83131ead0b0097a8b2534e35
+SHA256: 42ea86f199c8611b8f655a392ce43a0bdc43ff6ff2c8617e1703b619b402ae31
+SHA512: 472b170e1355ac057a9587b5c2ad23fda5f1beca56dd622314eac0f448a5676239e9c3f9c38fe83e1db336f5225a971c869a3188d3e5abc7513ee223c67f5bc4
+Homepage: https://www.alsa-project.org/
+Description: shared library for ALSA applications
+ This package contains the ALSA library and its standard plugins, as well
+ as the required configuration files.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libatopology-dev
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 72
+Provides: libatopology-dev
+Depends: libatopology2 (= 1.2.5.1-1.2~bpo11+0.sean00), libasound2-dev
+Breaks: libasound2-dev (<< 1.2.1.1)
+Replaces: libasound2-dev (<< 1.2.1.1)
+Filename: ./i386/libatopology-dev_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 31976
+MD5sum: 76ae52e147dd0994e89548f97031790f
+SHA1: 58741f869211abc21c26c8655f6e38fb418eaf6b
+SHA256: aa5bce48c699ff62da9726edf80640ced1c89fee23f873c4c38f1a2996cfc4ed
+SHA512: 2ef47faa1a31f0010f29c2fcf093b731e4a993eba8687de427734733ff800c84673b4d0a56b5e1df994ca72a95268ad23f686b6387539f21373938d1cddfd358
+Homepage: https://www.alsa-project.org/
+Description: shared library for handling ALSA topology -- development files
+ This package contains files required for developing software
+ that makes use of libatopology2, the ALSA topology library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
+Package: libatopology2-dbgsym
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 119
+Depends: libatopology2 (= 1.2.5.1-1.2~bpo11+0.sean00)
+Filename: ./i386/libatopology2-dbgsym_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 102924
+MD5sum: 213cab51404e446753fb86a225e805f5
+SHA1: 8f2dbbaaa26e0b6483d409cb21bdf98103a87fa3
+SHA256: c7bb7a8f57ebe1025ec1a56670c7bf36bd1feb082cd0d812f25046d2f2e2c66c
+SHA512: 514631097b4149a2325095e6283d505955bff22752e2c0875784e09e6ee3faa156b95315e9a293745bfb14fbf6fff2a7e95f5935f6dfc4510a40b807a15c1e03
+Description: debug symbols for libatopology2
+Build-Ids: e602f566dc52d963dab37f6ae79b639510b76b50
+
+Package: libatopology2
+Architecture: i386
+Version: 1.2.5.1-1.2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: alsa-lib
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Installed-Size: 166
+Depends: libasound2 (>= 1.2.3), libc6 (>= 2.4)
+Breaks: libasound2 (<< 1.2.1.1)
+Replaces: libasound2 (<< 1.2.1.1)
+Filename: ./i386/libatopology2_1.2.5.1-1.2~bpo11+0.sean00_i386.deb
+Size: 70860
+MD5sum: 16b3178e089a7cf2c5a43be0aa5109b9
+SHA1: 7be5f391c4369808ca793699d849c272284f6273
+SHA256: aa9a0d74c20163c0fddfbf7376018a727955424a0d22c6d06d58d9f8c24a01ad
+SHA512: 0e52256b093ce0b13959953fdf2a1d87c6c04340fd8b72a89fe64e5f19e33be51460b857f917723940615050b34368d80befec3a205089079abc109d45c5bcae
+Homepage: https://www.alsa-project.org/
+Description: shared library for handling ALSA topology definitions
+ This package contains the ALSA topology library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+
 Package: libavcodec-dev
 Architecture: i386
 Version: 7:4.4.1-2.1~bpo11+0.sean00
