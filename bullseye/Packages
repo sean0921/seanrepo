@@ -2051,31 +2051,6 @@ Description: Configuration files and profiles for ALSA drivers
  .
  ALSA is the Advanced Linux Sound Architecture.
 
-Package: libasound2-data
-Architecture: all
-Version: 1.2.5.1-2
-Multi-Arch: foreign
-Priority: optional
-Section: libs
-Source: alsa-lib
-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
-Installed-Size: 217
-Recommends: alsa-ucm-conf, alsa-topology-conf
-Suggests: alsa-utils
-Breaks: libasound2 (<< 1.2.5.1-2)
-Replaces: libasound2 (<< 1.2.5.1-2)
-Filename: ./all/libasound2-data_1.2.5.1-2_all.deb
-Size: 38656
-MD5sum: 7f859c467d5c827ac82771810ea351e1
-SHA1: a3c7d266999df69c90fd5f7d363557406b08de90
-SHA256: 5f52341ef3b8cc39118ea57a26854d6a8757d8b8a015fa4a039678bab21725fd
-SHA512: 26ce143f3a9f15dbe55fbbb7f3fc0159f752f1a41f652c7cab0ad0725a028abdb52c6ca2b7cf826c54f722516d8c85c1240a5c51294faeca5ae5e6f27b382051
-Homepage: https://www.alsa-project.org/
-Description: Configuration files and profiles for ALSA drivers
- This package contains configuration files for ALSA drivers.
- .
- ALSA is the Advanced Linux Sound Architecture.
-
 Package: libasound2-doc
 Architecture: all
 Version: 1.2.5.1-1.2~bpo11+0.sean00
@@ -2093,31 +2068,6 @@ MD5sum: 038f231425c774fbeda350607c60dbb6
 SHA1: 5fb6a357be13e9cc727b10095af824e6d4e799c4
 SHA256: f61ff6865cfbff22c9751cfa0d625df4795b921eb66ded96cec0dc82091c2898
 SHA512: ecb4bdfca2a2f5a8160d188284939ea319e2463a3d72971578544ee9b11597d10ff3bb5f6896b64c7348fb73d4ccf669a14114771251d316869bbec882b92803
-Homepage: https://www.alsa-project.org/
-Description: documentation for user-space ALSA application programming
- This package contains the HTML documentation for the ALSA library, which
- describes the development API for user-space applications that want to
- use ALSA.
- .
- ALSA is the Advanced Linux Sound Architecture.
-
-Package: libasound2-doc
-Architecture: all
-Version: 1.2.5.1-2
-Multi-Arch: foreign
-Priority: optional
-Section: doc
-Source: alsa-lib
-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
-Installed-Size: 16059
-Depends: libjs-jquery
-Suggests: libasound2-dev
-Filename: ./all/libasound2-doc_1.2.5.1-2_all.deb
-Size: 2216424
-MD5sum: e1ac459241ff8a7530a14e61857bf0c0
-SHA1: d8ed5b72617262a7621e2406e9d761130f22bf4f
-SHA256: 2ca14dd39ea75e477c6c2a1bf725a0a9ae88da7cb935c9ae13cfa156485ee320
-SHA512: 0edeeaad8814cfd9158a4ceee88827decb4706e73f232855c3c8bb96fafb957a0374944b8e29c017627e69dccd203aed09b1db8317b75f3505f458dc3a0b271e
 Homepage: https://www.alsa-project.org/
 Description: documentation for user-space ALSA application programming
  This package contains the HTML documentation for the ALSA library, which
@@ -3138,6 +3088,50 @@ Description: Tools for transcoding, streaming and playing of multimedia files
   * ffplay: a simple media player based on SDL and the FFmpeg libraries
   * ffprobe: a simple multimedia stream analyzer
   * qt-faststart: a utility to rearrange Quicktime files
+
+Package: ffmsindex-dbgsym
+Architecture: amd64
+Version: 2.23-5~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: ffms2
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 60
+Depends: ffmsindex (= 2.23-5~bpo11+0.sean00)
+Filename: ./amd64/ffmsindex-dbgsym_2.23-5~bpo11+0.sean00_amd64.deb
+Size: 44116
+MD5sum: 194d6043d0f6067d57fe1f65030b16ba
+SHA1: dcb7db98f558c80f4ebb7dddc33b4ef913e35652
+SHA256: ea097b8a894817543b6ec09d0fb610c05eab4211c9c4c1357d27b52e1f03da89
+SHA512: eaa3ef707801a191e50e90d64a78f0588778293a4d2a02fa16e93b9094dcd0f07d9a8b696595edfa87ba8ad3b58a90c59908a2979878ff02a77b0d54bdc696f4
+Description: debug symbols for ffmsindex
+Build-Ids: d9507981030076244e6bbe004a41be4cbabe6a30
+
+Package: ffmsindex
+Architecture: amd64
+Version: 2.23-5~bpo11+0.sean00
+Priority: optional
+Section: video
+Source: ffms2
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 54
+Depends: libc6 (>= 2.14), libffms2-4 (>= 2.21), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Filename: ./amd64/ffmsindex_2.23-5~bpo11+0.sean00_amd64.deb
+Size: 23036
+MD5sum: 82f4b41706cca2d6c537504ff89cbae8
+SHA1: 739bdb716ee9dd4069e120eba6da42e335cd1abb
+SHA256: d2f870b7a942dbd3ea7db9be1486dbef0df1c2c5c31ac15ec39ac08654631889
+SHA512: 50367d9b32071aa73d0acef362ff4fe3e7c70701d882f00a8aca5b9323dcbba1052cea490c424d9e954ea2732f02293852bdace9cef3f4c66ab5c07552a183f6
+Homepage: https://github.com/FFMS/ffms2
+Description: Command line tool to create ffms2 index files
+ A cross platform ffmpeg wrapper library, and some additional content for
+ things ffmpeg doesn't handle well. A more friendly API and an easy way to
+ say "open and decompress this, I don't care how".
+ .
+ This package contain a command line indexer tool. Used to create index
+ files which can later be used by applications which are useing ffms2
+ to speed up loading of multimedia files.
 
 Package: gir1.2-cloudproviders-0.3.0
 Architecture: amd64
@@ -5748,6 +5742,75 @@ Description: cloud provider library
  clients to expose their services. Clients such as file managers and desktop
  environments can then provide integrated access to the cloud providers
  services.
+
+Package: libffms2-4-dbgsym
+Architecture: amd64
+Version: 2.23-5~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: ffms2
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 758
+Depends: libffms2-4 (= 2.23-5~bpo11+0.sean00)
+Filename: ./amd64/libffms2-4-dbgsym_2.23-5~bpo11+0.sean00_amd64.deb
+Size: 724272
+MD5sum: 6ac7e034f749c87cd3f6c5c0c6b4b1b7
+SHA1: c38a7b748ce3c2c06d9c75acbba2ea4092e0cde2
+SHA256: 24d4231454accfdfd122a5cc49bd7365557e0e934cbc0e59bb64680a3184f56f
+SHA512: 293112d15c02f4814ab0e78bb1ffb30a7adc7fc02c90907a660011efee412c0d6d81af9867a613b36a2a2f1fa1fc6b567e32aa31707dccfc18bbe9379b933ab3
+Description: debug symbols for libffms2-4
+Build-Ids: d1f777b394a5ce171c92f6c2c68176b4763b5689
+
+Package: libffms2-4
+Architecture: amd64
+Version: 2.23-5~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ffms2
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 187
+Depends: libavcodec58 (>= 7:4.2), libavformat58 (>= 7:4.1), libavutil56 (>= 7:4.0), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), zlib1g (>= 1:1.1.4)
+Filename: ./amd64/libffms2-4_2.23-5~bpo11+0.sean00_amd64.deb
+Size: 71808
+MD5sum: c2bb15824f7251bf0adaffc5d46122f5
+SHA1: 05ed90c92cf4cfcb66857178bd3d4d0db3fda61d
+SHA256: 1b36fc46709e656e14ada7ff27f62f8eca3cdf445b9fe1c222ced86041f614d9
+SHA512: 8ee0cf6360a3d0212d66e46091d97d984c0f2d74e6cb6c54f9af4ce279c7c6c61f7e0fa353f4ecb6bd1611387175aa3890e73672925c75dee114d26b6a3923f1
+Homepage: https://github.com/FFMS/ffms2
+Description: Cross platform ffmpeg wrapper library
+ A cross platform ffmpeg wrapper library, and some additional content for
+ things ffmpeg doesn't handle well. A more friendly API and an easy way to
+ say "open and decompress this, I don't care how".
+ .
+ This package contains the shared library.
+
+Package: libffms2-dev
+Architecture: amd64
+Version: 2.23-5~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: ffms2
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 149
+Depends: libffms2-4 (= 2.23-5~bpo11+0.sean00), libavcodec-dev, libavformat-dev, libavutil-dev, libswresample-dev, libswscale-dev, zlib1g-dev
+Filename: ./amd64/libffms2-dev_2.23-5~bpo11+0.sean00_amd64.deb
+Size: 40652
+MD5sum: 2b90e5221df42232b0694838bdfb6cda
+SHA1: 8a7eba8d39c73890f81778fb4551969459ba9763
+SHA256: 7bff77221ece1b71212cf78eb2cc9867a8c497083b9da30958a61ee5d2d11738
+SHA512: d9ba1eeadc730a7928f8cda457a4c7884c9f93431df59d68a227f2b4c52392ebddde7b9873c079d2822ed76b12518724e455f9619f4d7db210783e1805ddc34e
+Homepage: https://github.com/FFMS/ffms2
+Description: Development files for libffms2
+ A cross platform ffmpeg wrapper library, and some additional content for
+ things ffmpeg doesn't handle well. A more friendly API and an easy way to
+ say "open and decompress this, I don't care how".
+ .
+ This package contain headers and other files needed to compile and link
+ against libffms2.
 
 Package: libgmt-dev
 Architecture: amd64
