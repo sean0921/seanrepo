@@ -3133,6 +3133,102 @@ Description: Command line tool to create ffms2 index files
  files which can later be used by applications which are useing ffms2
  to speed up loading of multimedia files.
 
+Package: fio-dbgsym
+Architecture: amd64
+Version: 3.28-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: fio
+Maintainer: Martin Steigerwald <martin.steigerwald@proact.de>
+Installed-Size: 1354
+Depends: fio (= 3.28-1~bpo11+0.sean00)
+Filename: ./amd64/fio-dbgsym_3.28-1~bpo11+0.sean00_amd64.deb
+Size: 1257944
+MD5sum: 976b6a8d964d8819d98d72cfae341a05
+SHA1: 98eab75eee2629ea4254db4699f4f9b79bc5fa07
+SHA256: 2b3665e5aca8deea0f87bd3ad06a1d2107b56b541af8c5cc26e25e41ac80611e
+SHA512: 393aaa37193df22949b50a2e9522568681823083030aad682837f79c873317044ccf28eeab4698893a0eecef7df634c06173faa19cf67ef7d928f0ca667a8797
+Description: debug symbols for fio
+Build-Ids: 8517b6dddd56fde662594054a4a97da22b2d862d 993df16dd0c7cfbb6c85c6f51a57e8b9fe5bc5e3 ee2e80929b55b1d556a29657ca1555112158a4c6 f4146126989b83dad3b38232e4936184246f935e f7fd60e711e43dc52994e925a1d7506c0dce7847
+
+Package: fio
+Architecture: amd64
+Version: 3.28-1~bpo11+0.sean00
+Priority: optional
+Section: utils
+Maintainer: Martin Steigerwald <martin.steigerwald@proact.de>
+Installed-Size: 7428
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.30), libgfapi0 (>= 9.2), libibverbs1 (>= 1.1.6), libnuma1 (>= 2.0.11), libpmem1 (>= 1.5), libpmemblk1 (>= 1.4), librados2 (>= 0.79), librbd1 (>= 10.1.0), librdmacm1 (>= 1.0.15), zlib1g (>= 1:1.1.4), init-system-helpers (>= 1.51), python3
+Suggests: gnuplot, gfio, python-scipy
+Filename: ./amd64/fio_3.28-1~bpo11+0.sean00_amd64.deb
+Size: 5334684
+MD5sum: 155d318392c325b8593c3bb9516388f3
+SHA1: 9760e460ad3dcbc592714e7a6fcb31a5eadad393
+SHA256: 149ab29371b32cb2124c6ab535eb2c1c3475471e0194095ef3e9976ae53e1156
+SHA512: 0d66d6e3a2a3ba298e6540ca951bbddd4b96a3da5dd9b145da1a8958e9f9a4d55b67d7eda9470821f516aa3d7373779fdcc6076f66160bf548d49d6e2cd3d204
+Homepage: https://github.com/axboe/fio
+Description: flexible I/O tester
+ fio is a tool that will spawn a number of threads or processes doing a
+ particular type of I/O action as specified by the user. fio takes a
+ number of global parameters, each inherited by the thread unless
+ otherwise parameters given to them overriding that setting is given.
+ The typical use of fio is to write a job file matching the I/O load
+ one wants to simulate.
+ .
+ This package contains the command line version of fio and all additional
+ command line tools. The package gfio contains the GTK+ based gui frontend
+ for fio.
+
+Package: gfio-dbgsym
+Architecture: amd64
+Version: 3.28-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: fio
+Maintainer: Martin Steigerwald <martin.steigerwald@proact.de>
+Installed-Size: 1328
+Depends: gfio (= 3.28-1~bpo11+0.sean00)
+Filename: ./amd64/gfio-dbgsym_3.28-1~bpo11+0.sean00_amd64.deb
+Size: 1258024
+MD5sum: e31ef81dd585f7cab797f2daf8d66c75
+SHA1: e5f7d169b086ecbf59440e9952c49e6c0401ed76
+SHA256: 870a2d39eec14a9078dbfc08c02ab890a73397c5e747084eb6dc3084c3b00543
+SHA512: f879c1cad452a870f3bebcf14315446336def9d1905bdd76d32edbe27d9600ae4cfec57e3ea89c2195b31e7fb88602d7464e66f245b4ec28b100ac1cc7b38a4f
+Description: debug symbols for gfio
+Build-Ids: 04cffe751076be93be7d72f90d3d1130f573111a
+
+Package: gfio
+Architecture: amd64
+Version: 3.28-1~bpo11+0.sean00
+Priority: optional
+Section: utils
+Source: fio
+Maintainer: Martin Steigerwald <martin.steigerwald@proact.de>
+Installed-Size: 1862
+Depends: libaio1 (>= 0.3.93), libc6 (>= 2.30), libcairo2 (>= 1.2.4), libgfapi0 (>= 9.2), libglib2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.24.0), libibverbs1 (>= 1.1.6), libnuma1 (>= 2.0.11), libpmem1 (>= 1.5), libpmemblk1 (>= 1.4), librados2 (>= 0.79), librbd1 (>= 10.1.0), librdmacm1 (>= 1.0.15), zlib1g (>= 1:1.1.4)
+Suggests: fio
+Filename: ./amd64/gfio_3.28-1~bpo11+0.sean00_amd64.deb
+Size: 379204
+MD5sum: 509d165e99907d2508e92ea4b468c881
+SHA1: f26e2f667a70d2325e1b92bd212d4fabadde013e
+SHA256: 778ad0ccfd7c3807aa6c53abd32c505bf5d3f4034d825d141ab393784795aecb
+SHA512: b8781c50abbd4abdfc9b4d7b47ab485f876677ce9004df130eb1a7c2e8923f38a3cf56f1996e86905e217387baa67debb12329741e55dfd56ae7a75f4d81e295
+Homepage: https://github.com/axboe/fio
+Description: flexible I/O tester - gui frontend
+ fio is a tool that will spawn a number of threads or processes doing a
+ particular type of I/O action as specified by the user. fio takes a
+ number of global parameters, each inherited by the thread unless
+ otherwise parameters given to them overriding that setting is given.
+ The typical use of fio is to write a job file matching the I/O load
+ one wants to simulate.
+ .
+ This package contains the GTK+ based gui frontend for fio. The package
+ fio contains the command line version of fio which acts as a backend
+ to the GUI frontend. The frontend can talk to a locally or remotely
+ running fio server.
+
 Package: gir1.2-cloudproviders-0.3.0
 Architecture: amd64
 Version: 0.3.1-2
