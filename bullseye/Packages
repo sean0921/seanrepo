@@ -13270,6 +13270,24 @@ Description: GNOME terminal emulator application - Nautilus extension
  .
  This package contains the extension for Nautilus, the GNOME Files app.
 
+Package: directx-headers-dev
+Architecture: i386
+Version: 1.4.9-1
+Priority: optional
+Section: graphics
+Source: directx-headers
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2141
+Filename: ./i386/directx-headers-dev_1.4.9-1_i386.deb
+Size: 151040
+MD5sum: 24249cfeb7d86966a898b216dc5b1681
+SHA1: f64233729546d3e5fe0c8d79f98f9ce351e3d317
+SHA256: 1308a0ad6a6a32a091128ffbd513205cc63712a7a3fdbc787c9ed8a058a5d532
+SHA512: 1859be1383eaad54696936d1aae924c0a9a5de6610158f3213505bfca8d02f7a53ba0e19e2f8e1a5eb2ca117a0a71a7591a80ef203abfe913ac571e4efbd1109
+Homepage: https://github.com/microsoft/DirectX-Headers
+Description: Direct3D 12 headers
+ This package provides the development headers for Direct3D 12.
+
 Package: ffmpeg-dbgsym
 Architecture: i386
 Version: 7:4.4.1-2.1~bpo11+0.sean00
@@ -14324,6 +14342,560 @@ Description: FFmpeg library with functions for simplifying programming - runtime
  The goal for this library is to be modular, small, efficient and useful.
  .
  This package contains the runtime files.
+
+Package: libd3dadapter9-mesa-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 97
+Depends: libd3dadapter9-mesa (= 21.2.6-1~bpo11+0.sean00), libudev1
+Filename: ./i386/libd3dadapter9-mesa-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 58156
+MD5sum: d41bd3099295353e5666d05f784bb7d3
+SHA1: 3e92ca0da113542bbd87e35dd36b161b0c5a0e78
+SHA256: 3cdd92592eac3f1c9a49887624ed34edb372584ab3e0138aac2a1ac6bb84d167
+SHA512: cf56326d63b5591b7bd737bd94358201530b6369589f3a3095a3dd4a20e97d2a85da61d60baa8ca0a20eebe7076fb0d98c805966e5fa5437b173409e7b0478b6
+Homepage: https://mesa3d.org/
+Description: state-tracker for Direct3D9 -- development files
+ This package contains a Gallium3D state tracker that implements the Direct3D9
+ API.  Combined with the gallium-nine branch of Wine, programs using D3D9 can
+ achieve native (or better) graphics performance.
+ .
+ Development files
+
+Package: libd3dadapter9-mesa
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 18841
+Depends: libc6 (>= 2.29), libdrm-amdgpu1 (>= 2.4.105), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.75), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libsensors5 (>= 1:3.5.0), libstdc++6 (>= 5.2), libvulkan1 (>= 1.2.131.2), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4), libudev1
+Filename: ./i386/libd3dadapter9-mesa_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 5172884
+MD5sum: 004cde9cb612d6f8787a7fb59a69a858
+SHA1: 0077a43c61af150b88f23c851736d80ac69afb34
+SHA256: 92a5e9155c7b7f7d8c65fcde43c95945a6e66777e48a2968437e396b974586ec
+SHA512: 79cab46d06a03772db3398029438915b229ddcb5583b6911093748c899d0af5e5a809e6423102dcb88a7a9b9b3f9f82be87c4c44cc7ca6a6d1b0a9b1affe0be3
+Homepage: https://mesa3d.org/
+Description: state-tracker for Direct3D9
+ This package contains a Gallium3D state tracker that implements the Direct3D9
+ API.  Combined with the gallium-nine branch of Wine, programs using D3D9 can
+ achieve native (or better) graphics performance.
+
+Package: libdrm-amdgpu1
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 87
+Depends: libc6 (>= 2.28), libdrm2 (>= 2.4.108)
+Filename: ./i386/libdrm-amdgpu1_2.4.108-1_i386.deb
+Size: 32204
+MD5sum: 713c7cc28e8508dfeb96ddc2a8e26a3c
+SHA1: 284d91a8e4cc971c6c102660a04521606e0ad75d
+SHA256: dce3d103420ad7337bc8d1a97d9a373a839449ba1b736908d73c895536e0d986
+SHA512: 6b2abc1366e9b09af8fec3af54c095d3c3f3a739ba0e0d8f13ead073b91f11e5283d05fb3d6a46b8cc62b6ec4d9738ddeeb79496d2e00904348a52c60dccb593
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to amdgpu-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+
+Package: libdrm-dev
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1183
+Depends: libdrm2 (= 2.4.108-1), libdrm-intel1 (= 2.4.108-1), libdrm-radeon1 (= 2.4.108-1), libdrm-nouveau2 (= 2.4.108-1), libdrm-amdgpu1 (= 2.4.108-1), libpciaccess-dev
+Filename: ./i386/libdrm-dev_2.4.108-1_i386.deb
+Size: 289212
+MD5sum: 8534e28eb490f9ae1a7cd0c0dcb22062
+SHA1: c633bd4df2f8f3f570958ed29677779a8faa4c64
+SHA256: f968126f828548e2d424d279b9dfce51c19f89dfe688f7cdff7efa95a5bfad0e
+SHA512: 134ca17de3508e7462fc746719d007adbe6c85ec198bf160ac05a115c5386c843e5deb939e6df9011316f4627438de44c7378c64b7743657285e442e4f47724a
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to kernel DRM services -- development files
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package provides the development environment for libdrm.
+
+Package: libdrm-intel1
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 197
+Depends: libc6 (>= 2.17), libdrm2 (>= 2.4.108), libpciaccess0
+Filename: ./i386/libdrm-intel1_2.4.108-1_i386.deb
+Size: 74300
+MD5sum: 7048d7ed17a897fcef417e26ae734717
+SHA1: 96ead88ea5044ca1c8fbee5d8ec4766dabd98383
+SHA256: 77054d355f1b0e34ade6769c5f6f318f9e37e5a6456d35d01f9204f554c2cee5
+SHA512: 2415bc15aea2eb966603fb4302aacf6cff4587740fa46fdb0d63632eeee9d6f99ccb2d62080899df212808e0e03ae4170377b9e33d2ddcbd4b6be72bd363ade6
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to intel-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+
+Package: libdrm-nouveau2
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 77
+Depends: libc6 (>= 2.4), libdrm2 (>= 2.4.108)
+Filename: ./i386/libdrm-nouveau2_2.4.108-1_i386.deb
+Size: 29104
+MD5sum: 318f6fbe7d4d2edf7177c818f8bc6480
+SHA1: cd729369fe26b08ef368a94ebf1513cb1f8f4f75
+SHA256: 0999be8e638c2b3eb2cc6b3e9ce9367cd9fc7b675eea148a688a5ae5da14e8b3
+SHA512: b5b4cf563bc9520eb7c44295c3f1b7253c64010c53eba8c98bf0e4b5a05a6f15c23f63188c83fd98e1f32eeab54c9e2f8adf2f73e8aab269b2902464ff4bc905
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to nouveau-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+
+Package: libdrm-radeon1
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 94
+Depends: libc6 (>= 2.4), libdrm2 (>= 2.4.108)
+Filename: ./i386/libdrm-radeon1_2.4.108-1_i386.deb
+Size: 31840
+MD5sum: 6dd15f3274a740d20c169f711cc8daa4
+SHA1: 14a9d255fe1473717780a39141639ee47f8fa1a7
+SHA256: bda3759516796d752896578f082ad0c8a3997e245395c988c5ae6aad24667751
+SHA512: 1d9f8e792f1147046ddfa6fb000bb05459d58dd8d1397add06177c394e2ae96b5bf8f6868b9c82e663e830ef695f3656d8835604a9417ca321c2fb644beec524
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to radeon-specific kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+
+Package: libdrm-tests
+Architecture: i386
+Version: 2.4.108-1
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 246
+Depends: libdrm2 (= 2.4.108-1), libc6 (>= 2.17), libdrm-amdgpu1 (>= 2.4.77)
+Filename: ./i386/libdrm-tests_2.4.108-1_i386.deb
+Size: 63372
+MD5sum: 1138e45cc94f8c111da2ad0ae9fe1e18
+SHA1: 8526c74902e3bc22ac30a0e1656c2b69fb80ffd6
+SHA256: f6d70e3f6476fcb927c54ed5d11905244874d0f3954eeb56d0b957424cedb58f
+SHA512: ed6cb4114a88197857fb148f856b66dcc50837f0deeac546cec09b4f56ddd743501275d67625363591be8b35f381fb26bea6f0c20cb51f94dabe52483d2674cf
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Testing tools from the libdrm project
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package contains a variety of tools for testing from the libdrm project.
+
+Package: libdrm2
+Architecture: i386
+Version: 2.4.108-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdrm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 135
+Depends: libdrm-common (>= 2.4.108-1), libc6 (>= 2.17)
+Filename: ./i386/libdrm2_2.4.108-1_i386.deb
+Size: 47744
+MD5sum: 48959d2abd8f7c76b45624af9060fb2b
+SHA1: d01b5b0a83ae44932262289393e926b073746500
+SHA256: ea7b87b8640046fe3b7383aaffbfb6bd387d7f0c0ae4c5feb7de4765717b4a54
+SHA512: 7fada530b8be7a4f8667704e57ada79f1f5d89350e642b2b095b1dc38abb79364d0211ebed016a7ef3e31165777ecdb4f0bcf375ff16e365ff302df01700f5f1
+Homepage: https://cgit.freedesktop.org/mesa/drm/
+Description: Userspace interface to kernel DRM services -- runtime
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package provides the runtime environment for libdrm.
+
+Package: libegl-mesa0
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 356
+Provides: libegl-vendor
+Depends: libc6 (>= 2.29), libdrm2 (>= 2.4.81), libexpat1 (>= 2.0.1), libgbm1 (= 21.2.6-1~bpo11+0.sean00), libgcc-s1 (>= 4.2), libglapi-mesa (= 21.2.6-1~bpo11+0.sean00), libwayland-client0 (>= 1.15.0), libwayland-server0 (>= 1.15.0), libx11-xcb1 (>= 2:1.7.2), libxcb-dri2-0 (>= 1.8), libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1
+Filename: ./i386/libegl-mesa0_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 151640
+MD5sum: 46c3cba0c7e93f184d0d20e598f0d61c
+SHA1: a0e097daa8204bcb80ec5d96febf30209ea6aa3c
+SHA256: 8cebb626787310ec7511615be45bd3923320045d5352b2f6e0a29e5ee52d9d53
+SHA512: 6a861bf2e1b9d06db5af33384c5a23256e7a6a2e637d8a24edf96326662d30dd3f6cfefeb26c386e4c8f2681d44832e85193b24e03ff35168432c561222386f8
+Homepage: https://mesa3d.org/
+Description: free implementation of the EGL API -- Mesa vendor library
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the Mesa vendor library for EGL.
+
+Package: libegl1-mesa-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 80
+Depends: libegl-dev, libglvnd-dev
+Filename: ./i386/libegl1-mesa-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 55552
+MD5sum: 007b886935b3129de100a5d63024474c
+SHA1: 2e9a1d95b7d5ff62f89e0cea24166936886927c3
+SHA256: 83e2f0cb1b634dd4d18bcf7d348cb35c0a90b8774919b210d41876279df702fd
+SHA512: 12b3883ec4abc73bcf951331a2aeb6484a85154cdd459a978f185c4d777e6024532d004ddeafe30e9158da6700319407a41d59144f516404dad8397993bcc4c0
+Homepage: https://mesa3d.org/
+Description: free implementation of the EGL API -- development files
+ This package contains the development environment required for compiling
+ programs against EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package provides the development environment for compiling programs
+ against the EGL library.
+
+Package: libegl1-mesa
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libegl1
+Filename: ./i386/libegl1-mesa_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54144
+MD5sum: 0d5f57ca16b600e8bc098852da159e7f
+SHA1: 341829b955b89d4bf1ef2ca247317704eb05afce
+SHA256: a7f907958c804571f1dae1ca104594889103a889240b32aa2b5b7f37f87ac245
+SHA512: e98c96f89b36d203fb1f03611edc3420a1b770f8c0236ee6053204e02fe040fce23b832cf590412b5723075619b76a0fb6b324840c6fed3d5c3169849cd958f2
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libgbm-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 93
+Depends: libgbm1 (= 21.2.6-1~bpo11+0.sean00)
+Filename: ./i386/libgbm-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 57788
+MD5sum: 2b5241a3ebad423228a32741c230f417
+SHA1: fd42655541992a9785ab790cb23c8928aabf436f
+SHA256: 294b136a06afecb9773c2c93652997aee4dfdd37fa84d5ec365163514f158f27
+SHA512: 89986a384c937e4dde1e1dc339ceafebd894c5fc282b151ac9ea2335272fff737430ef9d799f25ed85d18c480dc106102d0e9068cb6b1fe2d592b4bc07fb2fc3
+Homepage: https://mesa3d.org/
+Description: generic buffer management API -- development files
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+ .
+ This package provides the development environment for compiling programs
+ against the GBM library.
+
+Package: libgbm1
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 143
+Depends: libc6 (>= 2.29), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libwayland-server0 (>= 1.15.0)
+Filename: ./i386/libgbm1_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 78488
+MD5sum: 88be5f1bb1530b55ffdd75e7e3e62c12
+SHA1: 34349b411c9a1e26cdb6cc143a9f27ce547ed725
+SHA256: 3b696229628c0c211f3fc7630b8e73d99b14cc8acac48020a430df061b25a5d5
+SHA512: c572b4d82696ac51a6062e9421a82476f53a5f3d06c102e541fdc0122787a2676eaf74a2a01337f17f9987152c7f61f1d217e0c0ce43ad48db194f1fc40daf72
+Homepage: https://mesa3d.org/
+Description: generic buffer management API -- runtime
+ This package contains the GBM buffer management library.  It provides a
+ mechanism for allocating buffers for graphics rendering tied to Mesa.
+ .
+ GBM is intended to be used as a native platform for EGL on drm or openwfd.
+
+Package: libgl1-mesa-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libgl-dev, libglvnd-dev
+Filename: ./i386/libgl1-mesa-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54152
+MD5sum: a4d2b3dc9fcb8686f5920714e1d3fb6c
+SHA1: 8260c05635139e85462e436bb5cc75a0a3fe1468
+SHA256: c8d45c22c355ed74577d41bef220725546c25522d2184bbfadff2f57154a4f1e
+SHA512: 9cbf5450c0370b8d86f3ebccb6cfbe62f6c7acd587bbb1ec361175eb1570dfd4e11db3dda6ab2fab874a6bdc8ccc906b610a57235bf379dc704898dea959406f
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libgl1-mesa-dri
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 40823
+Depends: libc6 (>= 2.29), libdrm-amdgpu1 (>= 2.4.105), libdrm-intel1 (>= 2.4.38), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.75), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libglapi-mesa (= 21.2.6-1~bpo11+0.sean00), libllvm11 (>= 1:9~svn298832-1~), libsensors5 (>= 1:3.5.0), libstdc++6 (>= 5.2), libvulkan1 (>= 1.2.131.2), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: ./i386/libgl1-mesa-dri_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 10602764
+MD5sum: 3eacc46ee86e907db60dd17cf3ee2a5c
+SHA1: 6d24c4c7cd17007318b263401735c2fa6c49fee4
+SHA256: 63213b3298d0524bb71c69c6f30625d313b5fdc99e1e32de1a335c86f9ffcb46
+SHA512: f95c458140fd876383cfed191079e715c55dea217fe3688a7f24afa982c63ee39f6fd8d29a547f2f98053bea649ee554a9884b8f97eab5cec2072027f1a0b8b5
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL API -- DRI modules
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the OpenGL library itself, only the DRI
+ modules for accelerating direct rendering.
+ .
+ For a complete description of Mesa, please look at the
+ libglx-mesa0 package.
+
+Package: libgl1-mesa-glx
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libgl1, libglx-mesa0
+Filename: ./i386/libgl1-mesa-glx_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54160
+MD5sum: fb2f55f9ecd9189448c1eeaeed10f908
+SHA1: 4302d52edd2185fe3bd08301686e356671f6fd62
+SHA256: 94fe85e83d4d1c07e2391136af1c4f762fc7bdd90ca32d6c25fc8864db79edb6
+SHA512: 9f11cd61c97e2d82444bd4e66d6d84a2ae24b88fed9eaa59cbe9f93c1ea2b912b7592bb591f721b3310ac5a851d59933b69df41c4bb633e0a407ccdaa6b7feed
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libglapi-mesa
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 237
+Depends: libc6 (>= 2.4)
+Filename: ./i386/libglapi-mesa_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 74864
+MD5sum: d859a8571c08129a1b073054a5612e24
+SHA1: 089b7a101ce0c0d77fe5672dd464e6519d5dcafb
+SHA256: d79f7f27aed5fe7c9c9e17e10cb435502aca017e83e8844fb8b8bca161c1fe84
+SHA512: ed926e91e8f748498fc7e14badccfae206b2f476d540d84faad01f745a473b97e1e06f2b0f50769e19521cdb7f32963fe6c410ee88914b6325ed08c37cea158c
+Homepage: https://mesa3d.org/
+Description: free implementation of the GL API -- shared library
+ The Mesa GL API module is responsible for dispatching all the gl*
+ functions. It is intended to be mainly used by both the libgles1-mesa
+ and libgles2-mesa packages.
+
+Package: libgles2-mesa-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libgles-dev, libglvnd-dev
+Filename: ./i386/libgles2-mesa-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54156
+MD5sum: 8e3a2773eaec8c34eafcb92fbd2415ae
+SHA1: 2b764d1d6ca59aeb9e9b71787ddbb0e8d34cab91
+SHA256: da395aa38de3567ccd837a8ff630e8f7ce79a9f05148db0130b89291129fd9f2
+SHA512: ecc1544b7b441751c9d9252f931858d3c408eb8187c4583174d4581a636201549337b50784250f4ea248b5b4cc0bbf4297f974dccf913d18d4833a533f309acd
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libgles2-mesa
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libgles2
+Filename: ./i386/libgles2-mesa_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54148
+MD5sum: d342257a51d8bc1ba9a72dab12647970
+SHA1: 65f1cc455bbd84df31a354d2aa795b8803021a97
+SHA256: 11065442c57a3dda1eb5120c4083165036d2696cbf5551f1b439068dda64c4ba
+SHA512: 634d6d57ba259b989aeeee90b20d7a2c10062db8c36b2ac82f9b94042587b753f2cf1dfbbecf3a211bfb664b94c0a15323517a879d45ea29366c1da125c49d98
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
+Package: libglx-mesa0
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 586
+Provides: libglx-vendor
+Depends: libc6 (>= 2.29), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libglapi-mesa (= 21.2.6-1~bpo11+0.sean00), libx11-6 (>= 2:1.4.99.1), libx11-xcb1 (>= 2:1.7.2), libxcb-dri2-0 (>= 1.8), libxcb-dri3-0 (>= 1.13), libxcb-glx0 (>= 1.8), libxcb-present0, libxcb-shm0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxext6, libxfixes3, libxshmfence1, libxxf86vm1, libgl1-mesa-dri
+Breaks: glx-diversions (<< 0.8.4~), libopengl-perl (<< 0.6704+dfsg-2)
+Filename: ./i386/libglx-mesa0_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 193088
+MD5sum: 2af92618b15a49bf9f94679bf33240e1
+SHA1: 9a737cf3f89c17d74f328899c8eda3e4070c996f
+SHA256: ec9f72c763b48d25cb39223ac1484b6f3a7386abde6375f2e74de3ebf03a56dd
+SHA512: 2a256db2ff8c7d4062926b646d5b849987745b0329978775aa0af8b727ab9eb22a72d28b838ca924d46e72c7212d1df0004bc20105e54e64d546ad7f5cdb235f
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL API -- GLX vendor library
+ Mesa is a 3-D graphics library with an API which is very similar to
+ that of OpenGL.  To the extent that Mesa utilizes the OpenGL command
+ syntax or state machine, it is being used with authorization from
+ Silicon Graphics, Inc.  However, the authors make no claim that Mesa
+ is in any way a compatible replacement for OpenGL or associated with
+ Silicon Graphics, Inc.
+ .
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package does not include the modules themselves: these can be found
+ in the libgl1-mesa-dri package.
+
+Package: libosmesa6-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 89
+Provides: libosmesa-dev
+Depends: libosmesa6 (= 21.2.6-1~bpo11+0.sean00), mesa-common-dev (= 21.2.6-1~bpo11+0.sean00) | libgl-dev
+Conflicts: libosmesa-dev
+Replaces: libosmesa-dev
+Filename: ./i386/libosmesa6-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 57552
+MD5sum: 3c4a590acb9280d7b5c3dc261251a102
+SHA1: deb11e95ac0e942a5023442712a91222e2872742
+SHA256: 3556f05628325fb5a38fbb93cc48d503880b2e444e31d51157522869a95c7e26
+SHA512: 4b86bda7541c3ddb2b39da39c175ccf23b7d0147749ebd2dc2c0ffc6f1b1b779a4ff387a476ef4d6af40ac2d8d008db5081e7d2b3b642636ae54f11bb932acfa
+Homepage: https://mesa3d.org/
+Description: Mesa Off-screen rendering extension -- development files
+ This package provides the required environment for developing programs
+ that use the off-screen rendering extension of Mesa.
+ .
+ For more information on OSmesa see the libosmesa6 package.
+
+Package: libosmesa6
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 12402
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 7), libglapi-mesa (= 21.2.6-1~bpo11+0.sean00), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: ./i386/libosmesa6_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 3040908
+MD5sum: 8d752288783b5bc9129ad79f69c42b55
+SHA1: 3c0dc3286daba70d1a5df9cf220f4fae70b169e5
+SHA256: 038b8840f919d95c440b833553ea363c82d29b9f7fabd85932acb2c3f0205e24
+SHA512: fb709744347542e1223010fc268a69a1fb44ae75f81c07c96d1d0482b0e937a4327e4f590c1b5b318fc7736f3218f992e1b0c8d10adf4dd6f4935267b571de10
+Homepage: https://mesa3d.org/
+Description: Mesa Off-screen rendering extension
+ OSmesa is a Mesa extension that allows programs to render to an
+ off-screen buffer using the OpenGL API without having to create a
+ rendering context on an X Server.  It uses a pure software renderer.
+ .
+ This package provides both 16-bit and 32-bit versions of the off-screen
+ renderer which do not require external libraries to work.
 
 Package: libpango-1.0-0-dbgsym
 Architecture: i386
@@ -15458,6 +16030,26 @@ Description: FFmpeg library for image scaling and various conversions - runtime 
  .
  This package contains the runtime files.
 
+Package: libwayland-egl1-mesa
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 71
+Depends: libegl1, libwayland-egl1
+Filename: ./i386/libwayland-egl1-mesa_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 54168
+MD5sum: 7b5778a47014f380957071a5dbd3db35
+SHA1: 9b803372f5f787ee566d4aab4b9fa137d3f77343
+SHA256: 7dfc9d4ef7277c02eff953329984de11e4875ae64d886d7bbf250b6d106169c5
+SHA512: 6245a78e73462ac40ef6b7c77af50309c899d5cfa433099f5ed13458765959c619037e74e5297ec8932a0b8e36a969c6933718e0b9b0addffab6d89ab8ef7b64
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+
 Package: libwine-development-dbgsym
 Architecture: i386
 Version: 6.0+repack-1~sean00
@@ -15528,6 +16120,55 @@ Description: Windows API implementation - library
  .
  This package provides the Wine library.
 
+Package: libxatracker-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 93
+Depends: libxatracker2 (= 21.2.6-1~bpo11+0.sean00)
+Filename: ./i386/libxatracker-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 57676
+MD5sum: efca372dbce9aa39ecff80a3043a6917
+SHA1: 19be5e92a990524ce88d18a3ca372bc991f29138
+SHA256: 904ff20a7e50e78c3f02a3c0de65275b181a55f4d730b82fed756985c270a291
+SHA512: 8269dc3acedf49228432a66c58b4cd08e2142a6bdd6522828daf6f3e67deb4cd5c1053febeb20e3387e729eecb44183749191061cc94114b031a0d2dd0759d06
+Homepage: https://mesa3d.org/
+Description: X acceleration library -- development files
+ This package contains the XA (X acceleration) library.  It is used exclusively
+ by the X server to do render, copy and video acceleration.
+ .
+ XA is intended to be used by the vmware driver for virtualized X acceleration.
+ .
+ This package provides the development environment for compiling programs
+ against the xatracker library.
+
+Package: libxatracker2
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 7423
+Depends: libc6 (>= 2.29), libdrm-nouveau2 (>= 2.4.66), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: ./i386/libxatracker2_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 1871188
+MD5sum: af1c5552b6042583abadfd5d60bc5b00
+SHA1: 66cb37563e75bcd09a5783b02ece3d3e25c38689
+SHA256: 0654cf719a167d08d3e330b5ea771e4ffff061111dadb7ef96f5f610b6ac78b6
+SHA512: c2a588904309906bbcb5a8b25ef3c1b46e2878226ebad9bdb12f314ec1597e4820c74e7843af6455570530ac481651c50bb36f84de9878952befc8354aaf6180
+Homepage: https://mesa3d.org/
+Description: X acceleration library -- runtime
+ This package contains the XA (X acceleration) library.  It is used exclusively
+ by the X server to do render, copy and video acceleration.
+ .
+ XA is intended to be used by the vmware driver for virtualized X acceleration.
+
 Package: libzimg-dev
 Architecture: i386
 Version: 3.0.3+ds1-1.1~bpo11+0.sean00
@@ -15597,6 +16238,130 @@ Description: scaling, colorspace, depth conversion library (shared library)
  from the programmer.
  .
  This package constains the shared library.
+
+Package: mesa-common-dev
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 2154
+Depends: libgl-dev, libglx-dev, libx11-dev, libdrm-dev (>= 2.4.95)
+Breaks: libegl1-mesa-dev (<< 18.2.5-2)
+Replaces: libegl1-mesa-dev (<< 18.2.5-2)
+Filename: ./i386/mesa-common-dev_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 1549588
+MD5sum: dd2bc326d1b8d221348fed5b8ba198b8
+SHA1: f5a41526e2258c531582d884785663d33551c91a
+SHA256: c33d87935dd0efb6994184ec79aabb9827ddc412925f3628ebf67c1f6e11c7c6
+SHA512: 9d3edffbf5f8bcf618bb713dd3dfa2579f3f86e362d31f2bcc6e9f5137b23128da83e37b141f9278334f7dd2d6731280623eed195744c58ef64ec3971738985c
+Homepage: https://mesa3d.org/
+Description: Developer documentation for Mesa
+ This package includes the specifications for the Mesa-specific OpenGL
+ extensions, the complete set of release notes and the development header
+ files common to all Mesa packages.
+
+Package: mesa-opencl-icd
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 46361
+Provides: opencl-icd
+Depends: libclc, ocl-icd-libopencl1 | libopencl1, libc6 (>= 2.29), libclang-cpp11 (>= 1:11.0.1), libdrm-amdgpu1 (>= 2.4.105), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.75), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 9), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: ./i386/mesa-opencl-icd_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 7372624
+MD5sum: 46ea3f9175a85098ca314aac4cad292c
+SHA1: f16c1835b5e39da84de533934e70966ef7216163
+SHA256: 3fd53419b218403ca5c803e3cb50f1db6670b242f50a7a0afe6dcdb517718dee
+SHA512: c00047e9c348d307137529400d47e9f432207d71341039ec8e96737dcbe1a5658beb7bb13dca20d212da161d8c42c652a1efc8ef98195dbabacc428da34fa283
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenCL API -- ICD runtime
+ This package contains the mesa implementation of the OpenCL (Open Compute
+ Language) library, which is intended for use with an ICD loader. OpenCL
+ provides a standardized interface for computational analysis on graphical
+ processing units.
+
+Package: mesa-va-drivers
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 11514
+Provides: va-driver
+Depends: libc6 (>= 2.29), libdrm-amdgpu1 (>= 2.4.105), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.75), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libx11-xcb1 (>= 2:1.7.2), libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Breaks: vdpau-va-driver (<< 0.7.4-5)
+Replaces: vdpau-va-driver (<< 0.7.4-5)
+Enhances: libva2
+Filename: ./i386/mesa-va-drivers_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 3077732
+MD5sum: 6028b0e4077596c8c2f622cdb4493137
+SHA1: 23032d006434bc3bd4b4f7a985810f51871e0736
+SHA256: d6ddbcce70031ba16481348714fef0b3c0b9eacba24d57d8440c1cdd52606911
+SHA512: 0c4fdcbc537805b8d6963026ced09a3933b4f39b104feab6c46d6e682338159d3beefb70b55e900f3661d62fc5153af696bd18329fab9d93cdba31f645a24f87
+Homepage: https://mesa3d.org/
+Description: Mesa VA-API video acceleration drivers
+ These libraries provide the Video Acceleration API (VA-API) for Unix.
+ They provide accelerated video playback (incl. H.264) and video
+ post-processing for the supported graphics cards.
+ .
+ This package enables support for VA-API for some gallium drivers.
+
+Package: mesa-vdpau-drivers
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 11865
+Provides: vdpau-driver
+Depends: libvdpau1, libc6 (>= 2.29), libdrm-amdgpu1 (>= 2.4.105), libdrm-nouveau2 (>= 2.4.66), libdrm-radeon1 (>= 2.4.31), libdrm2 (>= 2.4.75), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libx11-xcb1 (>= 2:1.7.2), libxcb-dri2-0 (>= 1.8), libxcb-dri3-0, libxcb-present0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Enhances: libvdpau1
+Filename: ./i386/mesa-vdpau-drivers_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 3206556
+MD5sum: 2ee0f100760028cfd9482b8e38430055
+SHA1: dd955c1fa8f3fea63e542408c3b19366ab0d2597
+SHA256: 735d0a7232a29814a2f99cac64c2ab8047cc632b8122d8be0d1b65c60bb4f8bc
+SHA512: 2ebc6c6456e47e5af2ca4c6284d3bc100e2f6f6e4c8a999bd0eb68528d66b13b666857f1d036aa230e28fa11bb4d196da3d0dfb2ea98f4fe17d6206c221b149c
+Homepage: https://mesa3d.org/
+Description: Mesa VDPAU video acceleration drivers
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) and video
+ post-processing for the supported graphics cards.
+ .
+ This package enables support for VDPAU for some gallium drivers.
+
+Package: mesa-vulkan-drivers
+Architecture: i386
+Version: 21.2.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mesa
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 25521
+Provides: vulkan-icd
+Depends: libvulkan1, libc6 (>= 2.29), libdrm-amdgpu1 (>= 2.4.105), libdrm2 (>= 2.4.89), libelf1 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 7), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libwayland-client0 (>= 1.15.0), libx11-xcb1 (>= 2:1.7.2), libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0 (>= 1.13), libxcb-sync1, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: ./i386/mesa-vulkan-drivers_21.2.6-1~bpo11+0.sean00_i386.deb
+Size: 4897692
+MD5sum: 69ac979374fc61aebfc0c23330254bdf
+SHA1: ec2e153d47c0142009248973d13bcca8efc3411e
+SHA256: ccf670ed6d0eea3cf97135a16f8d320b04a86a66ec328c13e456643a74133536
+SHA512: 4f90817f43a735ec848a95d09c83f0d6081a64e79c4968f4ff8a55798868e04d39d036fb5dd7015b470cb907768d6f844153cbd6ec6378a31842e1ebd119c057
+Homepage: https://mesa3d.org/
+Description: Mesa Vulkan graphics drivers
+ Vulkan is a low-overhead 3D graphics and compute API. This package
+ includes Vulkan drivers provided by the Mesa project.
 
 Package: pango1.0-tests-dbgsym
 Architecture: i386
