@@ -50,6 +50,2128 @@ Description: Documentation of the FFmpeg multimedia framework
  framework including the API documentation created by doxygen and the manpages
  for the libraries.
 
+Package: firefox-esr-l10n-ach
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 602
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ach_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 477520
+MD5sum: fa49cd1d1fe7f656ef62b339975330e1
+SHA1: b0c065936436d6c89893bb904dc791248f51efa4
+SHA256: 42ce5f0832fb82281adaa7cbe80e42fa98cfdee810328b716f3db39e94351483
+SHA512: f54d88c44b5474e989f1e7f6fa548ec6ce1c1daa518a7a62397a187938b346f0e0229c3bde4155bc6d1f2a8773c03c80cf019aafde6b00227e8a19d820933b7b
+Description: Acoli language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Acoli.
+
+Package: firefox-esr-l10n-af
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 578
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-af
+Filename: ./all/firefox-esr-l10n-af_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 451676
+MD5sum: 78f502676f161161834e58a2ac465423
+SHA1: 81e55794d04fe343ce1b6f7680cf00bfc30669eb
+SHA256: 1de545c2b67a817913f4e5b6765068f1c911f03379a4d234f364dca641b06de6
+SHA512: bfed0944a16793d208197bbd5f7870b7b7eb61db4de53b7070fefad11586bc488766055b04aef1b8bf66897904a242c377fdbd34db1c40bec68f821dc9f01897
+Description: Afrikaans language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Afrikaans.
+
+Package: firefox-esr-l10n-all
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: metapackages
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 207
+Depends: firefox-esr-l10n-ach, firefox-esr-l10n-af, firefox-esr-l10n-an, firefox-esr-l10n-ar, firefox-esr-l10n-ast, firefox-esr-l10n-az, firefox-esr-l10n-be, firefox-esr-l10n-bg, firefox-esr-l10n-bn, firefox-esr-l10n-br, firefox-esr-l10n-bs, firefox-esr-l10n-ca, firefox-esr-l10n-ca-valencia, firefox-esr-l10n-cak, firefox-esr-l10n-cs, firefox-esr-l10n-cy, firefox-esr-l10n-da, firefox-esr-l10n-de, firefox-esr-l10n-dsb, firefox-esr-l10n-el, firefox-esr-l10n-en-ca, firefox-esr-l10n-en-gb, firefox-esr-l10n-eo, firefox-esr-l10n-es-ar, firefox-esr-l10n-es-cl, firefox-esr-l10n-es-es, firefox-esr-l10n-es-mx, firefox-esr-l10n-et, firefox-esr-l10n-eu, firefox-esr-l10n-fa, firefox-esr-l10n-ff, firefox-esr-l10n-fi, firefox-esr-l10n-fr, firefox-esr-l10n-fy-nl, firefox-esr-l10n-ga-ie, firefox-esr-l10n-gd, firefox-esr-l10n-gl, firefox-esr-l10n-gn, firefox-esr-l10n-gu-in, firefox-esr-l10n-he, firefox-esr-l10n-hi-in, firefox-esr-l10n-hr, firefox-esr-l10n-hsb, firefox-esr-l10n-hu, firefox-esr-l10n-hy-am, firefox-esr-l10n-ia, firefox-esr-l10n-id, firefox-esr-l10n-is, firefox-esr-l10n-it, firefox-esr-l10n-ja, firefox-esr-l10n-ka, firefox-esr-l10n-kab, firefox-esr-l10n-kk, firefox-esr-l10n-km, firefox-esr-l10n-kn, firefox-esr-l10n-ko, firefox-esr-l10n-lij, firefox-esr-l10n-lt, firefox-esr-l10n-lv, firefox-esr-l10n-mk, firefox-esr-l10n-mr, firefox-esr-l10n-ms, firefox-esr-l10n-my, firefox-esr-l10n-nb-no, firefox-esr-l10n-ne-np, firefox-esr-l10n-nl, firefox-esr-l10n-nn-no, firefox-esr-l10n-oc, firefox-esr-l10n-pa-in, firefox-esr-l10n-pl, firefox-esr-l10n-pt-br, firefox-esr-l10n-pt-pt, firefox-esr-l10n-rm, firefox-esr-l10n-ro, firefox-esr-l10n-ru, firefox-esr-l10n-sco, firefox-esr-l10n-si, firefox-esr-l10n-sk, firefox-esr-l10n-sl, firefox-esr-l10n-son, firefox-esr-l10n-sq, firefox-esr-l10n-sr, firefox-esr-l10n-sv-se, firefox-esr-l10n-szl, firefox-esr-l10n-ta, firefox-esr-l10n-te, firefox-esr-l10n-th, firefox-esr-l10n-tl, firefox-esr-l10n-tr, firefox-esr-l10n-trs, firefox-esr-l10n-uk, firefox-esr-l10n-ur, firefox-esr-l10n-uz, firefox-esr-l10n-vi, firefox-esr-l10n-xh, firefox-esr-l10n-zh-cn, firefox-esr-l10n-zh-tw
+Filename: ./all/firefox-esr-l10n-all_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 119924
+MD5sum: 78f0072de79b3fe508a45d8111912b55
+SHA1: 1395f41edb0a49d62a1e947774ef8c9485c3a3ed
+SHA256: dbf158fb01abd12daab6225f83df060ac1f6dd1914fa088e2627b4a094f0c17d
+SHA512: 9cb7f5c349b9278a7624bd4460db77e35dc0c3da09c728e76767f87b5acbfd9afed6e3770c796200510026ece98e8356da342a4e38997ec24b6ec285b8a30c74
+Description: All language packages for Firefox ESR (meta)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This is a metapackage depending on all available localizations of Firefox ESR.
+
+Package: firefox-esr-l10n-an
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 648
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-an
+Filename: ./all/firefox-esr-l10n-an_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 526708
+MD5sum: ef038ca60114e20225dec4522336de88
+SHA1: afd3f2100136bc200fff299998a55ad346087ddc
+SHA256: 6253fe3a29231b3d09db2dbb5184c66c6bc96bb767ec27f33bfcd66c39c50848
+SHA512: 4c8831d062dab28c182a05b080f2510c9afb09ae1415053c5988c87d3a3aa2434a0af506dda5d3e807b929fc5842ea873443c70977bde548c69c6ca7655bbfab
+Description: Aragonese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Aragonese.
+
+Package: firefox-esr-l10n-ar
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 698
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ar
+Filename: ./all/firefox-esr-l10n-ar_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 577576
+MD5sum: 1f641c6b67c2190a2b0c873865206af4
+SHA1: 28674f7eb65b4e1af79329cd0811b042c5608089
+SHA256: d7f904a7a3b090ad9513656845d30abdd150562f547eda42ae5f7665803cf77f
+SHA512: 4b16389be9b45649ff02f37baee6d544e7aaea0668953b9939581807a1b408d828dd44f17bb1ceef5114bf102983c77826aa7ad420d87edc827b66bc3e39e6e7
+Description: Arabic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Arabic.
+
+Package: firefox-esr-l10n-ast
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 645
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ast_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 522512
+MD5sum: 7163ca3f0af0e02858f335811b1301e1
+SHA1: ab9038f2d7f0618142b932f0a5eb3432dd92c7b1
+SHA256: 1306d89a3cf87aee3ba23528ceed31fdebe8e625c712f5eafe22ec8c465181b6
+SHA512: 698dab32f782ba6b9d00998c70ee7ca2237dd34c9f0308e12318ff76fe291fbd4dbd9dbefad675b5b057524da11ad84797c19d1c22c04c4a38aadafe9d1fe47d
+Description: Asturian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Asturian.
+
+Package: firefox-esr-l10n-az
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 635
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-az_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 511524
+MD5sum: bb3ec9cc3ad931faca1e2186f01470f3
+SHA1: ccbae7b7fb0f23db014b208d2705f83da6e1bf61
+SHA256: 7cb152beb5e743b1e2598ce433328a7fbbff95f50d3315eae65b607e3be07ccc
+SHA512: 1f4d9153190680b3eecae5836b7fb83ab126d1dd01774b74a17f02137c6dd1872a14c79fb2ceced6975c33f1643df1539dd6d4af9651443183d239017bf290cd
+Description: Azerbaijani language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Azerbaijani.
+
+Package: firefox-esr-l10n-be
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 757
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-be
+Filename: ./all/firefox-esr-l10n-be_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 639896
+MD5sum: f533c82f864004938e1695064d1cd0bc
+SHA1: 24260ddaaea18f5e6e1b3746f67748e80b95f340
+SHA256: e1650c12ec21aee480ff1efdfe7c74ea1478aeb611a4112fd44b9aa1c9587a55
+SHA512: d93264ff24dbb0277e6e8e891c86d3c4ecc81ee672619d06e4aa370779ddd21dfddfe75503b200f2c5a96de50f4a036cd7cfef960c3bf47c6a637d157b9f2a62
+Description: Belarusian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Belarusian.
+
+Package: firefox-esr-l10n-bg
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 707
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-bg | myspell-bg
+Filename: ./all/firefox-esr-l10n-bg_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 586380
+MD5sum: fe6a8c861ffde6adf87baae11caf4180
+SHA1: 7e54385284e97b726c17ca2d34fa448bcc6be6cc
+SHA256: 909d21df2026bd38ca644ff6191c483f69874d1a679dca0debd0545264dd43fc
+SHA512: ccf17c5b3ab1e9334fa83a5f77550cc397a494f2e5e22b6603bf6aaa4ff6909a5a6a8fd1f6d5083607fa6a54a1b216d4a800787a16721f0b3441ce8bcea04b7c
+Description: Bulgarian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bulgarian.
+
+Package: firefox-esr-l10n-bn
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 697
+Provides: firefox-esr-l10n-bn-bd, firefox-esr-l10n-bn-in
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Breaks: firefox-esr-l10n-bn-bd (<< 68), firefox-esr-l10n-bn-in (<< 68)
+Replaces: firefox-esr-l10n-bn-bd (<< 68), firefox-esr-l10n-bn-in (<< 68)
+Filename: ./all/firefox-esr-l10n-bn_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 575232
+MD5sum: b29b9aa217332eb824c3a7f46fecdb92
+SHA1: 9a7f9bd3118fd99e9eaed8d33d19d7397a5a5c51
+SHA256: df88f8aeee1df11a790340928f1266bda9a6e978f66e5b445e21b592c209219e
+SHA512: 30dbcd8927f25520e71184487af7f9d1d874d19a47c67291557b989de5535458ccfe65cb4283f93301f45810d5438dd9e4ca55ad3d562ce426a3b460559b0c5f
+Description: Bengali language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bengali.
+
+Package: firefox-esr-l10n-br
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 671
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-br
+Filename: ./all/firefox-esr-l10n-br_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 551788
+MD5sum: afc0bfb27b30e11be22bc39f9c0aa635
+SHA1: 1e081d278a12ab19730beaa7604050d7e9235152
+SHA256: 82b5cee6b90292bf480b8fd8bf79b35ce6f7d7552b2f01fdc9a948125bfc4d44
+SHA512: 5272580de40f6befcd98ae36e908a733fc34bf7c620011fa5d99bbd66852a46c3a9377cf853635c88ee4940069f9b99512fcaf5b2eded2833a79121170397db0
+Description: Breton language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Breton.
+
+Package: firefox-esr-l10n-bs
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 613
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-bs
+Filename: ./all/firefox-esr-l10n-bs_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 490620
+MD5sum: 158322f08129ad842149d17b0d147032
+SHA1: 7171ff5234f96835010d4eb93a39e0485177e2a4
+SHA256: 44360bcd0b0766c4ef0555471f968165b8f598dcc2b38a4fbad246653584e0e3
+SHA512: 3195ff0e570d4cee3c33c6fbffeeae25c50e8deb9c3adb7365a52742fa164ce5455e859ccacc62c74513f5b24eefbcb37753e9ba09fc93cbb5057a7535d35ccc
+Description: Bosnian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bosnian.
+
+Package: firefox-esr-l10n-ca-valencia
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 675
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ca-valencia_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 547240
+MD5sum: dd7b7acffb172cb7afcd60d3a5afaeba
+SHA1: 07737a2228dd43670171fb95fe519137b26eb8fe
+SHA256: cf65259c50dd5123fb162de52304d9fe1afd4e16295e11340fa06697a17aa56a
+SHA512: 6c1e5a6a930c2435d0fc360e13cda347f5c2945e72a92fc2a2df380db29f41f878d38287dce944013150a4ffc4b2cc85c9e440e81a9cb6423708e51197bbf50e
+Description: Catalan (Valencia) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Catalan (Valencia).
+
+Package: firefox-esr-l10n-ca
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 676
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ca
+Filename: ./all/firefox-esr-l10n-ca_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 556672
+MD5sum: e84fcddc2d3c51db477209928fa8dfaf
+SHA1: 6afb6add4d338b03abff3c8d991eecc48f87ee3b
+SHA256: 8fbb98f493565d8b1c8186562cd6f9f588e32233e85abe995c8a32d0b7624673
+SHA512: 54fd3ee3dec88942c315232d760e23b39c5ee759ba361fde8d133ba5a677629091653a98295f294562f0ca984ccb154f7ebebb20126f535c18753a40a3dc9553
+Description: Catalan language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Catalan.
+
+Package: firefox-esr-l10n-cak
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 697
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-cak_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 577680
+MD5sum: 648d02faafa123f7613cfdeac1a1ce0a
+SHA1: 9876f4783859cc650774b9d667a4785dddfc6e12
+SHA256: 4e8215004807d92ef5a50467161c65b862351ca3406c8ca7de07fe33d70f8c78
+SHA512: 503c915be3ae9d84745bae87f6cdfbe73f54968147577cedefbee801f26e4b0ff841382cbcc0f2d4a7b5f71f23f42556035bb438d81ed03946cbaa9814dd7340
+Description: Kaqchikel language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kaqchikel.
+
+Package: firefox-esr-l10n-cs
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 705
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-cs
+Filename: ./all/firefox-esr-l10n-cs_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 585884
+MD5sum: 91db8557efad3564f2cb4ecd437c7da5
+SHA1: e04e8bab514b2eda12432681c1689ba2b26a12fd
+SHA256: 9538a290f0bc9fd82f726c68e1ae353a99bb79dd2046e8acca7463a704e6f2c8
+SHA512: 6713b1d5e0d93a1ebe2485c23729641ef35dc17bf392949cd7798a9f8d452472e57b664a69c10b8c99ec032d6726d5f8e8894821f150d4496b684ad2e6ac9bdc
+Description: Czech language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Czech.
+
+Package: firefox-esr-l10n-cy
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 687
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-cy_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 567792
+MD5sum: d80d4673b979a51348b7d87dc489e64c
+SHA1: 18b3f084fa429ca2c992267547176bae73c0b2ad
+SHA256: 40c799e1939f54fbb96266a06ef1ee3785df6a6411f7abdef622f18ac47a7633
+SHA512: ee07cc802d1eb170c1d4df61319ddf1f43abd7dffb2be69fe04caa57078eb5d06f30a79a9abfbc219ce90076ba521150d4560d00145df6c59ad71167a5131ac0
+Description: Welsh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Welsh.
+
+Package: firefox-esr-l10n-da
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 679
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-da | myspell-da
+Filename: ./all/firefox-esr-l10n-da_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 559648
+MD5sum: 4056bfee8c447516539a9dad25fd1cde
+SHA1: ed164799adf3d3c66e75640fb1c1277f9589c9aa
+SHA256: 46e579254e8b00352bf149c2662d0bf74dc532e1de96ee25cc774a01b88f8bb5
+SHA512: 21524e11967547215f256ff2b923966248438392f6b564bcf567583c85d7e2a8bd7fcaf490e998ab1d251c763f462ee48738762e7292a5c43af653b3a0cb840b
+Description: Danish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Danish.
+
+Package: firefox-esr-l10n-de
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 698
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-de-de | hunspell-de-at | hunspell-de-ch
+Filename: ./all/firefox-esr-l10n-de_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 578408
+MD5sum: 31485d2f82e72f486b6cc760da038ada
+SHA1: d15a9e05461a644dde7f5d26cfa5e988c1094c67
+SHA256: 78140662c0af5937af03eb28f9be91734f9b2b6dca65a1a08ff1b4b919adc91c
+SHA512: bc4fcb8afe44c36c420be4ad3e0578a414daf474686f976af7308e47209ce5f9738286aca4d47ade5114e04942711165d010a5dbd7ecf4083a2dddc797318c5d
+Description: German language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in German.
+
+Package: firefox-esr-l10n-dsb
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 708
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-dsb_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 588216
+MD5sum: 05a4938f13df55c0aff175586066f6f8
+SHA1: 039cce4d0670740b7651e119a5eeaea8dc479bff
+SHA256: bbd1d2075262f8d50d74e6001acfc43f0688670c48490bd3e6ddbf1d5640ec19
+SHA512: e0fc613cc392e1333537dbd45778626cf1bfba694a9eba3cc65b6f7b19d0ef9ffaf1fa449665410e89c7345c81cc3c3d757c383e79dcda624b847a1cce0b07cb
+Description: Lower Sorbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Lower Sorbian.
+
+Package: firefox-esr-l10n-el
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 772
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-el | myspell-el-gr
+Filename: ./all/firefox-esr-l10n-el_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 655968
+MD5sum: 2a3660abfc5e6e72546c83a1040341ba
+SHA1: 41ae47dd99c19134d95542924c2e06740b1af984
+SHA256: 1c6ee2ca312281c20c4c5184ea1aa3763303a134df9f498cd8823416e5b9b1dc
+SHA512: 127642f3f1306c076c6364942c8b1f1fa968c8045330a1db6a34161ba03828431d385232da650120a6b7d287425894e4df4f402cc4d1cb3aa6befe17ef81bbf3
+Description: Modern Greek language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Modern Greek.
+
+Package: firefox-esr-l10n-en-ca
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 655
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-en-gb | hunspell-en-us
+Filename: ./all/firefox-esr-l10n-en-ca_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 531552
+MD5sum: 242b2eb6531be10b6be8d8228fe2ae62
+SHA1: e8bd753a97d7c5af7f1ed85c82ae72b9517e2d54
+SHA256: 2dbaab7a2ab163f75a510fb05e93bc6025f67f759cd8402c6752f43169486d0f
+SHA512: e05ad4f91049166b54a074327a1d48249ce79b872ba5f63e52ca2f403ebe06f69b7fb6ff2fdea3c0cda8e5edfbc1040a65d55bbb8017d60ff8c4d4097a05d280
+Description: English (Canada) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in English (Canada).
+
+Package: firefox-esr-l10n-en-gb
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 655
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-en-gb | hunspell-en-us
+Filename: ./all/firefox-esr-l10n-en-gb_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 532156
+MD5sum: 62039bf769390e910a27416365eee03f
+SHA1: fa65832df3ca65e6a48ab6adab533dee7cba6958
+SHA256: 4c2d98e19b4b658e60d67be25dc78cf4e26aa471e05859974e0ec9c27bd93a1e
+SHA512: a6ac0e6ac4fe56cae790429c9c1c6f957483c549090cc3683a754320c5a7da765d93dbed8f17c60c36bbecb41002c3cfb60f380315c0c61c4dda7cd964e295e7
+Description: English (United Kingdom) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in English (United Kingdom).
+
+Package: firefox-esr-l10n-eo
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 677
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-eo
+Filename: ./all/firefox-esr-l10n-eo_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 557772
+MD5sum: e94d4d057fa911d119335f35a32083e2
+SHA1: 760a671a1120fc10ec239cdc51c9bef84db714e2
+SHA256: 6844fff11260f3921a2d990d81ed067425a0d304cfe2bc8d9182e8396ee09816
+SHA512: 8674765f3fc1e69cc25c2f771bbc8f85fca878051585822bdc04cda4ef72d946612f020dc7740f91b8161ea8ffde5382237f8de4c8a3516672d82cf2cbb92559
+Description: Esperanto language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Esperanto.
+
+Package: firefox-esr-l10n-es-ar
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 691
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-es | myspell-es
+Filename: ./all/firefox-esr-l10n-es-ar_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 569564
+MD5sum: 0bae7187de65b4be85781162df11ca45
+SHA1: 1a31df355b2f74878faa105a923d49662df34056
+SHA256: 6f1b9ef624e2c805bad946b6fc3cda277c3e29daaab41053d7308ad02b4ba13f
+SHA512: effb3a996d72ceaee0960b2d3bb8abe510c6bdc81403e5a94d9c3d6b447b6d85800a9e5c18a4331e1108ff9b82cb288f075435666cdba4d16bff6d99a6f4a4bc
+Description: Spanish (Argentina) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Argentina).
+
+Package: firefox-esr-l10n-es-cl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 691
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-es | myspell-es
+Filename: ./all/firefox-esr-l10n-es-cl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 569140
+MD5sum: 516326ae1e3c6e584a25bcd9d0acec1d
+SHA1: 298e8d725a3e87cd8fba12fe6db5952436f996cb
+SHA256: ea702072aed8dff214952ff145103961d67e9146db8a94c5c653fc8f031e25fa
+SHA512: a7c6bb17192d27b35e4b068e4939d73dbf2141a84c160855e5d76818b35702d2d203abb332a5522904be1e082556d4630e23bb3a321d18b1ac1a98792678a2a4
+Description: Spanish (Chile) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Chile).
+
+Package: firefox-esr-l10n-es-es
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 682
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-es | myspell-es
+Filename: ./all/firefox-esr-l10n-es-es_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 560728
+MD5sum: 0e085bfd15a01629142860e1dd2a081e
+SHA1: 7a1ff79f34be647cd16fc50e31dccce0a3b71a7c
+SHA256: 6225f6cb840050742c2c0129e0f7cdcb6ce2e46c982dc03f2d5939badd182863
+SHA512: 2919ac50257419466c2567510b4165de1a7d38f4312af794f3e0abf39ded99820c9fdebf6b0f91286cad0324c4ab61709f36506694e82ef101dd4c180e09071b
+Description: Spanish (Spain) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Spain).
+
+Package: firefox-esr-l10n-es-mx
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 690
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-es | myspell-es
+Filename: ./all/firefox-esr-l10n-es-mx_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 568208
+MD5sum: d02cc873858dac12e17e9d4f93934d36
+SHA1: 9f01b3521a5e0e3c4883e98737bf2e9f7e27489c
+SHA256: fef965c47aa30a780ade63d6253b583a17f5cdf1b477da575d77aeb7367a62c0
+SHA512: e2500ef3f000ce07ff7a54c3bc091ebc81895605707e0c5a219fc907f91340c0e61c88eee67e4a50cc085ed6f832d201eb76154b7afe9cd56638c59854a9f3d3
+Description: Spanish (Mexico) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Mexico).
+
+Package: firefox-esr-l10n-et
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 631
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-et
+Filename: ./all/firefox-esr-l10n-et_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 507372
+MD5sum: f15cffe377918f736cfd08e50a077e85
+SHA1: 7a012bbb482522ff0bae24f2190027d37eb57e64
+SHA256: 7f9bc56aac64daa81d26a2e9aab37b41a2ffbd25dfa66bb7a25a8796f02e5373
+SHA512: dce7f0d8639d1c8ac615f17cd4944f3273d87349ef2cb374e28285b2c2e58c8e53541b72c61a7e0661bd5ad08cce4451f84f0e8b4042237464e268b42ea46d87
+Description: Estonian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Estonian.
+
+Package: firefox-esr-l10n-eu
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 682
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-eu
+Filename: ./all/firefox-esr-l10n-eu_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 563040
+MD5sum: 2322f86a52e71650b11f452fc3018cd5
+SHA1: 2ee849ca77018fdd10b7b3203d5dcdd53ba00601
+SHA256: cd62e7058e866736c0ae7650ea31abf5fbc4dddeaf9d5bd748524da856201ada
+SHA512: 0816d4194ec48f5834ef74af7eece5701352d911bbbf45b593b5f81be735927fc0eadbe71fdc085c035256215c7f49d12f1e32dcd93a318e993de17dde44bd07
+Description: Basque language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Basque.
+
+Package: firefox-esr-l10n-fa
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 696
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-fa
+Filename: ./all/firefox-esr-l10n-fa_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 576636
+MD5sum: 31c79675adbd3781b0488cff37108311
+SHA1: 5e428bf24a76cd561f3c00e88f50a7c61f78929f
+SHA256: e2e664f15e683b8b76147dd3c02a1156871decb0ae76131066085cba7adccd26
+SHA512: 738ba971c855bdd17c61e115fe07817223313bb71180074fb4f83c8c53ddabc79ac798d2eded69d754fcb203bb00d88157092cf63b8a931c56ac053efc0503a5
+Description: Persian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Persian.
+
+Package: firefox-esr-l10n-ff
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 620
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ff_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 496600
+MD5sum: fb731b8b2759419700741b5e60e6741d
+SHA1: dbf9c6fd380f1ea89a68fddc4b0c9d2fe38f8a7e
+SHA256: db3e19bc32364a4857388df5a82fc0d9f54256f43049fdaaf195cb8336af6ebb
+SHA512: abd1359d0bbca805edebadad2a15e2a7315dcc11b120d0353b8e569a575a34ef9e837e9ea0c0a59d8dd60a867b441380f62618224a92e9aabc4eec13e7b85409
+Description: Fulah language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Fulah.
+
+Package: firefox-esr-l10n-fi
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 675
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: xul-ext-mozvoikko
+Filename: ./all/firefox-esr-l10n-fi_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 556068
+MD5sum: b5f8f42fac2e4d64001d75072ebced6a
+SHA1: a21015d3175dd90e1fe2f24c70f634e21dba5967
+SHA256: 0030be913fa448579611099ac0a05570fa00eccc731695229004fd6943b925e5
+SHA512: 908f0042f59321fc1febd43fec47b7152dcb91699324e48ecb27cc52c1b6ec7ca1b06d27078f94249710b1e7c86a6439ea6e92e43dd298cb11d01f4ba7b2bbcf
+Description: Finnish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Finnish.
+
+Package: firefox-esr-l10n-fr
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 701
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-fr | myspell-fr | myspell-fr-gut
+Filename: ./all/firefox-esr-l10n-fr_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 581340
+MD5sum: fedbf3a4653ddf0b1ecab89dcdd4285e
+SHA1: 17ecb2d8e2aa933c97a938bf0e926d103dde48d9
+SHA256: 14e04ba2abf0cb01adba12bfcd2dac09b380b06121ed57a53ef6546e068d18e1
+SHA512: 1e544877de6c9c8591510446583c30adb920b6de5f8f9c21ae564f727012efff445143e8fb96064188bec93044e47dee03605396e49cd72c3d129c943ad493fc
+Description: French language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in French.
+
+Package: firefox-esr-l10n-fy-nl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 688
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-fy-nl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 566380
+MD5sum: bc5cd23ec5ba1ea557792e1a1b86e8e5
+SHA1: af2324418a3a3981cda430f4958a53fa0eb66b8c
+SHA256: 9b110085c68d6481db3043f01eb354b49d241a2f41b8d5008990a0f1c10872a7
+SHA512: 72f8c80c49eda543de643baec2c6642a5495b8aad3250a7bc0e9a7f74a4ab0b3dca59b01d22b47b140b8f4035abd7f0ba35661a9ca4ea8f28f1bec1eedc98013
+Description: Western Frisian (Netherlands) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Western Frisian (Netherlands).
+
+Package: firefox-esr-l10n-ga-ie
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 609
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-ga
+Filename: ./all/firefox-esr-l10n-ga-ie_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 482100
+MD5sum: 74af169fde084248480053535522f93b
+SHA1: f7c4a50243bbbe2890574834cd3400b48bdc74c7
+SHA256: 938303382918349212a2d91426557969892c9d1a31aa3f413a8f20a7749ec720
+SHA512: 0ff201d19e9d70a3efa5782440bb8be6f0f8264456cb12b524cf6507465e679697a9afeae6dc339636151f793e0de5311cd186b79ca45993325247316cd66421
+Description: Irish (Ireland) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Irish (Ireland).
+
+Package: firefox-esr-l10n-gd
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 678
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-gd | myspell-gd
+Filename: ./all/firefox-esr-l10n-gd_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 558624
+MD5sum: f5de5d3633ecbb2c4920c73d779c774e
+SHA1: afa7a2d842dd461ad922b00906f1b309d980906b
+SHA256: 112d41b9758c64c7cd59a995b49599978de631b08560fa34d6615cd6a989e8a3
+SHA512: 2d769102c587165e6d389bb6bd4235dd6431e7c2473fe5f7059df00dc4205f154416f555c67b04a24e5d3bac0a97c31008ddb6257282a8d7f0e0b9407ef968da
+Description: Scottish Gaelic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Scottish Gaelic.
+
+Package: firefox-esr-l10n-gl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 686
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-gl-es | hunspell-gl
+Filename: ./all/firefox-esr-l10n-gl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 566628
+MD5sum: 13755bab5bf2d78994fdb521b8ac6546
+SHA1: c84df49af908c46cb5f1bb52a693a4664e198030
+SHA256: 3bb91ae053c1d7807d037ca196a6d2b0139a212d8862e572a0e9e985a45bd2e8
+SHA512: afb8e318699264668cfe2cbe285079043ad5c259fb715e6c270aae1a41df0a80b2b9963faa7410abba3cf3abc7a98950290cca4d7ac1b4828868bb2c411a43e0
+Description: Galician language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Galician.
+
+Package: firefox-esr-l10n-gn
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 700
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-gn_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 580476
+MD5sum: e35b6081d7b22926bec230af6538920a
+SHA1: 4ffd0b5be34427245bcdf809160e8e21a4c89644
+SHA256: 3a4592534c62bebf44b0e9f81bc3998d4c7c18898fee6374bf04f9b11e0d280c
+SHA512: 330cbb5ee9310ab88f0a39445b9169e3368dec52c7a5419d5ce81231c809be9b9c97151a0c6149fd8462826d77c159af7c74bfc13249ec1610654d646e7bc559
+Description: Guarani language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Guarani.
+
+Package: firefox-esr-l10n-gu-in
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 672
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-gu
+Filename: ./all/firefox-esr-l10n-gu-in_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 546948
+MD5sum: a522ec539488ad054f7094eb49b09cf4
+SHA1: ba6d2419cb74fb3e2ae4b3f2603a24ab854ef283
+SHA256: 54b0212f2435e510996f4ceb4386ccf2f9db97ad1ecaa9dd303d196e790096a0
+SHA512: 03a3cee3cb632f8e6c0733d3967f03858f135f4b562a2fc87fd116d1b1e3ad0270575207d6e8fa771f2d1ad2eaa555af32223af7ffda0f6c5efc9131e8348499
+Description: Gujarati (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Gujarati (India).
+
+Package: firefox-esr-l10n-he
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 696
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-he | myspell-he
+Filename: ./all/firefox-esr-l10n-he_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 576380
+MD5sum: e071d0f1c154292658c1abd255afbc59
+SHA1: 9762cd105ece68394f093791295e9d872ace765a
+SHA256: 4b1f4de2e497be4a000f4746352026f1a26e91e77dddeecde4f9f34cfd5b09ba
+SHA512: 170f6c7a43f3dd6662c8e9b271bba12a9314f58eef7304c7adc5713ccdb4b216f121b59de63f5799ce97adb77c20b5bee88f33a908bf6783a882c0181d022027
+Description: Hebrew language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hebrew.
+
+Package: firefox-esr-l10n-hi-in
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 697
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-hi
+Filename: ./all/firefox-esr-l10n-hi-in_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 572924
+MD5sum: 4083a698d1d138957f30d04ab890100f
+SHA1: c8483eb59c90c3246e9c87690d377d113f32692a
+SHA256: 65a741e72a00ceababc46013d3893b1bdb9fb0e11ca3c1da282003a915cc6c37
+SHA512: cefe91dcfa09c5fcd2f54011930addf22c96261d8acb1fa3dad490b481c27bb9561d24e479ebd2bd8c51038687998448963ef4d201c57f6b66010de8626b7c70
+Description: Hindi (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hindi (India).
+
+Package: firefox-esr-l10n-hr
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 676
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-hr
+Filename: ./all/firefox-esr-l10n-hr_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 556920
+MD5sum: efe164734cf710110126dad343cb782c
+SHA1: c3bfb9e3d5a8058f6327535e2113200f8019800c
+SHA256: 9e3c234e5bb9cd9f7e8f66db41aaf6939301e48b6b210f041c8d1cb4c323ba24
+SHA512: 8d13d0c61d0aa2c7167a74108a876049fd61e58c20c99abfbbd51392fb0a318c0959d447f515e03053bb288aa31e54d03dd4f2392fcdb5337769c28b2448fffe
+Description: Croatian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Croatian.
+
+Package: firefox-esr-l10n-hsb
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 705
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-hsb_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 584640
+MD5sum: d6c3e3ba2efca3d3ee8f7f50d09f9a92
+SHA1: c88f14d99d0754edbda23ef3a9887f59a7f202df
+SHA256: 3a50d69ee6d859e45d9970ab555071174742a0449fd3a82e5ded70768b6c612f
+SHA512: 6a0cfe2571d8e51140d496595ef4c7a70fdc8f199d4ede5ee53cee056fb444b3c758f6af65630c72bcc04fa1dcf1b4fc94b34a5971685e8e16ae26062697fb58
+Description: Upper Sorbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Upper Sorbian.
+
+Package: firefox-esr-l10n-hu
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 708
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-hu | myspell-hu
+Filename: ./all/firefox-esr-l10n-hu_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 589504
+MD5sum: ad27ed7d4452db1f05e0d02cb71fc925
+SHA1: baad98a00f6671e3ef1029cf928049b275b1c96e
+SHA256: c92a082d2094157c52d87f4725471374c2212ab34a10a648ba2367d11714b421
+SHA512: 2ade799cd8406b6d4c220f7f0f150f807d04976b47ad2823c7b865ee101656ae1ce4b60a2fdce7cbd16a70f79fcf1b285e63cf2f65380421ad16cf8eb2898d65
+Description: Hungarian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hungarian.
+
+Package: firefox-esr-l10n-hy-am
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 718
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-hy
+Filename: ./all/firefox-esr-l10n-hy-am_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 595072
+MD5sum: 9984b25c0d67a459816cde6c3bdf24fb
+SHA1: ae9b9390564311b503db22eec1b5676d40b2ddc5
+SHA256: 572eed56ab1fee9a770444bc2aee7ae7ca18b62ef3d2ed943c56822c135addde
+SHA512: daa388301be74841bdef513a815c779140b38c4da14f8f2b69907b8864bafc28ab7f713e46343009c40b7e7ae78d88cff99ef2671a1862950cfde78b80b7ec85
+Description: Armenian (Armenia) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Armenian (Armenia).
+
+Package: firefox-esr-l10n-ia
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 677
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ia_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 558160
+MD5sum: 1c5e3dac0255952593cb1c6a44b884a1
+SHA1: 1814e8e6d7cbf85648e06039b9ebae16eef28ff8
+SHA256: 80236e5d97672f5c9a1f09c4a78e537a2c284e6b6f02c554ad0c8a6f9c84939b
+SHA512: 71eb376a9e8002f5338040afe7ade721a505488a9f691ac7c09227a7a598e02a1b5be2119beed14e89fb9bc14fbf07f0e530685219ebac7bb5ac28795b675ab8
+Description: Interlingua language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Interlingua.
+
+Package: firefox-esr-l10n-id
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 667
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-id
+Filename: ./all/firefox-esr-l10n-id_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 546784
+MD5sum: 844bcdd8464c55e06f90fe547f8aa29b
+SHA1: f1a1a819d52b043ccdbc9c8aebd179c3034f64a4
+SHA256: 479ed166de86171ba377a29aa2379cd65b8aed991044c10a28b94c0f255f06a9
+SHA512: ebb7b69f2f216bb9ccc2383e8d4f8167998d9573d057cc7fe6fc96f7b14e2ea5fc8d9209af9de685b9a8b98f0429993d08e82fc82b9cfa91e09947e2177b0e1b
+Description: Indonesian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Indonesian.
+
+Package: firefox-esr-l10n-is
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 618
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-is
+Filename: ./all/firefox-esr-l10n-is_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 494652
+MD5sum: 0b15a9a64b13ada2e745c6ec06a2ec60
+SHA1: 875ce59223ec6a1e5c1a29b08a64806f9a4c2f77
+SHA256: 4f3aeb38a1052e8da272b40251204723ead1d508cb5a7f39e31df9508da01f1f
+SHA512: cc5406f3fe012961945322d95db23dc6cc3d9cd00eaced2982422e7f2cfa040c5000fc0bdf728aa8b490879071058449ff58bf17cbb6c97eb727b474270b8473
+Description: Icelandic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Icelandic.
+
+Package: firefox-esr-l10n-it
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 607
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-it
+Filename: ./all/firefox-esr-l10n-it_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 485384
+MD5sum: dfe93ec5d1dcf980a3187b8bf92b4dcf
+SHA1: 91ea370ca0868e759a49368f66b2f01483d973ae
+SHA256: f9f08545e262c6610bd8c3230e6b876b51ac24fcb200ebfa9e3d4992f9a91205
+SHA512: 69b18ec567f28188fa8d82ac833f42dea2c843655af539af7eac5bc3bc9b8ac76171dc04264ded0e31be6db19f845bf66e23cb2e973cdc33f81a3cc0d0637e92
+Description: Italian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Italian.
+
+Package: firefox-esr-l10n-ja
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 726
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ja_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 608004
+MD5sum: 9ba915d157c3d5be673242deed49dd49
+SHA1: dc33aa216744249731653593277f5f2adbdce83c
+SHA256: cddb189fb2cbef546d559f70d48804f450ad6eb7dcba63fed9fc377ebde44c20
+SHA512: 4eb68c7abca8f43f524463b73b09afc925bac5f71fbea6976255491fc8219aa32d15474920b84afc98d2939ec8da2e8f76b7fc11643e8747a5c5591100814139
+Description: Japanese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Japanese.
+
+Package: firefox-esr-l10n-ka
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 724
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ka_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 605892
+MD5sum: cc58fb4c9da3a58da3abd6aa41b52d1d
+SHA1: f877427afe345171070ffa3b9309012f6f3bd8fd
+SHA256: 4dfaac4c0f366559d4f7d3fa8d58d5a1e731b17e9c2f153db9269f995031f5f6
+SHA512: 65d1b1d357ffdc7b883e6172143d13ccaafbf497493fa2e492586b02fbc1d6e98d6d2b4ce4de3f9bd3d7302974bba051c4d044a7bc5208381538983dd6564d18
+Description: Georgian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Georgian.
+
+Package: firefox-esr-l10n-kab
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 689
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-kab_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 568696
+MD5sum: 35fef8063a08cabd46a4e303691d5c6d
+SHA1: bc25d2ad390fb3a088fc4d9043eb2320a9d38c68
+SHA256: 2c31ff51eaf7528b3d4a4fe499babbde544b2308a7ebc8e4dc33b8df9ca7f1cb
+SHA512: ee3c26beff1b9edf04cd67c5d678d891a22844390039274776de2d520ac02a7790cc8f2b268ca70b58059382b781d534edaefeede783b1ec4101a6ae9824911f
+Description: Kabyle language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kabyle.
+
+Package: firefox-esr-l10n-kk
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 742
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-kk
+Filename: ./all/firefox-esr-l10n-kk_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 624956
+MD5sum: 7ba81781b6b3f9dbe671ec5eb0f4ebf3
+SHA1: 4a81d5dbd14d8fbca099358b9da596ccb05daa64
+SHA256: d09f4de199865bbb07062e02f433096aaaa317d12cd218eb818b11d31657b603
+SHA512: 6d7cd5514f2cca05c8b7d9d4f96e7497dd17d48bd76190ae56641b8a259bd459ea23ac2c40f8eb57ef93de29682bd22fa3823055d983d440517cbe4e1a83a34a
+Description: Kazakh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kazakh.
+
+Package: firefox-esr-l10n-km
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 673
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-km_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 551652
+MD5sum: 9438c7d74b0ae0a45b7d09283aa4b42d
+SHA1: b0a906f997f5780edf2b123e70b307c8638e9f43
+SHA256: 8b9f2351b6f35d034fd90d0541370cdf6cfc0ec1ce7291a519c84407c51a7078
+SHA512: 89cceb15c8d4a0d841cf538dd5db4e6555cc13f5d6ab8014a95f382d0d6660f4cb9f38849b21910e273742683de410c82b450ea4621323aaa94575bf7dac341a
+Description: Central Khmer language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Central Khmer.
+
+Package: firefox-esr-l10n-kn
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 643
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-kn_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 519920
+MD5sum: 592938d60ec3f37ee3f542817dd079dd
+SHA1: e41025ee97b406e4fbe3eef2188806abc7b1dbef
+SHA256: 435d9675ca976cb9d681cb86ab308708764159efd74ee102892251463dd171e6
+SHA512: dc30b5c0c071c70d7a0a803152d997d0ebe04ddbac6d08c021a3a3b1b87bbae8f4184b13a85b718825e0692d77109f2a3b6a823ad53dc62d569a357146918541
+Description: Kannada language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kannada.
+
+Package: firefox-esr-l10n-ko
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 715
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ko
+Filename: ./all/firefox-esr-l10n-ko_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 596672
+MD5sum: e3b82b7606d877e2df42292a82daf82e
+SHA1: d3d5b4c9730c36ecd8a9aa2a6fcf2e732e1103e7
+SHA256: 90ed5586646b614e47eb4a7aaafb1369a7a7b9f3c5f1e24feb0de45902fb5fe0
+SHA512: 4728d14d707060ee8c4c6c2e0855f537b16215b354456e5b3d3b77503c70268dbcf71fd77e48bfd954b54651d96ec3bc58ebbf543238b87d3fcb1d2e6bb445ef
+Description: Korean language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Korean.
+
+Package: firefox-esr-l10n-lij
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 619
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-lij_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 495704
+MD5sum: dfa57c6711bac83823e445ee49da3a3d
+SHA1: 967a9fdbfe6e36c48f5a7d31b9f0eb6febd6e8a3
+SHA256: e3513666a560eb1cf01bd09e6b60fe9bbc37bdc4e8000aafc4e23d4967a3deeb
+SHA512: bc4d6737bfe78606323ee16c26f9657cf0cf1a12ec21967cbc4570214446c1581a50b57d5522b7de9977b6985702efa971e9e8b53548a9ca5baac20fa834e264
+Description: Ligurian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Ligurian.
+
+Package: firefox-esr-l10n-lt
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 703
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-lt
+Filename: ./all/firefox-esr-l10n-lt_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 584244
+MD5sum: b7d6f54657ff9e46b63988d0f8da185f
+SHA1: 1fe8443904ec4601cac55d08925794eba02dfa66
+SHA256: ca067c34c832d72cba021f0bed6d77e98d8ff6fc1e323d4e93195b0afcbef7ed
+SHA512: bad0190e3916fb5022e95f85685d36d7d25d53a9c6e1ecc16f1db630b492c21edbf6ca1dceed363c835f97c64d2fbe11c197145e2ac6a03632f6bd811ae10d63
+Description: Lithuanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Lithuanian.
+
+Package: firefox-esr-l10n-lv
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 611
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-lv | myspell-lv
+Filename: ./all/firefox-esr-l10n-lv_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 486612
+MD5sum: a1bf4fc255aeb99fc2c7114c22f5d666
+SHA1: 0131d00fcb5fa7d305d8d80a0b0017d40e66e296
+SHA256: 37324f1466104d0b834ca2572e720cba18a642b56f8c64fd04b75a032e70d252
+SHA512: 0a882995c4276a81036828b46e7d02a7fc9bf77003a4fd2eb654f819e72db5081c17d17215f67440cb1db7137fb3ababa1fd9282190dc494d1a0ff20c2db62b2
+Description: Latvian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Latvian.
+
+Package: firefox-esr-l10n-mk
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 612
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-mk_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 488940
+MD5sum: 4969120bb44530f94fb86eac188c441e
+SHA1: 1b66b9ab644b06ef740997cd06c0678e7a405df3
+SHA256: cac6ed3af5851f967a7574576a8b01024f07dc0bf160d4a07f1008c26eb5f3ef
+SHA512: 125f083c3d0921a812d10e5b5cf3ac839a00ebe6499991de45826dcb123dcce83f4c54fae9e48e6c5ee44e97ffbc43aeb72c70e9735f2c96cc70b068fdccd202
+Description: Macedonian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Macedonian.
+
+Package: firefox-esr-l10n-mr
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 674
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-mr_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 553172
+MD5sum: d91e31b4df39a5b3a2984b1f7b3f003d
+SHA1: 8eb2975abbad9b29e5ee1715b09a0ba8a4c4bc45
+SHA256: ee0c1f2bc3487a1948f1ebaee5d35fb2a1e9777fa32e766ec86df8b55474bb83
+SHA512: 2c0d826e4d6fa6dbc5a781f4471b79f4298f31887f7af2c6774f62d880f8bb5dd95e06d60eba16a1b9519b3fcc7ccfafb148dd35c7c367e94873c5ef663facee
+Description: Marathi language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Marathi.
+
+Package: firefox-esr-l10n-ms
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 598
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ms_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 473116
+MD5sum: 5ffde36a672fe0367e7796f737f928aa
+SHA1: 3fa2ff80d4567cdc7b0e7715f6b62f01c2e43cd0
+SHA256: e2a673dd69aa16c8256cd27e127502148747fccc2925c68f3276821341d141fa
+SHA512: 75996f0409337ceec8c78d00def7ba563577e937db318abc9e475af346fd0bf58d94cb91b85530317616c04942caa6d22714b7726ec3186cab29d05b556242ae
+Description: Malay language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Malay.
+
+Package: firefox-esr-l10n-my
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 661
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-my_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 538608
+MD5sum: 03c515b57afe45a36ba3cfd538563501
+SHA1: 8ce694f9471cbb946395107cd756d044f735ece5
+SHA256: a21980442bb282d1a0fea8c12517f79d2820f8f5bccd6f8f8a218a29a072fbe2
+SHA512: 180d1d66ffa79cc18e1971a54a7f8bad4d439f7b493dcbdbfd910f2c46ddd8b00558114e68a9acf0d7439b908f4751eb09702d8a3fc5de69ba812fa3ecee272b
+Description: Burmese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Burmese.
+
+Package: firefox-esr-l10n-nb-no
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 674
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-nb
+Filename: ./all/firefox-esr-l10n-nb-no_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 552208
+MD5sum: 9a16e64199d12f72f76f8bb9355abb6e
+SHA1: c2247c8fda452b99addab42c283a85f1c3bc0f0f
+SHA256: 1f31306a930390a07c570d53ee80456e51328045d81b05e81ab0c2439f6deb49
+SHA512: cf43f7aaf878f0888cf959efe90bdb0f63006ec9161209e4236a5b32fc540ce143ca45af3035d86523aebf1c0b70938aebc6ee9eca6df45afff33c3c9b69f9bf
+Description: Norwegian Bokmål (Norway) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Norwegian Bokmål (Norway).
+
+Package: firefox-esr-l10n-ne-np
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 622
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ne
+Filename: ./all/firefox-esr-l10n-ne-np_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 496884
+MD5sum: 205662b89170b153893ce8a46b3b8058
+SHA1: 8b547adef3e690694b08a11e3b8341620d49b49e
+SHA256: 70a9655572a2ee037323113a646e4227b6ba29f690475466b11cd9259ba5691d
+SHA512: bd8cc4dc9fee222dc3d6f310e44d8994cf5895ed991b549a048303743495478d2190ba09d2744548dca1fbf404f87d5f83208994f4dd9211a20076fc19468d8e
+Description: Nepali (Nepal) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Nepali (Nepal).
+
+Package: firefox-esr-l10n-nl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 682
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-nl
+Filename: ./all/firefox-esr-l10n-nl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 563388
+MD5sum: b3b892934e0c8b15a5104ed0c406490b
+SHA1: 912ab71d7b5ccb75de4287d7c1201a411ff7a17c
+SHA256: b0449b1996fbe94d28102b2330ac30f821e767165595a764ab5a25e83e332bd5
+SHA512: b368e703a685e484ff79bf2862d2c60bb903a7d147106ad91721d0029bf8a18be719602902db065ee195723be05096c6dbf1b9c35e44c38c5faa2242325bb06f
+Description: Dutch language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Dutch.
+
+Package: firefox-esr-l10n-nn-no
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 675
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-nn
+Filename: ./all/firefox-esr-l10n-nn-no_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 553836
+MD5sum: e46f65d7f0567ed30fce723630a7f513
+SHA1: 7082986427eddb4bfc5834b9f5f1912897bc508c
+SHA256: d322737c8e2c1fcb7deb912c5015f6573f3279455be24e3a5b081837e5386d3e
+SHA512: 5202113827adb2eeea02ce4b9976ae661570d28337a6c699dc46b86cdda3fbc59bbfb0dc755b3b7e9b26921e8d3899b480489699d4ad334f5f75c596d2892f0a
+Description: Norwegian Nynorsk (Norway) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Norwegian Nynorsk (Norway).
+
+Package: firefox-esr-l10n-oc
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 697
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-oc
+Filename: ./all/firefox-esr-l10n-oc_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 577304
+MD5sum: 9652bd279e518515ac54221d8469a639
+SHA1: c1ec55f08e20052a3e441347d0261ea3df1b92b9
+SHA256: de4ac4f94ea33cccbab111d0a5a29c667a95244223f5ede5ed1d9222432ef9f5
+SHA512: ab3c873268879f30dcd72c8e9dea5fd6b5f3672fb628898836f570d72461416dff0f1ed711588d97713d29580ef1a605cb5ae52b6f4b610d9769b35db799b992
+Description: Occitan language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Occitan.
+
+Package: firefox-esr-l10n-pa-in
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 730
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-pa-in_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 609420
+MD5sum: 31b3117525f36a8627d4968977d78475
+SHA1: 21d39ec8e300ffde0921c39ad3a7099685537477
+SHA256: 30c872b0325d01c9e8053ad2aebc41b32bdef054cbcd6a86e3ee067a02fd654a
+SHA512: f59ffa4773f020982540fd59496b4bb366329bddefd2523f474e95d0c29870a7fe22edbcb418a96fd09e655f567af7d63a99dec84228e011847d4e4ba95811d5
+Description: Panjabi (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Panjabi (India).
+
+Package: firefox-esr-l10n-pl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 699
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-pl | myspell-pl
+Filename: ./all/firefox-esr-l10n-pl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 579356
+MD5sum: 0a982a13de5ca0790224e851a0b8fa81
+SHA1: 0ddd55154c5326a5c14925f57f742425a01a0424
+SHA256: ed80c6dc3eb75344e7a11f292d18281f8f7ad54f4691fdcfcd980463cc997c32
+SHA512: bdbf93613e006206f2d41c8fac227de6e6d7fce740757eadea56147b088cee92033f9bc4c8eb0b4e0f9c71837f1b9094ba0a6fd3483fe459c57a98b71e198042
+Description: Polish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Polish.
+
+Package: firefox-esr-l10n-pt-br
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 687
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-pt-br | myspell-pt-br
+Filename: ./all/firefox-esr-l10n-pt-br_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 565848
+MD5sum: 86f83f1a46ab6870b4adda4b33ed279b
+SHA1: ae49e7326c072c7243c33fe96c573db455bb6a15
+SHA256: 84c1900eac8f692b5ea7b517cd29738996af1f6f461d0e3960cbd29745d3d453
+SHA512: 3a8eb9bcbe39450608f1fca58f9f29c688c1ec77a294de5138548545b81e1a9fd13c8c1f088b5d79a1497613b229efdf41e9c327212732e59ef5ee68ca3e65dd
+Description: Portuguese (Brazil) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Portuguese (Brazil).
+
+Package: firefox-esr-l10n-pt-pt
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 691
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-pt-pt | myspell-pt-pt
+Filename: ./all/firefox-esr-l10n-pt-pt_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 568840
+MD5sum: 1865154d0b4d4db6d3b66067b819ef91
+SHA1: b32e6be0a5323851d4637d4880d52bc8f3c2d3ad
+SHA256: 3c8af2a6175efc5fa7e0fccd95e4c52a3b2c41bd9b80438201812681f8c46482
+SHA512: d75b591c71b367cd32d8027520b993bb889185759584c6a8314b56dfd7f0d63bb540ac85b2754559ceb7f7f8866a02a4e27217e0e8ef3093d6555725d58d65ee
+Description: Portuguese (Portugal) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Portuguese (Portugal).
+
+Package: firefox-esr-l10n-rm
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 682
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-rm_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 562756
+MD5sum: 566a70d3e3964d311d6e90aec45a0323
+SHA1: 1e217038411eb6f99e8da02ecc7fc3edd8ee7de4
+SHA256: 67058b2cdaa59eee01668db9bcffea418f0d6069c9fe2c64cba8704caf75a5af
+SHA512: 6d99d39b7d48dcb2944393828ca3850f051fc70b1d7cbf5ea8c32c3f91981f217d545bc532cfaa795a7e8f497f1aa89ab5b91e93f5cc8b1a523eb6a45e127d63
+Description: Romansh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Romansh.
+
+Package: firefox-esr-l10n-ro
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 676
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ro
+Filename: ./all/firefox-esr-l10n-ro_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 554448
+MD5sum: 48224ac920784e5df2bf87a1420427ba
+SHA1: ce98fd9d05df8fc99ff600c73e85752c97513dd5
+SHA256: 634645ab8c6cb0c2136a6af8bd8780353a05d2fd0e15d0d430440024d9194afa
+SHA512: 6c32f46dec926901ae95c187b7c65411d48bc730e22f2adec1ca74ddc472c0c209b7a4718bc48b4529e7761d0fce0f41d5bb3e356c77ea7d7e3e8883f0ebab73
+Description: Romanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Romanian.
+
+Package: firefox-esr-l10n-ru
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 762
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-ru | myspell-ru
+Filename: ./all/firefox-esr-l10n-ru_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 644676
+MD5sum: 3917d5f92452dcf0fb0d1c614667b298
+SHA1: 641a5a6c7517ec22c0df6693347ca48f58d37790
+SHA256: 9586350480fb261dfeb6eb82f25862bde1b5abf4063c5cddf3af54a9027492da
+SHA512: 0e65c760bbd0fc6319bc4ff0a1dac4713c4d7bc967b37e556134314402755f073752b7dc5f5a42f54861fa056671af3aff06fdfaf4638db9a4afc236cdc747f8
+Description: Russian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Russian.
+
+Package: firefox-esr-l10n-sco
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 651
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-sco_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 528700
+MD5sum: 047df74711804b2c85648ce029188699
+SHA1: d3030cd303faf13935cececbeee503511b692231
+SHA256: f51ec515e9a10a129286a7305f9083ea603e1df9b0ce101752a238770e5e4382
+SHA512: 34b72c99d805b5e21901c5ef7b021668fbb055a14bbfa0864d73fb14a61d7a2befef50ea6c3d709b1d59cc6c368928ec79051db11f1a9fd307d8fd7c1626ebd0
+Description: Scots language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Scots.
+
+Package: firefox-esr-l10n-si
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 632
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-si
+Filename: ./all/firefox-esr-l10n-si_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 508640
+MD5sum: a4f07d2c44f6c9732a3bbcefdeff6ff8
+SHA1: 1b509333503b3056d643724362953b744070643f
+SHA256: 9a9b624741cafd299aad524f4cbd36d16d2b52feec2dbcf10f7e16c1d75ac840
+SHA512: f12d6fca7ce95057e77c50056d52ef0f0c5275f67a61cc251721780c05a8a45add8bf2e79bf8640bb3654acc437f1d94d4d961b2bad3fcb36c41babd65be25e9
+Description: Sinhala language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Sinhala.
+
+Package: firefox-esr-l10n-sk
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 709
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-sk | myspell-sk
+Filename: ./all/firefox-esr-l10n-sk_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 589604
+MD5sum: c629c7b6c5fb210dbd67ae9047b94c13
+SHA1: 3559af026aca8795eb21f2de2d1fc178545c5045
+SHA256: 8f19eaf94833cc53e5979891f4fdc8c4ddde8783818a844c099641de74f5be9e
+SHA512: 4e9c3a518c116857cf76963805706a3436c5304a9b5669f0d00b133a5bf0b10cc7f87191bf162a0d71c620de7ff1624c3f547edd8acbd900e2c84142406ef03d
+Description: Slovak language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Slovak.
+
+Package: firefox-esr-l10n-sl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 678
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-sl
+Filename: ./all/firefox-esr-l10n-sl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 559144
+MD5sum: 82072f270c210a8935b7daadf3727d8b
+SHA1: 35aca5cf8ce10f926205661fd3773be7b0acbffb
+SHA256: aad92370b4272bffb125df4cdad1276237f4b19a8e6971837bb054e4d8bf0657
+SHA512: 5bb70c8dfda888d183ebc21860296c498e0fb8532430c6a93175b5f4a1592c0cfe73123eb85088ecd6a431d36554f3e5f2af0ec3d915db0b23a75eef0d3797b3
+Description: Slovenian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Slovenian.
+
+Package: firefox-esr-l10n-son
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 577
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-son_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 450832
+MD5sum: 98d6e2a8d1235239c5e357eea2258113
+SHA1: a026cf0156f450b66f47f868d463657613866545
+SHA256: 42eb8629c7771ee46b11948c73a1447bdb9d6cc54e01ea65989ab8ef60b076ec
+SHA512: 7a8efe62562434cec040a920b52f2f7601e6a92a6b08a11c2b7f7b766d7a9aa4b839f38aed0fd1d20ef22b79e563374427f64ea45f985b49aba99ef5e009959a
+Description: Songhai languages language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Songhai languages.
+
+Package: firefox-esr-l10n-sq
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 691
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: myspell-sq
+Filename: ./all/firefox-esr-l10n-sq_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 571752
+MD5sum: 42e830de2cf532d487771a17b821e11e
+SHA1: 0d713b3cb76bab48d02e860bae6e2fa448a46c5e
+SHA256: 545977b2ca9705798ef6c70f8020031927086658c7e61e2b030608a1cbf99c57
+SHA512: ba66470b2c969105f97541da1c412ea0bc67b6665cad0e1260d1fcbdb18d28cc28766c01af63a77293bda94d7909f3c8e52de619db26af45a03d3158e85877cb
+Description: Albanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Albanian.
+
+Package: firefox-esr-l10n-sr
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 724
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-sr
+Filename: ./all/firefox-esr-l10n-sr_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 606408
+MD5sum: 0c80f798934119b29f3bd0f2894ed14e
+SHA1: af2f445d66356ab43bdb278df2b57aac2472e47f
+SHA256: 4c6a488a1c51ca5a09051fbf93bd39a73b547fcd5c1b90207b389d5a13bde94c
+SHA512: 3d4be4d024eab4cc3e813ef145cb4bd3e03df23942f790b3f96d859feef4d5debdf9fe1cc1269f84e59af09f5845256006fb47677c30098072d10b69aa9e02ea
+Description: Serbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Serbian.
+
+Package: firefox-esr-l10n-sv-se
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 684
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-sv-se
+Filename: ./all/firefox-esr-l10n-sv-se_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 562320
+MD5sum: eb997cc75987b70bcdb6cc6b11697ca5
+SHA1: 46ce4ee3905c9a59e7310a410d83cf40d006b0d5
+SHA256: 19cded87e7c79e786ca6bd7dded46264e2cff2ea1b10f72dcfb324a0f5d88c41
+SHA512: 1fabc98a77b965ce3236972b1a5c7bc87a02da1121bd9a879fa089f56367ad3f6e05fecee26c510982cece5aacb714e3c3b60f1dada0c4216210a8adfdba7367
+Description: Swedish (Sweden) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Swedish (Sweden).
+
+Package: firefox-esr-l10n-szl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 657
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-szl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 533512
+MD5sum: 303a4f18f47398d79d9720950788cbab
+SHA1: 111a2582ad876b67b2919888f7a0d45251238233
+SHA256: a5d5099a1b5b363715a174b9c5ea7f87172200c5cc2b02e3469827e3342a1216
+SHA512: a47f3d4e32e9d1cb29defd52f45258c6c405b4337ff77ffcaee61aeaf6c024d1ac20600e186e67e863713f440f8a6f1c8ea4c63386108bed4d2d1c7c14062918
+Description: Silesian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Silesian.
+
+Package: firefox-esr-l10n-ta
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 656
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ta_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 534244
+MD5sum: 8a3c06469eb2ca7253c77c89ec92eae1
+SHA1: b80401498453368e70a3ddc98acf4c3c2a5a612e
+SHA256: 67b3c4296fa53ef3f4ec56cbfb00a533bd97753882e0847d7987f8a1a5468df4
+SHA512: 5d5dd3468f3658bbc0f8155e9a1681e2489664425d3b8c75a0b7353ddc92ac777c007c2adfe6845c0ac51e78b491e17b3becc31354fc964cc2aa22e787af13ea
+Description: Tamil language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Tamil.
+
+Package: firefox-esr-l10n-te
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 691
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-te
+Filename: ./all/firefox-esr-l10n-te_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 569196
+MD5sum: 53649a04f60a0070f4e1bd7eb4293de4
+SHA1: a5224c9d2a7757a272f71559a54df62062ea61e1
+SHA256: c78d24fd97793c674b9403a10667b68d3d0410ababac3644038559fc14452345
+SHA512: 2db4b5fbc924e342af0ca2963fc502b08a2be412928884fa9ac81b8c193972fe78330577c539cf497601107f575c2ed0b7e6b1fe91f670a3779312a5acbd7ca8
+Description: Telugu language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Telugu.
+
+Package: firefox-esr-l10n-th
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 739
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-th
+Filename: ./all/firefox-esr-l10n-th_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 621888
+MD5sum: 5cc544826befbbf28a443d142dac88ef
+SHA1: 598932992424283743715c1b1b446b2a0618af58
+SHA256: 1e03bcba420b9de8f2b727acdfbd9e2996b03ecab223b8a5c9d0bf743c0d4545
+SHA512: 89768ce48d640093f99618c462bc15fe1f8424a71253e332e0ffc6c47036c468262f466cc851dd6336f491a4caba00b86d1d635d30d5832f5576c5154c55a448
+Description: Thai language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Thai.
+
+Package: firefox-esr-l10n-tl
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 663
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-tl_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 541628
+MD5sum: b20f2ee3c0054a7ffd9efd81d65a2446
+SHA1: 4b8fc393ed80087711699564648ab6320c212017
+SHA256: 831a4f0f5944cdeacdb36cdcf421c03683f5d17f4c3f474370d42f30d845d0dd
+SHA512: ebcac6c8858d2b004ecbe6feda62b93ca6421cc1387445f2a64eda5ab751b44c1bda06ca486a43df3e151ff473edfef2c727f94b41af980904054a5b22fc0683
+Description: Tagalog language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Tagalog.
+
+Package: firefox-esr-l10n-tr
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 695
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-tr_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 575952
+MD5sum: 5ad68922f9c9c1190ff391edda272933
+SHA1: b4b1e6658e6080bbb6226d4f917565774196b799
+SHA256: ae6a6e46f467101a9a34e736e97a3b03b455cb6dcabf01c49c4458cb08920126
+SHA512: 5cdca6f4eec80072beaa02ea2f13e8724beb0ff868cb54674b9a92a23a3962b85be8248eadef7ee2f4f51dade192ea7f82443e3a58c4f4e2c2c97696ef1b72d6
+Description: Turkish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Turkish.
+
+Package: firefox-esr-l10n-trs
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 638
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-trs_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 512764
+MD5sum: 3b83332836cdd65f9b6efd845c3bc376
+SHA1: ad34e0cc0ca8783925ff5294322f6222f9f0ec38
+SHA256: 7728e6cb93b57b203673d6b51f8175593c9434c27ec17e6d0f8edfcb88aeac58
+SHA512: 62138b9c371726f84379e0161dd6f40dc536a61de3012f269a6f7f4aa8ecd56cc20d58d228ef22fa46d5359f5c71d2a8d03d173000db886239699eda32c2c688
+Description: Chicahuaxtla Triqui language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Chicahuaxtla Triqui.
+
+Package: firefox-esr-l10n-uk
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 755
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-uk | myspell-uk
+Filename: ./all/firefox-esr-l10n-uk_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 637948
+MD5sum: 6c11cf8d4744567398ab0236644e00a6
+SHA1: 666f37841cc7538628115b79788213d327b00ced
+SHA256: 200de7c9530e42c48623745c34f6c632cb9b85556c1ad85f7aef965edaee7ce3
+SHA512: 910a6edc5ebd499db06bac0328cde87f965f8c0802b17d1693c39755995d5e76feb23ea542d0ac174e03554ce1413d58a5165615b126e95973ae719e201d142b
+Description: Ukrainian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Ukrainian.
+
+Package: firefox-esr-l10n-ur
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 695
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-ur_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 574404
+MD5sum: dd27c844427dbc86316654e44bcd921b
+SHA1: 6c608bc3dfbde9477ef28a46d66308757c617f2d
+SHA256: d7b3fe27b015a22d62db7005193ef1f365dcb30c8fc19b27fb6f236974b16bbc
+SHA512: 19b5ab5b967884a4a50a434e6325df961bb446e3f0af9c3b2fed4e3aba962c86eb1ff9c596c53d5fe7af3e114e2794cbf37ccf4c7b41fd7dbdb1307528e55de0
+Description: Urdu language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Urdu.
+
+Package: firefox-esr-l10n-uz
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 616
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-uz
+Filename: ./all/firefox-esr-l10n-uz_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 493320
+MD5sum: af14b37f5d986d23539371b9d2420614
+SHA1: 5f87064aff743c566f9be4601082a9502430a691
+SHA256: 13ba9e99aa22ee95b97b24fc9bab329e9ee239d73b57c85149104727071cc282
+SHA512: 0c8c6c8978cdefe8e275902e426bb61de5fa58cd5cce9012167daa6b2d56c663043b7cdded67c2df4095c6ef305fc5b271d7450110710a96eb90fada54a8be32
+Description: Uzbek language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Uzbek.
+
+Package: firefox-esr-l10n-vi
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 712
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Recommends: hunspell-vi
+Filename: ./all/firefox-esr-l10n-vi_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 593456
+MD5sum: 328505d3956582f659ad6465b1a573d6
+SHA1: 0b8868bcb097cb32b2eb0ce9654497497b100ac0
+SHA256: 6d7df3e64871c4683d543e0bb3ff847c8778e1d47d48d10b035d7145d65c4e62
+SHA512: 3b001a6c2d950cc85d1f01b6a4045ffca82519570eedf27b4ab1fc257e68049f09194e0484d5b2c9ef49be09152d1545b040df99b441d51ead6f86f34c6814b4
+Description: Vietnamese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Vietnamese.
+
+Package: firefox-esr-l10n-xh
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 579
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-xh_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 453816
+MD5sum: 4131cdc89569e4e7fc0c20685df5a9dc
+SHA1: a5e1dd2f2d53ed8aee97ed2597e6158c950cf1db
+SHA256: a8f78c1472cc60f168058d2ef34632de358d2ab5f4afb37acefe6b14ead26635
+SHA512: 0460991d4d2da8b35044d4dcb296d484dacaaf273ee0585bfa51a4b9d333e372a2cb9318370664fd56c45e32c24eb117153bbf00f7350d16e887d3ca11f9198d
+Description: Xhosa language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Xhosa.
+
+Package: firefox-esr-l10n-zh-cn
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 710
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-zh-cn_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 588572
+MD5sum: 0810c3c12c23320181dcda3c1b09e93f
+SHA1: 94e35879201e4dd46463dec9d9cbc0c453aa6b8c
+SHA256: 4b2688a019d7f90f15c0ef7b75476b5481afc500f9e4fa88cf4c7390c4aa5892
+SHA512: 1dd776f793214fd2a61a7850b996f1bba78bc790861c4d3956061b46ff71ebeb684bfb6d371a95aff4ed991e9de2a2306eb4e78a73f7e113ee3b901cc61150a3
+Description: Chinese (China) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Chinese (China).
+
+Package: firefox-esr-l10n-zh-tw
+Architecture: all
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: localization
+Source: firefox-esr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 711
+Depends: firefox-esr (>= 91.4.0esr-1~bpo11+0.sean00), firefox-esr (<< 91.4.0esr-1~bpo11+0.sean00.1~)
+Filename: ./all/firefox-esr-l10n-zh-tw_91.4.0esr-1~bpo11+0.sean00_all.deb
+Size: 589452
+MD5sum: d647bc931f796237718eacee2039df85
+SHA1: a183a59f34129183ba7fb0a4f1254018b24b03d3
+SHA256: 95975ae0617ed958fb17dca7b94b8b18f653df82b9d5dae3e71f63e4b7a68a36
+SHA512: 584c578215e847610b860eab610394fdbdea00d350c91ecebf596f7ea5e0689f8c3a0940aada4abc56b3cbac450ae8a808fa1ca6a45787b429e4d5ed92fde30e
+Description: Chinese (Taiwan) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Chinese (Taiwan).
+
 Package: git-all
 Architecture: all
 Version: 1:2.33.0-1
@@ -3856,6 +5978,28 @@ Description: flexible I/O tester
  This package contains the command line version of fio and all additional
  command line tools. The package gfio contains the GTK+ based gui frontend
  for fio.
+
+Package: firefox-esr
+Architecture: amd64
+Version: 91.4.0esr-1~bpo11+0.sean00
+Priority: optional
+Section: web
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 210591
+Provides: gnome-www-browser, www-browser
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.29), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libevent-2.1-7 (>= 2.1.8-stable), libffi7 (>= 3.3~20180313), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.10.1), libgcc-s1 (>= 4.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.9.14), libnspr4 (>= 2:4.32~), libnss3 (>= 2:3.68~), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 9), libvpx6 (>= 1.8.0), libx11-6, libx11-xcb1 (>= 2:1.7.2), libxcb-shm0, libxcb1, libxcomposite1 (>= 1:0.4.5), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, zlib1g (>= 1:1.2.11.dfsg), fontconfig, procps, debianutils (>= 1.16)
+Recommends: libavcodec58 | libavcodec-extra58 | libavcodec57 | libavcodec-extra57 | libavcodec56 | libavcodec-extra56 | libavcodec55 | libavcodec-extra55 | libavcodec54 | libavcodec-extra54 | libavcodec53 | libavcodec-extra53
+Suggests: fonts-stix | otf-stix, fonts-lmodern, libgssapi-krb5-2 | libkrb53, libcanberra0, pulseaudio
+Breaks: xul-ext-torbutton
+Filename: ./amd64/firefox-esr_91.4.0esr-1~bpo11+0.sean00_amd64.deb
+Size: 57669204
+MD5sum: bc22b133024b2cafe95f480c754416c5
+SHA1: 17bae238d79f3fa8ccd7e018f4f1bddeb2a20ee0
+SHA256: 8f41c529eef69afa5a0059c78e7ca1940610abe0e5d7cd1eae306fc5be66ffa5
+SHA512: eebf13efade0a5100a90649074d502657c87e1fd3cb975fb1756fb5374404f4216e447b04aabcc1d052ed598e3368bad9eea4774c1757ae9352016dbda911841
+Description: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
 
 Package: gfio-dbgsym
 Architecture: amd64
@@ -8521,6 +10665,142 @@ Description: video player based on MPlayer/mplayer2 (client library)
  .
  This package provides a client library that can be used to embed mpv in other
  applications.
+
+Package: libnspr4-dev
+Architecture: amd64
+Version: 2:4.32-3~bpo11+0.sean00
+Priority: optional
+Section: libdevel
+Source: nspr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 1153
+Depends: libnspr4 (>= 2:4.32), libnspr4 (<= 2:4.32-3~bpo11+0.sean00.1~)
+Breaks: libxmlsec1-dev (<= 1.2.33-1)
+Filename: ./amd64/libnspr4-dev_4.32-3~bpo11+0.sean00_amd64.deb
+Size: 211560
+MD5sum: ce54531fd9cd915d01d871669f056cb3
+SHA1: 422d69a97cba55b0ef11fd532b905ca44d5a8116
+SHA256: eee2f7b9f6ca7ab84eb4627b3fc4c119b5f521052aa9b2401b69d44eeaa82a6f
+SHA512: 0412083d0b39e17585644508fddee7ed54375da0d9679951ddca60c25a5fa059213b08ef5d7ae31442b0996fe03bb3df1dcfd6aa6937df23a7b65c3abbc27031
+Homepage: http://www.mozilla.org/projects/nspr/
+Description: Development files for the NetScape Portable Runtime library
+ This library provides platform independent non-GUI operating system
+ facilities including:
+  * threads,
+  * thread synchronisation,
+  * normal file I/O and network I/O,
+  * interval timing and calendar time,
+  * basic memory management (malloc and free),
+  * shared library linking.
+ .
+ Install this package if you wish to develop your own programs using the
+ NetScape Portable Runtime library.
+
+Package: libnspr4
+Architecture: amd64
+Version: 2:4.32-3~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nspr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 322
+Depends: libc6 (>= 2.30)
+Filename: ./amd64/libnspr4_4.32-3~bpo11+0.sean00_amd64.deb
+Size: 113112
+MD5sum: c807b3751d22249df369c1d06069be7b
+SHA1: bfbebbd4c58137bdefd2a7ad4d3265caae6a240c
+SHA256: 14a32d739bbb88f1dd0ec2c7bdfd335af9b1a14ae887edbbe3bcd089e8b66975
+SHA512: e20a03fdf75acbfd021f4d3cf33ac63ed6a007f974073008fb5726c0d5dba64aef1e844bd2ac07a99f697bf02db6cab58eefbf45d045c269247ea5ff4deefae5
+Homepage: http://www.mozilla.org/projects/nspr/
+Description: NetScape Portable Runtime Library
+ This library provides platform independent non-GUI operating system
+ facilities including:
+  * threads,
+  * thread synchronisation,
+  * normal file I/O and network I/O,
+  * interval timing and calendar time,
+  * basic memory management (malloc and free),
+  * shared library linking.
+
+Package: libnss3-dev
+Architecture: amd64
+Version: 2:3.73-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 1443
+Depends: libnss3 (= 2:3.73-1~bpo11+0.sean00), libnspr4-dev (>= 4.6.6-1)
+Breaks: libxmlsec1-dev (<< 1.2.33-1~)
+Filename: ./amd64/libnss3-dev_3.73-1~bpo11+0.sean00_amd64.deb
+Size: 254196
+MD5sum: b481b4913824d893eba2d6e6de18f5d4
+SHA1: 3c6cf545d0699baa6529a39c212bfb83480eab26
+SHA256: 511687c0553f33a08f52f4f00bf23b8c4253bd5e0659ba1283dad10b2685dce4
+SHA512: a154394edec01b3cbad473967c764fc02bbadadd9360dbf9a0873e6b824e71aced9df22cd9de112238f3e8c9654e41da221ed72bf55ff8937b5dfec7190f36cf
+Homepage: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
+Description: Development files for the Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+ .
+ Install this package if you wish to develop your own programs using the
+ Network Security Service Libraries.
+
+Package: libnss3-tools
+Architecture: amd64
+Version: 2:3.73-1~bpo11+0.sean00
+Priority: optional
+Section: admin
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 4952
+Depends: libc6 (>= 2.14), libnspr4 (>= 2:4.12), libnss3 (>= 2:3.66), zlib1g (>= 1:1.1.4)
+Filename: ./amd64/libnss3-tools_3.73-1~bpo11+0.sean00_amd64.deb
+Size: 1050696
+MD5sum: ea128184861ce548d129c9936f0683d5
+SHA1: a342b99fbcd4a2b041b0bb60546b8d2b65645a60
+SHA256: f0e712840b3a6d0b008de0edc5cbb4895971faad553e8217012bfce57a76e53e
+SHA512: 3d717cffc878a1ec7fba97a0aee1311b729ff65e500c9f886a405824beb0205b0c6b2887004343e8e0d4e124775b7acb236faa396f08c42ba122c77bbf755faa
+Homepage: http://www.mozilla.org/projects/security/pki/nss/tools/
+Description: Network Security Service tools
+ This is a set of tools on top of the Network Security Service libraries.
+ This package includes:
+  * certutil: manages certificate and key databases (cert7.db and key3.db)
+  * modutil: manages the database of PKCS11 modules (secmod.db)
+  * pk12util: imports/exports keys and certificates between the cert/key
+    databases and files in PKCS12 format.
+  * shlibsign: creates .chk files for use in FIPS mode.
+  * signtool: creates digitally-signed jar archives containing files and/or
+    code.
+  * ssltap: proxy requests for an SSL server and display the contents of
+    the messages exchanged between the client and server.
+
+Package: libnss3
+Architecture: amd64
+Version: 2:3.73-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 4097
+Depends: libc6 (>= 2.14), libnspr4 (>= 2:4.12), libsqlite3-0 (>= 3.5.9)
+Filename: ./amd64/libnss3_3.73-1~bpo11+0.sean00_amd64.deb
+Size: 1326364
+MD5sum: acf189426c2ad6cf75a404228e7ec008
+SHA1: 1a4e7240d86a655fed8170ae89749f1a7c7c30df
+SHA256: 0d2be39ed401ce944e602bcf8ff1be4380143eb874f8004a68f9aeaa456946ec
+SHA512: 85ff3feaa9203f215d605efeb4588a1a985f8abba38f8af66da4354f6728f630e3345e4528dafa8f8a80980d5a596a6c2714c3c55dcc23c16d68d8ab1dbcef52
+Homepage: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
+Description: Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
 
 Package: libosmesa6-dev
 Architecture: amd64
