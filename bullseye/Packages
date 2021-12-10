@@ -3046,6 +3046,41 @@ Description: Dummy transitional package for transition to new name
  This package ensures smooth transition to libqalculate-data and
  can be safely removed.
 
+Package: libstd-rust-dev-wasm32
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libdevel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 211719
+Recommends: lld-11, clang-11
+Suggests: nodejs (>= 12.16)
+Filename: ./all/libstd-rust-dev-wasm32_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 49094848
+MD5sum: 0655f13403cc3a8a80a71e9ec422e1b9
+SHA1: 4b7481a62a117621086544a0442597ebd2cf5af7
+SHA256: 1248f1b1ef129a529b8ea6bd86ffcb2d95d4d544cc882d4442c69c6c02a79803
+SHA512: 8ef036d232f53e570826343cc26ffebeec24f832e15a20948187f50f5983f3b2873e6d100e6648fea2e958dc883ceba9f6e222b5e82ced9bbdf53c5d1a5cfbd1
+Homepage: http://www.rust-lang.org/
+Description: Rust standard libraries - development files
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains the standard Rust libraries including development files,
+ needed to cross-compile Rust programs to the wasm32-unknown-unknown and
+ wasm32-wasi targets.
+
 Package: neovim-runtime
 Architecture: all
 Version: 0.5.0-1
@@ -3312,6 +3347,205 @@ Description: Common files for Remmina
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
  .
  This package contains the common files.
+
+Package: rust-all
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 246
+Depends: rustc (>= 1.56.0+dfsg1-2~bpo11+0.sean00), rustfmt (>= 1.56.0+dfsg1-2~bpo11+0.sean00), rust-clippy (>= 1.56.0+dfsg1-2~bpo11+0.sean00), rust-gdb (>= 1.56.0+dfsg1-2~bpo11+0.sean00) | rust-lldb (>= 1.56.0+dfsg1-2~bpo11+0.sean00), cargo
+Recommends: cargo (>= 0.57.0~~), cargo (<< 0.58.0~~)
+Suggests: rust-doc (>= 1.56.0+dfsg1-2~bpo11+0.sean00), rust-src (>= 1.56.0+dfsg1-2~bpo11+0.sean00), libstd-rust-dev-wasm32 (>= 1.56.0+dfsg1-2~bpo11+0.sean00), libstd-rust-dev-windows (>= 1.56.0+dfsg1-2~bpo11+0.sean00)
+Filename: ./all/rust-all_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 178288
+MD5sum: c54ab740fdc39d6e4b0b11e3e2fe14a7
+SHA1: 56d29f483043e98898711bbfe5eb3c75a4725f66
+SHA256: 2b6123a9ac4a32fa550b2e55c31465804a4ec31fc0efd51c2115c28d41a3196f
+SHA512: 8b635434625e8d5895da1d11d53cf5bb2f1b3cc2b62556937bf355748c14faae77feb4633ec29d8a9f6e5358bc9b25f14ea55cde1fc70aa56b2ecc0eb9500402
+Homepage: http://www.rust-lang.org/
+Description: Rust systems programming language - all developer tools
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package is an empty metapackage that depends on all developer tools
+ in the standard rustc distribution that have been packaged for Debian.
+
+Package: rust-doc
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Priority: optional
+Section: doc
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 415701
+Depends: libjs-jquery, libjs-highlight.js, libjs-mathjax, fonts-open-sans, fonts-font-awesome
+Recommends: cargo-doc
+Filename: ./all/rust-doc_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 16162928
+MD5sum: f0af564edbe2fe1b457aca4c085a3abe
+SHA1: 3651b2a5834b151e64cdf09d70ee8e39328548d9
+SHA256: c24a0c88a7697c2618aab67884122ea8bd6813152ec813ada51613a1bc243997
+SHA512: 16af5c8c7362e2aaeaef035ca495a2de1376acff8ab49f0479ec83672d16ed8f08b9a2bca57b56fab93595ae85dca395f44f7824a33450a5386d194dcd97ffd0
+Homepage: http://www.rust-lang.org/
+Description: Rust systems programming language - Documentation
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains the Rust tutorial, language reference and
+ standard library documentation.
+
+Package: rust-gdb
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 274
+Depends: gdb
+Suggests: gdb-doc
+Replaces: rustc (<< 1.1.0+dfsg1-1)
+Filename: ./all/rust-gdb_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 183208
+MD5sum: c2d86c5d6642cc6594dd2fa089685105
+SHA1: a5f9d8f8b860c1c0a2b030ed9015f819d7f311fd
+SHA256: 02d696ef58d1ceab277a0375ed2ea7a14b9e78db4f788ad704624d10a76cb6fd
+SHA512: 8bc2e73f9e7f0f35e6d7772b13d96ba2487c321f9397a12a8f520eb410594c8bc1d1b35a41929fdbf178c142d6050116c97eb3611506539ce8e2c5eaa3db2afd
+Homepage: http://www.rust-lang.org/
+Description: Rust debugger (gdb)
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains pretty printers and a wrapper script for
+ invoking gdb on rust binaries.
+
+Package: rust-lldb
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 287
+Depends: lldb-11, python3-lldb-11
+Replaces: rustc (<< 1.1.0+dfsg1-1)
+Filename: ./all/rust-lldb_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 184124
+MD5sum: cb6a96bf52a1aaef6f188b7e46a4b9b0
+SHA1: f623941534b8c43480075f710f55e3882dccd716
+SHA256: 1406bc55614b8d06c6e65d83b1cf7141d5693bcaba64f093fb7a26e4f985a22d
+SHA512: 29ba7c16ef4517b2b81808dfd265681d1d5283ece91af410e483d680e17a339df8e41f926a375d714e20bfeb3a3209fc6a03268ed5feb050c070562431862607
+Homepage: http://www.rust-lang.org/
+Description: Rust debugger (lldb)
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains pretty printers and a wrapper script for
+ invoking lldb on rust binaries.
+
+Package: rust-src
+Architecture: all
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 140438
+Filename: ./all/rust-src_1.56.0+dfsg1-2~bpo11+0.sean00_all.deb
+Size: 17268916
+MD5sum: 39edc905239f11405c772527813044f6
+SHA1: 9ec0e12d43ed0c9f72c29c24fe1d38dea6906712
+SHA256: 298b2d2088a69f66aa3a218051625d2b5a225c5f73e7e5ec37bff4dd3e166e4a
+SHA512: a4dfd32aafcfedbe0acf045d57b46894b895076b22a99d5d50cbee2dbffae4b79d90a5699cb6f4c9a4c9a79aef46d40a01a29255c827caff5903090930b61bdb
+Homepage: http://www.rust-lang.org/
+Description: Rust systems programming language - source code
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains sources of the Rust compiler and standard
+ libraries, useful for IDEs and code analysis tools such as Racer.
+
+Package: wasi-libc
+Architecture: all
+Version: 0.0~git20201130.5879558-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 3026
+Filename: ./all/wasi-libc_0.0~git20201130.5879558-1~bpo11+0.sean00_all.deb
+Size: 802920
+MD5sum: 37528b30028e7737ce5d5831d336dd42
+SHA1: c5000e8c7b31cb82e0d206e03e82f6598f199f2a
+SHA256: e1beceb53dbc3021930ecb558ecbd73b1b62000929b9506930c1b85a427ddf96
+SHA512: ff863deb9309e006987f3fa362dc7b891e35591d83f72daf319f85322130881ee1846009da6c54e6082351cd0459c15d934cf35b51763365db7a7b2ea7becdd9
+Homepage: https://github.com/CraneStation/wasi-libc
+Description: WASI libc implementation for WebAssembly
+ This is a work in progress. It's usable for many purposes, though the APIs
+ aren't stable yet. For example, this is used by the Rust compiler to build
+ its standard library for the wasm32-wasi target.
+ .
+ First, it's a usable libc. It builds a "libc" which can be used by compilers,
+ such as Clang 8.0, using the wasm32-wasi target. It's a work in progress, but
+ it is already sufficient to run basic programs.
+ .
+ Second, it's a "reference" implementation, which means the interfaces defined
+ here can be used by other tools and libraries, even if they don't use all the
+ actual implementations here. For example, we don't expect everyone will want to
+ use the exact malloc implementation provided here, but tools and libraries
+ using an ABI-compatible malloc interface will be able to interoperate
+ regardless of which actual implementation is used.
+ .
+ Third, it's an example showing the use of the WASI API. The libc functionality
+ is implemented using calls to WASI functions.
 
 Package: wayland-protocols
 Architecture: all
@@ -9895,6 +10129,107 @@ Description: Powerful and easy to use desktop calculator - library
  .
  This package contains the shared library used by all Qalculate! frontends.
 
+Package: libstd-rust-1.56
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 69492
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 4.2), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2)
+Filename: ./amd64/libstd-rust-1.56_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 17755168
+MD5sum: 99583cbeb4346defe714e817a3cec9ea
+SHA1: c6f5c185fe40d67a8e8d35fd40518eda6f155467
+SHA256: ad0c1187f7f214ddebfefde0ed6724fe929f545f3386511f87c35ec2a6b56300
+SHA512: ffbd574a474956c72f405e74d68ee7635694a29b45f5dbf922b0c92b62b6f0d4e72800b83f00b01ea7f8daac447855eec42c49dc96c3114051a845bd8222cf6f
+Homepage: http://www.rust-lang.org/
+Description: Rust standard libraries
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains the standard Rust libraries, built as dylibs,
+ needed to run dynamically-linked Rust programs (-C prefer-dynamic).
+
+Package: libstd-rust-dev-windows
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 232712
+Recommends: gcc-mingw-w64-x86-64-posix
+Filename: ./amd64/libstd-rust-dev-windows_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 47068304
+MD5sum: a99534ae516cc19e69ef488154e3d559
+SHA1: 468640d4c71d1e5fb871856a1a8d2ae5b48b85cd
+SHA256: 80b0f5df62a6a6d7a6c5985e2ce3e73cbdd01bc8459d628b54ac19463b964d45
+SHA512: 91465b4babc98a628c153f940af616e0ef204c117faaec4eb86d524807dc1859030075cd75687b6d0ac2ef3132156602fc9ac3d84607cdda9bd2d49bfa765b8b
+Homepage: http://www.rust-lang.org/
+Description: Rust standard libraries - development files
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains the standard Rust libraries including development files,
+ needed to cross-compile Rust programs to the *-pc-windows-gnu target
+ corresponding to the architecture of this package.
+
+Package: libstd-rust-dev
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 163916
+Depends: libstd-rust-1.56 (= 1.56.0+dfsg1-2~bpo11+0.sean00)
+Filename: ./amd64/libstd-rust-dev_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 31265440
+MD5sum: 2300b9cf8ab898d18706720d7c190c59
+SHA1: d167dc5e4b61051198774fba5b81207db22603a0
+SHA256: 75f05913a075f6208fe21d6da1dd772acaf657cf21c88d9584a26fe1e9655aea
+SHA512: 7a3cbeb52c600fa818cc69d5fe9abdbea215c74a29b1193d7c1d5f6628631313f3c37cded8d475b88c7aa198ec06414cd331dbe5a25dd63a5d72616cb0737323
+Homepage: http://www.rust-lang.org/
+Description: Rust standard libraries - development files
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains development files for the standard Rust libraries,
+ needed to compile Rust programs. It may also be installed on a system
+ of another host architecture, for cross-compiling to this architecture.
+
 Package: libswresample-dev
 Architecture: amd64
 Version: 7:4.4.1-2.1~bpo11+0.sean00
@@ -12901,6 +13236,114 @@ Description: GTK+ Remote Desktop Client
  consistent user interface.
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+
+Package: rust-clippy
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: allowed
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 7293
+Depends: libc6 (>= 2.18), libgcc-s1 (>= 4.2), libstd-rust-1.56 (= 1.56.0+dfsg1-2~bpo11+0.sean00)
+Recommends: cargo
+Filename: ./amd64/rust-clippy_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 1918736
+MD5sum: b89e59e71787ca011c4cee839bce4b27
+SHA1: 00ab2616fb14350678598c6b2a7eae25e33510ac
+SHA256: 401a345357f7b48cd4d5a9ada571b773777790134b094f4e56510df7ebd009d9
+SHA512: 06254413b3a4e11e1f44b02a39ee2cda616a7dfc2b12e9934797bb6ba18887a1ad78c7849b3a24ec2f5b4c7e5d7c1a9a2b31430ddb4f8ae9511747a10259b9a7
+Homepage: http://www.rust-lang.org/
+Description: Rust linter
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains 'clippy', a linter to catch common mistakes and improve
+ your Rust code as well a collection of over 400 compatible lints.
+ .
+ Lints are divided into categories, each with a default lint level. You can
+ choose how much Clippy is supposed to annoy help you by changing the lint
+ level by category.
+ .
+ Clippy is integrated into the 'cargo' build tool, available via 'cargo clippy'.
+
+Package: rustc
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: allowed
+Priority: optional
+Section: devel
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 9078
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstd-rust-dev (= 1.56.0+dfsg1-2~bpo11+0.sean00), gcc, libc-dev, binutils (>= 2.26)
+Recommends: cargo (>= 0.57.0~~), cargo (<< 0.58.0~~), llvm-11
+Suggests: lld-11, clang-11
+Breaks: libstd-rust-dev (<< 1.25.0+dfsg1-2~~)
+Replaces: libstd-rust-dev (<< 1.25.0+dfsg1-2~~)
+Filename: ./amd64/rustc_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 3548796
+MD5sum: bc21c4c2ffa52b818af45c7a0f3c3328
+SHA1: 368d18829d731ded8262cf2ec52292001bb284b1
+SHA256: 466c78a28279d401e1930a28c0ebf6f73ea23d22db0330c066fea4762c3334b3
+SHA512: 669802b8f2f981ca32a40a67db14fd7d4b67141c5c5089487630c95d31d3f2a5c1684e4c7fc71d716dc8148c7680e6c2cec0fda7e0ddb922782bb1e9226bac13
+Homepage: http://www.rust-lang.org/
+Description: Rust systems programming language
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+
+Package: rustfmt
+Architecture: amd64
+Version: 1.56.0+dfsg1-2~bpo11+0.sean00
+Multi-Arch: allowed
+Priority: optional
+Section: devel
+Source: rustc
+Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+Installed-Size: 9261
+Depends: libc6 (>= 2.18), libgcc-s1 (>= 4.2)
+Recommends: cargo
+Filename: ./amd64/rustfmt_1.56.0+dfsg1-2~bpo11+0.sean00_amd64.deb
+Size: 2487248
+MD5sum: d9a213d228d106c573f21df0edad47cf
+SHA1: f8ad2e9b7e5087ed564c5522bd0873a1dd8b978a
+SHA256: ab13951166fb16a7c9ab82752c4b7f25a50bb641c81540c5007ef9b6e7f5979f
+SHA512: 7b803f58041926808d22f719a211e3cd0f434bcc3bc3403b3c47ab3512e0c91d3be92d3b2091c45a5de82540276112f91b3cb91712fda06edaa9d96dc87749c1
+Homepage: http://www.rust-lang.org/
+Description: Rust formatting helper
+ Rust is a curly-brace, block-structured expression language.  It
+ visually resembles the C language family, but differs significantly
+ in syntactic and semantic details.  Its design is oriented toward
+ concerns of "programming in the large", that is, of creating and
+ maintaining boundaries - both abstract and operational - that
+ preserve large-system integrity, availability and concurrency.
+ .
+ It supports a mixture of imperative procedural, concurrent actor,
+ object-oriented and pure functional styles.  Rust also supports
+ generic programming and meta-programming, in both static and dynamic
+ styles.
+ .
+ This package contains 'rustfmt', a tool for formatting Rust code according to
+ style guidelines, as well as 'cargo-fmt', a helper enabling running rustfmt
+ directly with 'cargo fmt'.
 
 Package: telegram-desktop
 Architecture: amd64
