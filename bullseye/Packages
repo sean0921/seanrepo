@@ -5278,6 +5278,172 @@ Description: heavily refactored vim fork (runtime files)
  language-specific highlighting and indentation, color schemes, and standard
  plugins.
 
+Package: netdata-apache2
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 54
+Depends: apache2, netdata-core (>= 1.32.0-1~bpo11+0.sean00) | netdata-core-no-sse (>= 1.32.0-1~bpo11+0.sean00), netdata-web (>= 1.32.0-1~bpo11+0.sean00)
+Enhances: netdata-core, netdata-core-no-sse
+Filename: ./all/netdata-apache2_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 23376
+MD5sum: 682038e8d7cb9f90d2668b58fc2a38d1
+SHA1: 5fed8018573047887e92c6bebd3393c37331c02b
+SHA256: 1169ef37fc46e67829a76619c0ceb0b71ca856b77c738f4e6b43b32d71015034
+SHA512: 76a2ccf632cbd2df088b33f138c889693d791b55de65ea5a95917dd1a36b20b2bab0c96a1e763e74f36012baa3ba23481502afce08efc4c84793174ae33468a5
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (apache integration)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ Netdata includes its own embedded webserver, by default listening on localhost
+ only. To make netdata available to other users, a dedicated webserver such as
+ apache should be used (with authentication and encryption).
+ .
+ This package contains the integration for the apache HTTP server.
+
+Package: netdata-plugins-bash
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 1632
+Provides: netdata-plugins
+Depends: netdata-core (>= 1.32.0-1~bpo11+0.sean00) | netdata-core-no-sse (>= 1.32.0-1~bpo11+0.sean00)
+Suggests: fping
+Breaks: netdata-core (<< 1.19.0-2~), netdata-core-no-sse (<< 1.19.0-2~)
+Replaces: netdata-core (<< 1.19.0-2~), netdata-core-no-sse (<< 1.19.0-2~)
+Enhances: netdata-core, netdata-core-no-sse
+Filename: ./all/netdata-plugins-bash_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 404100
+MD5sum: 2beb6d2ec33e141736e894fcc48d0ba3
+SHA1: d826342e53f839905b23c3856b5f818f6f078917
+SHA256: 3cfbe13ff3ad758885d12d2c8100a61ec0f724edf5aad2bcc6c0bb731fb456cb
+SHA512: b1118016a88f1919a377e78bfcc5e100bcaf50062985cec79322ffd4ce69fb7b8da7724d9f6c45db639350332e570dfaa68af983efb506646423dfe32dee8823
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (bash plugins)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ This package contains the plugins using bash.
+
+Package: netdata-plugins-nodejs
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 328
+Provides: netdata-plugins
+Depends: netdata-core (>= 1.32.0-1~bpo11+0.sean00) | netdata-core-no-sse (>= 1.32.0-1~bpo11+0.sean00)
+Recommends: nodejs
+Enhances: netdata-core, netdata-core-no-sse
+Filename: ./all/netdata-plugins-nodejs_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 64928
+MD5sum: 3bb8d54af32c67b38b13c4209d093b13
+SHA1: 534fce7d4245fd7573794291e6599a9da2e507e5
+SHA256: 519b85dd8717c0dd70fe8cc74ec9471d62914b5c27f3d0d0fa7ac578eb929dae
+SHA512: 42f0831cc7c5aacccb7bee806c9f79777415552f59cf46e650135f5ddf86022a2b29f90292fb474542e599ec914753118675366e9bb61764d47f47f38c20050e
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (nodejs plugins)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ This package contains the plugins using nodejs.
+
+Package: netdata-plugins-python
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 1186
+Provides: netdata-plugins
+Depends: netdata-core (>= 1.32.0-1~bpo11+0.sean00) | netdata-core-no-sse (>= 1.32.0-1~bpo11+0.sean00), python3, python3-six, python3-urllib3 (>= 1.22), python3-yaml
+Suggests: python3-psycopg2, python3-pymysql, python3-requests
+Breaks: netdata-core (<< 1.17.0-1~), netdata-core-no-sse (<< 1.17.0-1~)
+Replaces: netdata-core (<< 1.17.0-1~), netdata-core-no-sse (<< 1.17.0-1~)
+Enhances: netdata-core, netdata-core-no-sse
+Filename: ./all/netdata-plugins-python_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 181896
+MD5sum: d9a09e640a1ffc403859f3eb568e8247
+SHA1: 9e8105407d2c5b4df4f3cbf1c3bf632f14398c71
+SHA256: 62317ac04b2f40c8f99404c69483512bef37f14f9af54423c6eb367705ac7715
+SHA512: c8a745a394f800a2bcd86a08527c1949f08fb7de1f73b416e1c95d9e6ed5b1784855dbc5c0c4bead0365c465fed4a21765f12258cf0632786d4b72e29d4b305d
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (python plugins)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ This package contains the plugins using python.
+
+Package: netdata-web
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 23003
+Depends: fonts-font-awesome, libjs-bootstrap, netdata-core (>= 1.32.0-1~bpo11+0.sean00) | netdata-core-no-sse (>= 1.32.0-1~bpo11+0.sean00)
+Conflicts: netdata-data
+Replaces: netdata-data
+Enhances: netdata-core, netdata-core-no-sse
+Filename: ./all/netdata-web_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 5313048
+MD5sum: 41472907812aa1e41beebe33e7d86ba6
+SHA1: 6ef39df59d250bcf80f44c0e85a9db5cfe2d6fd3
+SHA256: 8474fa25b1eb4c377cee1b469b1c385e6f55afd9440afdbd2ea9aaddfe7f8738
+SHA512: a99ff7eb99320304b1d5a68ef4f3fac8c6b209fcffcec928ee10c810ab67968e31a3255d23f38527ed929addd8955d73725bbd0ece1f537e176de628b92d644a
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (web)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ This package contains the web frontend.
+
+Package: netdata
+Architecture: all
+Version: 1.32.0-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 45
+Depends: netdata-core | netdata-core-no-sse, netdata-plugins-bash, netdata-web
+Recommends: netdata-plugins-nodejs, netdata-plugins-python
+Filename: ./all/netdata_1.32.0-1~bpo11+0.sean00_all.deb
+Size: 23156
+MD5sum: c3bad50f8f0cbfce2f311aa41d086db1
+SHA1: b854339e7970bb6e62195fd1602d47ea843b0b09
+SHA256: 5ab79ef276aea39c22593c728b129775e1dedb837e76045e81d0af113b1ebb1e
+SHA512: a77ab5cdc43f964fb78a8eec292d1bb8020382c5d0f5f78732fc2050331b1c7025d2416ca3123169245b5ac177f540b8cb756d38793de1140b2d00a050f2c49f
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (metapackage)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ It can run autonomously without any third party components or it can be
+ integrated to existing monitoring tool chains (Prometheus, Graphite,
+ OpenTSDB, Kafka, Grafana, etc).
+ .
+ This package is a metapackage depending on the typical netdata components.
+
 Package: parallel
 Architecture: all
 Version: 20210822+ds-3~bpo11+0.sean00
@@ -13492,6 +13658,55 @@ Description: heavily refactored vim fork
  .
  GUIs (or TUIs) can easily embed Neovim or communicate via TCP sockets using
  the discoverable msgpack API.
+
+Package: netdata-core-dbgsym
+Architecture: amd64
+Version: 1.32.0-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 5348
+Depends: netdata-core (= 1.32.0-1~bpo11+0.sean00)
+Filename: ./amd64/netdata-core-dbgsym_1.32.0-1~bpo11+0.sean00_amd64.deb
+Size: 5000604
+MD5sum: c6b65f4e32d776ef2a1c37213ec02fcc
+SHA1: a50108cfdbb3ebcb65c3c85600a34b09d644eefa
+SHA256: aac092bc4abfc26a6f1ea05aaf961a3ec85ed7bbc2e4c6078ecab7da602d3e0e
+SHA512: 4e9bed3d274ced0c0f3969fbba1e1feecdcab5c912f1089634b72146a91a8c66c001246f029ea6e0ecb860d45c7680214b5b01693d220ae966d93c525f0119d0
+Description: debug symbols for netdata-core
+Build-Ids: 0155aa766d917576f125ad0fae83c00ae8b1483f 1b1a0412e12b0e7cc40d6f0a823e324139e30683 2156a0c400213dff67a5421b4976060ba2cea735 47f8d53154349c8c749bfe339222ff2a4ca1b8cf 5309eb71d4c3da90d23869267e8aaaf3b6efb21f 9727ee3ffce0de26ee7a03f08d1d6424bcb4b00c 9ca8ac92bd25906f13559693f67c549c87417d22
+
+Package: netdata-core
+Architecture: amd64
+Version: 1.32.0-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Source: netdata
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 4551
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libcap2-bin, lsb-base, libc6 (>= 2.28), libcap2 (>= 1:2.10), libjson-c5 (>= 0.15), libjudydebian1, liblz4-1 (>= 0.0~r130), libmnl0 (>= 1.0.3-4~), libnetfilter-acct1 (>= 1.0.3), libssl1.1 (>= 1.1.0), libuuid1 (>= 2.16), libuv1 (>= 1.4.2), zlib1g (>= 1:1.1.4)
+Recommends: curl
+Suggests: apcupsd, hddtemp, iproute2, iw, lm-sensors, nc
+Conflicts: netdata-core-no-sse
+Breaks: netdata-plugins-bash (<< 1.19.0-2~), netdata-plugins-python (<< 1.17.0-1~)
+Replaces: netdata-core-no-sse, netdata-plugins-bash (<< 1.19.0-2~), netdata-plugins-python (<< 1.17.0-1~)
+Filename: ./amd64/netdata-core_1.32.0-1~bpo11+0.sean00_amd64.deb
+Size: 1234896
+MD5sum: 32038a44a19a01078b6a59c8b96e5719
+SHA1: f33b875cba575fa307ddaee760ca1a715f4c917e
+SHA256: ec603982c51d4ce9a37d259f15e4e9028befc435ea15cca1adee0ee233533ff5
+SHA512: e4bd5640a18278a0ac9ddc578bc4fb20f44a8a653aeb4a8e93018e3a3b15418cf954c6aec43f732d50ee923d830823cbecfcefcca11ab167fa7619390d1e2aa8
+Homepage: https://github.com/netdata/netdata
+Description: real-time performance monitoring (core)
+ Netdata is distributed, real-time, performance and health monitoring for
+ systems and applications. It provides insights of everything happening on the
+ systems it runs using interactive web dashboards.
+ .
+ This package contains the minimal core build with SSE2 optimizations for
+ current systems.
 
 Package: pango1.0-tests-dbgsym
 Architecture: amd64
