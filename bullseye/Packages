@@ -17784,6 +17784,201 @@ Description: free implementation of the OpenGL API -- GLX vendor library
  This package does not include the modules themselves: these can be found
  in the libgl1-mesa-dri package.
 
+Package: libnspr4-dbgsym
+Architecture: i386
+Version: 2:4.32-3~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: nspr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 322
+Depends: libnspr4 (= 2:4.32-3~bpo11+0.sean00)
+Filename: ./i386/libnspr4-dbgsym_4.32-3~bpo11+0.sean00_i386.deb
+Size: 274904
+MD5sum: 51e060a3465a6b1a78bf4f4551e2f857
+SHA1: 2839891cc1581d68c4edab4eed39b9634255de92
+SHA256: aa1d6c583f52f6ca134eed91b1275b50ab935efbf8534914d3003c9dfd15c918
+SHA512: 342e93327b296820967bd7aea24844b6352a49fca4ae88dc741eb1765a0984da1ce9f42996d0faab6b5b705e6c1083cd6dba4ce2c539fbdcca15150a5c676b8a
+Description: debug symbols for libnspr4
+Build-Ids: 1222bae15d080f0e661f47d45d02d8864d9d2301 59e2f2ddd0c34b7019061a372aa033cecb2280f3 cad14e205f0ec7c023803cc9b24dfce74c8988cf
+
+Package: libnspr4-dev
+Architecture: i386
+Version: 2:4.32-3~bpo11+0.sean00
+Priority: optional
+Section: libdevel
+Source: nspr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 1099
+Depends: libnspr4 (>= 2:4.32), libnspr4 (<= 2:4.32-3~bpo11+0.sean00.1~)
+Breaks: libxmlsec1-dev (<= 1.2.33-1)
+Filename: ./i386/libnspr4-dev_4.32-3~bpo11+0.sean00_i386.deb
+Size: 224464
+MD5sum: 968bdc7f196c26b214e52f89a9de167a
+SHA1: 939a86e14dfb438bd561df74021ecdbf2001da3e
+SHA256: dad26631b408e301db84e22c9a4c87028c95e5a75b1b4724c0b43efa403ac710
+SHA512: 4377e83bf55ea203d7de20ca573f1064672ad735b8bf447d937eec81fb7609b583ba022949d06645d1465a45e462e1c5abd1fa68df0d49d89a136c627008bcf9
+Homepage: http://www.mozilla.org/projects/nspr/
+Description: Development files for the NetScape Portable Runtime library
+ This library provides platform independent non-GUI operating system
+ facilities including:
+  * threads,
+  * thread synchronisation,
+  * normal file I/O and network I/O,
+  * interval timing and calendar time,
+  * basic memory management (malloc and free),
+  * shared library linking.
+ .
+ Install this package if you wish to develop your own programs using the
+ NetScape Portable Runtime library.
+
+Package: libnspr4
+Architecture: i386
+Version: 2:4.32-3~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nspr
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 338
+Depends: libc6 (>= 2.30)
+Filename: ./i386/libnspr4_4.32-3~bpo11+0.sean00_i386.deb
+Size: 122452
+MD5sum: eca6b15137383162a4f1f5132fda664d
+SHA1: fa2106f5340323d63ee9f2bef134370a284d26cb
+SHA256: 87cf62148bc1a469cda31a11c9c52378a608c8e2330df877d80eeec9e52aeb6c
+SHA512: 33708acb437d7bddd0c3a83af8095a3472f1de4f4dc2c3ede4754f226de95d3efeb7766a2e4a5b5405f03126f816e3bbf23f2e21db682421c8baeb649c7e6f72
+Homepage: http://www.mozilla.org/projects/nspr/
+Description: NetScape Portable Runtime Library
+ This library provides platform independent non-GUI operating system
+ facilities including:
+  * threads,
+  * thread synchronisation,
+  * normal file I/O and network I/O,
+  * interval timing and calendar time,
+  * basic memory management (malloc and free),
+  * shared library linking.
+
+Package: libnss3-dbgsym
+Architecture: i386
+Version: 2:3.73-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 4010
+Depends: libnss3 (= 2:3.73-1~bpo11+0.sean00)
+Filename: ./i386/libnss3-dbgsym_3.73-1~bpo11+0.sean00_i386.deb
+Size: 3667968
+MD5sum: c93c0787cb26e797ef9bc6197f3aefee
+SHA1: 8a9ef4d0593e7b6b4b88d4a05182667f165f2b50
+SHA256: cc6adf284892b69049c855daecdd71ef8c7b7bd20f85285db4a803c79bdc8abc
+SHA512: b951f2a9bca5eb8ea89aa9b90204734e75cc724876514e99b69a1d9d4c531e14e55e477dee748e0e984355ac0247d52c0a47166f6b6e553832e969a51894a47b
+Description: debug symbols for libnss3
+Build-Ids: 0e9595f1db3ad265f621160c17abab280410e74c 10e5bf4c9a7fcb458882e79de0b55126e710819b 131d10c3ac29d41e1315fd2ec6d72c69a7baa14f 286cfec7501452b81df6da30e770f61e4002cc9c a2d5fa9e202368d1e23c77858261eb0fb3209754 ae2cdaddbabfc82edbb987bd781753b116289f11 b154260342393b6ba9de0b28d0f1d1ad8ad5ee8c da63c8019a630f1a1356e008b13a7ac232533722 f4a1218c5cf07066419b5173bb1b974e40abc42e
+
+Package: libnss3-dev
+Architecture: i386
+Version: 2:3.73-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 1423
+Depends: libnss3 (= 2:3.73-1~bpo11+0.sean00), libnspr4-dev (>= 4.6.6-1)
+Breaks: libxmlsec1-dev (<< 1.2.33-1~)
+Filename: ./i386/libnss3-dev_3.73-1~bpo11+0.sean00_i386.deb
+Size: 256880
+MD5sum: 353d54292f7e80af8e35aa41cc1f78af
+SHA1: 3741cf943a1c1e7b8e2c1dc3bd2cd577346499e6
+SHA256: 74101aadf44bb0ea6374b16adc9b060963967df263072548b44508ddc993b26e
+SHA512: a14e875adb75382157abc7ad0f3d5ef5f7771c6facccc292f2ce76aabf5d5b7d7442dce87fea8e86c611a69ccec051298affebb8e43e9c39135387cb1e3f1fcc
+Homepage: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
+Description: Development files for the Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+ .
+ Install this package if you wish to develop your own programs using the
+ Network Security Service Libraries.
+
+Package: libnss3-tools-dbgsym
+Architecture: i386
+Version: 2:3.73-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 4849
+Depends: libnss3-tools (= 2:3.73-1~bpo11+0.sean00)
+Filename: ./i386/libnss3-tools-dbgsym_3.73-1~bpo11+0.sean00_i386.deb
+Size: 4157248
+MD5sum: f2fd692a9cbaf69c4be05944ee43fe50
+SHA1: 850042a2343f1f822b2627441dcd1a22190df5eb
+SHA256: 99a4884ce6304659bd06759b7b1c6a1b095f182d9a87045e7bf68a5f5add894a
+SHA512: 6c81340cc0048a53965ee22eea1b3083d3f0c7e3656d969c1484a8cb67cd3b34907e9eba6da5fcff8d26856982f6156acee59cdf386f8a32726a777e5ed458d9
+Description: debug symbols for libnss3-tools
+Build-Ids: 032d9f133968659ab39d08d25cb35a6925811c9c 05049177cb24006f5747647467f975e98978cb64 1823bd35721eb1a1df34f7264baac732b9b956a1 1a8f9b41bc45605743d8406d6fe69dc8b46453c0 1f034bad8104aa2f252536cbe3f435d24cb52ce0 23a461087d53043b57ecf7ebb66498ff134e68fe 2bd7477037333dbe6079240173c805a161b9f294 2bf4c3f310423fe0f629af25f33d12467b79f002 2c8b51b7db1023029caf80972da948f44507455d 2ec13f37053a76bf258cb57f4854b4ca3cf1872f 36cb7bea763bd7dd8a4cce88ec502689402ddf0e 46db7b66fac361e901c5d9d42b1933722516023b 47329978c03aa1607ad70d39154f92a5aa2ecd16 530ff3776d3e58a259d325c3986bb4f9af2cc87f 58a7e9647b34e0629b6c33e3c10805b8060e1977 5aaee80d29947fef5999077ff006971b80fc2704 74e7778ffb3cffa8bc81bec13900e3f6523f04d1 7d303034fa4ae97bc1cdc79d8c3be520d73201eb 8eb99e5571bfdfd50302bf0c7ae1511295f96ade 9dfa0660297f8a409d1f978f14cdf8c23839ebfe a0d8e8a87f04d4a3eabb2dedc4dde6e75973d3da b2e3a2f96c3d544dedbdf0305857991496ad1489 baf41e431b64e3b77b5522136d25aa1210369a43 c2f5be0e6c9305370c404e39d4f8a6ed8ebce228 d0095410a310b2cf1076a45b9af8757d7b6e0142 d388b8cff30682fe37de2e8417e8e880bd7cb2ff e145fc36fe94547eacb46d28fbe74817e5c3b445 e9dc8f6eba3564f0fab6dc35f6874b62589436e5 ea08ab5501296e6ac2f7f624a608a70e8bf5ad28
+
+Package: libnss3-tools
+Architecture: i386
+Version: 2:3.73-1~bpo11+0.sean00
+Priority: optional
+Section: admin
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 5562
+Depends: libc6 (>= 2.28), libnspr4 (>= 2:4.12), libnss3 (>= 2:3.66), zlib1g (>= 1:1.1.4)
+Filename: ./i386/libnss3-tools_3.73-1~bpo11+0.sean00_i386.deb
+Size: 1140128
+MD5sum: a106fdd85ac0abd49256949a39e1ffb3
+SHA1: f29f6dce39dcdd51de04654314c6697bd8621817
+SHA256: 4d8a87d865b72dff92bdd7f30e98820a6129a7cf7d5b6e9097bc9035d30d1d51
+SHA512: b01d62e2d88b3debc366b565e2b610c7738584378012f71735c3732f90c19ae9416e3a6ed8531491bc2147e535dde028624c66e0c7db0d56989a49a52d72c2e6
+Homepage: http://www.mozilla.org/projects/security/pki/nss/tools/
+Description: Network Security Service tools
+ This is a set of tools on top of the Network Security Service libraries.
+ This package includes:
+  * certutil: manages certificate and key databases (cert7.db and key3.db)
+  * modutil: manages the database of PKCS11 modules (secmod.db)
+  * pk12util: imports/exports keys and certificates between the cert/key
+    databases and files in PKCS12 format.
+  * shlibsign: creates .chk files for use in FIPS mode.
+  * signtool: creates digitally-signed jar archives containing files and/or
+    code.
+  * ssltap: proxy requests for an SSL server and display the contents of
+    the messages exchanged between the client and server.
+
+Package: libnss3
+Architecture: i386
+Version: 2:3.73-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: nss
+Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
+Installed-Size: 4332
+Depends: libc6 (>= 2.28), libnspr4 (>= 2:4.12), libsqlite3-0 (>= 3.5.9)
+Filename: ./i386/libnss3_3.73-1~bpo11+0.sean00_i386.deb
+Size: 1407744
+MD5sum: 1b2bb60ab7c49a37ad57886ae26d3081
+SHA1: adaea5bd9ad9134af16cdbb2f991184ab7ce1835
+SHA256: 2fb3eca1f691495a1c755f5b06b28506036fb6409d24f4429baa1e89c2f0fc8c
+SHA512: 5b858b9ee08640cf54aea78fa76028c7c5613bc8b0a5d141f803408c4d5168602902bf61fbb04dc84c197d703c9e63532a92c31b5f1e270ed9efb35a805bc0e3
+Homepage: https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
+Description: Network Security Service libraries
+ This is a set of libraries designed to support cross-platform development
+ of security-enabled client and server applications. It can support SSLv2
+ and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
+ other security standards.
+
 Package: libosmesa6-dev
 Architecture: i386
 Version: 21.2.6-1~bpo11+0.sean00
