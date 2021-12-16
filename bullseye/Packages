@@ -7201,6 +7201,25 @@ SHA512: 36fea7cb44b88e706284a9d0d71c1d913c975b9dcb84164e18c933d48e8e1ed3461342d0
 Description: debug symbols for gns3-gui
 Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 924b693d5a0c001b790302f886da14804438744b f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
 
+Package: gns3-gui-dbgsym
+Architecture: amd64
+Version: 2.2.28~hirsute1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gns3-gui
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 140
+Depends: gns3-gui (= 2.2.28~hirsute1~bpo11+0.sean00)
+Filename: ./amd64/gns3-gui-dbgsym_2.2.28~hirsute1~bpo11+0.sean00_amd64.deb
+Size: 106752
+MD5sum: 8bbbc43d7e18b34030fade1e9fc10e06
+SHA1: ce34341b0315389435f2537d320747b9627ec9f3
+SHA256: ad087632a056a366253a509e58626d53be37e77bc57233cda00600f50ecd6e32
+SHA512: 4f2112ab5f5c15e8f33686fb467cae85679437ab3686d23a23bdc24dc626a225528c611014af1a0946642ba4fcc01d2c8771362b769554c6688e87f0c38751be
+Description: debug symbols for gns3-gui
+Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 924b693d5a0c001b790302f886da14804438744b f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
+
 Package: gns3-gui
 Architecture: amd64
 Version: 2.2.26~hirsute1~bpo11+1.sean00
@@ -7235,6 +7254,24 @@ MD5sum: 84835291835e9e61944b7f073f15ccf7
 SHA1: c7f467f262f575b16852e56287b719d7a8234a18
 SHA256: 14ac85eb099de87e1cd5ebeceb5a4789a669e0975889f0887e88d67c4e9d6cf2
 SHA512: de2ae65bcf4369abcbe305566d5c22f7d66d8c6f33e33147cdab35074eeea0ca497f2b568137f22a9f141d9d5ee683f7eb75b8cc15bdfe7e0034b5fc0c88e972
+Description: GNS3 GUI
+
+Package: gns3-gui
+Architecture: amd64
+Version: 2.2.28~hirsute1~bpo11+0.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 26206
+Depends: python3, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyqt5.qtwebsockets, wireshark, vinagre, libc6 (>= 2.7)
+Recommends: gns3-server
+Replaces: gns3 (<< 1.4.0-1)
+Filename: ./amd64/gns3-gui_2.2.28~hirsute1~bpo11+0.sean00_amd64.deb
+Size: 6310984
+MD5sum: a2a456cb610be3a6cdfba7a01e44f938
+SHA1: 2a956152ded340c033acaff8f676fb5840360731
+SHA256: 4a799b005a75df9eddc0668409357c00af3a370e6b5eff84fe9618434162044f
+SHA512: 328b1af81388bf77473b86b7d5a78a24b3c21ef33d2f00dca0962bfe98b081c99ac2420da8bacaab85429aae0bd7acb025d602ed9f5724f869af41d346ce12b3
 Description: GNS3 GUI
 
 Package: gns3-server-dbgsym
@@ -7275,6 +7312,25 @@ SHA512: 92f0a652b9e8978f10eebcd17c46858d69e9a8598243b37fc7e18d26b693a9c12080b57b
 Description: debug symbols for gns3-server
 Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 2958c2e5ab9bcee493650466c0df335a28d8bb3f 37145f3256058be9df29d62dcdea3608093cd88f 68ad4f2ccfa7ebf4672d757bd218ddce4c5120ca 924b693d5a0c001b790302f886da14804438744b acf2c86fe84817394730d8dad0577a568592dc67 b37d98d9bf241032baea6cb62b66092d018bf56f c889628fcfa27d5f7f8ad7048d51950610aca253 d256a21b64aad2ccd689b568fb0898b1bdc3edf7 e9fced434308b375c25a59f8a8cf05101c074c5f f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
 
+Package: gns3-server-dbgsym
+Architecture: amd64
+Version: 2.2.28~hirsute1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gns3-server
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 1324
+Depends: gns3-server (= 2.2.28~hirsute1~bpo11+0.sean00)
+Filename: ./amd64/gns3-server-dbgsym_2.2.28~hirsute1~bpo11+0.sean00_amd64.deb
+Size: 1159636
+MD5sum: 41fa5ec5e3cff26347087c701fa10b31
+SHA1: 93215aa3152511f5817842e5df6a98d99675af88
+SHA256: 8a3c7b2e79183dabaf900e573c489fd90ae1ef1a1b7ec58595e9b1d836c772a6
+SHA512: 7bfaca414d34bc7bfb26fce79725d270cbded46cec7433caefc415b86a7450987db5abe40f944eb82a5dd0af9c771954cfec4c4c4704e6e314e42484d1a113e9
+Description: debug symbols for gns3-server
+Build-Ids: 20270af5f8d220e4d264edbb78ecc08f0a97569b 2958c2e5ab9bcee493650466c0df335a28d8bb3f 37145f3256058be9df29d62dcdea3608093cd88f 68ad4f2ccfa7ebf4672d757bd218ddce4c5120ca 924b693d5a0c001b790302f886da14804438744b acf2c86fe84817394730d8dad0577a568592dc67 b37d98d9bf241032baea6cb62b66092d018bf56f c889628fcfa27d5f7f8ad7048d51950610aca253 d256a21b64aad2ccd689b568fb0898b1bdc3edf7 e9fced434308b375c25a59f8a8cf05101c074c5f f6b9e6b6e7235a99174c0b709cbfc63f9be2e54c
+
 Package: gns3-server
 Architecture: amd64
 Version: 2.2.26~hirsute1~bpo11+1.sean00
@@ -7309,6 +7365,24 @@ MD5sum: d4ba5c17cf743f8d2a273aab8914808a
 SHA1: 2fb887d9804b3cd0d4b0a4ec4b262d01df5c368f
 SHA256: 60cb1c55b85756cdb8226d303ef07a164aca616ce2ab70b597ced604064ff0f8
 SHA512: f4ef0d62663c586ad69c3cbcfac9844541cf7e158c02b1e0244a31f9295d2abb00a705cde927882d06cf0de243530b8a1020a69fcef58419a5859eb8eaf5fe84
+Description: GNS3 server
+
+Package: gns3-server
+Architecture: amd64
+Version: 2.2.28~hirsute1~bpo11+0.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 47427
+Depends: python3, vpcs, ubridge (>= 0.9.14), qemu-system-x86, qemu-kvm, qemu-utils, mtools, cpulimit, libvirt-bin | libvirt-daemon-system, libc6 (>= 2.14)
+Recommends: dynamips, x11vnc, xvfb
+Enhances: gns3-iou
+Filename: ./amd64/gns3-server_2.2.28~hirsute1~bpo11+0.sean00_amd64.deb
+Size: 8536356
+MD5sum: 99a7a6779dc464f1522a8200dc3af9a7
+SHA1: d3cd1351278f82c36959f6663a42a1f3135d22d7
+SHA256: 99e35d2e512215f494f5267a2a755d4b738f857c41f32b6f7f0bed605d5575e0
+SHA512: ccd7edc12a226ee2e12440db22117912b43ff4b3beb12646a3dd84c57a2393e314e51047034d2ebddb3e9a4000a57226021a8d2a7a90b075e5c03402ce183fd6
 Description: GNS3 server
 
 Package: gtk-4-examples-dbgsym
@@ -16355,6 +16429,27 @@ Maintainer: GNS3 team <developers@gns3.net>
 Installed-Size: 210
 Depends: libc6 (>= 2.14)
 Filename: ./amd64/vpcs_0.8.2-1~hirsute1~bpo11+1.sean00_amd64.deb
+Size: 66872
+MD5sum: 354f9386155f480608ffe4e1cb9b66f9
+SHA1: a5a8d52963077d0b888ca64f905d6105d8ad4e8c
+SHA256: 14f19b07c862db937280e110b11a5728f383bd1d3c3e86dcdeba918d4b3bcecc
+SHA512: 796108852db1c49e6994be55e357c4dfc8f11c3ae5128a4cceb7cfbd31d7bf4a3caf101f6a7ab09aa71ea651863fff76de1539f0a35f6cb097ba850e07ca561e
+Homepage: http://sourceforge.net/projects/vpcs/
+Description: Virtual PC Simulator
+ VPCS can simulate up to 9 PCs. You can ping/traceroute to
+ them or ping/traceroute to other hosts/routers from the VPCS.
+ .
+ VPCS is not intended to be a fully functional PC.
+
+Package: vpcs
+Architecture: amd64
+Version: 1:0.8.2-1~hirsute1~bpo11+1.sean00
+Priority: optional
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 210
+Depends: libc6 (>= 2.14)
+Filename: ./amd64/vpcs_1%3a0.8.2-1~hirsute1~bpo11+1.sean00_amd64.deb
 Size: 66872
 MD5sum: 354f9386155f480608ffe4e1cb9b66f9
 SHA1: a5a8d52963077d0b888ca64f905d6105d8ad4e8c
