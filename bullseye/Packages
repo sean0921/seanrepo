@@ -5478,6 +5478,31 @@ Description: build and execute command lines from standard input in parallel
  makes it possible to use output from GNU Parallel as input for other
  programs.
 
+Package: pipenv
+Architecture: all
+Version: 2021.11.23-1~bpo11+0.sean00
+Priority: optional
+Section: python
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 12563
+Depends: python3-certifi, python3-pip, python3-pkg-resources, python3-virtualenv, python3-virtualenv-clone, python3:any
+Filename: ./all/pipenv_2021.11.23-1~bpo11+0.sean00_all.deb
+Size: 1783408
+MD5sum: a8f38d9b2eab46676c73210f1fad2e64
+SHA1: e9466104500026cff3912ba74250f8782c407066
+SHA256: 71e4d7d906c0c24cc729845dcc718bd823d3d2d2b7a7552345bfe35c4258e314
+SHA512: 3e52e8736361c7ccb2c9b9336dedb7ad7b47065e8d02d95ea31d8a4d3ee73308b42dc51b62caf857608a637f23cd480de432c0911938f7e5d0dc64b99d8d36b4
+Homepage: https://github.com/pypa/pipenv
+Description: Python's officially recommended packaging tool
+ Pipenv is the officially recommended Python packaging tool from Python.org.
+ .
+ Pipenv is a tool that aims to bring the best of all packaging worlds (bundler,
+ composer, npm, cargo, yarn, etc.) to the Python world. It automatically
+ creates and manages a virtualenv for your projects, as well as adds/removes
+ packages from your Pipfile as you install/uninstall packages. It also
+ generates the ever–important Pipfile.lock, which is used to produce
+ deterministic builds.
+
 Package: putty-doc
 Architecture: all
 Version: 0.76-1
