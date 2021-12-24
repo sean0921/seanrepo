@@ -5224,6 +5224,37 @@ Description: Rust standard libraries - development files
  needed to cross-compile Rust programs to the wasm32-unknown-unknown and
  wasm32-wasi targets.
 
+Package: mpich-doc
+Architecture: all
+Version: 3.4.1-5
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: mpich
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 675
+Conflicts: lam-mpidoc, lam4-dev, mpi-doc, openmpi-doc, openmpi-mpidoc
+Breaks: mpich2-doc
+Replaces: mpich2-doc
+Filename: ./all/mpich-doc_3.4.1-5_all.deb
+Size: 259384
+MD5sum: 897425fd09781525fd171774505ad450
+SHA1: 5e0df85086bba01500b6bd0b48c4140af11b9fa2
+SHA256: 2ec0ca9ba656eb7ffe6f1d28bd207515acd78e1fa839833bc4d715ab40c7f90d
+SHA512: 84368201bad220aef518ed3dd57e3cea8bd29957b41ad3e63a7cb876d9273e14b89a71c87d198a617d261f2fa305ce5d0629b26e0a12e2db752159eaf9b0ba2a
+Homepage: https://www.mpich.org/
+Description: Documentation for MPICH
+ MPICH is a high-performance and widely portable implementation of the
+ MPI-3.1 standard from the Argonne National Laboratory.
+ It efficiently supports different computation and communication platforms
+ including commodity clusters, SMPs, massively parallel systems, and
+ high-speed networks.
+ This release has all MPI 3.1 functions and features required by the standard
+ with the exception of support for the "external32" portable I/O format and
+ user-defined data representations for I/O.
+ .
+ This package includes the MPICH documentation.
+
 Package: neovim-runtime
 Architecture: all
 Version: 0.5.0-1
@@ -11089,6 +11120,66 @@ Description: Intelligent Input Bus - development file
  This package contains the header files and static libraries which are
  needed for developing the IBus applications.
 
+Package: libmpich-dev
+Architecture: amd64
+Version: 3.4.1-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mpich
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 22562
+Depends: gfortran | fortran-compiler, g++, libmpich12 (= 3.4.1-5), gfortran-10 | gfortran-mod-15, mpich (= 3.4.1-5)
+Filename: ./amd64/libmpich-dev_3.4.1-5_amd64.deb
+Size: 2343808
+MD5sum: 846e5dd682fd8ff96b703fdd22003766
+SHA1: 3529d5e8bb76fbe215d2fbc29088c5d5c2acb78a
+SHA256: adb649a0791bdded95defb428d2ad58bde028fc1b66ce369f03c9d0d88735fbe
+SHA512: d39a769f0507013b1f2c59918133814611c99af8a5dfcb80523a8842af802af15519a6732f03e05fad0fdfdd0e4c3a3f1f586b5188d9208bd0dc903347fbdc5d
+Homepage: https://www.mpich.org/
+Description: Development files for MPICH
+ MPICH is a high-performance and widely portable implementation of the
+ MPI-3.1 standard from the Argonne National Laboratory.
+ It efficiently supports different computation and communication platforms
+ including commodity clusters, SMPs, massively parallel systems, and
+ high-speed networks.
+ This release has all MPI 3.1 functions and features required by the standard
+ with the exception of support for the "external32" portable I/O format and
+ user-defined data representations for I/O.
+ .
+ This package includes the MPICH headers and static libraries, as well
+ as the compiler wrappers needed to build MPICH programs.
+
+Package: libmpich12
+Architecture: amd64
+Version: 3.4.1-5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mpich
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 12733
+Depends: libc6 (>= 2.17), libgfortran5 (>= 9), libstdc++6 (>= 5)
+Breaks: libmpich1.0-dev (<< 3)
+Filename: ./amd64/libmpich12_3.4.1-5_amd64.deb
+Size: 1975304
+MD5sum: a223e94225d6923bc226bc4a7176fd92
+SHA1: f1d56bd8cac055dcead388c8dc7f436d408dd783
+SHA256: 4328730a9da5711c21ea75a2d6d32d1591a40a2a447ec9e44ea3b6f3622d0f42
+SHA512: c7b98c75b0ae40f6e4ce36cff08dfe031922f4774918af0d957674e86b6155c035e1affc9530f1b351af56b75c1e1d354f23fe7dbba24a1c14a3c05db7eb300a
+Homepage: https://www.mpich.org/
+Description: Shared libraries for MPICH
+ MPICH is a high-performance and widely portable implementation of the
+ MPI-3.1 standard from the Argonne National Laboratory.
+ It efficiently supports different computation and communication platforms
+ including commodity clusters, SMPs, massively parallel systems, and
+ high-speed networks.
+ This release has all MPI 3.1 functions and features required by the standard
+ with the exception of support for the "external32" portable I/O format and
+ user-defined data representations for I/O.
+ .
+ This package includes the MPICH shared libraries.
+
 Package: libmpv-dev
 Architecture: amd64
 Version: 0.33.1-1~bpo11+0.sean00
@@ -14109,6 +14200,38 @@ Homepage: https://mesa3d.org/
 Description: Mesa Vulkan graphics drivers
  Vulkan is a low-overhead 3D graphics and compute API. This package
  includes Vulkan drivers provided by the Mesa project.
+
+Package: mpich
+Architecture: amd64
+Version: 3.4.1-5
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Installed-Size: 862
+Depends: hwloc-nox | hwloc, libmpich12 (= 3.4.1-5), libc6 (>= 2.17), libslurm36 (>= 1.3.8)
+Recommends: libmpich-dev (= 3.4.1-5)
+Suggests: mpich-doc (= 3.4.1-5)
+Breaks: libmpich1.0-dev (<< 3)
+Replaces: libmpich1.0-dev (<< 3)
+Filename: ./amd64/mpich_3.4.1-5_amd64.deb
+Size: 219348
+MD5sum: faf3f27680d44ec950022d415b06c58f
+SHA1: 214e74ca2919a594eaf906bd587abd40793d5dd8
+SHA256: 8214b78ad0b901aacd9a289f174b3b21e24c43f0fe5411720be6e555fafcee7f
+SHA512: 526b53b6995fe854ba829d67e04d1442a0d01e8721c94a9edae46d94058de0dd708bdabb390e059806587ea98038cdfe06d710b2365e91ea8634fac5f000b31e
+Homepage: https://www.mpich.org/
+Description: Implementation of the MPI Message Passing Interface standard
+ MPICH is a high-performance and widely portable implementation of the
+ MPI-3.1 standard from the Argonne National Laboratory.
+ It efficiently supports different computation and communication platforms
+ including commodity clusters, SMPs, massively parallel systems, and
+ high-speed networks.
+ This release has all MPI 3.1 functions and features required by the standard
+ with the exception of support for the "external32" portable I/O format and
+ user-defined data representations for I/O.
+ .
+ This package includes the program binaries necessary to run MPICH programs.
 
 Package: mpv-dbgsym
 Architecture: amd64
