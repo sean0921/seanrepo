@@ -1,3 +1,24 @@
+Package: cython-doc
+Architecture: all
+Version: 0.29.24-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: cython
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 2793
+Depends: libjs-jquery, libjs-underscore
+Suggests: cython3
+Filename: ./all/cython-doc_0.29.24-1~bpo11+0.sean00_all.deb
+Size: 628696
+MD5sum: 617843cff4af6dda4b3eceef4713e265
+SHA1: 6ca5d52ea5c20f5efb668362b79c390e41fa7a4f
+SHA256: b6b46cd440f2126dda1729c0c3dafbd23c6428b56f2220e4679cbe60d595e62f
+SHA512: fa37bd98bc6202ec171e4fc31900ebdbe444599a795d5569b6d4475bef747335d538aa424bcf159e17b255386b0873fdd7bfc2aad7941282776e92bf0ec47469
+Homepage: http://cython.org/
+Description: C-Extensions for Python - documentation
+ This package contains documentation for Cython.
+
 Package: dolphin-emu-data
 Architecture: all
 Version: 5.0+dfsg-6
@@ -5548,6 +5569,68 @@ Description: PuTTY HTML documentation
  Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
  Plink, PSCP, PSFTP, and PuTTYgen).
 
+Package: python-numpy-doc
+Architecture: all
+Version: 1:1.21.5-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: numpy
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 723201
+Depends: libjs-sphinxdoc (>= 2.4.3-5~)
+Filename: ./all/python-numpy-doc_1.21.5-2~bpo11+0.sean00_all.deb
+Size: 12893788
+MD5sum: a1b3f1f6b8a83d0d6dafe81be0d9d264
+SHA1: 8b87f16122df5e79bc2ab84280381dc56f72056e
+SHA256: bbb15b30523b330cfcb9be7ec5993e083677dee938b9b84a2b82207106e82fde
+SHA512: da2e9e91e7a32690ccac40ced2a9cea2e66e8fd6299c6cd08ba6db8617a223f7759b524ff4aedafeb69e8aa8dd1c894947a899af5b765b9c86fbe8ea1b697306
+Homepage: http://www.numpy.org/
+Description: NumPy documentation
+ Numpy contains a powerful N-dimensional array object, sophisticated
+ (broadcasting) functions, tools for integrating C/C++ and Fortran
+ code, and useful linear algebra, Fourier transform, and random number
+ capabilities.
+ .
+ Numpy replaces the python-numeric and python-numarray modules which
+ are now deprecated and shouldn't be used except to support older
+ software.
+ .
+ This package contains documentation for Numpy and f2py.
+
+Package: python-pydata-sphinx-theme-doc
+Architecture: all
+Version: 0.7.2-1~bpo11+0.sean00
+Priority: optional
+Section: doc
+Source: pydata-sphinx-theme
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 8
+Filename: ./all/python-pydata-sphinx-theme-doc_0.7.2-1~bpo11+0.sean00_all.deb
+Size: 2068
+MD5sum: 5006e9870af380a2838475c8428d515f
+SHA1: a558234f0627214cb13fc4c12ebd35c09bdc0328
+SHA256: 9cd77e58d2cd5407f28a81f3984873e962ffc25b84a33afc108b69a56e2c92f1
+SHA512: 6a68daf769e919ad4288cf8783fa23abc27aea3fcecee6eafcb56fc3abe82234f0bb708f441f7f1e92ce287ebfc965e2ea2f1b9e16d99657672b532d887abd8a
+Homepage: https://github.com/pydata/pydata-sphinx-theme
+Description: documentation for the pydata-sphinx-theme Python library
+ Originally developed for the pandas docs, work is being done to make this more
+ generic and more easily extensible to suit the needs of the different projects;
+ noteworthy project using this theme:
+ .
+  * Pandas: https://pandas.pydata.org/docs/
+  * NumPy: https://numpy.org/devdocs/
+  * Bokeh: https://docs.bokeh.org/en/dev/
+  * JupyterHub and Binder: https://docs.mybinder.org/,
+      http://z2jh.jupyter.org/en/latest/,
+      https://repo2docker.readthedocs.io/en/latest/,
+      https://jupyterhub-team-compass.readthedocs.io/en/latest/
+  * Jupyter Book beta version uses an extension of this theme:
+      https://beta.jupyterbook.org
+  * Fairlearn: https://fairlearn.github.io/master/quickstart.html
+ .
+ This package provides documentation for pydata-sphinx-theme
+
 Package: python3-ibus-1.0
 Architecture: all
 Version: 1.5.24-2~exp1
@@ -5573,6 +5656,38 @@ Description: Intelligent Input Bus - introspection overrides for Python (Python 
  .
  This package contains GObject Introspection overrides for Python that
  can be used by Python applications using IBus.
+
+Package: python3-pydata-sphinx-theme
+Architecture: all
+Version: 0.7.2-1~bpo11+0.sean00
+Priority: optional
+Section: python
+Source: pydata-sphinx-theme
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 3202
+Depends: python3-bs4, python3-docutils, python3-sphinx, python3:any
+Filename: ./all/python3-pydata-sphinx-theme_0.7.2-1~bpo11+0.sean00_all.deb
+Size: 1073176
+MD5sum: 7ffa611ae7b9b2784d6c2b41c414ff5f
+SHA1: a6392724153d66003a99c9389e4d6919a326d27d
+SHA256: 60bbd7c2fb5c92b2c6f08b51eb873c93e5793ac8573694d8e13267803213f5dd
+SHA512: 0b4643737d9d52e707adbddb38d9c7c37fbf32ed342a1cd3a1ebe66ea51a0863946ba2a120204fc7efd9e3e1be620c08da1a8dcd7497282dd238ee2259a6ef58
+Homepage: https://github.com/pydata/pydata-sphinx-theme
+Description: bootstrap-based Sphinx theme from the PyData community
+ Originally developed for the pandas docs, work is being done to make this more
+ generic and more easily extensible to suit the needs of the different projects;
+ noteworthy project using this theme:
+ .
+  * Pandas: https://pandas.pydata.org/docs/
+  * NumPy: https://numpy.org/devdocs/
+  * Bokeh: https://docs.bokeh.org/en/dev/
+  * JupyterHub and Binder: https://docs.mybinder.org/,
+      http://z2jh.jupyter.org/en/latest/,
+      https://repo2docker.readthedocs.io/en/latest/,
+      https://jupyterhub-team-compass.readthedocs.io/en/latest/
+  * Jupyter Book beta version uses an extension of this theme:
+      https://beta.jupyterbook.org
+  * Fairlearn: https://fairlearn.github.io/master/quickstart.html
 
 Package: python3.8-doc
 Architecture: all
@@ -5953,6 +6068,37 @@ Description: Windows API implementation - standard suite
  This package provides essential wrappers and convenience tools for the
  standard Wine components. It also employs the Debian alternatives system to
  provide the usual command names, e.g. "wine" instead of "wine-development".
+
+Package: cython3
+Architecture: amd64
+Version: 0.29.24-1~bpo11+0.sean00
+Priority: optional
+Section: python
+Source: cython
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 6403
+Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any, libc6 (>= 2.14)
+Recommends: python3-dev, gcc
+Suggests: cython-doc
+Filename: ./amd64/cython3_0.29.24-1~bpo11+0.sean00_amd64.deb
+Size: 1314348
+MD5sum: a15600cc44e8180bbb1df67499f72e69
+SHA1: c37f6ada8c98c16768285aa405a50e8649ee7694
+SHA256: 41bc3a188753ba172ae3c1a31a130939641cc86c2b6bbc4e1c6d1d85f61d75fa
+SHA512: b3f9e41e280665102fcd12a0e8cd8be2b948a54380c1f5bcef249e7bf160d50a84dca2b44be689dd659a45fd17e74383c1eefa68e46c3b37c6a5643c8c94c8dc
+Homepage: http://cython.org/
+Description: C-Extensions for Python 3
+ Cython is a language that makes writing C extensions for the Python language as
+ easy as Python itself. Cython is based on the well-known Pyrex, but supports
+ more cutting edge functionality and optimizations.
+ .
+ The Cython language is very close to the Python language, but Cython
+ additionally supports calling C functions and declaring C types on variables
+ and class attributes. This allows the compiler to generate very efficient C
+ code from Cython code.
+ .
+ This makes Cython the ideal language for wrapping external C libraries, and
+ for fast C modules that speed up the execution of Python code.
 
 Package: directx-headers-dev
 Architecture: amd64
@@ -15193,6 +15339,36 @@ Description: Python 3 bindings for gobject-introspection libraries
  This package contains the Python 3 binding generator for libraries that
  support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
  package. With these packages, the libraries can be used from Python 3.
+
+Package: python3-numpy
+Architecture: amd64
+Version: 1:1.21.5-2~bpo11+0.sean00
+Priority: optional
+Section: python
+Source: numpy
+Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 18574
+Provides: dh-sequence-numpy3, python3-f2py, python3-numpy-abi9, python3-numpy-api14, python3-numpy-dev, python3.9-numpy
+Depends: python3-pkg-resources, python3 (<< 3.10), python3 (>= 3.9~), python3.9:any, python3:any, libblas3 | libblas.so.3, libc6 (>= 2.29), liblapack3 | liblapack.so.3
+Suggests: gcc, gfortran, python-numpy-doc, python3-dev, python3-pytest
+Filename: ./amd64/python3-numpy_1.21.5-2~bpo11+0.sean00_amd64.deb
+Size: 3242560
+MD5sum: 84a3274ca67623aba0be01da7b0f9172
+SHA1: f3dd72b19a612a71f9f16e732e98ad1e2eb57e0f
+SHA256: 2f03e6becc4204128fde7f7e6e4f80e043563a082a2f9307edd7dc20308511c8
+SHA512: e755bace76a954afa4f939ac8bcf6f07f44cfe2814ce3954bde3d508e43bee5379d80ad889dc30b2bbb063cb77ce9edc1814f46baa2dc458b20c549d8971a68d
+Homepage: http://www.numpy.org/
+Description: Fast array facility to the Python 3 language
+ Numpy contains a powerful N-dimensional array object, sophisticated
+ (broadcasting) functions, tools for integrating C/C++ and Fortran
+ code, and useful linear algebra, Fourier transform, and random number
+ capabilities.
+ .
+ Numpy replaces the python-numeric and python-numarray modules which are
+ now deprecated and shouldn't be used except to support older
+ software.
+ .
+ This package contains Numpy for Python 3.
 
 Package: python3.8-dbg
 Architecture: amd64
