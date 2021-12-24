@@ -5465,6 +5465,61 @@ Description: real-time performance monitoring (metapackage)
  .
  This package is a metapackage depending on the typical netdata components.
 
+Package: openmpi-common
+Architecture: all
+Version: 4.1.2-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 457
+Conflicts: openmpi-common
+Filename: ./all/openmpi-common_4.1.2-1~bpo11+0.sean00_all.deb
+Size: 183608
+MD5sum: 60d513271ba8ede055142d93365bf652
+SHA1: 93677fa0c577ced0863acc9b79dfd82061241396
+SHA256: ea0dec0579acce076cb070c2ce3114a4a58b78890826fa80a297b574c40e24f6
+SHA512: a8a65d7b43a52f8d65089458e930bfe82010ed1fee6beb49f4473e019e38d8379ff78c2d8024fc581729ef4f04bf72df59c8786fb494a60ce2de47761ae518db
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- common files
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains platform independent files for Open MPI.
+
+Package: openmpi-doc
+Architecture: all
+Version: 4.1.2-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 4167
+Conflicts: lam-mpidoc, lam4-dev, mpi-doc, openmpi-doc
+Breaks: libopenmpi-dev (<< 4.1.2~rc1-4)
+Replaces: libopenmpi-dev (<< 4.1.2~rc1-4)
+Filename: ./all/openmpi-doc_4.1.2-1~bpo11+0.sean00_all.deb
+Size: 1094100
+MD5sum: 764258ef0fc05dbb66a6ed8fa904d802
+SHA1: 172acf59e5b3e4b90d079428226b4bb66e94c744
+SHA256: d034887f796dc3845ab140444f581e1170f42d4f7793aeeb9d5354a93fb5b42a
+SHA512: 234ccff3a25630cf17ab208d9fd2fe92f47624897350e9218aa0e59025e4f06dfb9bf929a19ee7f05c346d37776e85647ea04a03079736946d4a0e481e145448
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- man pages
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains man pages describing the Message Passing Interface
+ standard.
+
 Package: parallel
 Architecture: all
 Version: 20210822+ds-3~bpo11+0.sean00
@@ -11341,6 +11396,64 @@ Description: Network Security Service libraries
  and  v4, TLS, PKCS #5, #7, #11, #12, S/MIME, X.509 v3 certificates and
  other security standards.
 
+Package: libopenmpi-dev
+Architecture: amd64
+Version: 4.1.2-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 9115
+Depends: gfortran-10 | gfortran-mod-15, libopenmpi3 (= 4.1.2-1~bpo11+0.sean00), openmpi-common (>= 4.1.2-1~bpo11+0.sean00), libibverbs-dev (>= 1.1.7), libhwloc-dev, libevent-dev, libpmix-dev, libjs-jquery, libjs-jquery-ui, zlib1g-dev, openmpi-bin (>= 3.0.0-1)
+Recommends: libcoarrays-openmpi-dev
+Suggests: openmpi-doc
+Conflicts: libopenmpi-dev
+Breaks: lam4-dev (<< 7.1.4-4), openmpi-doc (<< 4.1.2~rc1-4)
+Filename: ./amd64/libopenmpi-dev_4.1.2-1~bpo11+0.sean00_amd64.deb
+Size: 987352
+MD5sum: da3f0bbf8a81207588fb884f25bfb3f7
+SHA1: 25ee594b4de5f788e00b679ea5184f937230e495
+SHA256: 1b8fed9b3e965efb4baf8b1804c242e42e19e2a7cab18871abf00c274a08f97b
+SHA512: ba2964b0f60d2787fa5b39d5e5bbe69ec1e26e893ab574e15199ad45c76351029686c206d11bce672a815793edef163017fa28f89737c059ee88b782f1f6119e
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- header files
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains the header files and compiler wrappers which are needed
+ to compile and link programs against libopenmpi.
+
+Package: libopenmpi3
+Architecture: amd64
+Version: 4.1.2-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 9810
+Depends: libc6 (>= 2.29), libevent-core-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libfabric1 (>= 1.11.0), libgcc-s1 (>= 3.0), libhwloc15 (>= 2.4.1+dfsg), libibverbs1 (>= 1.1.7), libnl-3-200 (>= 3.2.7), libpmix2 (>= 4.0.0), libpsm-infinipath1 (>= 3.3+7.gec1d6d2), libpsm2-2 (>= 10.3-37), libstdc++6 (>= 5), libucx0 (>= 1.10.1~rc1+really.1.10.0), zlib1g (>= 1:1.2.0), libhwloc-plugins
+Breaks: gromacs-openmpi (<< 2020~beta2-2), libeztrace0 (<< 1.1-8-5+b1), starpu-contrib-examples (<< 1.3.2+dfsg-2+b1), starpu-examples (<< 1.3.2+dfsg-4+b1)
+Filename: ./amd64/libopenmpi3_4.1.2-1~bpo11+0.sean00_amd64.deb
+Size: 2406684
+MD5sum: 7ace7ac0062f7a182c37c29352d41d43
+SHA1: fca09feaacdf536848c5918ac1aa8225cda3eed4
+SHA256: e4c393b9ad58c98f645285cf5dbcb01e52bd47fd0ecb334a63a80d92f56fae40
+SHA512: 7b3a7ccc1fb454223c2869933412978adbe532c8218be99a689fb7062076c7fd56301ea6adc0b2c9a23b1ad59370d1a09fe2d54c95242e5b4c4d3972413640fe
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- shared library
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains the Open MPI shared libraries.
+
 Package: libosmesa6-dev
 Architecture: amd64
 Version: 21.2.6-1~bpo11+0.sean00
@@ -14441,6 +14554,50 @@ Description: real-time performance monitoring (core)
  .
  This package contains the minimal core build with SSE2 optimizations for
  current systems.
+
+Package: openmpi-bin
+Architecture: amd64
+Version: 4.1.2-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 554
+Depends: libc6 (>= 2.8), libevent-core-2.1-7 (>= 2.1.8-stable), libopenmpi3 (>= 4.1.2), openmpi-common (>= 4.1.2-1~bpo11+0.sean00), openssh-client | ssh-client
+Suggests: gfortran | fortran-compiler
+Conflicts: openmpi-bin
+Breaks: lam4-dev (<< 7.1.4-4), libmpich-dev (<< 3.3~b1-5), libopenmpi-dev (<< 4.0.5-3), mpich (<< 3.3~b1-5)
+Replaces: libopenmpi-dev (<< 4.0.5-3)
+Filename: ./amd64/openmpi-bin_4.1.2-1~bpo11+0.sean00_amd64.deb
+Size: 242468
+MD5sum: 72a364487c154a96ebfc6076fab3a279
+SHA1: 8aee53e851dceaa080391557fc98f40a6645b642
+SHA256: 1db3dc71ce67c3b91262d33217c94cb3ce35b32d3fb0a62650f7918f4a7adb40
+SHA512: 1cef11cfe55cbc9d4a525714767fffc9d0238eda798338fa2ae9cc725780bdfdb7afae508844eb577c7aa93adc4300384a57e55b3da25eec883618fa3c429f0a
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- binaries
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ Features:
+  * Full MPI-3.1 standards conformance
+  * Thread safety and concurrency
+  * Dynamic process spawning
+  * High performance on all platforms
+  * Reliable and fast job management
+  * Network and process fault tolerance
+  * Support network heterogeneity
+  * Single library supports all networks
+  * Run-time instrumentation
+  * Many job schedulers supported
+  * Internationalized error messages
+  * Component-based design, documented APIs
+ .
+ This package contains the Open MPI utility programs.
 
 Package: pango1.0-tests-dbgsym
 Architecture: amd64
