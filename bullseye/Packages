@@ -4385,6 +4385,38 @@ Description: Generic Mapping Tools - Architecture-independent files
  .
  This package contains the architecture-independent files for GMT.
 
+Package: gmt-common
+Architecture: all
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Multi-Arch: foreign
+Priority: optional
+Section: science
+Source: gmt
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 94208
+Breaks: gmt (<< 5.1.2), gmt-doc (<< 6.0.0~rc5), gmt-manpages (<< 5.1.2)
+Replaces: gmt (<< 5.1.2), gmt-doc (<< 6.0.0~rc5), gmt-manpages (<< 5.1.2)
+Filename: ./all/gmt-common_6.3.0+dfsg-2.2~bpo11+1_all.deb
+Size: 81733096
+MD5sum: 30b690aa8d31d44c4e9e1f14eb9139e4
+SHA1: 42f24ba9d170187c4c04404594d02c700b87a63a
+SHA256: 25b25e5fd4999294cc159da82dc135b2d48ee24df661772095b6daf752eafb8e
+SHA512: 5dc656607ec5bed9ed842462533a4479f14fa8883616b535455fa0a2d7f922d8a211efcd6b15ac58a6585762ea9037d3a50ab3df945fbd92e22a7133ee05152c
+Homepage: http://gmt.soest.hawaii.edu/
+Description: Generic Mapping Tools - Architecture-independent files
+ GMT is a collection of tools that allow users to manipulate
+ (x,y) and (x,y,z) data sets (including filtering, trend fitting, gridding,
+ projecting, etc.) and produce Encapsulated PostScript File (EPS) illustrations
+ ranging from simple x-y plots through contour maps to artificially illuminated
+ surfaces and 3-D perspective views in black and white, gray tone, hachure
+ patterns, and 24-bit color.
+ .
+ GMT supports many common map projections plus linear, log, and power scaling,
+ and comes with support data such as coastlines, rivers, and political
+ boundaries.
+ .
+ This package contains the architecture-independent files for GMT.
+
 Package: gmt-dcw
 Architecture: all
 Version: 2.0.0-1+sean00
@@ -4465,6 +4497,28 @@ MD5sum: 084c75053f895e4d504d4ee1dbe20f13
 SHA1: 20138537636ce3e51ccc8b082f5294c9aea1557e
 SHA256: 12626f3304b50da0f5872284c996cf326c4a0605ec20062077ddb031b3ee20c1
 SHA512: bce1d6e5e66320ea77a02208cdb6c58ba69261b01b72975f25971ab7d989fc0eccba0605474da47b024debf3c303be970f666d4710639e111805b99333e4a069
+Homepage: http://www.soest.hawaii.edu/pwessel/dcw/index.html
+Description: Digital Chart of the World (DCW) for GMT
+ DCW-GMT is an enhancement to the original 1:1,000,000 scale vector basemap
+ of the world available from the Princeton University Digital Map and
+ Geospatial Information Center and from GeoCommunity at
+ http://data.geocomm.com/readme/dcw/dcw.html.
+ This data is for use by GMT, the Generic Mapping Tools.
+
+Package: gmt-dcw
+Architecture: all
+Version: 2.0.2-1~bpo11+1
+Multi-Arch: foreign
+Priority: optional
+Section: science
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 24559
+Filename: ./all/gmt-dcw_2.0.2-1~bpo11+1_all.deb
+Size: 21883976
+MD5sum: 91a7672d751ee323c964c6e63d7b40ce
+SHA1: 04ef48e4c8bb58346aeb82677d58f678c45f8229
+SHA256: b48cf51ccf32b4fe1e53ced9f1b4b619f03cdd8d1c2e90a6b2bf639d187def57
+SHA512: 949be76e72376243520d61bafb1263ec5374df3cb67a12f000f55b1c05b7c1b639c7f05bda9188b3355398d395878f8268bbbb4703f5a6a08c0a32245021f36a
 Homepage: http://www.soest.hawaii.edu/pwessel/dcw/index.html
 Description: Digital Chart of the World (DCW) for GMT
  DCW-GMT is an enhancement to the original 1:1,000,000 scale vector basemap
@@ -7270,6 +7324,27 @@ SHA512: 74c415733d4656ede46f4eda7eb7909c09a08dadc779f214d653d93c16710de52c952390
 Description: debug symbols for gmt
 Build-Ids: 443b12646778ec46576bb80aaf71f577fdf1142c 58f28a2b0f2b20e598d0ebb4f7c887674888df8f
 
+Package: gmt-dbgsym
+Architecture: amd64
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: gmt
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 1281
+Depends: gmt (= 6.3.0+dfsg-2.2~bpo11+1)
+Breaks: gmt-dbg (<< 5.4.2+dfsg-2~)
+Replaces: gmt-dbg (<< 5.4.2+dfsg-2~)
+Filename: ./amd64/gmt-dbgsym_6.3.0+dfsg-2.2~bpo11+1_amd64.deb
+Size: 1248284
+MD5sum: 19d646f6276836ff997dbeb27b591e67
+SHA1: 84cf74d73d9a6f93896685263291cfc23795ad4f
+SHA256: 4f816bf7bbda9a018b2a237d027a04fba0025c1eef60e221fe6de17359f807d1
+SHA512: 01514e6f1446ae84e260255deadb6a3de9d50bb6d3726de894c63b25d6d8457d9602d8a1d7b9eac76bfc9cba88066c122823953fa37b2977a3d2fac45ab58201
+Description: debug symbols for gmt
+Build-Ids: 2f51fee87cd56f5c48d2ae538cf8e5cc0841da61 4d4e72e1dca8e2276c41725fb0e87a2ec1868a41
+
 Package: gmt
 Architecture: amd64
 Version: 6.2.0+dfsg-1+sean00
@@ -7437,6 +7512,36 @@ MD5sum: 60f2f2f9ca8a86ee33bfe51dab5767bd
 SHA1: 91e9e13ad0c9bfbb8d23a4da5d843189ea621d88
 SHA256: 9b7cd5e9a118dfb6b113848e8caf5a805b8bf0183e0a7ab2b30e8d1048b0966a
 SHA512: 3dbac8ac6c7bcbc7c97c441820bad7b3f45d93cf0d30323582f9ad7b00bfa2ae7543626eb1c3ce0efbbd5c8c96f3a2571f00ba187d521f705f6acfe16bbe26a8
+Homepage: http://gmt.soest.hawaii.edu/
+Description: Generic Mapping Tools
+ GMT is a collection of tools that allow users to manipulate
+ (x,y) and (x,y,z) data sets (including filtering, trend fitting, gridding,
+ projecting, etc.) and produce Encapsulated PostScript File (EPS) illustrations
+ ranging from simple x-y plots through contour maps to artificially illuminated
+ surfaces and 3-D perspective views in black and white, gray tone, hachure
+ patterns, and 24-bit color.
+ .
+ GMT supports many common map projections plus linear, log, and power scaling,
+ and comes with support data such as coastlines, rivers, and political
+ boundaries.
+
+Package: gmt
+Architecture: amd64
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Priority: optional
+Section: science
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 1608
+Depends: gmt-common (= 6.3.0+dfsg-2.2~bpo11+1), libc6 (>= 2.29), libgmt6 (>= 6.3.0), libnetcdf18 (>= 3.6.1)
+Recommends: gmt-gshhg-data | gmt-gshhg-low, gmt-dcw
+Breaks: libgenome-perl (<< 0.06-3~), libgmt-dev (<< 5.3.2+dfsg-1~exp2)
+Replaces: libgenome-perl (<< 0.06-3~), libgmt-dev (<< 5.3.2+dfsg-1~exp2)
+Filename: ./amd64/gmt_6.3.0+dfsg-2.2~bpo11+1_amd64.deb
+Size: 600304
+MD5sum: 1270e7c99953b70c547312a6fe76336a
+SHA1: e223d8da4d7489b85cde5ccdd68420c426017715
+SHA256: aeb3d8b105723aa9b28dae37e297112c591f1a821f45165c02cd64a5e6910cf4
+SHA512: 8bcf0f4b19a4bde379653be8d81f14d097464661d8f03d7ae7d1222f18944433adf40174d79c99a0bcc61881facdba501086da7c1165c9c98564f397d873d870
 Homepage: http://gmt.soest.hawaii.edu/
 Description: Generic Mapping Tools
  GMT is a collection of tools that allow users to manipulate
@@ -10038,6 +10143,33 @@ Description: Generic Mapping Tools Library - Development files
  This package contains the files used for development of programs that
  use the GMT libraries (headers).
 
+Package: libgmt-dev
+Architecture: amd64
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Priority: optional
+Section: libdevel
+Source: gmt
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 763
+Depends: libgmt6 (= 6.3.0+dfsg-2.2~bpo11+1), libnetcdf-dev
+Suggests: gmt
+Filename: ./amd64/libgmt-dev_6.3.0+dfsg-2.2~bpo11+1_amd64.deb
+Size: 167648
+MD5sum: 12b54b4e86df96ea0eea30e88f7dc71e
+SHA1: 739a5f05f0dfd3bb78d52811be1dca1e99c422a1
+SHA256: 27c8905ebe63d480c47ef5ebbaad817e4a561985d25e778b0e3e5c10a1b62d7f
+SHA512: e6dd110a53ead52b34a0e8e5676cf47a13eba32d60e1765d99f50feec6b4b0cd4db80fa8250e27a2a0f8c5e4dbc21461883c8b172fe852c3ce1e560e4771bbae
+Homepage: http://gmt.soest.hawaii.edu/
+Description: Generic Mapping Tools Library - Development files
+ These set of libraries allow manipulating geographic and Cartesian data sets
+ (including filtering, trend fitting, gridding, projecting, etc.) and
+ producing Encapsulated PostScript File (EPS) illustrations ranging from
+ simple x-y plots via contour maps to artificially illuminated surfaces
+ and 3-D perspective views.
+ .
+ This package contains the files used for development of programs that
+ use the GMT libraries (headers).
+
 Package: libgmt6-dbgsym
 Architecture: amd64
 Version: 6.2.0+dfsg-1+sean00
@@ -10169,6 +10301,28 @@ SHA256: db373fe33e11c9de538f182a95a590f349435157596d81535093a88a3ca93eb4
 SHA512: 08cfad905fdd1117eee4ae2f121a80493a8a6a9ad7c13910cf7f09a87dd8cb2263f3e1c9f51c82f86a079467d046a32a39d8b5a23b9e3e074801bcbc4500c156
 Description: debug symbols for libgmt6
 Build-Ids: 3cedba095f84334cc13f9fece94aea9fab53c8f3 d12020a2fa2e7dc5a8152b1e4d00da1b26e60861
+
+Package: libgmt6-dbgsym
+Architecture: amd64
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: gmt
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 4428
+Depends: libgmt6 (= 6.3.0+dfsg-2.2~bpo11+1)
+Breaks: gmt-dbg (<< 5.4.2+dfsg-2~)
+Replaces: gmt-dbg (<< 5.4.2+dfsg-2~)
+Filename: ./amd64/libgmt6-dbgsym_6.3.0+dfsg-2.2~bpo11+1_amd64.deb
+Size: 4350736
+MD5sum: 3d3063cc54e0f4eb1a2b40a6631e34fc
+SHA1: e902ad170b94d50c2040dcfb417880bbfb5be86d
+SHA256: d8c045087a134e51155af3811f61f26b8246faa6bd7c787c1c2ee4782300db2c
+SHA512: ac621519e922e68a204844b5b6082498d5eaaab681be4b82940f8ac30ae09e936ce3151eb80045436435774b4d3b54cfa36a3f93c25c05a8c3d3c0db4a580d73
+Description: debug symbols for libgmt6
+Build-Ids: 3cedba095f84334cc13f9fece94aea9fab53c8f3 b15361a38c484fbf721169c1be19177fe4e841b1
 
 Package: libgmt6
 Architecture: amd64
@@ -10322,6 +10476,33 @@ MD5sum: b325ada390746d9a4db484e38b786fcb
 SHA1: 3f4e87d47cf8fa86db090fa85e82ff490c8432c8
 SHA256: 5fd16c7bbd3c00071f4b238b77881a2e148acab4d3ad52ecb5ffd5a490dc5a52
 SHA512: 0b6f22e7cea7653fcefb153fc429bc17c19a38f9a5c2169c28cd23d38e60a914a564fb22476889af5a8ead103f320d9c9ed65f8022d0112e2361ae16640ce7b2
+Homepage: http://gmt.soest.hawaii.edu/
+Description: Generic Mapping Tools Library
+ GMT libraries allow manipulating geographic and Cartesian data sets
+ (including filtering, trend fitting, gridding, projecting, etc.) and
+ producing Encapsulated PostScript File (EPS) illustrations ranging from
+ simple x-y plots via contour maps to artificially illuminated surfaces
+ and 3-D perspective views.
+ .
+ This package contains the GMT library.
+
+Package: libgmt6
+Architecture: amd64
+Version: 6.3.0+dfsg-2.2~bpo11+1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gmt
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Installed-Size: 5196
+Depends: libblas3 | libblas.so.3, libc6 (>= 2.29), libcurl3-gnutls (>= 7.16.2), libfftw3-single3 (>= 3.3.5), libgdal28 (>= 3.0.0), libgeos-c1v5 (>= 3.4.2), liblapack3 | liblapack.so.3, libnetcdf18 (>= 4.0.1), libpcre2-8-0 (>= 10.22), zlib1g (>= 1:1.1.4)
+Suggests: gmt
+Filename: ./amd64/libgmt6_6.3.0+dfsg-2.2~bpo11+1_amd64.deb
+Size: 1883272
+MD5sum: 14a20e25ee7418ef4b08e7f2938eca74
+SHA1: b11435f49fb8dde5f5c26fd07728101978a9d4d2
+SHA256: c027bb5c1b99ceec0b6a8146de2a3ea2a82bea334d19258b99d1f73fbf12ee03
+SHA512: 570bb556c1bd0dc9f29ee7dc3b93152116f31c7ed11676cdf1824eabed67bce0677436e65ba30aced41abf5fcef225eff6f66f782bb6db90f5a193fce4861f71
 Homepage: http://gmt.soest.hawaii.edu/
 Description: Generic Mapping Tools Library
  GMT libraries allow manipulating geographic and Cartesian data sets
