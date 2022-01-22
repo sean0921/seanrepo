@@ -11679,6 +11679,29 @@ Description: video player based on MPlayer/mplayer2 (client library dev files)
  .
  This package provides development files for libmpv.
 
+Package: libmpv-dev
+Architecture: amd64
+Version: 0.34.1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 181
+Depends: libmpv1 (= 0.34.1-1~bpo11+0.sean00)
+Filename: ./amd64/libmpv-dev_0.34.1-1~bpo11+0.sean00_amd64.deb
+Size: 50060
+MD5sum: 63184dbb7632c4c5650c23bfdef4c2e2
+SHA1: 1f7e9f3a30c90d3e71828027a11efda010e4acc8
+SHA256: f89cbf7d113b24349b6503d05607d3f5eacedded3c6f2d543c56c030c624af3a
+SHA512: 33d2e6dc15ecd429a9d939e40c7e1ad24cbdddb56d7e70aaceaf4e91c102933c115875333b7a65f727f428fbff1ebcc1c2b9d6428a3da0b8305ae2c05289c68d
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2 (client library dev files)
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ This package provides development files for libmpv.
+
 Package: libmpv1-dbgsym
 Architecture: amd64
 Version: 0.33.1-1~bpo11+0.sean00
@@ -11738,6 +11761,26 @@ SHA256: 4c2bd9dc0fe941b71ee6a0bd8ce7a0d83d9a3252640c40971b7567247f0f6a53
 SHA512: 33c987b044ffbba93422bf401e8303361cbb723c358a06c6abf20fd7f4de95e7699c92e40c0d23eb723b837b6bb18540bdb45d17bdb47f1a59fc6cbd5251cd10
 Description: debug symbols for libmpv1
 Build-Ids: 7dcafcaa470604a0bd55e3acb0b9c1ea2625afce
+
+Package: libmpv1-dbgsym
+Architecture: amd64
+Version: 0.34.1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2440
+Depends: libmpv1 (= 0.34.1-1~bpo11+0.sean00)
+Filename: ./amd64/libmpv1-dbgsym_0.34.1-1~bpo11+0.sean00_amd64.deb
+Size: 2270660
+MD5sum: 1d545651dc0e68cb20d52a8cb2f79e4e
+SHA1: 5e7068d6a0d3aa16303beecdab4779b8ac2b5733
+SHA256: 6f9c43182417af175d8544760f01c4ef5131cfe20b4345e7d083b86a09b1cb7a
+SHA512: c4beeff89064ba85eaa1506296d4bf6b704cdef7a86a8bc848c8791512fdb4454599c47494b84f2a9d71a5220d7a6535f53d8ed13aeb44e28a2ca48f4d1b20ba
+Description: debug symbols for libmpv1
+Build-Ids: 655bd0906b234650cf0726598d76fe6e31204675
 
 Package: libmpv1
 Architecture: amd64
@@ -11806,6 +11849,31 @@ MD5sum: 7f3fbf2ea1d7973b0d0209c42d676051
 SHA1: 7cf62582165345c9f201fcc0d856c706ae329bf2
 SHA256: 33dea62ef641779073e31a8811c70bfc146cba984a99ef4d11c0854ec217a420
 SHA512: 26709cb537e4ab5f18a7dd953af9d047726553b216d111b67c7f3f97f4e9299f05053024e1131f9418f61a67c7e6d778c365501db6aa7749c92fcff3c1f5b881
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2 (client library)
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ This package provides a client library that can be used to embed mpv in other
+ applications.
+
+Package: libmpv1
+Architecture: amd64
+Version: 0.34.1-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2395
+Depends: libarchive13 (>= 3.4.0), libasound2 (>= 1.0.27), libass9 (>= 1:0.13.6), libavcodec58 (>= 7:4.2), libavdevice58 (>= 7:4.0), libavfilter7 (>= 7:4.0), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libbluray2 (>= 1:0.2.2), libc6 (>= 2.29), libcaca0 (>= 0.99.beta17-1), libcdio-cdda2 (>= 10.2+2.0.0), libcdio-paranoia2 (>= 10.2+2.0.0), libcdio19 (>= 2.1.0), libdrm2 (>= 2.4.75), libdvdnav4 (>= 4.1.3), libegl1, libgbm1 (>= 8.1~0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.6), liblua5.2-0, libmujs1 (>= 1.0.7), libplacebo192 (>= 4.157.0), libpulse0 (>= 0.99.4), librubberband2 (>= 1.9.0), libsdl2-2.0-0 (>= 2.0.12), libsixel1, libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libuchardet0 (>= 0.0.1), libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvdpau1 (>= 0.2), libvulkan1 (>= 1.2.131.2), libwayland-client0 (>= 1.15.0), libwayland-cursor0 (>= 1.15.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.2.99.3), libxss1, libxv1, libzimg2 (>= 0.3.1), zlib1g (>= 1:1.1.4)
+Recommends: youtube-dl (>= 2014.11.26)
+Filename: ./amd64/libmpv1_0.34.1-1~bpo11+0.sean00_amd64.deb
+Size: 842040
+MD5sum: adb33c552ab227b292175f0fddb32260
+SHA1: 8870d4b6166f29481e655e2981ead08dc3289bfb
+SHA256: 3df927d9a9ee3e7e709445004bbe49007b1bcb1bc28ca22eb0b0fa5f45c0bebb
+SHA512: 9dd1f7365c57b6df7de99f9fa1295d88193f051bef7be8b23cdbd68b42887476c43aba3b0ebbcde19c2f4711c5eecdf4ea92078d235b3142f9ea825013229d8e
 Homepage: https://mpv.io/
 Description: video player based on MPlayer/mplayer2 (client library)
  mpv is a movie player based on MPlayer and mplayer2. It supports a wide
@@ -13509,6 +13577,31 @@ Description: GPU-accelerated video/image rendering primitives (development files
  .
  This package contains the development files.
 
+Package: libplacebo-dev
+Architecture: amd64
+Version: 4.192.0-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libplacebo
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 424
+Depends: libplacebo192 (= 4.192.0-1~bpo11+0.sean00), libepoxy-dev, liblcms2-dev, libvulkan-dev (>= 1.0.42)
+Filename: ./amd64/libplacebo-dev_4.192.0-1~bpo11+0.sean00_amd64.deb
+Size: 93952
+MD5sum: 1f2c3ea2e6c32763025c7d53c411dc41
+SHA1: 7ccf1fcf45b59f24639362ecd4e4a942d5c669ea
+SHA256: ed78265932c3c4df316296bc93322e62b95af888ac43cc8df3a782635a370b23
+SHA512: b900a0aaa5955a635688214861d79ea83fb4ff33652c4b878f93542b7251b30f73aae9d6d1a8534f7dfb2c0cbfd9e05a1bbcf5dd66b9191b253df4ab57b7eaba
+Homepage: https://code.videolan.org/videolan/libplacebo
+Description: GPU-accelerated video/image rendering primitives (development files)
+ The library provides useful GPU-accelerated image processing primitives based
+ on GLSL. It includes shader routines for decoding and transforming colors,
+ tone mapping, dithering, and for various algorithms that sample from images,
+ such as debanding and scaling.
+ .
+ This package contains the development files.
+
 Package: libplacebo157-dbgsym
 Architecture: amd64
 Version: 4.157.0-1~bpo11+0.sean00
@@ -13545,6 +13638,51 @@ MD5sum: f45d530885514ccd9c9a145f3cf8b86c
 SHA1: b5d8a9c2009d35acffafcd8c0c055aa384183c66
 SHA256: e6833a6ebeea47832baac01d919d3ea3349d6ed27b8711eb0c2e98c582f76244
 SHA512: 1866d066e8f508c6c8c009b0ac013feab86f2ab58b52f234d1e952dc0d3204019595e4981b321d1464d2b8a7ea2f42317274840011076d0c69d7172e6364c1f8
+Homepage: https://code.videolan.org/videolan/libplacebo
+Description: GPU-accelerated video/image rendering primitives (shared library)
+ The library provides useful GPU-accelerated image processing primitives based
+ on GLSL. It includes shader routines for decoding and transforming colors,
+ tone mapping, dithering, and for various algorithms that sample from images,
+ such as debanding and scaling.
+ .
+ This package contains the shared library.
+
+Package: libplacebo192-dbgsym
+Architecture: amd64
+Version: 4.192.0-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: libplacebo
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 1771
+Depends: libplacebo192 (= 4.192.0-1~bpo11+0.sean00)
+Filename: ./amd64/libplacebo192-dbgsym_4.192.0-1~bpo11+0.sean00_amd64.deb
+Size: 951360
+MD5sum: d5c79c50e97761428924b1d28610e558
+SHA1: a6f648ab0a1d2e6a564da79d9d8444064c6d3671
+SHA256: 4531b228c93324aa392c04a9fa639646189112b06c6e859587b66fece56ad9e9
+SHA512: f04c59e8703dc35a00277ebe062a2343e68220ee3a0ccf85f4945f95c41f43aa6948c3a8cde63dee8ebe9489c3033733a99ce0024243ac8f9bc3bf2b3b34ae9f
+Description: debug symbols for libplacebo192
+Build-Ids: 2c1615c2befa381586b844f8941ec04b12cc1396
+
+Package: libplacebo192
+Architecture: amd64
+Version: 4.192.0-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libplacebo
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 7102
+Depends: libc6 (>= 2.29), libepoxy0 (>= 1.4.3), libgcc-s1 (>= 3.4), liblcms2-2 (>= 2.6), libstdc++6 (>= 9), libvulkan1 (>= 1.2.131.2)
+Filename: ./amd64/libplacebo192_4.192.0-1~bpo11+0.sean00_amd64.deb
+Size: 2033608
+MD5sum: 6eee15878c9a4ed0ab86e80249ef18ff
+SHA1: 42a64de2a5c63bed8a2178df52a8410dd725afd5
+SHA256: 067daa79baf4ae531272e223205cb72ac3eca6b983b5c700108886d3bef02c55
+SHA512: f925c52484681332afd8a0dac03db6d67cc8d7110345243b11e667055c664d960f95ec9c3c557ef6f2b98bab0113aaffbae53c721ad95f4bc683fe5db1f043d2
 Homepage: https://code.videolan.org/videolan/libplacebo
 Description: GPU-accelerated video/image rendering primitives (shared library)
  The library provides useful GPU-accelerated image processing primitives based
@@ -14720,6 +14858,25 @@ SHA512: 603029ff9b07518ab8a5a9ba6057cd0380921c570e59fc933ebf45bc9602aa49b6a77295
 Description: debug symbols for mpv
 Build-Ids: f6abe591f5a9aad59fac3473f47730b45b458b2b
 
+Package: mpv-dbgsym
+Architecture: amd64
+Version: 0.34.1-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mpv
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2494
+Depends: mpv (= 0.34.1-1~bpo11+0.sean00)
+Filename: ./amd64/mpv-dbgsym_0.34.1-1~bpo11+0.sean00_amd64.deb
+Size: 2324376
+MD5sum: 105f62dfe578ce80db18c21f9db3374d
+SHA1: ef19b1554252afebaebb8262f13aa9007c9974c5
+SHA256: 6d28aab55f25e2296000841f56089c42074b21b01493ea59730c62d13967e3df
+SHA512: 2ec6b1b6adbefca9d81521023edc76bfe5343871118c9840cb71fa74c8de14ff171a6178640eb9d873e1b4db1a16d8b97cf4b6419a37455fca261bac1557ff63
+Description: debug symbols for mpv
+Build-Ids: 61f6e0fc7cb1a586be8247c7a8be756fc0b362da
+
 Package: mpv
 Architecture: amd64
 Version: 0.33.1-1~bpo11+0.sean00
@@ -14803,6 +14960,40 @@ MD5sum: 4240de476621900c2596cb1b9a9f6a00
 SHA1: fb6a14d57a47644d936921605b5be231571af459
 SHA256: aa795fb1ba6b5301263688e226a77460b1e69a5489769867605b91e289983f99
 SHA512: da40404fd4ae99386a6a140c7c12a29254ef56ba221f9eb4fab6a3a0ea9ce9651bd69159f75fe0de0b3c978c781571b354b7c334b906ccf25553c0fe5f45be31
+Homepage: https://mpv.io/
+Description: video player based on MPlayer/mplayer2
+ mpv is a movie player based on MPlayer and mplayer2. It supports a wide
+ variety of video file formats, audio and video codecs, and subtitle types.
+ .
+ Changes from mplayer2 to mpv include:
+  * Removal of lots of unneeded code to encourage developer activity
+  * Better OSD rendering
+  * Cleaned up terminal output
+  * Improved OpenGL output
+  * Encoding functionality (replacement for mencoder)
+  * Wayland support
+  * Support for playing URLs of popular streaming sites
+  * Screenshot improvements
+  * ...
+ See mpv(1) for more info regarding changes between MPlayer, mplayer2 and mpv.
+
+Package: mpv
+Architecture: amd64
+Version: 0.34.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Installed-Size: 2819
+Depends: libarchive13 (>= 3.4.0), libasound2 (>= 1.0.27), libass9 (>= 1:0.13.6), libavcodec58 (>= 7:4.2), libavdevice58 (>= 7:4.0), libavfilter7 (>= 7:4.0), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libbluray2 (>= 1:0.2.2), libc6 (>= 2.29), libcaca0 (>= 0.99.beta17-1), libcdio-cdda2 (>= 10.2+2.0.0), libcdio-paranoia2 (>= 10.2+2.0.0), libcdio19 (>= 2.1.0), libdrm2 (>= 2.4.75), libdvdnav4 (>= 4.1.3), libegl1, libgbm1 (>= 8.1~0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.6), liblua5.2-0, libmujs1 (>= 1.0.7), libplacebo192 (>= 4.157.0), libpulse0 (>= 0.99.4), librubberband2 (>= 1.9.0), libsdl2-2.0-0 (>= 2.0.12), libsixel1, libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libuchardet0 (>= 0.0.1), libva-drm2 (>= 1.1.0), libva-wayland2 (>= 1.3.0), libva-x11-2 (>= 1.0.3), libva2 (>= 2.2.0), libvdpau1 (>= 0.2), libvulkan1 (>= 1.2.131.2), libwayland-client0 (>= 1.15.0), libwayland-cursor0 (>= 1.15.0), libwayland-egl1 (>= 1.15.0), libx11-6, libxext6, libxinerama1, libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.2.99.3), libxss1, libxv1, libzimg2 (>= 0.3.1), zlib1g (>= 1:1.1.4)
+Recommends: xdg-utils, yt-dlp | youtube-dl (>= 2014.11.26)
+Suggests: libcuda1
+Filename: ./amd64/mpv_0.34.1-1~bpo11+0.sean00_amd64.deb
+Size: 1129888
+MD5sum: e9e4576fcec47096ab7282de147fa925
+SHA1: 432fddedc91e944a86adcd890eeeaea3f68b1eb7
+SHA256: d43520a681f35d5ea8f2d1ae4aa0363cb25d86e723cddc4e02674b5395803107
+SHA512: 1ffe794ffcf98b43d1f5a1a02fdb63759950c0d9ded8ab7f10b40e2263a6866cc5a4516ce5b3b3c25fd68f57b3758335cd6c987dfa38fd7a3aff91480e53c8e1
 Homepage: https://mpv.io/
 Description: video player based on MPlayer/mplayer2
  mpv is a movie player based on MPlayer and mplayer2. It supports a wide
