@@ -5709,6 +5709,26 @@ Description: PuTTY HTML documentation
  Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
  Plink, PSCP, PSFTP, and PuTTYgen).
 
+Package: putty-doc
+Architecture: all
+Version: 0.76-2.1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 783
+Filename: ./all/putty-doc_0.76-2.1~bpo11+0.sean00_all.deb
+Size: 171484
+MD5sum: ac61ca90a92adc0ca7eedf21facbe3c4
+SHA1: 74109733188a602b23b6b70b18b25485c6e9b642
+SHA256: 9dc62883ef7426c8335f7215b91bef247c55f29fc63649c0b043e6eff6c794a3
+SHA512: db91aaf44b04185bbe46b54bc50ea96601fee95a6debf4971b9f7ee5f44d63c7b290051ac23c1d82f13f8ab4b0ff36c5b78fbdd3d9d65b9d1ea0b811f61c91cf
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: PuTTY HTML documentation
+ Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
+ Plink, PSCP, PSFTP, and PuTTYgen).
+
 Package: python-mpi4py-doc
 Architecture: all
 Version: 3.1.3-1~bpo11+0.sean00
@@ -16152,6 +16172,25 @@ SHA512: 42c844599868b3acd3fbe0e981a28d81219084a423e5baf10ed452b86189671d67402ac4
 Description: debug symbols for pterm
 Build-Ids: 6b449f5a9b63a6f51d670b5056a8d28cc6613524
 
+Package: pterm-dbgsym
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 698
+Depends: pterm (= 0.76-2.1~bpo11+0.sean00)
+Filename: ./amd64/pterm-dbgsym_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 637836
+MD5sum: 69195a91c960c4d2020da4023d476c01
+SHA1: 9ae010a4cfeb3f77c67e03ff06b6acd5d96e8a5d
+SHA256: af08f32436eec0bae6435e817600fad71105a5ad559c0f438af05c8a9feedeed
+SHA512: ad94ef78d2a8c9d6a8aae6309e02c020cb41cd9eec0fecef95c2acfccb4e96b824618b9c5d1673b621f80cfa755b116cef8dd3db9ca3c35479eab778dbc518fd
+Description: debug symbols for pterm
+Build-Ids: 6b449f5a9b63a6f51d670b5056a8d28cc6613524
+
 Package: pterm
 Architecture: amd64
 Version: 0.76-1
@@ -16170,6 +16209,33 @@ MD5sum: 0c1dee262a32bd1c2b1df0fab2804033
 SHA1: b2b2a7e9cf5ab78f9427c2b83fae25930b2763b3
 SHA256: 34d578542a023075678df0c2c670bf4e955aa2a7c683c5fd2eae11f1fef6b382
 SHA512: cf514bc70e8799b641efbff302b270047ec901a2b303d5cbb190a2159710ab66ed7ebc24a287137437e48f6dd51bfc88166fed0a1e8a484c3f47895f02ab6588
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: PuTTY terminal emulator
+ This is an X terminal emulator based on the popular Windows SSH client,
+ PuTTY. It supports xterm escape sequences, plus some Linux console
+ sequences for colour palette configuration and some DECterm sequences for
+ title bar control, and with an appropriate font it supports the UTF-8
+ encoding of Unicode. It also has some nifty features like rectangular
+ selection and NetHack keypad mode.
+
+Package: pterm
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 707
+Provides: x-terminal-emulator
+Depends: libc6 (>= 2.28), libcairo2 (>= 1.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Suggests: putty-doc
+Filename: ./amd64/pterm_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 226748
+MD5sum: a76ce07cb42a2510895f000523f03753
+SHA1: ff3c4720746113c149627a08a95291bf1a547eaf
+SHA256: fd4cc850d85814725839d236098638ce43b45f1b19b03fc838373c9c2d25b3a8
+SHA512: 5aa5c3ba518c5fce515d854ab1f913bd4d067c60d4c04bc71f9a6af3a9e5eb3da989a6c4be3334c9f29987d1741bd711bde8dba3a2d0e6510cf081da033a507d
 Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
 Description: PuTTY terminal emulator
  This is an X terminal emulator based on the popular Windows SSH client,
@@ -16198,6 +16264,25 @@ SHA512: 73abe3d789ecc9faf0d4f8ffd08b2abbcc10a646a5315060d5cf3290bacf833f8edbcf02
 Description: debug symbols for putty
 Build-Ids: c2d9930f231d2e9dfa2583fcec8fbcf1ad14de69 f98e9ba75d9a82b9c32378b8eaf532e13eae8cbc
 
+Package: putty-dbgsym
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 2289
+Depends: putty (= 0.76-2.1~bpo11+0.sean00)
+Filename: ./amd64/putty-dbgsym_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 2133772
+MD5sum: 4348c2aa539fd874ee84ed819b0f7284
+SHA1: 754abf4620b5800596c7c624f08b7cc2810150a4
+SHA256: a35ea0064a54e8067d2abb5c6eb8f43a7f6a242eeaa5f7a8775488a626b2fea4
+SHA512: bd004bb941de5d111be895b62d0c02d6a683a23060350b668cfa1ce79cb9bb7e3f67c0b0721dc3ea98dfe86e798dd6d1408551bfe11dfe720d90355ad17e65ec
+Description: debug symbols for putty
+Build-Ids: c2d9930f231d2e9dfa2583fcec8fbcf1ad14de69 f98e9ba75d9a82b9c32378b8eaf532e13eae8cbc
+
 Package: putty-tools-dbgsym
 Architecture: amd64
 Version: 0.76-1
@@ -16214,6 +16299,25 @@ MD5sum: 46b2b1611f0dfa526faadd89e28c012e
 SHA1: f42ac1919af23249d00bd5756176e7e2b9b9a6b7
 SHA256: 45b1421ad843a1327fcf901a072eff556b4f26ca17cddc9ca2967dad6dc23cfe
 SHA512: 34de00e2167f533017c5ee464448483ff19fa925edfc90e2423fe501b8872cf17fdc71eb13c197966d486988a10cd1c16bf276b9d1d9a747218cfd34612b6828
+Description: debug symbols for putty-tools
+Build-Ids: 741eb377e2bf966f872e8640677972c28679f7cc 792c5e47631b4c6d95acc7e6e2b0d0ebe9225675 81d640dd51725a3991114c11a8b8dc839cb483c4 cb033a80e988347318af76ee5b18685ce1936fcf fd43907ede9c9728d5c7de579a7eb62b6a656438
+
+Package: putty-tools-dbgsym
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 4712
+Depends: putty-tools (= 0.76-2.1~bpo11+0.sean00)
+Filename: ./amd64/putty-tools-dbgsym_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 4342216
+MD5sum: 5e682c38ee3fff908753368695de97c6
+SHA1: 553ea79dcb83e9bdfdaae7cd6d847dd833f49bf8
+SHA256: e5ae5a0eb444c06b30ed6855732b5154493d41977386d095df0bf1aa0df8e245
+SHA512: 528b8954d42a24c47d633739e139f37c54ca1a33d4ee3d7a6c7c3edcf54681c52d8c73f3ef83c850b04175f7aef9777cca6a01e59c162ab6952612fdb06d3089
 Description: debug symbols for putty-tools
 Build-Ids: 741eb377e2bf966f872e8640677972c28679f7cc 792c5e47631b4c6d95acc7e6e2b0d0ebe9225675 81d640dd51725a3991114c11a8b8dc839cb483c4 cb033a80e988347318af76ee5b18685ce1936fcf fd43907ede9c9728d5c7de579a7eb62b6a656438
 
@@ -16261,6 +16365,50 @@ Description: command-line tools for SSH, SCP, and SFTP
  authentication. It can be used to add SSH-like amenities to channels where
  you were already prepared to run a bare shell session.
 
+Package: putty-tools
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 3058
+Depends: libc6 (>= 2.29)
+Suggests: putty-doc
+Filename: ./amd64/putty-tools_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 564624
+MD5sum: 061518dbb4748eb8468af6975a61173e
+SHA1: ba577c09e3d774acdfd4afa8d5d8276ed295a59b
+SHA256: c997b3b2c1e08082c711731571ac9527ca06ce38c5c0628496b2be6481eac07b
+SHA512: 0a2493828ffb22a5bf57f3488c07622c13dda943970576b4e9955ddab4cfe33e8816efa7f6459e4e80a190209255ed6f91be4949bb95b8da01c1c2d4fdf640f5
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: command-line tools for SSH, SCP, and SFTP
+ This package provides several command-line tools from the PuTTY suite that
+ allow various kinds of secure interaction with remote systems.
+ .
+ Plink (PuTTY Link) connects to a remote system via SSH, Telnet, or rlogin,
+ and either starts an interactive session or runs a batch process. It
+ supports the usual SSH features like port forwarding, X11 forwarding,
+ SOCKS, and compression.
+ .
+ PSCP (PuTTY Secure Copy) transfers files securely between systems using an
+ SSH connection. It works with both SSH protocol 1 and protocol 2.
+ .
+ PSFTP (PuTTY SFTP client) transfers files securely between systems using
+ the SSH file transfer protocol, which is specific to SSH protocol 2. In
+ interactive mode its interface is much like the traditional Unix FTP
+ client, although it can also operate in batch mode.
+ .
+ PuTTYgen generates SSH public and private key pairs in any of a number of
+ formats, including those usable by PuTTY, OpenSSH, and ssh.com.
+ .
+ psusan (pseudo-SSH for untappable, separately authenticated networks) is a
+ server program that behaves like the innermost "connection" layer of an SSH
+ session, without the two outer security layers of encryption and
+ authentication. It can be used to add SSH-like amenities to channels where
+ you were already prepared to run a bare shell session.
+
 Package: putty
 Architecture: amd64
 Version: 0.76-1
@@ -16279,6 +16427,34 @@ MD5sum: 0a6f44d1bf261a9f1cf6b781d0f714d3
 SHA1: be456e70cbac4950428c79172da3d7d37b6db5d7
 SHA256: 752fba394c0244397e9d253a0fc13fbad64e5941610b5b78fbef6705b6cf80dd
 SHA512: 2a9fa70e72616e5015483118eb9b733b80d2c22458160ec2bb99302f8eeb0f6bb876b70c633d46ac0c0a4c9ffacf5336af7531fa873ae4dd15122cf2f29c3564
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: Telnet/SSH client for X
+ This is the Unix port of the popular Windows SSH client, PuTTY. It supports
+ flexible terminal setup, mid-session reconfiguration using Ctrl-rightclick,
+ multiple X11 authentication protocols, and various other interesting things
+ not provided by ssh in an xterm.
+ .
+ Pageant is an SSH authentication agent, and a tool for communicating with
+ an already-running agent.
+
+Package: putty
+Architecture: amd64
+Version: 0.76-2.1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 1649
+Depends: putty-tools, libc6 (>= 2.28), libcairo2 (>= 1.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Suggests: putty-doc
+Breaks: putty-tools (<< 0.68-2~)
+Replaces: putty-tools (<< 0.68-2~)
+Filename: ./amd64/putty_0.76-2.1~bpo11+0.sean00_amd64.deb
+Size: 490660
+MD5sum: 1bae82f2c617996f677994cdf546b648
+SHA1: 676714c7eba925fe3a009ab5810845c109e7b981
+SHA256: 23c04642f0b6a4cfa9390c8e8627d121ad0a037a386fa1fcaa3a7b0fce1e23a0
+SHA512: 84f034f82dd36be716cead31d7eacd2a8ff5c37ade9201f6b4087da6722fba0c8396c7a2a97af0a5d7627a06da5534f6ce658edc79d42d52465dc60355322f03
 Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
 Description: Telnet/SSH client for X
  This is the Unix port of the popular Windows SSH client, PuTTY. It supports
