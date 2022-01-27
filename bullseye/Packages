@@ -18163,6 +18163,29 @@ Description: fast and secure messaging application
  same time — your messages sync seamlessly across any number of your phones,
  tablets or computers.
 
+Package: telegram-desktop
+Architecture: amd64
+Version: 3.4.8+ds-1~bpo11+0.sean00
+Built-Using: libtgowt (= 0~git20211207.d5c3d43+dfsg-2~bpo11+1), ms-gsl (= 3.1.0-4), range-v3 (= 0.11.0-1), tl-expected (= 1.0.0~dfsg-2)
+Priority: optional
+Section: net
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Installed-Size: 76956
+Depends: qt5-image-formats-plugins, libabsl20200923 (>= 0~20200923-1), libavcodec58 (>= 7:4.2), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libc6 (>= 2.29), libdbusmenu-qt5-2 (>= 0.3.2), libgcc-s1 (>= 3.4), libglib2.0-0 (>= 2.39.4), libglibmm-2.4-1v5 (>= 2.64.2), libhunspell-1.7-0, libjpeg62-turbo (>= 1.3.1), libkf5waylandclient5 (>= 4:5.42.0), liblz4-1 (>= 0.0~r130), libminizip1 (>= 1.1), libopenal1 (>= 1.14), libopus0 (>= 1.1), libqrcodegencpp1 (>= 1.2.1), libqt5core5a (>= 5.15.2), libqt5dbus5 (>= 5.15.2), libqt5gui5 (>= 5.15.2) | libqt5gui5-gles (>= 5.15.2), libqt5network5 (>= 5.15.2), libqt5svg5 (>= 5.6.0~beta), libqt5waylandclient5 (>= 5.10.1), libqt5widgets5 (>= 5.15.2), librlottie0-1 (>= 0~git20200305.a717479+dfsg), libsigc++-2.0-0v5 (>= 2.2.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libx11-6, libxcb-keysyms1 (>= 0.4.0), libxcb-record0, libxcb-screensaver0, libxcb1, libxcomposite1 (>= 1:0.4.5), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrandr2 (>= 2:1.5.0), libxtst6, libxxhash0 (>= 0.6.5), qtbase-abi-5-15-2, qtwayland-client-abi-5-15-2, zlib1g (>= 1:1.1.4)
+Recommends: fonts-open-sans
+Filename: ./amd64/telegram-desktop_3.4.8+ds-1~bpo11+0.sean00_amd64.deb
+Size: 26921852
+MD5sum: b073f4db2f80e01c901ac8ba786d6019
+SHA1: 7dcb5e544b381bb90b748b3e8aaea51b6b01c7b9
+SHA256: 2a890a3a34b0bfa4ec9b13b3eda0ba7aa89f231890e2ec592403144719d12526
+SHA512: cf4ea6ea18755c0ae09bf095db505511cd2feb6f45c1c4b6e4c7f8c070cca31ff30fc5ecb32a325b9919d66b7861b4b55cc53a6caaf7a522e0013f43c12c94cd
+Homepage: https://desktop.telegram.org
+Description: fast and secure messaging application
+ Telegram is a messaging app with a focus on speed and security, it is
+ super-fast, simple and free. You can use Telegram on all your devices at the
+ same time — your messages sync seamlessly across any number of your phones,
+ tablets or computers.
+
 Package: ubridge-dbgsym
 Architecture: amd64
 Version: 0.9.18-1~hirsute1~bpo11+1.sean00
