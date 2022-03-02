@@ -8189,6 +8189,24 @@ SHA256: de0ee1fdb7834ec4944ab24cf86d2f0ce7c1caf80bf591a74491a9e238aa2f0a
 SHA512: f312a1b349b2b605ee2df2414beb3e5c75f218ea26fa9f5c7762a2c10dd1d5b50d280ba84abc910bf20ecc3b99c288ace4fcf4c8b67e03177abc708371cf6fb7
 Description: GNS3 GUI
 
+Package: gns3-gui
+Architecture: amd64
+Version: 2.2.31~impish1~bpo11+0.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 28272
+Depends: python3, python3-pyqt5, python3-pyqt5.qtsvg, python3-pyqt5.qtwebsockets, wireshark, vinagre, libc6 (>= 2.14)
+Recommends: gns3-server
+Replaces: gns3 (<< 1.4.0-1)
+Filename: ./amd64/gns3-gui_2.2.31~impish1~bpo11+0.sean00_amd64.deb
+Size: 6740372
+MD5sum: e4e3566a22e911b1fe954bf4667f2dc5
+SHA1: 33224816bac001e2ee45fa18944c9fb6aeb371df
+SHA256: 71567c27b8aeb5df102e17b097a1661ee2ebdb14a370d42f9d1548a3dae0206e
+SHA512: 5df1c008c7aae3b1607747c7065d80f733c60cfa45d95e87e93da3f4e20dc99333f509c2637c7a47f4568c75a1d99e55bef842c996b420e70a00f4d7a1843a61
+Description: GNS3 GUI
+
 Package: gns3-server-dbgsym
 Architecture: amd64
 Version: 2.2.26~hirsute1~bpo11+1.sean00
@@ -8316,6 +8334,24 @@ MD5sum: 58e510fd582ff86bdfd89e12ea2ac668
 SHA1: b540b17ff01afe250d0d7047367d5052df015231
 SHA256: 1df4a7a2738e63b693576c6b3bb52785900c51239275f491394cfee46bce82a4
 SHA512: 8c24c9cf9e74c6d9b39e2d28438cfe9c34a1d2d5f5bd60336e1e15c142bb2e6a73711fe14aecd233bf35a2b2bd76a3219620af963e0181040fff7ca7866c6aa3
+Description: GNS3 server
+
+Package: gns3-server
+Architecture: amd64
+Version: 2.2.31~impish1~bpo11+0.sean00
+Priority: extra
+Section: net
+Maintainer: GNS3 team <developers@gns3.net>
+Installed-Size: 49462
+Depends: python3, vpcs, ubridge (>= 0.9.14), qemu-system-x86, qemu-kvm, qemu-utils, mtools, cpulimit, libvirt-bin | libvirt-daemon-system, libc6 (>= 2.14)
+Recommends: dynamips, x11vnc, xvfb
+Enhances: gns3-iou
+Filename: ./amd64/gns3-server_2.2.31~impish1~bpo11+0.sean00_amd64.deb
+Size: 9038924
+MD5sum: 935d9b2eb936ef90553657c3891f99ec
+SHA1: bddb32b4f1b102d9970d979d32a7d99e07435e9f
+SHA256: 7d22d0b6f257616833fc291c62b98d5863ce06959cdcb60b75c54073eb7c7450
+SHA512: 43d1b8f20b6e10b4b1652c7b8c1345e3bd7bc7072d86840a0970634e88f4b66d476f785e33c4b6d2e598ea81af3320c2eba4490140f378cb99a4e4c4ffa4927b
 Description: GNS3 server
 
 Package: gtk-4-examples-dbgsym
