@@ -6280,6 +6280,31 @@ Description: Python's officially recommended packaging tool
  generates the ever–important Pipfile.lock, which is used to produce
  deterministic builds.
 
+Package: pipenv
+Architecture: all
+Version: 2022.3.23-1~bpo11+1
+Priority: optional
+Section: python
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 12445
+Depends: python3-certifi, python3-pip, python3-pkg-resources, python3-virtualenv, python3-virtualenv-clone, python3:any
+Filename: ./all/pipenv_2022.3.23-1~bpo11+1_all.deb
+Size: 1761904
+MD5sum: 76ab95a99de233b2272eab2197c58e38
+SHA1: 0de4d0330818ea9afb5a3f9182a6a65c0df39cbe
+SHA256: 197a684e0e9d4d33f87b8b9394d4ca4921a1e3f9e2d53116d08228d0a3dca3fa
+SHA512: 337c2e7b0b2ec5ed508c63c9a8c5ac857dbcd0508555bb4bf63ca844ef3555f81713f80696a7474df3ff6f5b3a9deb42818750d6abc6f6d7d7ad80234f8bdd66
+Homepage: https://github.com/pypa/pipenv
+Description: Python's officially recommended packaging tool
+ Pipenv is the officially recommended Python packaging tool from Python.org.
+ .
+ Pipenv is a tool that aims to bring the best of all packaging worlds (bundler,
+ composer, npm, cargo, yarn, etc.) to the Python world. It automatically
+ creates and manages a virtualenv for your projects, as well as adds/removes
+ packages from your Pipfile as you install/uninstall packages. It also
+ generates the ever–important Pipfile.lock, which is used to produce
+ deterministic builds.
+
 Package: putty-doc
 Architecture: all
 Version: 0.76-1
