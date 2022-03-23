@@ -16070,6 +16070,25 @@ SHA512: 9d061763c93f0193cafc9d01a6eec0987e35baf4bc66f69ae6039a4233b8239e67cba992
 Description: debug symbols for mtr
 Build-Ids: 20d1760dfcc7585c5153c91bf50574951e609e4c d848e04700e0bad5e76367bd9e85cfb8c479dc01
 
+Package: mtr-dbgsym
+Architecture: amd64
+Version: 0.95-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 193
+Depends: mtr (= 0.95-1~bpo11+0.sean00)
+Filename: ./amd64/mtr-dbgsym_0.95-1~bpo11+0.sean00_amd64.deb
+Size: 157604
+MD5sum: 5d9fa327562bef9aa54c72a81ce02164
+SHA1: 321f0539c89154c572d1258df0981c75396482e7
+SHA256: 642cf2b28e05355f18059d599ffafc73d8fa869cbbb66023296d3aed56cdaf7f
+SHA512: 9a739132d42b52042a87841865f83cb5afcb4286bd2fc8e216ea0e2f677b90f9d281167df243c26e0933ea8bef1e2999b2d855eac97bbca16687b5f3812100a2
+Description: debug symbols for mtr
+Build-Ids: 389785cdd27559355548012bbfcedf2cb9409f89 7caf78af1d0a2fdf8a7f4409e14bf3ce439c0bf9
+
 Package: mtr-tiny-dbgsym
 Architecture: amd64
 Version: 0.94-2
@@ -16088,6 +16107,25 @@ SHA256: 88bca79bf6887c8904cf44ddc5bfd19b073fca80add5828eccfde2b149f2c83b
 SHA512: 8c197230e84c2cd83bc8acc4e93b9a90b65959ec17a86299e3f6373b819057dda598535cd52794b096da9c6c4ecbcd251d33a239bb9452a054875939418c0e6f
 Description: debug symbols for mtr-tiny
 Build-Ids: 4d862b1c33cf1160608c42968dbd3874e4037134 a2f30b99d53f3bbb052898505a7e1f5d3bd90b2e
+
+Package: mtr-tiny-dbgsym
+Architecture: amd64
+Version: 0.95-1~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 163
+Depends: mtr-tiny (= 0.95-1~bpo11+0.sean00)
+Filename: ./amd64/mtr-tiny-dbgsym_0.95-1~bpo11+0.sean00_amd64.deb
+Size: 131080
+MD5sum: c463fa3d63b9c05a833334899399118a
+SHA1: 07a88963d25abe2693c83075da98a5603dc2bc88
+SHA256: 4a58dee9c816af6a53b6eb24591ff6004ce8d596dc8f18aa5bee6b40a9f38071
+SHA512: 80abe1478f55b9f7b67d4a6a79def301d452275ff059e2bfff4116c510ec03cc2edd9250dcd410a769795aa4311582be9022fc77b70e50f3387f645eadbb15af
+Description: debug symbols for mtr-tiny
+Build-Ids: b27cdda382976340077c56deed02d5faf535f13a e4c884fa3249a96380548d7818cc4e8f337cf454
 
 Package: mtr-tiny
 Architecture: amd64
@@ -16120,6 +16158,37 @@ Description: Full screen ncurses traceroute tool
  .
  mtr-tiny is compiled without support for X and conserves disk space.
 
+Package: mtr-tiny
+Architecture: amd64
+Version: 0.95-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Source: mtr
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 161
+Depends: libc6 (>= 2.29), libjansson4 (>= 2.0.1), libncurses6 (>= 6), libtinfo6 (>= 6)
+Breaks: mtr, suidmanager (<< 0.50)
+Replaces: mtr
+Filename: ./amd64/mtr-tiny_0.95-1~bpo11+0.sean00_amd64.deb
+Size: 72048
+MD5sum: b1af372eb7d3a5209da0c780375e776a
+SHA1: 21d1fb137afff35d462901fa06595142d4e14411
+SHA256: c22a7438b938f26d0ddf451ea262f46ccb581da4d4a7de0b82a8d5db26ffa4b3
+SHA512: a4d2353f5e8651fbdbac45085359ea86cadabc200abe6ca5eeb13c98f671c354a46f10d3e0418879715bb11a2edb400009f319a5a069b193259f1a77278694df
+Homepage: https://www.bitwizard.nl/mtr/
+Description: Full screen ncurses traceroute tool
+ mtr combines the functionality of the 'traceroute' and 'ping' programs
+ in a single network diagnostic tool.
+ .
+ As mtr starts, it investigates the network connection between the host
+ mtr runs on and a user-specified destination host.  After it
+ determines the address of each network hop between the machines,
+ it sends a sequence of ICMP ECHO requests to each one to determine the
+ quality of the link to each machine.  As it does this, it prints
+ running statistics about each machine.
+ .
+ mtr-tiny is compiled without support for X and conserves disk space.
+
 Package: mtr
 Architecture: amd64
 Version: 0.94-2
@@ -16136,6 +16205,34 @@ MD5sum: 0907635c64ee6055d64d68cdb5eedbbf
 SHA1: b9e6b2f76269aaefcc03465326f4468d82146732
 SHA256: 09fbd9b199485210c069ac28912a9abc157a66a2523af5cfbe100cf0fa528d26
 SHA512: 163b81bc15948d2c7831d0e0a888d7fa81afdceb090c290dace7004ed1102e1f8bceab925198714eca7aa80afafea5a7bb71d9d98927a3985e8ab65cd6929229
+Homepage: https://www.bitwizard.nl/mtr/
+Description: Full screen ncurses and X11 traceroute tool
+ mtr combines the functionality of the 'traceroute' and 'ping' programs
+ in a single network diagnostic tool.
+ .
+ As mtr starts, it investigates the network connection between the host
+ mtr runs on and a user-specified destination host.  After it
+ determines the address of each network hop between the machines,
+ it sends a sequence of ICMP ECHO requests to each one to determine the
+ quality of the link to each machine.  As it does this, it prints
+ running statistics about each machine.
+
+Package: mtr
+Architecture: amd64
+Version: 0.95-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Maintainer: Robert Woodcock <rcw@debian.org>
+Installed-Size: 214
+Depends: libc6 (>= 2.29), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libjansson4 (>= 2.0.1), libncurses6 (>= 6), libtinfo6 (>= 6)
+Breaks: mtr-tiny, suidmanager (<< 0.50)
+Replaces: mtr-tiny
+Filename: ./amd64/mtr_0.95-1~bpo11+0.sean00_amd64.deb
+Size: 88372
+MD5sum: 7b12758151030e15fad5ba9a864acdbb
+SHA1: cacaa57a1d4ed03c53e6ec0a8505735cfb490fad
+SHA256: 9162d66c33d1180678c611592e754182d8cf24beb9b899c88fa3e6792ad92374
+SHA512: 9de11092e221923428521ee89e709a15bacc518e2736aa0f8429dfc31c7bb6f93a03e1682cfcce12438fa82b7b1fb04396fe3541fcc3f1da72037273038bcd04
 Homepage: https://www.bitwizard.nl/mtr/
 Description: Full screen ncurses and X11 traceroute tool
  mtr combines the functionality of the 'traceroute' and 'ping' programs
