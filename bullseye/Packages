@@ -71,6 +71,32 @@ Description: Documentation of the FFmpeg multimedia framework
  framework including the API documentation created by doxygen and the manpages
  for the libraries.
 
+Package: filezilla-common
+Architecture: all
+Version: 3.58.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: filezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 10347
+Filename: ./all/filezilla-common_3.58.0-1~bpo11+0.sean00_all.deb
+Size: 2309860
+MD5sum: 9ae7b92f17e7593bc699bd837e4c153d
+SHA1: 27931e8cb35871209a445d1aa1c52019add2f2c4
+SHA256: 1d2c9dca2c8b6dad6c74d425e32c263988326b9c587db1ac2cde3f7ef28cf685
+SHA512: 18410d952be0cef62e8dd4e7638bbeab7b0082c0f5aff3084205b21babf32b584ea7be1b6f9de23c8ec12ebc097acdcd9aa138573503f1f168b84a837ab661da
+Homepage: https://filezilla-project.org/
+Description: Architecture independent files for filezilla
+ FileZilla is a full-featured FTP client with an easy-to-use GUI.
+ .
+ It is written in C++ and uses the wxWidgets library.
+ .
+ See the filezilla package description for the full list of features.
+ .
+ This package contains architecture independent files such as images and
+ translations.
+
 Package: firefox-esr-l10n-ach
 Architecture: all
 Version: 91.4.0esr-1~bpo11+0.sean00
@@ -5174,6 +5200,38 @@ Description: FFmpeg headers for interfacing with NVIDIA's codec APIs
  This package contains header files defining the API to use NVDEC and NVENC in
  applications, e.g., in ffmpeg.
 
+Package: libfilezilla-common
+Architecture: all
+Version: 0.36.0-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 455
+Breaks: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21, libfilezilla22 (<< 0.34.2-2)
+Replaces: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21, libfilezilla22 (<< 0.34.2-2)
+Filename: ./all/libfilezilla-common_0.36.0-2~bpo11+0.sean00_all.deb
+Size: 70772
+MD5sum: c841bfb4684726f338abb41e647b3f33
+SHA1: 9f047ebec9ef5a6171e285d5dba3cbb20f3e6fa9
+SHA256: e9eba1d27f2ce5d13a61056c916e868a23f8f46bfbe4f5edca1333c766e28aed
+SHA512: 727297004e31a91716b9c9feeaa374ce6d1e1b4d6023fad7e2968b02a2b2e5445f0995b4da5ff83dbc0f986cfb4abeb3d639fd88fa3106b975ff38c1bcc1cf05
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (translations)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains architecture independent files such as images
+ and translations.
+
 Package: libgtk-4-common
 Architecture: all
 Version: 4.4.0+ds1-1
@@ -7677,6 +7735,47 @@ Description: Command line tool to create ffms2 index files
  This package contain a command line indexer tool. Used to create index
  files which can later be used by applications which are useing ffms2
  to speed up loading of multimedia files.
+
+Package: filezilla
+Architecture: amd64
+Version: 3.58.0-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 7798
+Depends: filezilla-common (= 3.58.0-1~bpo11+0.sean00), libc6 (>= 2.28), libdbus-1-3 (>= 1.9.14), libfilezilla24 (>= 0.36.0), libgcc-s1 (>= 3.0), libgtk-3-0 (>= 3.0.0), libnettle8, libpugixml1v5 (>= 1.6), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2), libwxbase3.0-0v5 (>= 3.0.5.1+dfsg), libwxgtk3.0-gtk3-0v5 (>= 3.0.5.1+dfsg)
+Recommends: xdg-utils
+Filename: ./amd64/filezilla_3.58.0-1~bpo11+0.sean00_amd64.deb
+Size: 2050124
+MD5sum: ada7a1ca3793a5cce670b6cc48461ff8
+SHA1: a3a11e92123c5fbceedb41a2b543971aec5da903
+SHA256: 685df6fa1d76200610e55705dfb67e1df9919ae8bb2305ca29056734180f83af
+SHA512: f7dea932a8e83dac08998c7f204ef8278fc45d36aa1f67fa98b8276d3667fc5fa10a4ce21dcd248c7686f027fb40e3fb2a6145dde63a3e4f2dbe76d24208df2d
+Homepage: https://filezilla-project.org/
+Description: Full-featured graphical FTP/FTPS/SFTP client
+ FileZilla is a full-featured FTP client with an easy-to-use GUI.
+ .
+ It is written in C++ and uses the wxWidgets library.
+ .
+ FileZilla includes the following features:
+   * Supports FTP, FTP over SSL/TLS (FTPS) and SSH File Transfer Protocol (SFTP)
+   * IPv6 support
+   * Available in more than 40 languages
+   * Supports resume and transfer of large files >4GB
+   * Easy to use Site Manager and transfer queue
+   * Bookmarks
+   * Drag & drop support
+   * Speed limits
+   * Filename filters
+   * Directory comparison
+   * Network configuration wizard
+   * Remote file editing
+   * Keep-alive
+   * HTTP/1.1, SOCKS5 and FTP Proxy support
+   * Logging to file
+   * Synchronized directory browsing
+   * Remote file search
+   * Tabbed interface to connect to multiple servers
 
 Package: fio-dbgsym
 Architecture: amd64
@@ -11402,6 +11501,68 @@ Description: Development files for libffms2
  .
  This package contain headers and other files needed to compile and link
  against libffms2.
+
+Package: libfilezilla-dev
+Architecture: amd64
+Version: 0.36.0-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 1585
+Depends: libfilezilla24 (= 0.36.0-2~bpo11+0.sean00)
+Filename: ./amd64/libfilezilla-dev_0.36.0-2~bpo11+0.sean00_amd64.deb
+Size: 280588
+MD5sum: 719ca795baa8eeb77049bc6b5942e90b
+SHA1: 9333a441ad5e0e765ff256016c5fe3c562b38981
+SHA256: 012c653e519bffa02b0ce64400350ad601a243a3ccbeb093297b6513529bebe1
+SHA512: c40f282ce911f91a393bc2f6c0ee2d92e3357936edec27d265c0af2d06687689206f23ddcfb92613941c342a0af85d92671a814100837219d529162e8d68f813
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (development)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains the development files for the library.
+
+Package: libfilezilla24
+Architecture: amd64
+Version: 0.36.0-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 623
+Depends: libfilezilla-common (>= 0.36.0-2~bpo11+0.sean00), libc6 (>= 2.25), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libgmp10, libgnutls30 (>= 3.7.0), libhogweed6 (>= 3.1), libnettle8 (>= 3.1), libstdc++6 (>= 6)
+Conflicts: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21
+Replaces: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21
+Filename: ./amd64/libfilezilla24_0.36.0-2~bpo11+0.sean00_amd64.deb
+Size: 198000
+MD5sum: ef882822aa7a4def0ac84037d771e2e3
+SHA1: e0525e7502452caa312902cda67fa17dd2ebf0db
+SHA256: f144fb01a6a3f6bfa0b3dd5e08a9f1d8777c726424100f7e567046fef07ac1f3
+SHA512: 08cad0dde0fefb711b7359b1e557b43759eb70673838b493498b8f10578f59333054d8b60b669bfbc1f92d1b0baa11f747010b357c6251807278ee958803eb29
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (runtime lib)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains the shared library.
 
 Package: libgbm-dev
 Architecture: amd64
