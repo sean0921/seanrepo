@@ -5497,6 +5497,26 @@ Description: documentation for the GTK graphical user interface library
  This package contains the HTML documentation for the GTK library
  in /usr/share/doc/libgtk-4-doc/ .
 
+Package: liboctave-dev
+Architecture: all
+Version: 7.1.0-1~bpo11+0.sean00
+Priority: optional
+Section: oldlibs
+Source: octave
+Maintainer: Debian Octave Group <team+pkg-octave-team@tracker.debian.org>
+Installed-Size: 500
+Depends: octave-dev
+Filename: ./all/liboctave-dev_7.1.0-1~bpo11+0.sean00_all.deb
+Size: 486260
+MD5sum: 7968ba179cff63bb327a2af0ad76203c
+SHA1: 220bc6cfcd373a7f0d364478d3b2064b3445f4e8
+SHA256: 989c1cfa6393e38f41fe0aa24b7ab72e424cbac7e0e14ffb83f4e80509907a21
+SHA512: 1aa765f0f8baa0e668f8da5c0bb7f3c114dd844d6d8d227f9881afd3d0b3dcb4c4975576e6bec5858349d6fc7141d7fa555ddc16c0136deef6e05ab8f727d764
+Homepage: https://www.octave.org/
+Description: transitional dummy package for GNU Octave development
+ The only purpose of this package is to ensure a smooth upgrade to the new
+ 'octave-dev' package which replaces 'liboctave-dev'. It can be safely removed.
+
 Package: libpango1.0-doc
 Architecture: all
 Version: 1.48.10+ds1-1.1~sean00+1
@@ -6316,6 +6336,70 @@ Description: real-time performance monitoring (metapackage)
  OpenTSDB, Kafka, Grafana, etc).
  .
  This package is a metapackage depending on the typical netdata components.
+
+Package: octave-common
+Architecture: all
+Version: 7.1.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: math
+Source: octave
+Maintainer: Debian Octave Group <team+pkg-octave-team@tracker.debian.org>
+Installed-Size: 21005
+Recommends: fonts-freefont-otf
+Filename: ./all/octave-common_7.1.0-1~bpo11+0.sean00_all.deb
+Size: 6217592
+MD5sum: 5ca4379cd027fae469826b28964bca11
+SHA1: 50fcec63005ec1b2f4ad46577d1b5903e2067372
+SHA256: 267d849eb03f2f89387960aad40d9a434fbd3e6f6d10cbe8d7eab4a2700898d8
+SHA512: b413cdd81d93836daa638db7a26bbebb77ed552667a465711d61b3de1fb9f9b833c09edf0837f24b4a5d86843f5c9ffeae55db4a90117b652b2d629619dcdcf3
+Homepage: https://www.octave.org/
+Description: architecture-independent files for octave
+ Octave is a (mostly MATLAB® compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ Octave can be dynamically extended with user-supplied C++ files.
+ .
+ This package provides the architecture-independent files (Octave scripts
+ and other helper files).
+
+Package: octave-doc
+Architecture: all
+Version: 7.1.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: octave
+Maintainer: Debian Octave Group <team+pkg-octave-team@tracker.debian.org>
+Installed-Size: 20133
+Depends: info
+Suggests: www-browser | pdf-viewer
+Breaks: octave-htmldoc (<< 4.2.1-6), octave-info (<< 4.2.1-6)
+Replaces: octave-htmldoc (<< 4.2.1-6), octave-info (<< 4.2.1-6)
+Enhances: octave
+Filename: ./all/octave-doc_7.1.0-1~bpo11+0.sean00_all.deb
+Size: 8285572
+MD5sum: 7e6c3fd5f807c61950f3fd4214ede2c2
+SHA1: cbc2c979ca37c914bcea6bcbe24133af1985de5f
+SHA256: 0aa01d74b86e9f7d21faf3866e0500f5ae790b8ae23bb8b5de2ff6cc6a3c950b
+SHA512: d9f37a1a9a500f0578fc93cfb0658b60c9490f70d977dca16e676e1efb4fbdc73a6f0343fe3705a92363b09f218f0836723eadf4a3de79948be185ba58d1d75a
+Homepage: https://www.octave.org/
+Description: documentation of the GNU Octave language
+ Octave is a (mostly MATLAB® compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the following documentation in HTML, PDF and Info
+ formats:
+  - the main user manual
+  - a document on the C++ classes used internally by Octave.
+ .
+ It also includes a reference card in PDF format and in a4, letter and legal
+ paper sizes.
+ .
+ This package is required by the 'help -i' command at the Octave command-line
+ and by the help documentation browser in the graphical interface.
 
 Package: openmpi-common
 Architecture: all
@@ -18005,6 +18089,57 @@ Description: real-time performance monitoring (core)
  .
  This package contains the minimal core build with SSE2 optimizations for
  current systems.
+
+Package: octave-dev
+Architecture: amd64
+Version: 7.1.0-1~bpo11+0.sean00
+Priority: optional
+Section: libdevel
+Source: octave
+Maintainer: Debian Octave Group <team+pkg-octave-team@tracker.debian.org>
+Installed-Size: 5205
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), octave (= 7.1.0-1~bpo11+0.sean00), libreadline-dev | libreadline-gplv2-dev, libncurses5-dev, libhdf5-dev | libhdf5-openmpi-dev | libhdf5-mpich-dev, libgl1-mesa-dev | libgl-dev, libblas-dev | libblas.so, liblapack-dev | liblapack.so, libfftw3-dev, gfortran, gcc, g++
+Enhances: octave
+Filename: ./amd64/octave-dev_7.1.0-1~bpo11+0.sean00_amd64.deb
+Size: 933088
+MD5sum: fa9eff3b55600f1a0c33dd4ef07f1502
+SHA1: 410fd0f0280d4d181620ba7653495b76d40bb543
+SHA256: afe7cf3eaa471a8140680f47b75a894567b316876ec11b532ba5c03797a776f0
+SHA512: 8debd5c47b074df46f24e645844131c444ed37c88cff321ad3ec0c524b1e53627e676333f587a1859e1484eadc64a0589c99bb7aabb300e4fca85b684b2be497
+Homepage: https://www.octave.org/
+Description: development files for the GNU Octave language
+ Octave is a (mostly MATLAB® compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the header files and the mkoctfile script used for
+ extending Octave via compiled code.
+
+Package: octave
+Architecture: amd64
+Version: 7.1.0-1~bpo11+0.sean00
+Priority: optional
+Section: math
+Maintainer: Debian Octave Group <team+pkg-octave-team@tracker.debian.org>
+Installed-Size: 43341
+Provides: octave-abi-57
+Depends: libamd2 (>= 1:4.5.2), libarpack2 (>= 2.1), libblas3 | libblas.so.3, libbz2-1.0, libc6 (>= 2.29), libccolamd2 (>= 1:4.5.2), libcholmod3 (>= 1:4.5.2), libcolamd2 (>= 1:4.5.2), libcurl3-gnutls (>= 7.16.2), libcxsparse3 (>= 1:4.5.2), libfftw3-double3 (>= 3.3.5), libfftw3-single3 (>= 3.3.5), libfltk-gl1.3 (>= 1.3.0), libfltk1.3 (>= 1.3.3), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.4.2), libgcc-s1 (>= 4.0), libgfortran5 (>= 8), libgl1, libgl2ps1.4 (>= 1.4.2+dfsg1), libglpk40 (>= 4.59), libglu1-mesa | libglu1, libgomp1 (>= 4.2.1), libgraphicsmagick++-q16-12 (>= 1.3.26-5~), libgraphicsmagick-q16-3 (>= 1.3.5), libhdf5-103-1, liblapack3 | liblapack.so.3, libpcre3, libportaudio2 (>= 19+svn20101113), libqhull-r8.0 (>= 2020.1), libqrupdate1 (>= 1.1.1), libqscintilla2-qt5-15 (>= 2.11.2), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.14.1) | libqt5gui5-gles (>= 5.14.1), libqt5help5 (>= 5.15.1), libqt5network5 (>= 5.0.2), libqt5printsupport5 (>= 5.0.2), libqt5widgets5 (>= 5.15.1), libqt5xml5 (>= 5.0.2), libreadline8 (>= 6.0), libsndfile1 (>= 1.0.20), libspqr2 (>= 1:5.8.1+dfsg), libstdc++6 (>= 9), libsuitesparseconfig5 (>= 1:5.0.0), libsundials-ida4 (>= 4.1.0), libsundials-sunlinsol2 (>= 4.1.0), libumfpack5 (>= 1:4.5.2), libx11-6, zlib1g (>= 1:1.2.11.dfsg), texinfo, octave-common (= 7.1.0-1~bpo11+0.sean00)
+Recommends: gnuplot-qt | gnuplot-x11 | gnuplot-nox, libopenblas0 | libatlas3-base, pstoedit, epstool, default-jre-headless, octave-doc
+Suggests: octave-dev
+Breaks: liboctave3v5, liboctave4, liboctave5, liboctave6, liboctave7, liboctave8, octave-nlopt (<< 2.6.1-8~)
+Filename: ./amd64/octave_7.1.0-1~bpo11+0.sean00_amd64.deb
+Size: 10192432
+MD5sum: 3444ca771bf665da16224eaa0ff2eecf
+SHA1: accd8b86083b6275fa93f69e187c9d6fe03c1959
+SHA256: 890746cbc4c510471b0de4816c5591eb366f7f2ba2eb6be131fb45629537ab2f
+SHA512: 830183e5a6eee12d63e0940194e40b03834c23d478f03cee70539efd1fac0fe5e3d0346abb7bcb5cfd2206b80473a34e34dc476dc579cdcd44f29e3c63ddbe66
+Homepage: https://www.octave.org/
+Description: GNU Octave language for numerical computations
+ Octave is a (mostly MATLAB® compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ Octave can be dynamically extended with user-supplied C++ files.
 
 Package: openmpi-bin
 Architecture: amd64
