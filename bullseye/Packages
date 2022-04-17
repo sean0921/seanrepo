@@ -7295,6 +7295,36 @@ Description: Common files for Remmina
  .
  This package contains the common files.
 
+Package: remmina-common
+Architecture: all
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 3424
+Recommends: remmina
+Filename: ./all/remmina-common_1.4.25+dfsg-1~bpo11+0.sean00_all.deb
+Size: 594608
+MD5sum: 5869459e886b987533bbbac642abd1bc
+SHA1: d2fd9067e3f797fcbd0abc8674d502bfd5155b00
+SHA256: f07932a03a4eae3d29599be757c871b5130a53e6f2797cccfcb01539a439fa23
+SHA512: 2fca42266f54c0bd91e0656a5ff35ba194d74a0092919b7f42b19a6f77aebf5efb2820cd4ea1346804487ac3d4be1f540385d50cfa08f4b2ea4d9ce36cf898d7
+Homepage: https://www.remmina.org/
+Description: Common files for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the common files.
+
 Package: rust-all
 Architecture: all
 Version: 1.56.0+dfsg1-2~bpo11+0.sean00
@@ -20310,6 +20340,37 @@ Description: Headers for Remmina
  This package contains the development headers for Remmina, to develop
  new plugins.
 
+Package: remmina-dev
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 52
+Depends: remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-dev_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 20540
+MD5sum: 363492c025071fe0605b1293350e9ed0
+SHA1: d2715217d8d2e73d44c8e4cd313c0a2a6497281b
+SHA256: e6ac5ec2e223c6381d0d603fe1c6c28643e5ea9d31e87a5c2207b7a407ddf2c6
+SHA512: 1c857e5aea3936cc816f736da3aa15aaa69c4e26b7a9e8d01b181823d78b2550c4bafc23095403737a7dce9a305a26a865fa36f86671004f9d2564b28e0f0ee0
+Homepage: https://www.remmina.org/
+Description: Headers for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the development headers for Remmina, to develop
+ new plugins.
+
 Package: remmina-plugin-exec-dbgsym
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -20410,6 +20471,36 @@ Description: EXEC plugin for Remmina
  .
  This package contains the EXEC plugin for Remmina.
 
+Package: remmina-plugin-exec
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 49
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.18.0), libgtk-3-0 (>= 3.0.0), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-exec_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 21076
+MD5sum: ee8c3a55b180ac4934dc27450c3cfa6d
+SHA1: f212a7a3e040eae9752ec47451724604e05a42ae
+SHA256: 0528f1a7b78b5f17efced5b00301de5b36893880104411e400b0abac62ea80df
+SHA512: 87c7d75d91663f930f173ed3bd43bcc3b40c5d78942eb873a85c5f4c0a015e05ea7b6362e013c40aa51474a9b2f21289b434116e2e658ed40b436858d0bd30f9
+Homepage: https://www.remmina.org/
+Description: EXEC plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the EXEC plugin for Remmina.
+
 Package: remmina-plugin-kiosk
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -20467,6 +20558,36 @@ Description: Kiosk plugin for Remmina
  consistent user interface.
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+ .
+ This package contains the Kiosk plugin for Remmina.
+
+Package: remmina-plugin-kiosk
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 33
+Depends: remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-kiosk_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 17764
+MD5sum: f8d62302533ef99c76e255e8b5c40ba1
+SHA1: 85aac32592aec4264fb65d6a383d7660eca6e750
+SHA256: f71977c98a32d175b2e773f4706217b38235d6afd3304fefc8087381798857db
+SHA512: fa3dec30aa42cbbd4cc7570b9f85e6ccc1fc86e606cbf40015ecee2d197d3b7e6b628a6173c2133ea083e1415f04745e2eac20afbd752c5b7bb95ef598570de7
+Homepage: https://www.remmina.org/
+Description: Kiosk plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
  .
  This package contains the Kiosk plugin for Remmina.
 
@@ -20572,6 +20693,37 @@ Description: KWallet plugin for Remmina
  This package contains the KWallet plugin for Remmina, which
  allows one to store and retrieve passwords using the KDE wallet.
 
+Package: remmina-plugin-kwallet
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 49
+Depends: libc6 (>= 2.4), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.31.8), libkf5wallet-bin, libkf5wallet5 (>= 4.96.0), libqt5core5a (>= 5.15.1), libstdc++6 (>= 4.1.1), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-kwallet_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 20976
+MD5sum: 77ba941f90b186edca8ba299d34439be
+SHA1: b417c7ecd7089b97d5204063c5950dabd698866e
+SHA256: 3ed9ca776f4935ee55a82cda4bbbcf47f12dc9345a239f7a2a4321643461db2f
+SHA512: 62ed656ec3c3ff7767b59229812ab9939f7c9ab1760319c09133184fe52828feab1b10758d5a2dab60e6a2e1db0856040a708e0c53cba9ca3f1dab39c342d22b
+Homepage: https://www.remmina.org/
+Description: KWallet plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the KWallet plugin for Remmina, which
+ allows one to store and retrieve passwords using the KDE wallet.
+
 Package: remmina-plugin-rdp-dbgsym
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -20669,6 +20821,36 @@ Description: RDP plugin for Remmina
  consistent user interface.
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+ .
+ This package contains the RDP plugin for Remmina.
+
+Package: remmina-plugin-rdp
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 176
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.6.0), libcups2 (>= 1.6.0), libfreerdp-client2-2 (>= 2.2.0~), libfreerdp2-2 (>= 2.3.0+dfsg1), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.41.1), libgtk-3-0 (>= 3.21.4), libwinpr2-2 (>= 2.1.0+dfsg1), libx11-6, remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-rdp_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 62996
+MD5sum: 266cdcfc3e6fc2366bed1af3dbb9deb6
+SHA1: 6b04b6cf779ca4ae1fcfcc347a04a63e0d787f0d
+SHA256: f65812c8c1a6e0dfd134526761c99a96a29b8ff5912c3e7e96add0be14b4ac35
+SHA512: a7939b57437a1a2c725c99a008f3e60918711ccaa58b9e16a5179699f120ba2a74b383c3934ee6d289cbf4ae82e1d2612707cdf4ddf7bdac1a93e340fc061446
+Homepage: https://www.remmina.org/
+Description: RDP plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
  .
  This package contains the RDP plugin for Remmina.
 
@@ -20780,6 +20962,40 @@ Description: Secret plugin for Remmina
  allows one to store and retrieve passwords from GNOME Keyring
  or KWallet.
 
+Package: remmina-plugin-secret
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 45
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.12.0), libsecret-1-0 (>= 0.7), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Breaks: remmina-plugin-gnome
+Replaces: remmina-plugin-gnome
+Filename: ./amd64/remmina-plugin-secret_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 20236
+MD5sum: 3022ae4db6871955d18523e8c7f9f5b4
+SHA1: 074a6746c6c31796411e7501925fdee99af19cee
+SHA256: 3245dd4b3b325e1ca97a1866343bb038c0bafb8084044628b4fd15698de83b1a
+SHA512: adc7597bc2f331f8b97121e82c53279c628c9b056063c573a29cff33c1498c07764fef8c707bb06ca7739b61be343e1daf768d297f0f6c8c0c045b9e6d83c872
+Homepage: https://www.remmina.org/
+Description: Secret plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the secret plugin for Remmina, which
+ allows one to store and retrieve passwords from GNOME Keyring
+ or KWallet.
+
 Package: remmina-plugin-spice-dbgsym
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -20880,6 +21096,36 @@ Description: Spice plugin for Remmina
  .
  This package contains the Spice plugin for Remmina.
 
+Package: remmina-plugin-spice
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 65
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.12), libspice-client-glib-2.0-8 (>= 0.38), libspice-client-gtk-3.0-5 (>= 0.32), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-spice_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 26516
+MD5sum: 423e7f36f6e39830d23a7645496fa415
+SHA1: b91b348b9a399073b078d075929e06a110ecea31
+SHA256: 9adbe3381280bae861affa2f4dbc6c16de05d06e37435cea04b33eb959fab8ad
+SHA512: f9a53c8f49c582ececb45e43a037368f853c81d18006d84a78b0f474c9bfba6fc08a4a6d1d647db9e7ea5f57de82df84477cd5a770c9c8625d06db559ca7a3b1
+Homepage: https://www.remmina.org/
+Description: Spice plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the Spice plugin for Remmina.
+
 Package: remmina-plugin-vnc-dbgsym
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -20977,6 +21223,36 @@ Description: VNC plugin for Remmina
  consistent user interface.
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+ .
+ This package contains the VNC plugin for Remmina.
+
+Package: remmina-plugin-vnc
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 82
+Depends: libc6 (>= 2.15), libcairo2 (>= 1.6.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk-3-0 (>= 3.9.12), libvncclient1 (>= 0.9.10), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-vnc_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 33464
+MD5sum: cd1cccf1fc514722c04d47a69f2995ab
+SHA1: b5cd9bcc7b6f8ad00e3bd947b35233c8ba8e019a
+SHA256: 2f11158988f0032796ce106f1e96019a5483a449b79941a7bc6453343d26591b
+SHA512: bb3f6d7782a4aa2b776c03f2125ef41a7472ea6bc4ef9fa5f819b013fc015d60893471359e6903a14ac385f1739735376c0377cfdce7c8c4f6052e4c7078dd3c
+Homepage: https://www.remmina.org/
+Description: VNC plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
  .
  This package contains the VNC plugin for Remmina.
 
@@ -21082,6 +21358,67 @@ Description: WWW plugin for Remmina
  This package contains the WWW plugin for Remmina, used to open
  Web based consoles.
 
+Package: remmina-plugin-www
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 69
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.41.2), libgtk-3-0 (>= 3.0.0), libwebkit2gtk-4.0-37 (>= 2.31.1), remmina (= 1.4.25+dfsg-1~bpo11+0.sean00)
+Filename: ./amd64/remmina-plugin-www_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 27120
+MD5sum: 94929123b3b0b6b3f5eb4e89300b821c
+SHA1: 946b62707cc643fded6e0bdd81f903ae812761db
+SHA256: 9bead2c56cc260f6eb0d609902e36ea2b78757d1721c30b1efb1a20f4edf1fe2
+SHA512: 032ca459a74cee4ae0f3d3e3e11ae9b61f081cc8c76088cb9320d5eeea05d68df65f4f9046cdfae3d552c62eb466f66f2619bfc531c3b670543bfc0c7361a491
+Homepage: https://www.remmina.org/
+Description: WWW plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+ .
+ This package contains the WWW plugin for Remmina, used to open
+ Web based consoles.
+
+Package: remmina-plugin-x2go
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: x11
+Source: remmina
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 97
+Depends: pyhoca-cli, remmina (= 1.4.25+dfsg-1~bpo11+0.sean00), libc6 (>= 2.4), libglib2.0-0 (>= 2.31.8), libgtk-3-0 (>= 3.0.0), libx11-6
+Filename: ./amd64/remmina-plugin-x2go_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 38568
+MD5sum: 5813ff460bf463b0c6ef7d5acbd8dedd
+SHA1: 093a4b0e947405ba96b85c7140165d6e4a54aa4a
+SHA256: e0c82e4c480760e7948e6a07b06569b681b9d6c8da399eccf64be0e824e9a7c5
+SHA512: 076a640cbb4ad6d39f15dd588a2e94060aec9f928727d7e4a822be8509bc18da1d47decaf6f00b3de4298e7f899b7780e8030ab72efcb3f5f8f857526d4c29b6
+Homepage: https://www.remmina.org/
+Description: X2Go plugin for Remmina
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
+ .
+ This package contains the X2Go plugin for Remmina.
+
 Package: remmina
 Architecture: amd64
 Version: 1.4.20+dfsg-4~bpo11+0.sean00
@@ -21139,6 +21476,35 @@ Description: GTK+ Remote Desktop Client
  consistent user interface.
  .
  Currently RDP, VNC, SPICE, WWW, EXEC and SSH are supported.
+
+Package: remmina
+Architecture: amd64
+Version: 1.4.25+dfsg-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 902
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavahi-ui-gtk3-0 (>= 0.6.30), libayatana-appindicator3-1 (>= 0.4.90), libc6 (>= 2.15), libcairo2 (>= 1.6.0), libgcrypt20 (>= 1.8.0), libglib2.0-0 (>= 2.61.2), libgtk-3-0 (>= 3.21.5), libjson-glib-1.0-0 (>= 1.5.2), libpango-1.0-0 (>= 1.14.0), libsodium23 (>= 1.0.10), libsoup2.4-1 (>= 2.30.0), libssh-4 (>= 0.8.1), libvte-2.91-0 (>= 0.51.90), remmina-common (= 1.4.25+dfsg-1~bpo11+0.sean00), default-dbus-session-bus | dbus-session-bus
+Recommends: remmina-plugin-rdp, remmina-plugin-vnc, remmina-plugin-secret
+Suggests: remmina-plugin-exec, remmina-plugin-kwallet, remmina-plugin-spice, remmina-plugin-www, remmina-plugin-x2go
+Filename: ./amd64/remmina_1.4.25+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 220064
+MD5sum: d8c83c3f30b81e2263e0fbe720f61afa
+SHA1: fd8ea76ac737ee0cc787dd706e350a19f9193373
+SHA256: 0ea9299ed53f956d56c867f18d2bf8a41af58abf3714aa0c60b5b0edbc48039c
+SHA512: 3ef24ec877fea821b974a91e6a579ce06e437613d986d71b48ea53371a769d2b07c14bc5308674f7b3b69335409dcc8abeef700d54c5558117b6f03af3ac9639
+Homepage: https://www.remmina.org/
+Description: GTK+ Remote Desktop Client
+ Remmina is a remote desktop client written in GTK+, aiming to be
+ useful for system administrators and travellers, who need to work
+ with lots of remote computers in front of either large monitors or
+ tiny netbooks.
+ .
+ Remmina supports multiple network protocols in an integrated and
+ consistent user interface.
+ .
+ Currently RDP, VNC, SPICE, WWW, X2Go, EXEC and SSH are supported.
 
 Package: rust-clippy
 Architecture: amd64
