@@ -2219,6 +2219,35 @@ Description: Chinese (Taiwan) language package for Firefox ESR
  .
  This package contains the localization of Firefox ESR in Chinese (Taiwan).
 
+Package: fonts-noto-color-emoji
+Architecture: all
+Version: 2.034-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Installed-Size: 10070
+Filename: ./all/fonts-noto-color-emoji_2.034-1~bpo11+0.sean00_all.deb
+Size: 9385476
+MD5sum: 96660cacfdd2b6eb65ac826966a69118
+SHA1: e7789c96384990bb42d5351312b87b669eedfd88
+SHA256: 2564ecbe0a0fbefa91a200e12a78e433f74aa04606fc2dfc95795db3aaa35acd
+SHA512: 99f941af28558f22561c7544c19ac65f3e0f1cd5b2d74078679b657afa705f54fe13e4f10cf70297e463bc526d7c03da6451949224b9ec83e02e36ca301e6779
+Homepage: https://www.google.com/get/noto/help/emoji/
+Description: color emoji font from Google
+ Noto is a collection of font families, each visually harmonized across
+ scripts.
+ .
+ The name "Noto" is short for "No Tofu", describing the aim of covering
+ all living Unicode scripts.
+ .
+ Tofu (豆腐) is Japanese jargon for unicode replacement character "�"
+ (U+FFFD) often displayed as replacement for unassigned or unknown
+ characters.
+ .
+ This package contains the color emoji font used on "stock" Android devices
+ such as the Google Pixel.
+
 Package: git-all
 Architecture: all
 Version: 1:2.33.0-1
@@ -7550,6 +7579,38 @@ Description: Intelligent Input Bus - introspection overrides for Python (Python 
  .
  This package contains GObject Introspection overrides for Python that
  can be used by Python applications using IBus.
+
+Package: python3-nototools
+Architecture: all
+Version: 0.2.16-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: nototools
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Installed-Size: 7611
+Depends: python3-fonttools, python3:any, unicode-data
+Breaks: python-nototools
+Replaces: python-nototools
+Filename: ./all/python3-nototools_0.2.16-1~bpo11+0.sean00_all.deb
+Size: 899596
+MD5sum: a66fd4e40ebeeb4a8cb144fb8378c812
+SHA1: e6ab4c84c0e34477d0ad9662419e3cfba837b060
+SHA256: 38b890d217c856fefaabe5dccb89aacaca5f25a27454795405241e7e5bc82c3b
+SHA512: d6fcc51d35e7f042c5731541baed25e2a745ed08820fd26a0e479e6921f9a7b3641339dd4b16722506b0a8a52ae4b129bb62fb3aa23da60ab1d479e6126667b7
+Homepage: https://github.com/googlefonts/nototools
+Description: font support tools from the Noto Fonts project
+ Noto is a collection of font families, each visually harmonized across
+ scripts.
+ .
+ The name "Noto" is short for "No Tofu", describing the aim of covering
+ all living Unicode scripts.
+ .
+ Tofu (豆腐) is Japanese jargon for unicode replacement character "�"
+ (U+FFFD) often displayed as replacement for unassigned or unknown
+ characters.
+ .
+ This package contains Python scripts used to maintain the fonts.
 
 Package: python3-pydata-sphinx-theme
 Architecture: all
