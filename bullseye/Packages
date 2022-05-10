@@ -97,6 +97,32 @@ Description: Architecture independent files for filezilla
  This package contains architecture independent files such as images and
  translations.
 
+Package: filezilla-common
+Architecture: all
+Version: 3.59.0-1
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: filezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 10360
+Filename: ./all/filezilla-common_3.59.0-1_all.deb
+Size: 2313368
+MD5sum: 01ee6105c7753543c7c090c0fe3b366c
+SHA1: 2a3ec9ab401646864f3edd3016f5010ae3007b04
+SHA256: 0e64efd8401954bf752128a06aecc45bf383b47dc385385e697de0b764464f49
+SHA512: ae189b26e74fd42571dc046960d49d2b2c7b926cb2f3ce19c7f9714961babcb0838ff508e080786d88b22570381409dcfdcb08328fc2901c16d1ed735bb68f5f
+Homepage: https://filezilla-project.org/
+Description: Architecture independent files for filezilla
+ FileZilla is a full-featured FTP client with an easy-to-use GUI.
+ .
+ It is written in C++ and uses the wxWidgets library.
+ .
+ See the filezilla package description for the full list of features.
+ .
+ This package contains architecture independent files such as images and
+ translations.
+
 Package: firefox-esr-l10n-ach
 Architecture: all
 Version: 91.4.0esr-1~bpo11+0.sean00
@@ -6061,6 +6087,38 @@ Description: build high-performing platform-independent programs (translations)
  This package contains architecture independent files such as images
  and translations.
 
+Package: libfilezilla-common
+Architecture: all
+Version: 0.37.2-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 455
+Breaks: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21, libfilezilla22 (<< 0.34.2-2)
+Replaces: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21, libfilezilla22 (<< 0.34.2-2)
+Filename: ./all/libfilezilla-common_0.37.2-1~bpo11+0.sean00_all.deb
+Size: 71184
+MD5sum: c1c14165d6215b5018426d21891e5551
+SHA1: dd303a71d1858583cb46bd10d9cdccc0d42a3689
+SHA256: ae7fad7009cc1d549d0f616d59e8d6dc4876ea8a4e937a60bc0dcbb7a49a31b7
+SHA512: e0367a1c88d60d4e8bf7afc4c9a79eb1cd5415e40f979779ccd37d02e66f72fd6a545601b9e3cf5dd6e8db9ba70072a325815c2161c9a1a2d0e5e85d7887f127
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (translations)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains architecture independent files such as images
+ and translations.
+
 Package: libgtk-4-common
 Architecture: all
 Version: 4.4.0+ds1-1
@@ -8799,6 +8857,47 @@ MD5sum: ada7a1ca3793a5cce670b6cc48461ff8
 SHA1: a3a11e92123c5fbceedb41a2b543971aec5da903
 SHA256: 685df6fa1d76200610e55705dfb67e1df9919ae8bb2305ca29056734180f83af
 SHA512: f7dea932a8e83dac08998c7f204ef8278fc45d36aa1f67fa98b8276d3667fc5fa10a4ce21dcd248c7686f027fb40e3fb2a6145dde63a3e4f2dbe76d24208df2d
+Homepage: https://filezilla-project.org/
+Description: Full-featured graphical FTP/FTPS/SFTP client
+ FileZilla is a full-featured FTP client with an easy-to-use GUI.
+ .
+ It is written in C++ and uses the wxWidgets library.
+ .
+ FileZilla includes the following features:
+   * Supports FTP, FTP over SSL/TLS (FTPS) and SSH File Transfer Protocol (SFTP)
+   * IPv6 support
+   * Available in more than 40 languages
+   * Supports resume and transfer of large files >4GB
+   * Easy to use Site Manager and transfer queue
+   * Bookmarks
+   * Drag & drop support
+   * Speed limits
+   * Filename filters
+   * Directory comparison
+   * Network configuration wizard
+   * Remote file editing
+   * Keep-alive
+   * HTTP/1.1, SOCKS5 and FTP Proxy support
+   * Logging to file
+   * Synchronized directory browsing
+   * Remote file search
+   * Tabbed interface to connect to multiple servers
+
+Package: filezilla
+Architecture: amd64
+Version: 3.59.0-1
+Priority: optional
+Section: net
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 7770
+Depends: filezilla-common (= 3.59.0-1), libc6 (>= 2.28), libdbus-1-3 (>= 1.9.14), libfilezilla25 (>= 0.37.2), libgcc-s1 (>= 3.0), libgtk-3-0 (>= 3.0.0), libnettle8, libpugixml1v5 (>= 1.6), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 5.2), libwxbase3.0-0v5 (>= 3.0.5.1+dfsg), libwxgtk3.0-gtk3-0v5 (>= 3.0.5.1+dfsg)
+Recommends: xdg-utils
+Filename: ./amd64/filezilla_3.59.0-1_amd64.deb
+Size: 2046484
+MD5sum: 71216797341afc75ed4353d10690295d
+SHA1: 24205092144c9efa3de79e4bbe5d19fbad728e76
+SHA256: 90d78814e5a0f76c0c9088bd74443b16910351d78dd8000f97edd807d32696bd
+SHA512: 8a7b6969c0a460bcaa58f5747388ad4ce764a7ee5e0e01a7875922ff50f03973809ff4aca36315da9bd68f24c24ea03f743f02a8e4e287ea3479bc40acc0dd16
 Homepage: https://filezilla-project.org/
 Description: Full-featured graphical FTP/FTPS/SFTP client
  FileZilla is a full-featured FTP client with an easy-to-use GUI.
@@ -12650,6 +12749,36 @@ Description: build high-performing platform-independent programs (development)
  .
  This package contains the development files for the library.
 
+Package: libfilezilla-dev
+Architecture: amd64
+Version: 0.37.2-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 1626
+Depends: libfilezilla25 (= 0.37.2-1~bpo11+0.sean00)
+Filename: ./amd64/libfilezilla-dev_0.37.2-1~bpo11+0.sean00_amd64.deb
+Size: 287128
+MD5sum: a5eee3836efb20dfcce48e900218cd1a
+SHA1: 9a4dba059e812d06ba35f230a648196f771bb5db
+SHA256: 6899b8498c28f5bdd2f14abcc665163874f6a05d7afe8a253130a00c83b72cf5
+SHA512: 1d51c88ec9a70d3e168ce1edbb2b133a8537cc8d5fff10a05b8117ddb0c0706333bfc92f2995b0efede862ccf1b0b87b27cd7ef6fbf1fde4efe7d7bda26ba312
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (development)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains the development files for the library.
+
 Package: libfilezilla24
 Architecture: amd64
 Version: 0.36.0-2~bpo11+0.sean00
@@ -12668,6 +12797,38 @@ MD5sum: ef882822aa7a4def0ac84037d771e2e3
 SHA1: e0525e7502452caa312902cda67fa17dd2ebf0db
 SHA256: f144fb01a6a3f6bfa0b3dd5e08a9f1d8777c726424100f7e567046fef07ac1f3
 SHA512: 08cad0dde0fefb711b7359b1e557b43759eb70673838b493498b8f10578f59333054d8b60b669bfbc1f92d1b0baa11f747010b357c6251807278ee958803eb29
+Homepage: https://lib.filezilla-project.org/
+Description: build high-performing platform-independent programs (runtime lib)
+ Free, open source C++ library, offering some basic functionality to build
+ high-performing, platform-independent programs. Some of the highlights include:
+ .
+  - A typesafe, multi-threaded event system that's very simple to use yet
+    extremely efficient
+  - Timers for periodic events
+  - A datetime class that not only tracks timestamp but also their accuracy,
+    which simplifies dealing with timestamps originating from different sources
+  - Simple process handling for spawning child processes with redirected I/O
+ .
+ This package contains the shared library.
+
+Package: libfilezilla25
+Architecture: amd64
+Version: 0.37.2-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libfilezilla
+Maintainer: Phil Wyett <philip.wyett@kathenas.org>
+Installed-Size: 635
+Depends: libfilezilla-common (>= 0.37.2-1~bpo11+0.sean00), libc6 (>= 2.25), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libgmp10, libgnutls30 (>= 3.7.0), libhogweed6 (>= 3.1), libnettle8 (>= 3.1), libstdc++6 (>= 6)
+Conflicts: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21
+Replaces: libfilezilla0, libfilezilla11, libfilezilla19, libfilezilla21
+Filename: ./amd64/libfilezilla25_0.37.2-1~bpo11+0.sean00_amd64.deb
+Size: 201580
+MD5sum: 1bba4f97b956afdeec707a629f59549c
+SHA1: 462f93580874c3ad897cce8788cec8b3c983c50d
+SHA256: bef7cbc260091789319d662cd0436a467ad333a5f5947d7ad3bb01df0d6901b4
+SHA512: 9e43c60bb4e1ab745d0276543225f23f18188be8a4091f0ae50e579ad4c19f285a4808c55fd78ff198552a471cd32ddfe36e7d44e2690a7f632817739802c339
 Homepage: https://lib.filezilla-project.org/
 Description: build high-performing platform-independent programs (runtime lib)
  Free, open source C++ library, offering some basic functionality to build
