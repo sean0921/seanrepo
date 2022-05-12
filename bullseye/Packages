@@ -6859,6 +6859,29 @@ Description: wayland compositor infrastructure - documentation files
  This package contains the documentation for the Wayland libraries.
  Non-developers likely have little use for this package.
 
+Package: lutris
+Architecture: all
+Version: 0.5.10.1-1
+Priority: optional
+Section: contrib/games
+Maintainer: Debian Games Team <team+pkg-games@tracker.debian.org>
+Installed-Size: 2728
+Depends: python3:any, python3-yaml, python3-lxml, python3-requests, python3-pil, python3-gi, python3-setproctitle, python3-magic, python3-distro, python3-dbus, gir1.2-gtk-3.0, gir1.2-webkit2-4.0, gir1.2-notify-0.7, psmisc, cabextract, unzip, p7zip, curl, fluid-soundfont-gs, x11-xserver-utils, mesa-utils
+Recommends: python3-evdev, gvfs-backends, libwine-development, winetricks
+Suggests: gamemode
+Filename: ./all/lutris_0.5.10.1-1_all.deb
+Size: 701368
+MD5sum: 8d4dea4e1c99ab978c7bd2275b25621a
+SHA1: df0c1aecd122e97bef9325b26c5de0c0f5cec326
+SHA256: 63d6db875b6469399cb6e1e6632a794e7b96f9b1ec84451049333b3d407d290f
+SHA512: 096177479c3b1fd1acefd492824afde98c6c6d7e13783c115860e435ed4c7336eb5fb3beadc4de18bab6a084e6f98c0caba3db1d3345e68c4ecbd78fd33a582b
+Homepage: https://lutris.net
+Description: video game preservation platform
+ Lutris helps you install and play video games from all eras and from most
+ gaming systems. By leveraging and combining existing emulators, engine
+ re-implementations and compatibility layers, it gives you a central interface
+ to launch all your games.
+
 Package: mpich-doc
 Architecture: all
 Version: 3.4.1-5
