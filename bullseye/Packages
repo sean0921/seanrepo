@@ -7410,6 +7410,32 @@ Description: high performance message passing library -- common files
  .
  This package contains platform independent files for Open MPI.
 
+Package: openmpi-common
+Architecture: all
+Version: 4.1.3-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 458
+Conflicts: openmpi-common
+Filename: ./all/openmpi-common_4.1.3-2~bpo11+0.sean00_all.deb
+Size: 184828
+MD5sum: ff3e50e742157a54bc74187a7accdbbb
+SHA1: a3cc61559311051b4c2d2734c98677cb99423b74
+SHA256: 8d4692ad4c1a35c6c21151394e756c158bfdd4dca04636c75c85e53b1505751f
+SHA512: af2006f5d77ca75958c984f7038b184432d5b9850fe3bee773eeca7ecd02bbd340125ab9cde8b063b28d8f9b3ae44c1f73b968c337ea272c07e0e8508a7573fe
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- common files
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains platform independent files for Open MPI.
+
 Package: openmpi-doc
 Architecture: all
 Version: 4.1.2-1~bpo11+0.sean00
@@ -7428,6 +7454,35 @@ MD5sum: 764258ef0fc05dbb66a6ed8fa904d802
 SHA1: 172acf59e5b3e4b90d079428226b4bb66e94c744
 SHA256: d034887f796dc3845ab140444f581e1170f42d4f7793aeeb9d5354a93fb5b42a
 SHA512: 234ccff3a25630cf17ab208d9fd2fe92f47624897350e9218aa0e59025e4f06dfb9bf929a19ee7f05c346d37776e85647ea04a03079736946d4a0e481e145448
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- man pages
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains man pages describing the Message Passing Interface
+ standard.
+
+Package: openmpi-doc
+Architecture: all
+Version: 4.1.3-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 4168
+Conflicts: lam-mpidoc, lam4-dev, mpi-doc, openmpi-doc
+Breaks: libopenmpi-dev (<< 4.1.2~rc1-4)
+Replaces: libopenmpi-dev (<< 4.1.2~rc1-4)
+Filename: ./all/openmpi-doc_4.1.3-2~bpo11+0.sean00_all.deb
+Size: 1095184
+MD5sum: 4220133e5d1bf2c58cf0956e01db1783
+SHA1: c6b024edcdf2a431349f8ff64e4e71b03475e008
+SHA256: dd148c1a3796208d6112b58d38718fb8ce5bbd16658b984b8ff4672b9e084b2c
+SHA512: b292f1a75a411f130408c2dd6e7f92b47f05c79314114c8b2e5353aae49f25cf3efc980897d763c3fcb315685c4462796a6eeac631a166f27078b9b198271781
 Homepage: https://www.open-mpi.org/
 Description: high performance message passing library -- man pages
  Open MPI is a project combining technologies and resources from several other
@@ -15221,6 +15276,57 @@ Description: high performance message passing library -- header files
  This package contains the header files and compiler wrappers which are needed
  to compile and link programs against libopenmpi.
 
+Package: libopenmpi-dev
+Architecture: amd64
+Version: 4.1.3-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 9115
+Depends: gfortran-10 | gfortran-mod-15, libopenmpi3 (= 4.1.3-2~bpo11+0.sean00), openmpi-common (>= 4.1.3-2~bpo11+0.sean00), libibverbs-dev (>= 1.1.7), libhwloc-dev, libevent-dev, libpmix-dev, libjs-jquery, libjs-jquery-ui, zlib1g-dev, openmpi-bin (>= 3.0.0-1)
+Recommends: libcoarrays-openmpi-dev
+Suggests: openmpi-doc
+Conflicts: libopenmpi-dev
+Breaks: lam4-dev (<< 7.1.4-4), openmpi-doc (<< 4.1.2~rc1-4)
+Filename: ./amd64/libopenmpi-dev_4.1.3-2~bpo11+0.sean00_amd64.deb
+Size: 988616
+MD5sum: e4a26ec4db518f425c2662b963d6c6e8
+SHA1: b0b36c8fff812fd9c8799e374957228f55b33b28
+SHA256: 8d626a2e6ab5ee71c2c31432f8a3e46f68560d8103c81d4ed96b4ac21cc74450
+SHA512: 1d463c73e29ff8ce90f12e03696adcb68b4b07bad8e7bfebd28c52315d7b02c1daa5c8e3600b0e5621f879326dc976e38d80d67bcbc477e4594b930ac065054c
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- header files
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains the header files and compiler wrappers which are needed
+ to compile and link programs against libopenmpi.
+
+Package: libopenmpi3-dbgsym
+Architecture: amd64
+Version: 4.1.3-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Multi-Arch: same
+Priority: optional
+Section: debug
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 12092
+Depends: libopenmpi3 (= 4.1.3-2~bpo11+0.sean00)
+Filename: ./amd64/libopenmpi3-dbgsym_4.1.3-2~bpo11+0.sean00_amd64.deb
+Size: 10323396
+MD5sum: d86b7083b1e275aff4672d9b10654db8
+SHA1: 9f1dd113373c728a53b3eea5f2c2238fd80ab7dd
+SHA256: 79978c41d14c71049be6be82be38a5ae3a18a8c0fb677691fc756cececc74360
+SHA512: d31b635241956ca689908ac96d114bca9d70ee520e6b0a4965bdeff520364126cab4c0c9f6ddd9c426ea3a1aeb9176c47befbbd6d0968eae46090405f6df3f5a
+Description: debug symbols for libopenmpi3
+Build-Ids: 0000c366c4a99c0799b53e969048dda7b13bc6fb 0049ef264ac93ce6a22c27e1a1ef1054fa5f9329 070c4b915f91aae3dad080dba487c948c770950e 088d8ed5481668ab157121d8ccc8e677c8016f21 08b03953ecb611bf55b8267c49f79d8976a96d2f 093ede27b05c815bb2cfa400d65ba3b21c1a9816 0c4ab1b64adcc119c3154707825b8fef5a47ca0f 0d6954f5f6b35050553fe134f3dc7bbe11c3e434 0d8a72f37b0fe2ea8d5cc1716081d5906158533c 0ec7ec71ca4ec2e9d825796e0c1a55e24abac55d 0fc3810fdff34a580b82096866e491c1c818dc2a 10ef3253fde19963c6bc19a0213349a80be73be8 12123e20b2714f10c2c52ed25fbd3fbe970f64a2 13de7bfd39064957608f764316a940ad3de7dd21 1558512a28c386df113d82e60fe019e70919be6e 156b6fa9d59f01115b2b34b93375f83b1e450cc5 15ba07348eef2e09700175ca1aa87222e464a9a5 1687a3bd611c5b55e5e508583cc1390b7ffa66a2 175558bafed1b31b68c714c169f9c15f07f037dd 1787875ad0f22e1d89311049fb4354e6d90476db 187b3af0b3c4904b98fd055d7af0a49ebb66763f 19b509173ed0be6eeaf3a8848b0e25c580d41ac9 19ed23a3db0f0f4dacbeb5481e769ba037e57614 1c03820fc2161f65086d1b26d85abaa02b7791a4 1de613f2f675434eda887f15cc864eaf8a834b4a 2699bbba08370b72e4e141fb7bd7128a94d7d37c 26d17e23c54431d5291268a59bcd6934661ae68f 2b17452830d38da3bd78d0f2b39ab2b4a7c9312f 2c1261b9762fb55578e3d6ec7054d8324da32e86 2d77be465f7999f4002c34e01cd1bbd4cff42fb7 2e83e561852b2223e76c6c3934aa73148c849096 2f1b0de193a8960f10122203503807974b90222b 3054f23ce5b773a0c8b5d3506f241643967b66d1 30dc95de72d07d69c892ebca38db114a5f19108e 3152398654e2f4b0a14a62a87e92bfc5ad5214fd 34b3c89c6e674fd058df6087eb91beb0a6a98af6 35a6007d03a3d559deedddd1d61f5aa164b9687b 37e01c2e2ed52736cbb11903ee652c529c5c52c2 3814579b7672f4a5deaefa0672488d0440f82f93 3a4fd8630316dd67cccc160a25b8d0fd83db6c37 3b23ffdbb05bfbfe947ceaa4f18532a140758232 3de8d65fd24ffad71bbb398642ec121614490fee 3ffb4b81255082a0316e8714f2af1d7b3eac85a0 40869ec77857ea43bf11424b08c8c7bb242e7c3e 40dcb4d358d4d425c2b98e0c706aed67148de4bc 41276c38fdbd6e060e1f464fb4312a347b83eb3f 41c864e98888af8d0317a41282cedf9a6fd88495 4408a49318b31e33dfb2408c0c9e3779f1efdecd 44690944c2ec34c228728b7f256db99504ce831e 45a84ef21ae7b089f80563dea418510eba10f2d1 48db072b573f27ccfdc979b9fe1d7f2ed9fcd68b 4c10af705c43a42fd918c33eab2070287607ea7a 4cee5e2efe20fc26613bb2e0987abf422d67dc2d 4da057a679947bdf2fb1ab3706202d1a95222d9e 4e21dd5991c8529fb486961d1ed21d10e2f333e0 50840e4acdd585c25a99036ef6a47ae2e4150a64 509f01712860ec368e91da528352af333e7d4557 50adc4bbc5604eb0992a6de0b34b8a6bd70686aa 54169bc4696ff4d71f617253d82df632d5c33bca 55f8b35615fe7e384d4f1739439ecf68b3a4b62a 57922eea2754a12ead59f7505b6e53b1d8c0cf05 57de3b3ced73bf9425e776fa196bf1ab35def40b 5982486cb2dad38d15dac7e35b46b8a62d76bb87 5b6220e8fc991e86e67bbcabcb5363e89e7ae0fc 5f11c00a323d2be15e4442a72cdec6bc4d7aa42a 6078c18229e3a87674dc784dcad86967666d357d 612f8bb70dd0b6c628892fd91f67f73c41fd246d 636a3bb0370fc31402c2c185c0c30ba15fa9aeea 643392d45b5a8bb58c9329c812235654f8704ec2 6443867ad65caf1239b4642747350cef085933e5 66bb2adc30078abb1f140801b65d272365aaa674 67413731a221f67e89e3f3168fecf7392c7c0b29 6bc54e2c1c3f8221c48c00ae6d5ca59fc7077a14 6c5bb9c4442a990c8e382b76eecbaedadda23a97 6c674f5305fdb9d5a73ff1a49f2893101ee5b2db 6dd65ef45c68702aff95420bbe3ea8a1c8df8807 6e617c2601ffecd3c2aab0f55ab0c9f8e8848c91 6f9a5667b390deea43c1ba50337839e89f753375 71d52573035df08d77bc6622490e47f883971c8d 72dcf4d5c02a60b6dfa2f8825d0df215ffc5dfc6 731e8f1cd1510b0b616f9e728ee4b1f832b0881d 758a5992ad97d063da1557b35a23bc3eaa267795 7b3255faed3eceaa068d3bb8ab8c23bd11c8bc4c 80aeeacd881dad216f56ab0b4c50b51a7e1e2162 830ed0d5b0ff547ed11fa98ec27b434ea94e15f6 84279224ae5272cf4d2d2ddb32279ab56bd30dc0 8550551924a27774f07aee71375a105d99f080af 858d593046544f161e9ff4cf1d997b613d16b013 8fc732bde2b24137686768bed046201c94ab28dd 90f581491c34303ff4a449000e06afea94904bc8 92e8b6e823436e30d7ae7f3fe8ef328bad8ea0ff 939a640140eb168235edb6b16d4773f3bfc2feda 9759e5092b8a180dd23be5d414c3e3a8e8d18036 9934da081237a49acafe43ca8ae7d7ae4f1100cd 9b40b00bd6b0b3ff83a70b689757b173bf30e06c 9c51f1cfbbfd29f63d7d15b38950e5b61307836d 9c62e258427a65c0ce09ac02e7ff20fe200375d2 9e7243024c15345e234c99de38be58e21438486d a6c4d01844e3307526bd2f1b5a5d46fc250ce9f8 a7c616bbd02e61fb886f38036ee85a6414f4061b a80eb579be22175906f28baf0c34aa067cdd942c a8831f4c2ab3158a830280b8e7f7bb72432ed6e3 ac59cd9b3d687142eadcff9e6f4ca53efe6c5310 ad868f456c8c415fd5862bc1c200a954ad93d585 b1f81339af069323d124f344b9ec6a0776884a5d b2db58bf75a3a2d768c07b63a3431a41dcb374df b4898be0b9b0086f560f29f039bd60d4dc59c339 b60d2363f1b6915a638b7be5674aef22341592a7 b74a84a318db11d74937ff3892ec40a8d2a86fa0 b77dfd027669a73c2d3bc049eabb9c1f79c204a7 ba38f153bc70f4b933206d1dfb9bfd9eeb83fa88 bdd591b11330118fead770768f33e9a05676cd8a be39d4b2742e4e9e0a1b2e7a56d9677ff4f4fbcb be4bc06bfbdde09fbd1ef0cb175731c9c2534bcb c0cab3790d73b5934433dbfa43fa5405864cc59f c327deef9c1bdc8e85d28278544ec2d15b9fc65f c417a42cfdc3c88df01b0a85e8a4e18c6b111841 c4ff9d5ec6b3fedee77add7fb8acc2e678def3b9 c8addb017cd2211b0c0b70d613513c78eb73a480 c9a7be3623dd4d7e258e9af1bcf07ce59031a212 cd36564d3ce012dc649c53a689fdcfb755736454 cdf5cf5cfd2b3e3616f12b44b386a7f340e5ada7 d30f9104edae49e498022fb52902078b62d4704a d3934d46cf44176ac234892c090d03efe6141322 d468fe1f688b33ff309b9654e667a89d55596ce1 d74205f9d85fb50b575f1a06a1a238e4572bdbf1 d8938d05f1d56681cc90f0dbf9b3380e9c6e39f8 e0d1d24d9f7e267bb33dbdc6e97c3b2c858a0217 e342f1b6f27b9272ee65e936450b2fccc7f6edf6 e38980f3ab9afb54d998ade83a52d1e4762b93d0 e3a7bc5a26eef42667a5d94088c471c44ae83ada e693fe1f516af51cf1679644e09f3d0ccc04884b e93a5ed0f4b7939850eefa8ff46c2b934a31693b e9eeb1a31f07e9afd28d504c337d6a3f6618e53e f1536ba70f56e21f0d195a19711852478a72b161 f6e48cb7a8d92d171115bdfd3998d9366f025f4d f7d6899e15d8a893e41c7c391c2d64615fd8b5b9 fccf051e9aed94aecd89af21e4b3ae5a2b65baae fd267e3c3c80679d934a22d50badaac211dbe308 fd4d1e8396f2404a9204c2a70c332829080ea7c3
+
 Package: libopenmpi3
 Architecture: amd64
 Version: 4.1.2-1~bpo11+0.sean00
@@ -15238,6 +15344,33 @@ MD5sum: 7ace7ac0062f7a182c37c29352d41d43
 SHA1: fca09feaacdf536848c5918ac1aa8225cda3eed4
 SHA256: e4c393b9ad58c98f645285cf5dbcb01e52bd47fd0ecb334a63a80d92f56fae40
 SHA512: 7b3a7ccc1fb454223c2869933412978adbe532c8218be99a689fb7062076c7fd56301ea6adc0b2c9a23b1ad59370d1a09fe2d54c95242e5b4c4d3972413640fe
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- shared library
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ This package contains the Open MPI shared libraries.
+
+Package: libopenmpi3
+Architecture: amd64
+Version: 4.1.3-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 8860
+Depends: libc6 (>= 2.29), libevent-core-2.1-7 (>= 2.1.8-stable), libevent-pthreads-2.1-7 (>= 2.1.8-stable), libfabric1 (>= 1.11.0), libgcc-s1 (>= 3.0), libhwloc15 (>= 2.4.1+dfsg), libibverbs1 (>= 1.1.7), libnl-3-200 (>= 3.2.7), libpmix2 (>= 4.0.0), libpsm-infinipath1 (>= 3.3+7.gec1d6d2), libpsm2-2 (>= 10.3-37), libstdc++6 (>= 5), libucx0 (>= 1.10.1~rc1+really.1.10.0), zlib1g (>= 1:1.2.0), libhwloc-plugins
+Breaks: gromacs-openmpi (<< 2020~beta2-2), libeztrace0 (<< 1.1-8-5+b1), starpu-contrib-examples (<< 1.3.2+dfsg-2+b1), starpu-examples (<< 1.3.2+dfsg-4+b1)
+Filename: ./amd64/libopenmpi3_4.1.3-2~bpo11+0.sean00_amd64.deb
+Size: 2250132
+MD5sum: 4767a68ac002d9d63f9003f1db940253
+SHA1: 3ef2c9054a32feb2c58e8ce615ddd74161003ef4
+SHA256: 68b4351e60b7cc72e576958e3fde7f30f8ceb4247a0008f886d457e8c65cb4dd
+SHA512: 601cb1a784fa918e53a53266cdd095a7d5e21a4e8cb38deb0db32e280680ef9b01f1dbc92100d27e9f41111b47a023042d928c5d1b740e8ce671003ebcb282bc
 Homepage: https://www.open-mpi.org/
 Description: high performance message passing library -- shared library
  Open MPI is a project combining technologies and resources from several other
@@ -19411,6 +19544,25 @@ Description: GNU Octave language for numerical computations
  .
  Octave can be dynamically extended with user-supplied C++ files.
 
+Package: openmpi-bin-dbgsym
+Architecture: amd64
+Version: 4.1.3-2~bpo11+0.sean00
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 178
+Depends: openmpi-bin (= 4.1.3-2~bpo11+0.sean00)
+Filename: ./amd64/openmpi-bin-dbgsym_4.1.3-2~bpo11+0.sean00_amd64.deb
+Size: 100868
+MD5sum: 54287b7a2cfba6cecba153005ff317a5
+SHA1: 5b934ab835e622fbe6fc465f907001006cabfd77
+SHA256: c4782ce51d7213ca73511bed8a98c55819ddfe829553afc09c6d00782d9d87fa
+SHA512: 571c924315c0c38b9934cd3fc6292685d6d0552cba0ed4b158d79d5d72f8f5502e9cda17f47ce5ec0548b7817bdb301dc384a0155c2914fdf5d715e855a2c815
+Description: debug symbols for openmpi-bin
+Build-Ids: 0179969dcef3d06f171bc134e034cba475bb6849 2e31216cde7607ecd3d41c2d2d657133da03da02 6877276f1b48f558c552b2f0fc02acbc51d26c58 843dac0f83e84d267551809a823ca228de8130b7 953ef18449af30b2ffd03efaeeca8461e5a7e4aa 9bb009ba0195ef22191c419bbb4814adc597e5e9 b8bc3951e20f8ee0e51474a8ab68ed928ac6a047 fa905e90deeb802c9e2c20e7cc44e16b83f086e1
+
 Package: openmpi-bin
 Architecture: amd64
 Version: 4.1.2-1~bpo11+0.sean00
@@ -19431,6 +19583,50 @@ MD5sum: 72a364487c154a96ebfc6076fab3a279
 SHA1: 8aee53e851dceaa080391557fc98f40a6645b642
 SHA256: 1db3dc71ce67c3b91262d33217c94cb3ce35b32d3fb0a62650f7918f4a7adb40
 SHA512: 1cef11cfe55cbc9d4a525714767fffc9d0238eda798338fa2ae9cc725780bdfdb7afae508844eb577c7aa93adc4300384a57e55b3da25eec883618fa3c429f0a
+Homepage: https://www.open-mpi.org/
+Description: high performance message passing library -- binaries
+ Open MPI is a project combining technologies and resources from several other
+ projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best
+ MPI library available. A completely new MPI-3.1 compliant implementation, Open
+ MPI offers advantages for system and software vendors, application developers
+ and computer science researchers.
+ .
+ Features:
+  * Full MPI-3.1 standards conformance
+  * Thread safety and concurrency
+  * Dynamic process spawning
+  * High performance on all platforms
+  * Reliable and fast job management
+  * Network and process fault tolerance
+  * Support network heterogeneity
+  * Single library supports all networks
+  * Run-time instrumentation
+  * Many job schedulers supported
+  * Internationalized error messages
+  * Component-based design, documented APIs
+ .
+ This package contains the Open MPI utility programs.
+
+Package: openmpi-bin
+Architecture: amd64
+Version: 4.1.3-2~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: openmpi
+Maintainer: Alastair McKinstry <mckinstry@debian.org>
+Installed-Size: 554
+Depends: libc6 (>= 2.8), libevent-core-2.1-7 (>= 2.1.8-stable), libopenmpi3 (>= 4.1.3), openmpi-common (>= 4.1.3-2~bpo11+0.sean00), openssh-client | ssh-client
+Suggests: gfortran | fortran-compiler
+Conflicts: openmpi-bin
+Breaks: lam4-dev (<< 7.1.4-4), libmpich-dev (<< 3.3~b1-5), libopenmpi-dev (<< 4.0.5-3), mpich (<< 3.3~b1-5)
+Replaces: libopenmpi-dev (<< 4.0.5-3)
+Filename: ./amd64/openmpi-bin_4.1.3-2~bpo11+0.sean00_amd64.deb
+Size: 244148
+MD5sum: fbce238bf4e6ca9451808516cd04aac7
+SHA1: ccaba5909d5e0dcb7ced90c9fe1940b52b51f072
+SHA256: b555b1ee789ac9507e9004ec8461e674daddc4207f538257dbb650b56cf9866c
+SHA512: d2e3529b8f800fbe859c652ca9e5a3de0dbd3a89e22dfff0c103ee11a6496881a02cdc2f91530f803653945e89e15893f9ffaeea21b3a3253fc34b8a95c93cd5
 Homepage: https://www.open-mpi.org/
 Description: high performance message passing library -- binaries
  Open MPI is a project combining technologies and resources from several other
