@@ -23194,6 +23194,62 @@ Description: Windows API implementation - 64-bit binary loader
  .
  This package provides the binary loader for 64-bit Windows applications.
 
+Package: xorgxrdp
+Architecture: amd64
+Version: 1:0.2.18-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 212
+Provides: xorg-driver-input, xorg-driver-video
+Depends: libc6 (>= 2.15), libepoxy0 (>= 1.0), xorg-input-abi-24, xorg-video-abi-24, xserver-xorg-core (>= 2:1.18.99.901)
+Recommends: xorg
+Filename: ./amd64/xorgxrdp_0.2.18-1~bpo11+0.sean00_amd64.deb
+Size: 60536
+MD5sum: 1dbfb0e279a621fa5eb5f0838032eefa
+SHA1: 745ce0a7464e6cf77ff54727e0f4e35f3c2da9f2
+SHA256: 0a51a7fb0bf76c5cfdd0c75d895a6e26b9712ee535b08e2cde9812093ecd1a21
+SHA512: d17dedaabeb5658f3d1c0eb8954ce7234c8dd163d2e42193afc5c6be9b822f378957b0090d2ab19edacba8fe024aaa93297ee9fcd8346935cef0137453ccf3e4
+Homepage: http://xrdp.sourceforge.net
+Description: Remote Desktop Protocol (RDP) modules for X.org
+ xorgxrdp is a set of drivers (screen device, keyboard, and mouse)
+ for X.org enabling use through an RDP session with xrdp. For full
+ operation, most standard X11 fonts and tools need to be installed;
+ the Recommended xorg metapackage is a superset of what’s actually
+ needed but will do.
+
+Package: xrdp
+Architecture: amd64
+Version: 0.9.19-1~bpo11+0.sean00
+Priority: optional
+Section: net
+Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+Installed-Size: 3161
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, lsb-base (>= 3.0-6), ssl-cert, libc6 (>= 2.15), libfuse2 (>= 2.6), libjpeg62-turbo (>= 1.3.1), libopus0 (>= 1.1), libpam0g (>= 0.99.7.1), libssl1.1 (>= 1.1.0), libx11-6, libxfixes3, libxrandr2
+Recommends: fuse, xorgxrdp
+Suggests: guacamole
+Filename: ./amd64/xrdp_0.9.19-1~bpo11+0.sean00_amd64.deb
+Size: 490896
+MD5sum: 0f3fec3d3060d8cfa9e6f9ef3bfd666f
+SHA1: 14e23d19ec1b7b2543f4cd7d29c1ce5369314347
+SHA256: deb7dd10e09968f7ae16c472e3f8a39a619aeb5782739aed37d8515739ec44ad
+SHA512: 2c9b462a3feab3880d180f935ba8bdffe5e0ade5ef33ed4535780b85b423f10be83bdc17eb62005be85f903e37886e0ee30801029ef204bb981a3ca9c3a285ce
+Homepage: http://www.xrdp.org/
+Description: Remote Desktop Protocol (RDP) server
+ xrdp offers a graphical login to a remote client using
+ RDP (the Remote Desktop Protocol). xrdp can connect to
+ a locally created X.org session with the xorgxrdp drivers,
+ to a VNC X11 server, and forward to another RDP server.
+ .
+ xrdp accepts connections from freerdp, rdesktop, and the
+ built-in terminal server / remote desktop clients of
+ Microsoft Windows operating systems.
+ In the xorgxrdp (which replaces X11RDP) and VNC modes,
+ it provides a fully functional Linux terminal server,
+ offering an X-Window desktop to the user. In the RDP
+ or VNC forwarding mode, any sort of desktop can be used.
+
 Package: gnome-terminal
 Architecture: arm64
 Version: 3.38.3-1sean01
