@@ -5834,6 +5834,32 @@ Description: Data files for the GNOME terminal emulator
  This package contains data, help files and localization settings for
  gnome-terminal, the GNOME terminal emulator application.
 
+Package: gnome-terminal-data
+Architecture: all
+Version: 3.44.0-1~bpo11+0.sean00
+Priority: optional
+Section: gnome
+Source: gnome-terminal
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8672
+Recommends: gnome-terminal
+Filename: ./all/gnome-terminal-data_3.44.0-1~bpo11+0.sean00_all.deb
+Size: 1572028
+MD5sum: 4f62111973c9752dd7dca7b86ac4a8c6
+SHA1: 1a795f8a2c35f5c9773a8a02525f30cbc815ea4b
+SHA256: ca70794b05bf1b809aa1b53c204586828f1e7b6dcb4a1f915c379adc5a38d55f
+SHA512: db713ec9f60f608b321b9e5b2200045095773dd133d8e5a8f400203bbc0b1760281f8d3c215f585d83b6c505c26eca5006d0ac84d6b2cce5adbc296525d23b40
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: Data files for the GNOME terminal emulator
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ This package contains data, help files and localization settings for
+ gnome-terminal, the GNOME terminal emulator application.
+
 Package: ibus-data
 Architecture: all
 Version: 1.5.24-2~exp1
@@ -6829,6 +6855,31 @@ Description: Rust standard libraries - development files
  This package contains the standard Rust libraries including development files,
  needed to cross-compile Rust programs to the wasm32-unknown-unknown and
  wasm32-wasi targets.
+
+Package: libvte-2.91-doc
+Architecture: all
+Version: 0.68.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: vte2.91
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1280
+Filename: ./all/libvte-2.91-doc_0.68.0-1~bpo11+0.sean00_all.deb
+Size: 645188
+MD5sum: 5165faa6e3d1d9e1547f4c2fee31a4b8
+SHA1: 7e56168abfbdf2f7b7148e984c7cd79037434073
+SHA256: 5da463608dfd56266e927387dc24aedefb488ed2928dacc78e60071a0b9d51de
+SHA512: ab25828b48b9da7411b96b52dbe7e19cd48875868b59c2c40b0fc65565639f9dd55ef3ec36e5c364be52b2b93ff05d79e08a957fcb19f255d31adedac0e844b5
+Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Description: Terminal emulator widget for GTK+ 3.0 - documentation
+ The VTE library provides a terminal emulator widget VteTerminal for
+ applications using the GTK+ toolkit. It also provides the VtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains documentation files for the VTE library for GTK+
+ 3.x.
 
 Package: libwayland-doc
 Architecture: all
@@ -9576,6 +9627,30 @@ Description: Layout and rendering of internationalized text - gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
+Package: gir1.2-vte-2.91
+Architecture: amd64
+Version: 0.68.0-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: introspection
+Source: vte2.91
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 624
+Depends: gir1.2-freedesktop (>= 0.9.12), gir1.2-gtk-3.0 (>= 3.24.22), gir1.2-pango-1.0 (>= 1.22.0), libvte-2.91-0 (>= 0.67.90)
+Filename: ./amd64/gir1.2-vte-2.91_0.68.0-1~bpo11+0.sean00_amd64.deb
+Size: 608712
+MD5sum: 5c0dedfa7e9be11666565934cbee065d
+SHA1: 58283ce1817fe959a2e2c5ffd5e7312fd907e300
+SHA256: 0abada75b2a1eb84d0297d5e45aa20b46e0fba94fbf3c8fdd82cbc5b7eec2bec
+SHA512: d5e95343c1f06cacd9ddad221fcf167efe17a0734dff4c70911cd39b721c7735e13198f4c8fe975c56d603d983c2d5613c3f66927fe3a2ca2860cf1365616121
+Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Description: GObject introspection data for the VTE library
+ This package contains introspection data for VTE, a terminal emulator
+ widget for GTK+.
+ .
+ It can be used by interpreters understanding the GIRepository format to
+ write programs using the VTE widget for GTK+ 3.0.
+
 Package: git-dbgsym
 Architecture: amd64
 Version: 1:2.33.0-1
@@ -10325,6 +10400,34 @@ MD5sum: 998ba6e5b9dde0d2dfcecea8704ab171
 SHA1: c2888f1892cbdc64665d1566831c372d0eb1629a
 SHA256: 09bd3317780afe8a44b9c6a9d3e6a00a5552b92e70190327805bc15758c023ff
 SHA512: 1d0cfaece6308756e9795ba2d88f935af66e39c2345330d950470be5e9f8f7a7c033cdb8093e2be978847f062eb5ec512320ec2679d6cc5c6570e7dc11da27cf
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: GNOME terminal emulator application
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ GNOME Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+
+Package: gnome-terminal
+Architecture: amd64
+Version: 3.44.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: gnome
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1325
+Provides: x-terminal-emulator
+Depends: default-dbus-session-bus | dbus-session-bus, gnome-terminal-data (<< 3.45), gnome-terminal-data (>= 3.44), gsettings-desktop-schemas (>= 0.1.0), dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libdconf1 (>= 0.14.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgtk-3-0 (>= 3.23.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), libvte-2.91-0 (>= 0.68.0), libx11-6
+Recommends: gvfs, nautilus-extension-gnome-terminal, yelp
+Filename: ./amd64/gnome-terminal_3.44.0-1~bpo11+0.sean00_amd64.deb
+Size: 825588
+MD5sum: 1befef3831599443b8a645be5d917f4c
+SHA1: d5f36c173007e34f44a21190e6172e1293e34eb9
+SHA256: fab6362ed6c47b41e07739d63833b787e913344b666bcfee7a3e673da52e24d9
+SHA512: 46c0fa28ce09b524a7aa7e92f37bcbf4e60fb392ce7b4b6590e11ff9657bc7d43d8c4aac828f562725787499b965831a07b9e254b84ff32fe3c130d654dc95df
 Homepage: https://wiki.gnome.org/Apps/Terminal
 Description: GNOME terminal emulator application
  GNOME Terminal is a terminal emulation application that you can use to
@@ -17999,6 +18102,87 @@ Description: telegram related WebRTC fork
  project, in general, provides applications real-time capabilities that work on
  top of an open standard.
 
+Package: libvte-2.91-0
+Architecture: amd64
+Version: 0.68.0-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: vte2.91
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1179
+Depends: libvte-2.91-common (= 0.68.0-1~bpo11+0.sean00), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.28), libcairo2 (>= 1.10.0), libfribidi0 (>= 1.0.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgnutls30 (>= 3.7.0), libgtk-3-0 (>= 3.24.22), libicu67 (>= 67.1-1~), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.22.0), libpcre2-8-0 (>= 10.22), libstdc++6 (>= 5), libsystemd0 (>= 220), zlib1g (>= 1:1.2.0)
+Filename: ./amd64/libvte-2.91-0_0.68.0-1~bpo11+0.sean00_amd64.deb
+Size: 805252
+MD5sum: f2578bb5a7dae84b3d900725ade40b07
+SHA1: 5a6e2718ad6a7c3ab4ac12c64fffe659895c6b7e
+SHA256: 91c979e4732d7ac6a3629fa521cf33a4abe62e889e3d334d12f5fd5bebf7dad6
+SHA512: e9a5acd4dc0153d4f088f4c5e4208af453fe7e04e6aa097f71b9fa2ff719c7970ad56a1b15c20e3eac1b0bac0ec0b02727b8f66c74abf44d74590492c18b2779
+Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Description: Terminal emulator widget for GTK+ 3.0 - runtime files
+ The VTE library provides a terminal emulator widget VteTerminal for
+ applications using the GTK+ toolkit. It also provides the VtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains the runtime library, needed by programs using the
+ VTE widget with GTK+ 3.0.
+
+Package: libvte-2.91-common
+Architecture: amd64
+Version: 0.68.0-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: vte2.91
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1052
+Depends: libc6 (>= 2.3.4)
+Filename: ./amd64/libvte-2.91-common_0.68.0-1~bpo11+0.sean00_amd64.deb
+Size: 647684
+MD5sum: 82e00eb3f7b429829c61f7c6cc679941
+SHA1: effa55b3e37c7d7f34bc73c87d93f3a19a3f3e39
+SHA256: ef87e92adeb70ddec44b73539252055b79c51e1cd114f7022fa304aa18e25114
+SHA512: 5570c2aa682b280b69c8dc01cdd03b0fa4a12e0b085f792cca3bf3c96327155e026201c85b271b411b6925b780c41bccca5edae5e3764794c1bd740570b386ce
+Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Description: Terminal emulator widget for GTK+ 3.0 - common files
+ The VTE library provides a terminal emulator widget VteTerminal for
+ applications using the GTK+ toolkit. It also provides the VtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains internationalization files for the VTE library
+ and common files for the GTK+ 3.x version.
+
+Package: libvte-2.91-dev
+Architecture: amd64
+Version: 0.68.0-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: vte2.91
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1005
+Depends: gir1.2-vte-2.91 (= 0.68.0-1~bpo11+0.sean00), libglib2.0-dev (>= 2.40.0), libgnutls28-dev (>= 3.2.7), libgtk-3-dev (>= 3.12.0), libpango1.0-dev (>= 1.22.0), libpcre2-dev (>= 10.21), libvte-2.91-0 (= 0.68.0-1~bpo11+0.sean00), libvte-2.91-common, zlib1g-dev
+Recommends: libvte-2.91-doc
+Conflicts: libvte-2.90-dev
+Filename: ./amd64/libvte-2.91-dev_0.68.0-1~bpo11+0.sean00_amd64.deb
+Size: 637984
+MD5sum: d6821c87967c21e2b47fa97bb4516d6a
+SHA1: d7328e12c6d442d641a5aa14c2d6c45480fac0dd
+SHA256: c0317e9d4f4ac457927c36413e5bc64fa48ba95521d316336f90ce26d18489db
+SHA512: efcfae442214e746b2c26d4fbb3fe7e277902d07aea3d7d278171b6c06b8cd6d9a4188cd18e33ed985cc4c231ef885b0b82bf1a4905d1703d4d82761d191a0ef
+Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Description: Terminal emulator widget for GTK+ 3.0 - development files
+ The VTE library provides a terminal emulator widget VteTerminal for
+ applications using the GTK+ toolkit. It also provides the VtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains development files for the VTE library and its
+ Python bindings. It is needed to develop and build programs using the
+ VTE widget with GTK+ 3.0.
+
 Package: libwayland-bin
 Architecture: amd64
 Version: 1.20.0-1~bpo11+0.sean00
@@ -19258,6 +19442,37 @@ MD5sum: b5d05c6aaf49282fd9a532de5b07335b
 SHA1: 501d627a63dfc8249fd47e94cf7fde8f6007d6e1
 SHA256: 7d402dc1692dd2b185e85248ba9fe139ba17886522929192ca9990b8b66745ed
 SHA512: f73292e965d69d1a8e3afa5e0afa8a3ad9170227758c87bbbe6ed8f83493fe822ed47f3723d48487dcac980821d0f14bcafc048e835788ac6afb484cb23d033b
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: GNOME terminal emulator application - Nautilus extension
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ GNOME Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+ .
+ This package contains the extension for Nautilus, the GNOME Files app.
+
+Package: nautilus-extension-gnome-terminal
+Architecture: amd64
+Version: 3.44.0-1~bpo11+0.sean00
+Priority: optional
+Section: gnome
+Source: gnome-terminal
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 753
+Depends: gnome-terminal (= 3.44.0-1~bpo11+0.sean00), libc6 (>= 2.4), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgtk-3-0 (>= 3.22.27), libnautilus-extension1a (>= 3.28.0), libstdc++6 (>= 4.1.1)
+Breaks: gnome-terminal (<< 3.27.92-2~)
+Replaces: brasero (<< 3.27.92-2~)
+Enhances: nautilus
+Filename: ./amd64/nautilus-extension-gnome-terminal_3.44.0-1~bpo11+0.sean00_amd64.deb
+Size: 669712
+MD5sum: 64ab6da474346562ade46514422add16
+SHA1: ba3dce653cd02702c747137862c308018bc284a6
+SHA256: 3072aeb0e3aad0af16629197553186450295efdad772884c764c106946b20193
+SHA512: 381fb8c2e55d4fd0722e9a7ed9039b0ee93af721031a5a07a0a640eb74f0aeeb43867b6534432c10995632c167ad39dc7239cef0ea111cad6a5a382978dc7bf6
 Homepage: https://wiki.gnome.org/Apps/Terminal
 Description: GNOME terminal emulator application - Nautilus extension
  GNOME Terminal is a terminal emulation application that you can use to
