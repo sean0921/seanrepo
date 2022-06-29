@@ -7039,6 +7039,31 @@ Description: heavily refactored vim fork (runtime files)
  language-specific highlighting and indentation, color schemes, and standard
  plugins.
 
+Package: neovim-runtime
+Architecture: all
+Version: 0.7.2-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: editors
+Source: neovim
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 20071
+Filename: ./all/neovim-runtime_0.7.2-1~bpo11+0.sean00_all.deb
+Size: 3920412
+MD5sum: c54761d624251f927111223aeee3b253
+SHA1: dfd37e6a0a5d685d8636774ae2799c52ccd2d1fa
+SHA256: 25f5ec639c6567466209e8893bbd42c64ea02f93106c407fbfb7579373728159
+SHA512: ea2b014cc36ee35b820e29a077a9fe112f207bdccb9f94fdb7c3e68469fb994bc18bfb4966b91996eb1d4eacb98fbfa654f1d5ca77fd1816607797279a95c0e7
+Homepage: https://neovim.io/
+Description: heavily refactored vim fork (runtime files)
+ Neovim is a fork of Vim focused on modern code and features, rather than
+ running in legacy environments.
+ .
+ This package contains the architecture independent runtime files used by
+ neovim.  Examples of such files are: documentation, rules for
+ language-specific highlighting and indentation, color schemes, and standard
+ plugins.
+
 Package: netdata-apache2
 Architecture: all
 Version: 1.32.0-1~bpo11+0.sean00
@@ -18243,6 +18268,62 @@ Description: telegram related WebRTC fork
  project, in general, provides applications real-time capabilities that work on
  top of an open standard.
 
+Package: libtree-sitter-dev
+Architecture: amd64
+Version: 0.20.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: tree-sitter
+Maintainer: Tree-sitter Maintainers <team+tree-sitter@tracker.debian.org>
+Installed-Size: 291
+Depends: libtree-sitter0 (= 0.20.6-1~bpo11+0.sean00)
+Filename: ./amd64/libtree-sitter-dev_0.20.6-1~bpo11+0.sean00_amd64.deb
+Size: 92252
+MD5sum: 2629bab59fbe09ef0671474f7941f06a
+SHA1: 7eb6f11ae0d35e94047a1b15332f120d169ca9bc
+SHA256: 7cae462a31b605af2e1acbfb6e2683084b6221f151e20987e5a376917f509b5b
+SHA512: 3e024ed5fda89db471c524e05412918bc3b5b8658b6665734412095a540785dbbcafe3bdd794512230af6583bf80f05eeec3c7f3867f32eab252a14fdb919380
+Homepage: https://tree-sitter.github.io/tree-sitter/
+Description: incremental parsing system for programming tools (development files)
+ Tree-sitter is a parser generator tool and an incremental parsing library. It
+ can build a concrete syntax tree for a source file and efficiently update the
+ syntax tree as the source file is edited.
+ .
+ Tree-sitter aims to be:
+ .
+  * General enough to parse any programming language
+  * Fast enough to parse on every keystroke in a text editor
+  * Robust enough to provide useful results even in the presence of
+    syntax errors
+  * Dependency-free so that the runtime library (which is written in pure
+    C) can be embedded in any application
+ .
+ This package contains the header files and libraries needed for developing
+ with tree-sitter.
+
+Package: libtree-sitter0
+Architecture: amd64
+Version: 0.20.6-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: tree-sitter
+Maintainer: Tree-sitter Maintainers <team+tree-sitter@tracker.debian.org>
+Installed-Size: 201
+Depends: libc6 (>= 2.17)
+Filename: ./amd64/libtree-sitter0_0.20.6-1~bpo11+0.sean00_amd64.deb
+Size: 82176
+MD5sum: ab2975ccf19e09906956d12fe569008e
+SHA1: d2303f948ff0629c6ddc189fa1414a4388fee15c
+SHA256: 4c938911a0f95a1ccade7455154ba60fedf1050a46adf0adbc78eb3e9f1a7b12
+SHA512: 9bfd4c1776424a07f2037acc0e58da3abbf791926f968ba92d94ec322d8d6e6bce287ae75a33f4b8041d1b41302f6ef70ff0dfd3827906233db37f62beed74c0
+Homepage: https://tree-sitter.github.io/tree-sitter/
+Description: incremental parsing system for programming tools
+ Tree-sitter is a parser generator tool and an incremental parsing library. It
+ can build a concrete syntax tree for a source file and efficiently update the
+ syntax tree as the source file is edited.
+
 Package: libvte-2.91-0
 Architecture: amd64
 Version: 0.68.0-1~bpo11+0.sean00
@@ -18880,6 +18961,51 @@ Description: scaling, colorspace, depth conversion library (shared library)
  from the programmer.
  .
  This package constains the shared library.
+
+Package: lua-luv-dev
+Architecture: amd64
+Version: 1.43.0-0-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: lua-luv
+Maintainer: Jason Pleau <jason@jpleau.ca>
+Installed-Size: 1296
+Provides: lua5.1-luv-dev, lua5.2-luv-dev, lua5.3-luv-dev, lua5.4-luv-dev
+Depends: libuv1-dev, lua-luv (= 1.43.0-0-2~bpo11+0.sean00)
+Filename: ./amd64/lua-luv-dev_1.43.0-0-2~bpo11+0.sean00_amd64.deb
+Size: 139640
+MD5sum: 685d55834aa15c6f30a942d562bbc64f
+SHA1: 0a7c226ad8d3eb73aea726b561a5b98857c57f6b
+SHA256: d668dd82ad6abbb1de0dc6c4025cba331bfc59a852d31126f1c7af325ffb10ac
+SHA512: ca7d78384a084b8061d6a7b8e873d4fbc2fa90ba3c63ebf30c792aa192e60df257cea203ad07698becaf85b94eed2d4180104750c1d99fdff5f844ed64035817
+Homepage: https://github.com/luvit/luv
+Description: libuv bindings for Lua (development files)
+ This package provide the static library and headers for lua-luv
+Lua-Versions: 5.1 5.2 5.3 5.4
+
+Package: lua-luv
+Architecture: amd64
+Version: 1.43.0-0-2~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: interpreters
+Maintainer: Jason Pleau <jason@jpleau.ca>
+Installed-Size: 748
+Provides: lua5.1-luv, lua5.2-luv, lua5.3-luv, lua5.4-luv
+Depends: libc6 (>= 2.14), libuv1 (>= 1.40.0)
+Filename: ./amd64/lua-luv_1.43.0-0-2~bpo11+0.sean00_amd64.deb
+Size: 111772
+MD5sum: 2e31e5af7fec255c5f99d8460a4b4d68
+SHA1: 1891076e2b6f44bd169f0f867bbc88a9f141af08
+SHA256: 564f14d3f662e6f797ca6ddf6f32c3637b6793739b441806bfc0be879b934d73
+SHA512: 5247b2d5c48dbead3c8037017fc6f8d040d1d859785b9bc6e2c8922703bb3cbb56abb352cf9af9d69a4fcc0ef5328988bf0687991dfcfb077d8cb3b6564ce060
+Homepage: https://github.com/luvit/luv
+Description: libuv bindings for Lua
+ libuv is a multi-platform support library with a focus on asynchronous I/O.
+ .
+ This package provides libuv bindings for the Lua programming language.
+Lua-Versions: 5.1 5.2 5.3 5.4
 
 Package: mesa-common-dev
 Architecture: amd64
@@ -19759,6 +19885,35 @@ MD5sum: b1b39d0497b38b70a95a0120dd05a696
 SHA1: f0913e16149f5291cc118e45e578dd997823afd1
 SHA256: c1616190898eda09b026d48c1fbe7ed683cb51c528e9c8e765292b0c045a7f58
 SHA512: f1ffdf80d63f271703e3a2d5ef488d777891825b942bce1faf83ef968029319732bd8e43c7a8400374493c559dd7d36990e4edde6044c698a99b2b906c6c474c
+Homepage: https://neovim.io/
+Description: heavily refactored vim fork
+ Neovim is a fork of Vim focused on modern code and features, rather than
+ running in legacy environments.
+ .
+ msgpack API enables structured communication to/from any programming language.
+ Remote plugins run as co-processes that communicate with Neovim safely and
+ asynchronously.
+ .
+ GUIs (or TUIs) can easily embed Neovim or communicate via TCP sockets using
+ the discoverable msgpack API.
+
+Package: neovim
+Architecture: amd64
+Version: 0.7.2-1~bpo11+0.sean00
+Priority: optional
+Section: editors
+Maintainer: Debian Vim Maintainers <team+vim@tracker.debian.org>
+Installed-Size: 4629
+Provides: editor
+Depends: neovim-runtime (= 0.7.2-1~bpo11+0.sean00), libc6 (>= 2.29), libluajit-5.1-2 (>= 2.0.4+dfsg), libmsgpackc2 (>= 2.1.0), libtermkey1 (>= 0.19), libtree-sitter0 (>= 0.20.2), libunibilium4 (>= 2.0), libuv1 (>= 1.30.1), libvterm0 (>= 0.1), lua-luv (>= 1.43.0-0)
+Recommends: python3-neovim, xclip | xsel, xxd
+Suggests: ctags, vim-scripts
+Filename: ./amd64/neovim_0.7.2-1~bpo11+0.sean00_amd64.deb
+Size: 1757368
+MD5sum: db7ec81424fd740239d4490a31a253d2
+SHA1: 4fbba00851a9ac29d80c23367ef877de71712ed8
+SHA256: 6356132be25ce51382e2ec551d514925976e1c39d9e474a0b4b8cabaeba7d748
+SHA512: 9c31690df4eccf0cf1aff48e732e7d470a41385bc22f5897b40da6018acc8654c8b9b01454cea64bc7ecf637e4d3480d1857ea57df5390003ce63c0706c4c75e
 Homepage: https://neovim.io/
 Description: heavily refactored vim fork
  Neovim is a fork of Vim focused on modern code and features, rather than
