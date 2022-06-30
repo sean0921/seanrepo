@@ -2514,6 +2514,36 @@ Description: fast, scalable, distributed revision control system (all subpackage
  .
  This is a dummy package which brings in all subpackages.
 
+Package: git-all
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 971
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), git-doc, git-cvs, git-mediawiki, git-svn, git-email, git-gui, gitk, gitweb
+Suggests: git-daemon-run | git-daemon-sysvinit
+Filename: ./all/git-all_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 976712
+MD5sum: 7a292c6590e16a62fa5f2b5c3440d47f
+SHA1: ff918d0738d861bf7283d9d728a188c5cd670588
+SHA256: 52f70bea16eada987ca628d214ea0500e33e67fffe978941e813bc3a4c015796
+SHA512: 41c286d359f801d965be62b1ce73e67f70a6ad119d1f33860371bea0a5d8319f781d0a59e6f735c82af88239e0f9f33c4f29fc65d64f01789ac00d0c05e3055e
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (all subpackages)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This is a dummy package which brings in all subpackages.
+
 Package: git-cvs
 Architecture: all
 Version: 1:2.33.0-1
@@ -2818,6 +2848,44 @@ Description: fast, scalable, distributed revision control system (cvs interopera
  incorrect results. For reliable, one-shot imports, cvs2git from the
  cvs2svn package or parsecvs may be a better fit.
 
+Package: git-cvs
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1354
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), cvsps, libdbd-sqlite3-perl
+Suggests: git-doc, cvs
+Filename: ./all/git-cvs_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1040404
+MD5sum: 7231364e7f1aada015d762a57e8ff507
+SHA1: 44be79a79cdd00553ae8f01e7881e516cef243df
+SHA256: 3c8ff7c4e9b80ee2530fb37b4139faa1f0ccc824905542d9319ee0941333d3ea
+SHA512: a215160530654298e4c53c872799cb342019d6ef762ca8f64dcabfd565d528e3ecb864f0c3233939a1ac225981a0fdaca27392dafd49eebbf09f544f21c783ef
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (cvs interoperability)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git cvsimport, cvsexportcommit, and cvsserver
+ tools, which allow Git to read from and write to CVS repositories and
+ offer access over CVS protocol to Git repositories.
+ .
+ The git cvsimport tool can incrementally import from a repository that
+ is being actively developed and only requires remote access over CVS
+ protocol. Unfortunately, in many situations the import leads to
+ incorrect results. For reliable, one-shot imports, cvs2git from the
+ cvs2svn package or parsecvs may be a better fit.
+
 Package: git-daemon-run
 Architecture: all
 Version: 1:2.33.0-1
@@ -3080,6 +3148,41 @@ MD5sum: 7b635cc504c44e2076dde041a7b4476e
 SHA1: 969fdd11f55e011896e95089adb2053a462d3850
 SHA256: ba4a595bcecacb82dec58781d622c148b33be9d3c89c42b485ac1e3d144230fb
 SHA512: 356242161f09303dc09d32b51998b7ce94abaf847145bb1de80e811ecae3d16f9e6a3c61b953b400a38ed2257c001e98a0007897d2c9261d70cb2f0d8f0ec289
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (git-daemon service)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ git-daemon, as provided by the git package, is a simple server for git
+ repositories, ideally suited for read-only updates, i.e. pulling from git
+ repositories through the network.  This package provides a runit service
+ for running git-daemon permanently.  This configuration is simpler and
+ more reliable than git-daemon-sysvinit, at a cost of being less
+ familiar for administrators accustomed to sysvinit.
+
+Package: git-daemon-run
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 983
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), runit, adduser
+Conflicts: git-daemon-sysvinit
+Filename: ./all/git-daemon-run_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 978304
+MD5sum: c253d9f0e21c847d8bdd2dca1e121f34
+SHA1: 9c8e5c9d404bd356b512f636ae0609ebf036a092
+SHA256: aba82b57593d12d5a80d8385a142bbd9060c51d04308aa8ce6b2817001b3a889
+SHA512: 42c36b945a8be20e82a5c60b76c8fd581c04b09820b2716dbe9ad41e08f8f7fdd34baca0669131b0d1001f9b24f57b8e7a04d1d8f4e19abcbe1d462a7c4e1754
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (git-daemon service)
  Git is popular version control system designed to handle very large
@@ -3378,6 +3481,41 @@ Description: fast, scalable, distributed revision control system (git-daemon ser
  package provides the usual sysvinit service management commands
  ("service git-daemon start/stop") for git-daemon.
 
+Package: git-daemon-sysvinit
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 986
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), adduser, lsb-base (>= 3.0-6)
+Conflicts: git-daemon-run
+Filename: ./all/git-daemon-sysvinit_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 979500
+MD5sum: b2d65fe542b5a6ea04812a593abe9ed0
+SHA1: 563678df9ce2cc852f5a14ae081ceaaebfdbd81a
+SHA256: e339d8c75b7b4aa946a961d6ae93aad346f3a4163c7e2f527679bcb1b6a11c0c
+SHA512: e891af4cf8035dd3751433fc20478c4131fae5e7a8bf824c8e0d74a60fffa76aa3e821ee717b4073e3a4d55f632829f75592da205efeac221370b8651790ad2a
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (git-daemon service)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ git-daemon, as provided by the git package, is a simple server for git
+ repositories, ideally suited for read-only updates, i.e. pulling from git
+ repositories through the network.  This package provides a sysvinit service
+ for running git-daemon permanently.  Unlike git-daemon-run, this
+ package provides the usual sysvinit service management commands
+ ("service git-daemon start/stop") for git-daemon.
+
 Package: git-doc
 Architecture: all
 Version: 1:2.33.0-1
@@ -3597,6 +3735,35 @@ MD5sum: d1b07dd5b4e03683a2319812c6301be9
 SHA1: 64b7dcbc90a965098341fbfa06cd1b9a1b04348b
 SHA256: 3f552a9996e1c37fc81dd10daeb88f6b807cb4e1550ce95367ae6d24ed565553
 SHA512: 715d7c167d91d4caa1e09c26e57fcc4d192577ca6b1847af957ec600c43b71fd1157de58811c610e06502aa85fa738de9f8cdb1b1705d58bbfb09de45398935e
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (documentation)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the documentation.
+
+Package: git-doc
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 12360
+Suggests: git, git-cvs, git-svn, git-email, gitk, gitweb
+Filename: ./all/git-doc_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 2083252
+MD5sum: 524f3160a0ca0be89a57862a14404cb8
+SHA1: 8cef09cf2f1725bd35beac2b291a5ec82f8e1dc0
+SHA256: 4ab526b0685ece05e4178576a9a7ee47e18c2fc00a59cf709983616ad3051938
+SHA512: 50e0a453728baa13a670aa9ae4a98bc96d972b77b9aade5ff995f81ad026a842939d87b73fa7b9e42c1ea739c2a6668ba1bb619a0dec84d9c38371f3dfc4d725
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (documentation)
  Git is popular version control system designed to handle very large
@@ -3852,6 +4019,38 @@ MD5sum: f4478baa246f07a80006a7762cd25f63
 SHA1: 25fd684208739ba3899952309f7f508ac47b2ec3
 SHA256: 02afbce848974b38f4b44666cac1d69629540303931811c1b1296b5bdadb76cd
 SHA512: 9b18d60823942738984b84cf0269cf1bb4ee420794d3759ecc76343b34f1d70ade1cd39bb87b40260fd2117f8633c0c2fc641157183c484d22d22c37eb12e421
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (email add-on)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git-send-email program for sending series of
+ patch emails.
+
+Package: git-email
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1045
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.)
+Recommends: libemail-valid-perl, libmailtools-perl, perl (>> 5.21.5) | libnet-smtp-ssl-perl, libauthen-sasl-perl, libio-socket-ssl-perl (>= 1.951)
+Suggests: git-doc
+Filename: ./all/git-email_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1002820
+MD5sum: 3bf6ea9d109f4debf4f360c994ac6da7
+SHA1: a0d373a2e23bab54e65aef3411f0a91064ecf8e7
+SHA256: 153bb7e8e19170c7ea730140e644ed295d34ff2b0bd17846780f5991f9733141
+SHA512: 9262e6f5bba44ceaaeda89ab02465516a5b12e14b9de9b931efc634bebd7b97fa5a77fd6a150ddd0560c05d72de675da6aca8a3e73a20e61091854de61cc356b
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (email add-on)
  Git is popular version control system designed to handle very large
@@ -4162,6 +4361,43 @@ Description: fast, scalable, distributed revision control system (GUI)
  If meld is installed, it can be used for displaying diffs and for
  interactive merge conflict resolution.
 
+Package: git-gui
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 2392
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), tk
+Recommends: gitk
+Suggests: git-doc, aspell, meld
+Filename: ./all/git-gui_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1195340
+MD5sum: 266f3682b8344a01abe3d90ef11ffb85
+SHA1: 52ee1d6d0a389c2d8f4bbd498763d2c729568a6b
+SHA256: acbb4fb6002698d378149e6a9795ba8894fecbabd88de884d0548e0ce7210522
+SHA512: 3207757f0ada624d7412f817fd2717f48def1788628a06f5021cdb8d9d876a3e286e1dfac5c13076370bae430fc323f85750a3ebec254908cc7c533905107a2a
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (GUI)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git graphical user interface.
+ .
+ If aspell is installed, it can check the spelling of commit messages
+ as the user types.
+ .
+ If meld is installed, it can be used for displaying diffs and for
+ interactive merge conflict resolution.
+
 Package: git-man
 Architecture: all
 Version: 1:2.33.0-1
@@ -4380,6 +4616,35 @@ MD5sum: 8d49fcecdb085b06a35d292305b3f4c3
 SHA1: 7be82dd75fac1afc87fc56e3c3eb1740744b1c36
 SHA256: 634829cd5fa7a995493fd8e57b32da3f0bf242873bb93caef51ca63c516b9d86
 SHA512: d4432bf1e53bfdc88fd7832b71626011e588938ee441f4bfb25a043cdb43d6f15e755733c7d2e274f2aab0883656a29709fff68ba5e93c581237f75326e632c6
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (manual pages)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides reference documentation for use by the 'man'
+ utility and the 'git help' command.
+
+Package: git-man
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1992
+Filename: ./all/git-man_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1941992
+MD5sum: 9338c3be8450e6190159f38d2e2caee1
+SHA1: dece0d3f24ba160fe8a1f1f4f7d30a2e3d32cab5
+SHA256: 70962edb0b72ee8b505481646f0b48f1d06133c04b62b1a630765284a67f6425
+SHA512: b6324b61f0ce883705604696714ff7714c3c82600338c313b7da051744a6214a10bd0df9bcee21cb1c14569fda1dbb197e12aa916159274c7b483c6d886f6395
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (manual pages)
  Git is popular version control system designed to handle very large
@@ -4642,6 +4907,39 @@ MD5sum: 8277bf01cc5cdbc25a3e4dc0c8a21396
 SHA1: 3f1582c32e1262be4781fc4eeac8e055f7dc92e7
 SHA256: 618e93a760638f5e21ead56e82e344812d306366b080fe9ef5da11937cc176ca
 SHA512: 3df0e41d2b2abdb261bde483c015adf192329c9d9023855edd7287113b8415bd622b8cb03a2a4086288d2c581b4d8eb977a7ff4a2e9d05b89ea0f5b3eeacb62c
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (MediaWiki remote helper)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the mediawiki remote helper, which allows Git to
+ read from and write to a wiki such as Wikipedia as though it were a
+ remote Git repository, and a 'git mw' command that can show a preview
+ of how wiki markup will be rendered before pushing.
+
+Package: git-mediawiki
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1031
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), libmediawiki-api-perl (>= 0.39), liblwp-protocol-https-perl, libdatetime-format-iso8601-perl
+Suggests: mediawiki
+Filename: ./all/git-mediawiki_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 992084
+MD5sum: 352da2a2b6b584ada620b1a751a4394b
+SHA1: f943ece92179706e06c89f8f50a997c5c3bf478e
+SHA256: dfaa8e9b018666ff80b30df1a75118b03dd66c70312a64a88d079b4ec76b3617
+SHA512: eb7d50db7b88d56e341c1c4a4f3b427804256820f8ad04a8febfadbd493d095c61ac91c216c6341436171b79daa580a9e19facee1d9b1a582b63e3400d405382
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (MediaWiki remote helper)
  Git is popular version control system designed to handle very large
@@ -4922,6 +5220,39 @@ Description: fast, scalable, distributed revision control system (svn interopera
  This package provides tools for interoperating with Subversion repositories,
  and importing SVN development history.
 
+Package: git-svn
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1220
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), libsvn-perl, libyaml-perl, libterm-readkey-perl
+Suggests: git-doc, subversion
+Breaks: git (<< 1:1.8.3~rc1-1.)
+Replaces: git (<< 1:1.8.3~rc1-1.)
+Filename: ./all/git-svn_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1051576
+MD5sum: c5cc099c26ea7d9fdc31c82323d6192a
+SHA1: 7ab2c1350ad1c794b8c8b7b21127f6d027b144bf
+SHA256: c7e16d40307125a952067748eb62b7f2b58047757ff8f559e460b12ce55a8499
+SHA512: 97d8b7ef45b8d1926f19afb3b0bf75c6609fb49649d782405a23d848bcbcf5118dbef81bc9189150a5d651b2f8dabb6660b4af4b722e0e9daaeb0dd027c8ef3f
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (svn interoperability)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides tools for interoperating with Subversion repositories,
+ and importing SVN development history.
+
 Package: gitk
 Architecture: all
 Version: 1:2.33.0-1
@@ -5149,6 +5480,36 @@ MD5sum: 65a049c7632f61fb1c9aee4b19da41a1
 SHA1: 2411e4a4a00f5f354414e6d1e9988567650b6251
 SHA256: 57086419502e03f17af3e28c7ec725bee7bc41557573f4055f027c166eb61f81
 SHA512: 3d26c5776ebe8cbc5a554deee61ad8081283ceea98ee668a05023b48674380f081b09e75bb8528ec793080341bd3fb1d75fe054481f80fe76a728a23092f404f
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (revision tree visualizer)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the gitk program, a tcl/tk revision tree visualizer.
+
+Package: gitk
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 1798
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), tk
+Suggests: git-doc
+Filename: ./all/gitk_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 1112040
+MD5sum: d4f40cb501c9037fe51e3574d17e4a9a
+SHA1: aaeeb8684421300f3e393cc95af6b40dd561365d
+SHA256: 6da49278b754737c76f08f8df9590ea7860aa63ca79826196f460e5fb5eba7ee
+SHA512: 69a3a3b1f5c5504f4b5052caacdc6b2cf20b9cf28bf1825628662d91706c29f911874c0061bf2616468b38c3c30553caf98ce09b8fdd8b35418b8f049bbd9680
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (revision tree visualizer)
  Git is popular version control system designed to handle very large
@@ -5454,6 +5815,45 @@ MD5sum: 446bd2d963fa608c5c1e1f0528628534
 SHA1: 043fb5a3b32d12623cba84b4f2da3b9d0ea6d45c
 SHA256: f6dd530447cee6b3413efb9b8931238e3fcfb57e469822c4fcc8c856eae3f999
 SHA512: b9ee617762d73b6933f0278f83a95effdb873e1ffbcaf153c470aa6cbc2235a56b8b7b731b0a815e0b5bfdb4f29a44518b4a1b79eaddbeeb6478be48e62b59e2
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (web interface)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package configures a web interface for browsing git repositories.
+ .
+ If apache2 is installed, the web interface is automatically made
+ available at http://localhost/gitweb.  Other servers that support CGI
+ or mod_perl are supported through manual configuration.
+ .
+ If libcgi-fast-perl is installed, gitweb can also be run over FastCGI
+ (and served by nginx, for example).
+
+Package: gitweb
+Architecture: all
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Source: git
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 992
+Depends: git (>> 1:2.36.1), git (<< 1:2.36.1-.), perl, libcgi-pm-perl
+Recommends: apache2 (>= 2.4.6-4~) | lynx | httpd, libhttp-date-perl | libtime-parsedate-perl
+Suggests: httpd-cgi | libcgi-fast-perl, git-doc
+Breaks: apache2.2-common (<< 2.3~)
+Filename: ./all/gitweb_2.36.1-1~bpo11+0.sean00_all.deb
+Size: 980292
+MD5sum: d8cbb4ddf3670012f4b39d61928551dc
+SHA1: 99fc511119098b08fa4af8744c9d83b95f3a9649
+SHA256: 8a6700fa8323707041f744bb6ab0537a65b48a16e1d14e8a9097f8bfc3989220
+SHA512: 633e922e568f59e7928774c48fe117ca41e363532923e2a85078c7a014a04255ebf93afbe0d751a7ac2656e3ac9168d68785ac61c8a91ed403f2ba3ad6221630
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system (web interface)
  Git is popular version control system designed to handle very large
@@ -10176,6 +10576,41 @@ MD5sum: 22123809498cc3d5c30c21ab9e3c2c7c
 SHA1: e4efcd8dfc2e6e0479b7ccfe7b2d81d3eb4b6b49
 SHA256: 0165e6380a0f151133db6233097f47aa59d9395209ae4ac265478f70fe5a14ad
 SHA512: 34d7fd664d90ddbf394f53282b44cff5d7df09d9d83ca1acc6f4890da6267c01e880f7cf73cbd4cb86fff7e5983e52e8aa6678d0f6cc19ad31715b11b1c5859b
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git main components with minimal dependencies.
+ Additional functionality, e.g. a graphical user interface and revision
+ tree visualizer, tools for interoperating with other VCS's, or a web
+ interface, is provided as separate git* packages.
+
+Package: git
+Architecture: amd64
+Version: 1:2.36.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+Installed-Size: 38483
+Provides: git-completion, git-core
+Depends: libc6 (>= 2.28), libcurl3-gnutls (>= 7.56.1), libexpat1 (>= 2.0.1), libpcre2-8-0 (>= 10.34), zlib1g (>= 1:1.2.0), perl, liberror-perl, git-man (>> 1:2.36.1), git-man (<< 1:2.36.1-.)
+Recommends: ca-certificates, patch, less, ssh-client
+Suggests: gettext-base, git-daemon-run | git-daemon-sysvinit, git-doc, git-email, git-gui, gitk, gitweb, git-cvs, git-mediawiki, git-svn
+Breaks: bash-completion (<< 1:1.90-1), cogito (<= 0.18.2+), dgit (<< 5.1~), git-buildpackage (<< 0.6.5), git-el (<< 1:2.32.0~rc2-1~), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), guilt (<< 0.33), openssh-client (<< 1:6.8), stgit (<< 0.15), stgit-contrib (<< 0.15)
+Filename: ./amd64/git_2.36.1-1~bpo11+0.sean00_amd64.deb
+Size: 5983032
+MD5sum: bb715aa72326e8b2f12c9d9b88d93a56
+SHA1: 7f6fe93b8a85402d4337a884a9412d73256a907d
+SHA256: e38f07e970555a318c0be870105ff4efd8a3aaf59b4d329495f3a8332f8aa49f
+SHA512: 27d118afac3798c6833ebea65b98888b2d041dcf101a2a2387ab85b31f9507354cd9feef0b522a7adc695e3c89d1275a3fbd3c1e2e3474cbfdb3fc860ac77180
 Homepage: https://git-scm.com/
 Description: fast, scalable, distributed revision control system
  Git is popular version control system designed to handle very large
