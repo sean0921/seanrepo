@@ -18842,6 +18842,29 @@ Description: telegram related WebRTC fork
  project, in general, provides applications real-time capabilities that work on
  top of an open standard.
 
+Package: libtgowt-dev
+Architecture: amd64
+Version: 0~git20220508.10d5f4b+dfsg-1~bpo11+0.sean00
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libtgowt
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Installed-Size: 56560
+Depends: libabsl-dev, libx11-dev, libxcomposite-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxrandr-dev, libxrender-dev, libxtst-dev, libavcodec-dev, libavformat-dev, libavutil-dev, libssl-dev, libglib2.0-dev, libjpeg62-turbo-dev, libc6-dev, libopus-dev, libprotobuf-dev, libswresample-dev, libswscale-dev, libvpx-dev
+Filename: ./amd64/libtgowt-dev_0~git20220508.10d5f4b+dfsg-1~bpo11+0.sean00_amd64.deb
+Size: 7438908
+MD5sum: 2ad4456d921b473d9c4b9e1518e17975
+SHA1: 3cee5bfabccbe98fe2f9d790ab0e316291e7930d
+SHA256: 0ef8c8663be5fca6171c41dff753bc25f76485402cac4e08b97c374784d0e27f
+SHA512: ac3ab8ab30d4d78856dd0ea09b6165da9efbb94d8998d10192d8e57f554b89e3eb9ba6f10f048acce434b5311ec394ee2a1d791c310e1ef588bd05de1c45ddab
+Homepage: https://github.com/desktop-app/tg_owt
+Description: telegram related WebRTC fork
+ This supporting package contains a reduced fork of WebRTC source code. It is
+ primarily needed for build support of video calls in Telegram Desktop. WebRTC
+ project, in general, provides applications real-time capabilities that work on
+ top of an open standard.
+
 Package: libtree-sitter-dev
 Architecture: amd64
 Version: 0.20.6-1~bpo11+0.sean00
@@ -24077,6 +24100,29 @@ MD5sum: 6644d37792f35ea98fac91e55f523f14
 SHA1: 9243ca7279ab7463ee59fe9a6d5bb40bd40e5f9a
 SHA256: 8b6fb9c2097c53725614efa5fc3f27b18bef9a79e2cdc2645fa5835374ea1fd0
 SHA512: 6c523819ff1f3d2660fd5477cd9770181abca7399e846f569e6de6d3fe648f684a477663c8f4fc8d65fa1a862fa8b2b153140e0edfea013de997cfae40dce733
+Homepage: https://desktop.telegram.org
+Description: fast and secure messaging application
+ Telegram is a messaging app with a focus on speed and security, it is
+ super-fast, simple and free. You can use Telegram on all your devices at the
+ same time — your messages sync seamlessly across any number of your phones,
+ tablets or computers.
+
+Package: telegram-desktop
+Architecture: amd64
+Version: 4.0.2+ds-2~bpo11+0.sean00
+Built-Using: libtgowt (= 0~git20220508.10d5f4b+dfsg-1~bpo11+0.sean00), ms-gsl (= 3.1.0-4), range-v3 (= 0.11.0-1), tl-expected (= 1.0.0~dfsg-2)
+Priority: optional
+Section: net
+Maintainer: Nicholas Guriev <guriev-ns@ya.ru>
+Installed-Size: 83237
+Depends: qt5-image-formats-plugins, libabsl20200923 (>= 0~20200923-1), libavcodec58 (>= 7:4.2), libavformat58 (>= 7:4.2), libavutil56 (>= 7:4.0), libc6 (>= 2.29), libgcc-s1 (>= 3.4), libglib2.0-0 (>= 2.39.4), libglibmm-2.4-1v5 (>= 2.64.2), libhunspell-1.7-0, libjpeg62-turbo (>= 1.3.1), liblz4-1 (>= 0.0~r130), libminizip1 (>= 1.1), libopenal1 (>= 1.14), libopus0 (>= 1.1), libqrcodegencpp1 (>= 1.2.1), libqt5core5a (>= 5.15.2), libqt5gui5 (>= 5.15.2) | libqt5gui5-gles (>= 5.15.2), libqt5network5 (>= 5.15.2), libqt5svg5 (>= 5.6.0~beta), libqt5waylandclient5 (>= 5.10.1), libqt5widgets5 (>= 5.15.2), librlottie0-1 (>= 0~git20200305.a717479+dfsg), libsigc++-2.0-0v5 (>= 2.2.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 9), libswresample3 (>= 7:4.0), libswscale5 (>= 7:4.0), libvpx6 (>= 1.6.0), libwayland-client0 (>= 1.9.91), libx11-6, libxcb-keysyms1 (>= 0.4.0), libxcb-record0, libxcb-screensaver0, libxcb1, libxcomposite1 (>= 1:0.4.5), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrandr2 (>= 2:1.5.0), libxtst6, libxxhash0 (>= 0.6.5), qtbase-abi-5-15-2, qtwayland-client-abi-5-15-2, zlib1g (>= 1:1.1.4)
+Recommends: fonts-open-sans, libwebkit2gtk-4.0-37 | libwebkit2gtk-4.1-0
+Filename: ./amd64/telegram-desktop_4.0.2+ds-2~bpo11+0.sean00_amd64.deb
+Size: 28216472
+MD5sum: c4a81bd381d939db436aae68d1e50002
+SHA1: 5f7d20eaabf55801a191e00de0d618cae09c0c65
+SHA256: 571da9363007f74f27ae10ef722883b3e7786e6c3b113c989250d6077bec24b6
+SHA512: e3877749d50525418dded201503f521405af06594bbce14884d8b9f2ca595caed3c42d205994c0659a6710020263c186e4a09afafece99b926a75dda743d997e
 Homepage: https://desktop.telegram.org
 Description: fast and secure messaging application
  Telegram is a messaging app with a focus on speed and security, it is
