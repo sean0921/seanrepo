@@ -11831,6 +11831,53 @@ Description: "as-installed" tests for GTK 4
  This package contains installable test programs, primarily for use with
  autopkgtest.
 
+Package: ibus-anthy-dev
+Architecture: amd64
+Version: 1.5.14-1~bpo11+0.sean00
+Priority: optional
+Section: libdevel
+Source: ibus-anthy
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 58
+Depends: ibus-anthy (= 1.5.14-1~bpo11+0.sean00)
+Filename: ./amd64/ibus-anthy-dev_1.5.14-1~bpo11+0.sean00_amd64.deb
+Size: 9312
+MD5sum: 5c4c17731f051002a7b3055d20065971
+SHA1: f679bdcefc96406bfcea7fd9b3efa358f228f3e7
+SHA256: de46fc418710715ee928fc662179c279c5ea5742adc793ddf94229a449f853b1
+SHA512: d2f8cf3a912362445f0ff653095d3da3f0c76de6a08239067ffcb4dac466b2e91f1684777fb42db61686dde346f198d112a36ac3008b5c5a171e16278066f07f
+Homepage: https://github.com/fujiwarat/ibus-anthy/wiki
+Description: anthy engine for IBus, development files
+ IBus is an Intelligent Input Bus. It is a new input framework for Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ IBus-Anthy is an input method (IM) for Japanese, based on IBus.
+ .
+ This package provides ibus-anthy development files.
+
+Package: ibus-anthy
+Architecture: amd64
+Version: 1.5.14-1~bpo11+0.sean00
+Priority: optional
+Section: utils
+Maintainer: Debian Input Method Team <debian-input-method@lists.debian.org>
+Installed-Size: 8825
+Depends: anthy (>= 1:0.3-6), ibus (>= 1.5.22-2~), dconf-gsettings-backend | gsettings-backend, python3:any, libanthy1, libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Filename: ./amd64/ibus-anthy_1.5.14-1~bpo11+0.sean00_amd64.deb
+Size: 771692
+MD5sum: dea3ce30ea9ee645ff364b3ec78de93e
+SHA1: f3d9b065d2fa99a378f05b814e373a39a70ce9c9
+SHA256: 7548f3b52854e67475018d938b89447f65cee8fb2b9b7137f2b5835a5a72623f
+SHA512: 88ef3106aa9767c962a1e2849dad727d00b11c3af6da6a6e5920745c9b130a795a09b3bdbdd18c3717377fe693edb95b61d2eff69b62d499f0cdabf6e573ecfb
+Homepage: https://github.com/fujiwarat/ibus-anthy/wiki
+Description: anthy engine for IBus
+ IBus is an Intelligent Input Bus. It is a new input framework for Linux
+ OS. It provides full featured and user friendly input method user interface.
+ It also may help developers to develop input method easily.
+ .
+ IBus-Anthy is an input method (IM) for Japanese, based on IBus.
+
 Package: ibus-dbgsym
 Architecture: amd64
 Version: 1.5.24-2~exp1
