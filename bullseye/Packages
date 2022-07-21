@@ -6315,6 +6315,32 @@ Description: Data files for the GNOME terminal emulator
  This package contains data, help files and localization settings for
  gnome-terminal, the GNOME terminal emulator application.
 
+Package: gnome-terminal-data
+Architecture: all
+Version: 3.44.1-1~bpo11+0.sean00
+Priority: optional
+Section: gnome
+Source: gnome-terminal
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 8677
+Recommends: gnome-terminal
+Filename: ./all/gnome-terminal-data_3.44.1-1~bpo11+0.sean00_all.deb
+Size: 1575628
+MD5sum: d7aa6f4731b11f5969a66b4549e02370
+SHA1: e793c53c9e26f8bb2edb8b1daeb7aab5253be8c9
+SHA256: cf847c14068fe92a489103dd1dc19c55afc730fd410c5cc908e20fc47199d0b1
+SHA512: 0a51a239e7d58d8e8e253320e32522e8981feafaee20593ae9d1086df31833d70572ff23d1a76f00afa4305c1afd974047caf1fe86c47c5ef0b321582eff5e09
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: Data files for the GNOME terminal emulator
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ This package contains data, help files and localization settings for
+ gnome-terminal, the GNOME terminal emulator application.
+
 Package: ibus-data
 Architecture: all
 Version: 1.5.24-2~exp1
@@ -11114,6 +11140,34 @@ MD5sum: 1befef3831599443b8a645be5d917f4c
 SHA1: d5f36c173007e34f44a21190e6172e1293e34eb9
 SHA256: fab6362ed6c47b41e07739d63833b787e913344b666bcfee7a3e673da52e24d9
 SHA512: 46c0fa28ce09b524a7aa7e92f37bcbf4e60fb392ce7b4b6590e11ff9657bc7d43d8c4aac828f562725787499b965831a07b9e254b84ff32fe3c130d654dc95df
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: GNOME terminal emulator application
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ GNOME Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+
+Package: gnome-terminal
+Architecture: amd64
+Version: 3.44.1-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: gnome
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1326
+Provides: x-terminal-emulator
+Depends: default-dbus-session-bus | dbus-session-bus, gnome-terminal-data (<< 3.45), gnome-terminal-data (>= 3.44), gsettings-desktop-schemas (>= 0.1.0), dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libdconf1 (>= 0.14.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgtk-3-0 (>= 3.23.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.1.1), libuuid1 (>= 2.16), libvte-2.91-0 (>= 0.68.0), libx11-6
+Recommends: gvfs, nautilus-extension-gnome-terminal, yelp
+Filename: ./amd64/gnome-terminal_3.44.1-1~bpo11+0.sean00_amd64.deb
+Size: 825912
+MD5sum: 08b55f52768bfa09c595f679556c55f6
+SHA1: 27d55500093bc17f16e55cb5870e96512a5eef9f
+SHA256: 2e14745ec46f2f62a3efe89ac11bf0c2440f5a3eb16df1634f332ac53044f841
+SHA512: 7a81f55c95530b3e870b66fe6561b8596aa546229e032133eb06413006312749dc2bb41c6012f4e1464610273071c659bcabd539f6f63e1d821f60a9571ec664
 Homepage: https://wiki.gnome.org/Apps/Terminal
 Description: GNOME terminal emulator application
  GNOME Terminal is a terminal emulation application that you can use to
@@ -20384,6 +20438,37 @@ MD5sum: 64ab6da474346562ade46514422add16
 SHA1: ba3dce653cd02702c747137862c308018bc284a6
 SHA256: 3072aeb0e3aad0af16629197553186450295efdad772884c764c106946b20193
 SHA512: 381fb8c2e55d4fd0722e9a7ed9039b0ee93af721031a5a07a0a640eb74f0aeeb43867b6534432c10995632c167ad39dc7239cef0ea111cad6a5a382978dc7bf6
+Homepage: https://wiki.gnome.org/Apps/Terminal
+Description: GNOME terminal emulator application - Nautilus extension
+ GNOME Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the GNOME environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ GNOME Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+ .
+ This package contains the extension for Nautilus, the GNOME Files app.
+
+Package: nautilus-extension-gnome-terminal
+Architecture: amd64
+Version: 3.44.1-1~bpo11+0.sean00
+Priority: optional
+Section: gnome
+Source: gnome-terminal
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 754
+Depends: gnome-terminal (= 3.44.1-1~bpo11+0.sean00), libc6 (>= 2.4), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgtk-3-0 (>= 3.22.27), libnautilus-extension1a (>= 3.28.0), libstdc++6 (>= 4.1.1)
+Breaks: gnome-terminal (<< 3.27.92-2~)
+Replaces: brasero (<< 3.27.92-2~)
+Enhances: nautilus
+Filename: ./amd64/nautilus-extension-gnome-terminal_3.44.1-1~bpo11+0.sean00_amd64.deb
+Size: 670164
+MD5sum: 2b0b91d1f2d95cfd0765bd7a69ebb170
+SHA1: 02fa70bc387129369ff1b0562d37c04e7cee6df5
+SHA256: 71c2b3570790f6021f77584248e30c6235a903b5be5301415ba5cbe6b1c63012
+SHA512: a601200752136f093ec0f0192e6499739dd73f894ea1487e223a7998eded3893411ecbd5165af2b878d1e15c2b66c08c78abcc754ef30b0988ca0203f3c2f521
 Homepage: https://wiki.gnome.org/Apps/Terminal
 Description: GNOME terminal emulator application - Nautilus extension
  GNOME Terminal is a terminal emulation application that you can use to
