@@ -8386,6 +8386,26 @@ Description: PuTTY HTML documentation
  Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
  Plink, PSCP, PSFTP, and PuTTYgen).
 
+Package: putty-doc
+Architecture: all
+Version: 0.77-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 788
+Filename: ./all/putty-doc_0.77-1~bpo11+0.sean00_all.deb
+Size: 172992
+MD5sum: 3f8823ee147cecf83dd960686343a6fd
+SHA1: 01653549fcef33d734c031bf7f4d3e9ce895d6a7
+SHA256: ffa460388f9729488f7ae15e9dd58d2879625e960fdc5278847781ae1c5701c8
+SHA512: db025436254c176ff043b89c0c3eff632cf03ecea0055827b317dde6c1aab4eef34bce3e5156448383005eae4af8dc017beebeabf5fb078f295e95f0b62231b9
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: PuTTY HTML documentation
+ Full HTML documentation for the PuTTY suite of programs (PuTTY, pterm,
+ Plink, PSCP, PSFTP, and PuTTYgen).
+
 Package: python-mpi4py-doc
 Architecture: all
 Version: 3.1.3-1~bpo11+0.sean00
@@ -21698,6 +21718,33 @@ Description: PuTTY terminal emulator
  encoding of Unicode. It also has some nifty features like rectangular
  selection and NetHack keypad mode.
 
+Package: pterm
+Architecture: amd64
+Version: 0.77-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 723
+Provides: x-terminal-emulator
+Depends: libc6 (>= 2.28), libcairo2 (>= 1.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Suggests: putty-doc
+Filename: ./amd64/pterm_0.77-1~bpo11+0.sean00_amd64.deb
+Size: 231988
+MD5sum: 408c8b5329a3b83a848d6b5a8aee4db6
+SHA1: 43b704cdadaf539fa4d15b65d000ae007735e954
+SHA256: 205fa33ead347eea246da5b615bea773c8f5fea41677589ed5ac82646049e828
+SHA512: 15deca394334c3d085a82b3209a7ec5b0898b2a5c12397caa28536cf3a03284b7cfd7e4a607677c8198e1b2ec275e047e04073227d273bce2216071ac4cdf7f5
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: PuTTY terminal emulator
+ This is an X terminal emulator based on the popular Windows SSH client,
+ PuTTY. It supports xterm escape sequences, plus some Linux console
+ sequences for colour palette configuration and some DECterm sequences for
+ title bar control, and with an appropriate font it supports the UTF-8
+ encoding of Unicode. It also has some nifty features like rectangular
+ selection and NetHack keypad mode.
+
 Package: putty-dbgsym
 Architecture: amd64
 Version: 0.76-1
@@ -21906,6 +21953,50 @@ Description: command-line tools for SSH, SCP, and SFTP
  authentication. It can be used to add SSH-like amenities to channels where
  you were already prepared to run a bare shell session.
 
+Package: putty-tools
+Architecture: amd64
+Version: 0.77-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Source: putty
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 3179
+Depends: libc6 (>= 2.29)
+Suggests: putty-doc
+Filename: ./amd64/putty-tools_0.77-1~bpo11+0.sean00_amd64.deb
+Size: 566504
+MD5sum: 03ef737dc935b1b8c8fdaa60b3103c7b
+SHA1: 9c67d748ea9846e43652c43582cc060d62f8a6ce
+SHA256: f2a684e0f20e042de5347c1bbb77e8dca5380f3288fc3beba15e658cdd8a10dd
+SHA512: 1806e507b9a0de404783cc4babf1c1834ee3a34c3f7aaf721eebaf559d41f63fcdf29ac90e4aa7cc9ed6a5870d38cc0a4180bbaba3876d7ace6e47aec8018bcd
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: command-line tools for SSH, SCP, and SFTP
+ This package provides several command-line tools from the PuTTY suite that
+ allow various kinds of secure interaction with remote systems.
+ .
+ Plink (PuTTY Link) connects to a remote system via SSH, Telnet, or rlogin,
+ and either starts an interactive session or runs a batch process. It
+ supports the usual SSH features like port forwarding, X11 forwarding,
+ SOCKS, and compression.
+ .
+ PSCP (PuTTY Secure Copy) transfers files securely between systems using an
+ SSH connection. It works with both SSH protocol 1 and protocol 2.
+ .
+ PSFTP (PuTTY SFTP client) transfers files securely between systems using
+ the SSH file transfer protocol, which is specific to SSH protocol 2. In
+ interactive mode its interface is much like the traditional Unix FTP
+ client, although it can also operate in batch mode.
+ .
+ PuTTYgen generates SSH public and private key pairs in any of a number of
+ formats, including those usable by PuTTY, OpenSSH, and ssh.com.
+ .
+ psusan (pseudo-SSH for untappable, separately authenticated networks) is a
+ server program that behaves like the innermost "connection" layer of an SSH
+ session, without the two outer security layers of encryption and
+ authentication. It can be used to add SSH-like amenities to channels where
+ you were already prepared to run a bare shell session.
+
 Package: putty
 Architecture: amd64
 Version: 0.76-1
@@ -21980,6 +22071,34 @@ MD5sum: 0329b920be5279e5d2f670ecf3f83663
 SHA1: a639ded28f9833be9ed2ce9c81797f689f1ccdc0
 SHA256: ccea62d9a6ea1e365792aac930fe88c9c9d49654d99a444a0cf03e048c26655d
 SHA512: b4f62b896772cc4a774fd99188f7d64c8a7d3bc7c168e856c73d23d6c0babee8162f38af60a5af51d4d56c7d1d471f0258b5f55c4f558662126906851819eaf3
+Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+Description: Telnet/SSH client for X
+ This is the Unix port of the popular Windows SSH client, PuTTY. It supports
+ flexible terminal setup, mid-session reconfiguration using Ctrl-rightclick,
+ multiple X11 authentication protocols, and various other interesting things
+ not provided by ssh in an xterm.
+ .
+ Pageant is an SSH authentication agent, and a tool for communicating with
+ an already-running agent.
+
+Package: putty
+Architecture: amd64
+Version: 0.77-1~bpo11+0.sean00
+Multi-Arch: foreign
+Priority: optional
+Section: net
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 1689
+Depends: putty-tools, libc6 (>= 2.28), libcairo2 (>= 1.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Suggests: putty-doc
+Breaks: putty-tools (<< 0.68-2~)
+Replaces: putty-tools (<< 0.68-2~)
+Filename: ./amd64/putty_0.77-1~bpo11+0.sean00_amd64.deb
+Size: 502540
+MD5sum: 8e0f85ec2cbafb7329f274b6f63aedab
+SHA1: 43eb0f0df06b59c6dc22c2c93737b96729a90092
+SHA256: e149de2b3855c3882ce46e1149883dc7ac35566dc44680bcd60d3d27d0e34e48
+SHA512: 8de31d91514f68de3e11b758178a8f47c26d8d7ccf2eb8e1f49634c01e922fc1d65a76a3da1cb41bd342d0acf2213c6e9f172be96bbce1e3bdc29630f4e2b314
 Homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/
 Description: Telnet/SSH client for X
  This is the Unix port of the popular Windows SSH client, PuTTY. It supports
